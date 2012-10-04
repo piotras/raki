@@ -11,7 +11,14 @@ class WorkspaceTest extends RakiTest
 
     public function testWorkspacesNames()
     {
-        print_r($this->manager->getPossibleWorkspacesNames());
+        $expected = array(
+            'SG0' => array(
+                'Raki SG1' => array(
+
+                )
+            )
+        );
+        $this->assertEquals($this->manager->getPossibleWorkspacesNames(), $expected);
     }
 }
 
