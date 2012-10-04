@@ -1,6 +1,12 @@
 <?php
 
-interface WorkspaceManager {
+interface WorkspaceManager 
+{
+
+    /**
+     * Returns array of all storable type names.
+     */
+    public function getStorableTypeNames();
 
     /**
      * Returns array of possible workspaces names.
