@@ -14,7 +14,9 @@ class WorkspaceTest extends RakiTest
         $expected = array(
             'SG0' => array(
                 'Raki SG1' => array(
-
+                    'default' => array(),
+                    'fi' => array(),
+                    'ru' => array()
                 )
             )
         );
