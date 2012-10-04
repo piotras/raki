@@ -37,7 +37,7 @@ class RagnaroekWorkspaceManager implements WorkspaceManager
 
         $sgs[$this->default_sg_zero] = array();
         foreach ($this->sitegroups as $sg) {
-            $sgs[$this->default_sg_zero][] = $sg->name;
+            $sgs[$this->default_sg_zero][$sg->name] = array();
         }       
 
         return $sgs; 
