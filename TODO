@@ -1,0 +1,9 @@
+
+1. Create legacy schemas, which can be used with Ratatoskr
+2. Initialize legacy database
+3. Create sitegroup(s) and lang content in it
+4. "Import" legacy content 
+ a. Create workspace(s) from sitegroups
+ b. Create workspace(s) from languages (with default one being explicitly set)
+ c. Move content (e.g. INSERT... SELECT?)
+5. Test updated content
