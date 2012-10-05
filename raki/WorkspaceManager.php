@@ -20,7 +20,7 @@ interface WorkspaceManager
      * Returns array of all possible workspaces paths.
      * 
      */ 
-    public function dumpWorkspaces();
+    public function getPossibleWorkspacesPaths();
 
     /**
      * Create MidgardWorskpace.

@@ -35,7 +35,7 @@ class WorkspaceTest extends RakiTest
             '/SG0/Raki SG1/multilang/ru'
         );
 
-        $this->assertEquals($expected, $this->manager->dumpWorkspaces());
+        $this->assertEquals($expected, $this->manager->getPossibleWorkspacesPaths());
     }
 }
 
