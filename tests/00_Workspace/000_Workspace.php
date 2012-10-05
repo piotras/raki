@@ -14,14 +14,15 @@ class WorkspaceTest extends RakiTest
         $expected = array(
             'SG0' => array(
                 'Raki SG1' => array(
-                    'default' => array(),
-                    'fi' => array(),
-                    'ru' => array()
+                    'multilang' => array(
+                        'fi' => array(),
+                        'ru' => array()
+                    )
                 )
             )
         );
 
-        $this->assertEquals($this->manager->getPossibleWorkspacesNames(), $expected);
+        $this->assertEquals($expected, $this->manager->getPossibleWorkspacesNames());
     }
 
     public function testWorkspacesDump()
@@ -29,12 +30,12 @@ class WorkspaceTest extends RakiTest
         $expected = array(
             '/SG0',
             '/SG0/Raki SG1',
-            '/SG0/Raki SG1/default',
-            '/SG0/Raki SG1/fi',
-            '/SG0/Raki SG1/ru'
+            '/SG0/Raki SG1/multilang',
+            '/SG0/Raki SG1/multilang/fi',
+            '/SG0/Raki SG1/multilang/ru'
         );
 
-        $this->assertEquals($this->manager->dumpWorkspaces(), $expected);
+        $this->assertEquals($expected, $this->manager->dumpWorkspaces());
     }
 }
 
