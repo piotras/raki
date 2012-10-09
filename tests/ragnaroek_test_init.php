@@ -7,10 +7,14 @@ if (gc_enabled()) {
     gc_disable(); 
 }
 
+exec (__DIR__ . '/bootstrap.sh');
+
 //PHPUnit 3.4 compat
 if (method_exists('PHPUnit_Util_Filter', 'addDirectoryToFilter')) {
     require_once 'PHPUnit/Framework.php';
 }
+
+require_once 'RakiTestContent.php';
 
 $config = new MidgardConfig();
 $config->dbtype = $GLOBALS['midgard2.configuration.db.type'];
@@ -23,6 +27,9 @@ $config->loglevel = $GLOBALS['midgard2.configuration.loglevel'];
 
 $mgd = midgard_connection::get_instance();
 var_dump($mgd->open_config ($config));
+
+/* Initialize storage and content */
+RakiTestContent::prepareContent();
 
 spl_autoload_register(function($class) {
     include dirname(__FILE__) . '/../raki/' . str_replace('Ragnaroek', 'Ragnaroek/', $class)  . '.php';
