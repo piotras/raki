@@ -34,6 +34,7 @@ Optimal and preferred way to migrate content itself should be direct SQL query (
 type defined as mgdschema one.
 
 2. Accessing sitegroups and multilang content
+---------------------------------------------
 
 In Midgard1 we set sitegroup and language, and then we are able to request objects in sitegroup or language context.
 The same rule appplies in Midgard2, however we set workspaces instead of sitegroupor languages.
