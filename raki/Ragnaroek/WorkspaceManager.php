@@ -4,9 +4,14 @@ class RagnaroekWorkspaceManager implements WorkspaceManager
 {
     private $default_sg_zero = 'SG0';
     private $default_language;
+    private $default_sitegroup = null;
     private $sitegroups = array();
     private $languages = array();
     private $mgd = null;
+    private $midgardWorkspaceManager = null;
+    private $workspaces = array();
+    private $possible_workspaces = null;
+    private $possible_paths= null;
 
     public function __construct($default_language = null)
     {
@@ -17,6 +22,7 @@ class RagnaroekWorkspaceManager implements WorkspaceManager
         } else {
             $this->default_language = $this->getLangByCode($default_language);
         }
+        $this->default_sitegroup = new ragnaroek_sitegroup();
     }
 
     public function getLangByCode($code) 
@@ -124,6 +130,10 @@ class RagnaroekWorkspaceManager implements WorkspaceManager
 
     public function getPossibleWorkspacesNames($parent = null)
     {
+        if ($this->possible_workspaces != null) {
+            return $this->possible_workspaces;
+        }
+
         /* Get all sitegroups. Those are used as "base" workspaces */
         $this->populateSitegroups();
 
@@ -140,7 +150,8 @@ class RagnaroekWorkspaceManager implements WorkspaceManager
             }
         }       
 
-        return $sgs; 
+        $this->possible_workspaces = $sgs;
+        return $this->possible_workspaces;
     }
 
     private function buildWorkspacesPaths(&$paths, $elements, $base = '')
@@ -155,19 +166,150 @@ class RagnaroekWorkspaceManager implements WorkspaceManager
         }
     }
 
-    public function getPossibleWorkspacesPaths()
+    private function populatePaths()
     {
+        if (!empty($this->possible_paths)) {
+            return;
+        }
+
         $names = $this->getPossibleWorkspacesNames();
-        $paths = array();
+        $this->possible_paths = array(); 
 
-        self::buildWorkspacesPaths($paths, $names);       
-
-        return $paths;
+        self::buildWorkspacesPaths($this->possible_paths, $names);       
     }
 
-    public function createWorkspace($name, $parent = null)
+    public function getPossibleWorkspacesPaths()
     {
+        $this->populatePaths();
+        return $this->possible_paths;
+    }
 
+    private function getMidgardWorkspaceManager()
+    {
+        if ($this->midgardWorkspaceManager == null) {
+            $this->midgardWorkspaceManager = new midgard_workspace_manager($this->mgd);
+        }
+        return $this->midgardWorkspaceManager;
+    }
+
+    private function findSitegroupByName($name)
+    {
+        foreach ($this->sitegroups as $sg) {
+            if ($sg->name == $name) {
+                return $sg;
+            }
+        }
+
+        return null;
+    }
+
+    private function findLanguageByName($name)
+    {
+        if ($this->default_language->code == $name) {
+            return $this->default_language;
+        }
+
+        foreach ($this->languages as $lang) {
+            if ($lang->code == $name) { 
+                return $lang;
+            }
+        }
+
+        return null;
+    }
+
+    private function determineLegacyType($absPath)
+    {
+        $elements = explode('/', $absPath);
+        $elements_count = count($elements);
+
+        switch ($elements_count) {
+            
+        case 1:
+            throw new Exception("Invalid absolute path to determine legacy Midgard type");
+
+        case 2:
+            return $this->default_sitegroup;
+
+        case 3:
+            $sg = $this->findSitegroupByName($elements[2]);
+            if ($sg != null) {
+                echo "Return SG {$elements[2]} \n";
+                return $sg;
+            }
+            break;
+        }
+
+        return $this->findLanguageByName($elements[$elements_count - 1]);
+    }   
+
+    public function createWorkspace($name, MidgardWorkspace $parent = null)
+    {
+        $parent ? $parent_path = $parent->get_path() : $parent_path = '';
+        $absPath = $parent_path . '/' . $name;
+
+        $this->populatePaths();
+
+        if ($this->possible_paths == null
+            || in_array($absPath, $this->possible_paths) == false) {
+                throw new Exception ("Can not create workspace at '{$absPath}' path. Not defined in possible workspaces");
+            }
+
+        $ws = new midgard_workspace();
+        $ws->name = $name;
+        $this->getMidgardWorkspaceManager()->create_workspace($ws, $parent_path); 
+
+        /* Hold workspaces paths and associated sitegroup or language */
+        $absPath = $parent_path . '/' . $name;
+        $this->workspaces[$absPath]['workspace'] = $ws;
+        $this->workspaces[$absPath]['legacy'] = $this->determineLegacyType($absPath);
+    }
+
+    private function getMidgardWorkspaceByPath($absPath)
+    {
+        $ws = new MidgardWorkspace();
+        try {
+            $this->midgardWorkspaceManager->get_workspace_by_path($ws, $absPath);
+        } catch (Exception $e) {
+            throw new Exception($e->getMessage() . ". " . $absPath);
+        }
+        return $ws;
+    }
+
+    public function createWorkspacesAll()
+    {
+        $paths = $this->getPossibleWorkspacesPaths();
+        foreach ($paths as $path) {
+            $elements = explode ('/', $path);
+            $elements_count = count($elements);
+            try {
+                $name = $elements[$elements_count - 1];
+                $parent = $elements[$elements_count - 2];
+                if ($parent == '') {
+                    $parent = null;
+                } else {
+                    $parent_path = $elements;
+                    unset($parent_path[$elements_count - 1]);
+                    $parent_path = implode('/', $parent_path);
+                    $parent = $this->getMidgardWorkspaceByPath($parent_path);
+                }
+                $this->createWorkspace($name, $parent);
+            } catch (Exception $e) {
+                if ($e->getMessage() != "Failed to create workspace. WorkspaceStorage at path '{$path}' already exists") {
+                    throw $e;
+                }
+            }
+        }
+    }
+
+    public function getWorkspacesNames()
+    {
+        return array();
+    }
+
+    public function getWorkspacesPaths()
+    {
+        return array();
     }
 }
 

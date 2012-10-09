@@ -9,12 +9,12 @@ interface WorkspaceManager
     public function getStorableTypeNames();
 
     /**
-     * Returns array of possible workspaces names.
+     * Returns array of all possible workspaces names.
      *
      * Every key is workspace name and value is an array which holds
      * child workspaces.
      */ 
-    public function getPossibleWorkspacesNames($parent = null);
+    public function getPossibleWorkspacesNames();
 
     /**
      * Returns array of all possible workspaces paths.
@@ -25,10 +25,24 @@ interface WorkspaceManager
     /**
      * Create MidgardWorskpace.
      *
-     * No exception should be thrown if workspace with given name and 
-     * under given parent workspace already exists.
+     * Throws an exception if workspace with given name exists.
      */ 
-    public function createWorkspace($name, $parent = null);
+    public function createWorkspace($name, MidgardWorkspace $parent = null);
+
+    /**
+     * Create all possible workspaces.
+     */ 
+    public function createWorkspacesAll();
+
+    /**
+     * Returns array of names of all exisiting workspaces.
+     */
+    public function getWorkspacesNames();
+
+    /**
+     * Returns array of paths of all exising workspaces.
+     */
+    public function getWorkspacesPaths();  
 }
 
 ?>
