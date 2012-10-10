@@ -70,14 +70,14 @@ class WorkspaceTest extends RakiTest
         $this->assertTrue($this->midgardWorkspaceManager->path_exists('/SG0/Raki SG1/multilang/ru'));
     }
 
-    public function testWorkspacesNames()
+    public function testStoredWorkspacesNames()
     {
-        $this->assertEquals($this->workspacesNames, $this->manager->getWorkspacesNames());
+        $this->assertEquals($this->workspacesNames, $this->manager->getStoredWorkspacesNames());
     }
 
-    public function testWorkspacesPaths()
+    public function testStoredWorkspacesPaths()
     {
-        $this->assertEquals($this->workspacesPaths, $this->manager->getWorkspacesPaths());
+        $this->assertEquals($this->workspacesPaths, $this->manager->getStoredWorkspacesPaths());
     }
 }
 
