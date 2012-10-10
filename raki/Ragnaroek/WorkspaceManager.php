@@ -234,7 +234,6 @@ class RagnaroekWorkspaceManager implements WorkspaceManager
         case 3:
             $sg = $this->findSitegroupByName($elements[2]);
             if ($sg != null) {
-                echo "Return SG {$elements[2]} \n";
                 return $sg;
             }
             break;
@@ -302,14 +301,38 @@ class RagnaroekWorkspaceManager implements WorkspaceManager
         }
     }
 
-    public function getWorkspacesNames()
+    private function getChildrenNames($ws, &$names)
     {
-        return array();
+        $children = $ws->list_children();
+
+        if (empty($children)) {
+            return;
+        }
+
+        foreach ($children as $child) {
+            $names[$child->name] = array();
+            $this->getChildrenNames($child, $names[$child->name]);
+        }
     }
 
-    public function getWorkspacesPaths()
+    public function getStoredWorkspacesNames()
     {
-        return array();
+        $names = array();
+        $ws = new MidgardWorkspace();
+        $this->getMidgardWorkspaceManager()->get_workspace_by_path($ws, '/' . $this->default_sg_zero);
+        $names[$this->default_sg_zero] = array();
+
+        $this->getChildrenNames($ws, $names[$this->default_sg_zero]);
+
+        return $names;
+    }
+
+    public function getStoredWorkspacesPaths()
+    {
+        $names = $this->getStoredWorkspacesNames();
+        $paths = array();
+        self::buildWorkspacesPaths($paths, $names);
+        return $paths;
     }
 }
 
