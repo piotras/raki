@@ -37,12 +37,12 @@ interface WorkspaceManager
     /**
      * Returns array of names of all exisiting workspaces.
      */
-    public function getWorkspacesNames();
+    public function getStoredWorkspacesNames();
 
     /**
      * Returns array of paths of all exising workspaces.
      */
-    public function getWorkspacesPaths();  
+    public function getStoredWorkspacesPaths();  
 }
 
 ?>
