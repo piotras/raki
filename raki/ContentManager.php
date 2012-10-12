@@ -18,9 +18,9 @@ interface ContentManager
     public function getStoredTypeNames();
 
     /**
-     * Get the path of stored content 
+     * Get the content which is accessible by given path
      */
-    public function getStoredContentPath($content); 
+    public function getStoredContentByPath($absPath); 
 }
 
 ?>
