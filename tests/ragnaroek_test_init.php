@@ -26,6 +26,7 @@ $config->blobdir = $GLOBALS['midgard2.configuration.blobdir'];
 $config->loglevel = $GLOBALS['midgard2.configuration.loglevel'];
 
 $mgd = midgard_connection::get_instance();
+$mgd->enable_workspace(true);
 var_dump($mgd->open_config ($config));
 
 /* Initialize storage and content */
