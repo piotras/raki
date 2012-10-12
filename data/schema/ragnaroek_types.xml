@@ -65,6 +65,28 @@
 		<property name="score"    type="integer"/>
 	</type>
 
+	<type name="ratatoskr_topic" table="topic">
+		<property name="id" type="unsigned integer" primaryfield="id"/>
+		<property name="name"     type="string" index="yes"/>
+		<property name="code"     type="text"/>
+		<property name="up"       link="ragnaroek_topic:id" type="unsigned integer" upfield="up"/>
+		<property name="sitegroup" type="unsigned integer"/>
+    <!-- MidCOM properties -->
+		<property name="component"    type="string" index="yes"/>
+		<property name="style"    type="string" index="yes"/>
+		<property name="styleInherit"    type="boolean" field="style_inherit" index="yes"/>
+		<property name="symlink"    link="ragnaroek_topic:id" type="unsigned integer" index="yes"/>
+	
+		<!-- Multilang properties -->
+		<property name="title"    type="string"/>
+		<property name="extra"    type="text"/>
+		<property name="description" type="text"/>
+		<property name="lang"     type="unsigned integer" link="midgard_language:id"/>
+		<property name="sid"      type="unsigned integer"/>
+        <!-- Legacy -->
+		<property name="score"    type="integer"/>
+	</type>
+
 	<type name="midgard_language" table="midgard_language">
 		<property name="id" type="unsigned integer" primaryfield="id"/>
 		<property name="code"        type="string" dbtype="varchar(2)" index="yes"/>
