@@ -79,6 +79,16 @@ class WorkspaceTest extends RakiTest
     {
         $this->assertEquals($this->workspacesPaths, $this->manager->getStoredWorkspacesPaths());
     }
+
+    public function testGetStoredWorkspaceByPath()
+    {
+        $this->assertEquals("/TODO", $this->manager->getStoredWorkspaceByPath("/TODO"));
+    }
+
+    public function testGetStoredWorkspaceByName()
+    {
+        $this->assertEquals("TODO", $this->manager->getStoredWorkspaceByName("TODO"));
+    }
 }
 
 ?>
