@@ -1,0 +1,12 @@
+{
+    "name": "Midgard/Raki",
+    "require": {
+        "lespoilus/spyc": "dev-master"
+    },
+    "authors": [
+        {
+            "name": "piotras",
+            "email": "piotrek.pokora@gmail.com"
+        }
+    ]
+}
