@@ -42,7 +42,17 @@ interface WorkspaceManager
     /**
      * Returns array of paths of all exising workspaces.
      */
-    public function getStoredWorkspacesPaths();  
+    public function getStoredWorkspacesPaths(); 
+
+    /**
+     * Get stored workspace by given path
+     */
+    public function getStoredWorkspaceByPath($absPath); 
+
+    /**
+     * Get stored workspace by given name
+     */
+    public function getStoredWorkspaceByName($name); 
 }
 
 ?>

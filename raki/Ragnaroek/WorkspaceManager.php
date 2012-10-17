@@ -334,6 +334,16 @@ class RagnaroekWorkspaceManager implements WorkspaceManager
         self::buildWorkspacesPaths($paths, $names);
         return $paths;
     }
+
+    public function getStoredWorkspaceByPath($absPath)
+    {
+        return null;
+    }
+
+    public function getStoredWorkspaceByName($name)
+    {
+        return null;
+    }
 }
 
 ?>
