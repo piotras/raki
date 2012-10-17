@@ -22,6 +22,7 @@
     <testsuites>
         <testsuite name="RakiTest">
 	    <file>tests/00_Workspace/000_Workspace.php</file>
+	    <file>tests/00_Workspace/001_StorableWorkspace.php</file>
 	    <!-- <directory>tests/00_Workspace/</directory> -->
         </testsuite>
     </testsuites>
