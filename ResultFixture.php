@@ -11,7 +11,7 @@ class ResultFixture
     const   PATHS = 'paths';
     const   NAMES = 'names';
 
-    public function __construct($name, $yamlFile)
+    public function __construct($yamlFile, $name)
     {
         $this->testName = $name;
         $this->yaml = Spyc::YAMLLoad($yamlFile);   
