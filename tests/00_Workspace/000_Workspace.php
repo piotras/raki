@@ -1,41 +1,35 @@
 <?php
 
+require_once 'ResultFixture.php';
+
 class WorkspaceTest extends RakiTest 
 {
     private $manager = null;
     private $midgardWorkspaceManager = null;
-    private $workspacesNames = array(
-        'SG0' => array(
-            'Raki SG1' => array(
-                'multilang' => array(
-                    'fi' => array(),
-                    'ru' => array()
-                )
-            )
-        )
-    );
-    private $workspacesPaths = array(
-        '/SG0',
-        '/SG0/Raki SG1',
-        '/SG0/Raki SG1/multilang',
-        '/SG0/Raki SG1/multilang/fi',
-        '/SG0/Raki SG1/multilang/ru'
-    );
+    private $defaultFixture = null;
 
     public function setUp() 
     {
         $this->manager = new RagnaroekWorkspaceManager();
         $this->midgardWorkspaceManager = new midgard_workspace_manager(MidgardConnection::get_instance());
+        $this->defaultFixture = $this->getDefaultFixture();
+    }
+
+    private function getDefaultFixture()
+    {
+        $yaml = __CLASS__ . '.yaml';
+        return new ResultFixture( __DIR__ . '/' . $yaml, 'shared'); 
     }
 
     public function testPossibleWorkspacesNames()
     {
-        $this->assertEquals($this->workspacesNames, $this->manager->getPossibleWorkspacesNames());
+        $this->assertEquals($this->defaultFixture->getWorkspaceNames(), $this->manager->getPossibleWorkspacesNames());
     }
 
     public function testPossibleWorkspacesPaths()
     {
-        $this->assertEquals($this->workspacesPaths, $this->manager->getPossibleWorkspacesPaths());
+
+        $this->assertEquals($this->defaultFixture->getWorkspacePaths(), $this->manager->getPossibleWorkspacesPaths());
     }
 
     public function testCreateWorkspaceSG0()
@@ -72,12 +66,12 @@ class WorkspaceTest extends RakiTest
 
     public function testStoredWorkspacesNames()
     {
-        $this->assertEquals($this->workspacesNames, $this->manager->getStoredWorkspacesNames());
+        $this->assertEquals($this->defaultFixture->getWorkspaceNames(), $this->manager->getStoredWorkspacesNames());
     }
 
     public function testStoredWorkspacesPaths()
     {
-        $this->assertEquals($this->workspacesPaths, $this->manager->getStoredWorkspacesPaths());
+        $this->assertEquals($this->defaultFixture->getWorkspacePaths(), $this->manager->getStoredWorkspacesPaths());
     }
 
     public function testGetStoredWorkspaceByPath()
