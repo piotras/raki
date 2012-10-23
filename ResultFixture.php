@@ -2,24 +2,44 @@
 
 require_once 'vendor/lespoilus/spyc/spyc.php';
 
-
 class ResultFixture
 {
-    private $yamlDoc = null;
+    private $yaml = null;
+    private $testName = null;
 
-    public function __construct($yamlFile)
+    const   WORKSPACE = 'workspace';
+    const   PATHS = 'paths';
+    const   NAMES = 'names';
+
+    public function __construct($name, $yamlFile)
     {
-        $yamlDoc = Spyc::YAMLLoad($yamlFile);   
+        $this->testName = $name;
+        $this->yaml = Spyc::YAMLLoad($yamlFile);   
     }
 
-    public function getWorkspacesPaths()
+    private function getYamlWorkspaceKey()
     {
-
+        return $this->yaml[$this->testName][self::WORKSPACE];
     }
 
-    public function getWorkspacesNames()
+    private function getYamlWorkspaceKeyByName($name)
     {
+        $wsKey = $this->getYamlWorkspaceKey();
+        $values = $wsKey[$name];
+        if (empty($values)) {
+            return array();
+        }
+        return $values;
+    }
 
+    public function getWorkspacePaths()
+    {
+         return $this->getYamlWorkspaceKeyByName(self::PATHS);
+    }
+
+    public function getWorkspaceNames()
+    {
+        return $this->getYamlWorkspaceKeyByName(self::NAMES);
     }
 }
 ?>
