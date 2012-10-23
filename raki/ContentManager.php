@@ -20,7 +20,7 @@ interface ContentManager
     /**
      * Get the content which is accessible by given path
      */
-    public function getStoredContentByPath($absPath); 
+    public function getContentByPath(StorableWorkspace $workspace, $absPath); 
 }
 
 ?>
