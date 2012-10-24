@@ -19,7 +19,13 @@ class ResultFixture
 
     private function getYamlWorkspaceKey()
     {
-        return $this->yaml[$this->testName][self::WORKSPACE];
+        if (isset($this->yaml[$this->testName])) {
+            return $this->yaml[$this->testName][self::WORKSPACE];
+        }
+        if (isset($this->yaml['shared'])) {
+            return $this->yaml['shared'][self::WORKSPACE];
+        }
+        throw new Exception("Neither {$this->testName} nor 'shared' fixture found");
     }
 
     private function getYamlWorkspaceKeyByName($name)
