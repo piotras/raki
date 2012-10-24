@@ -337,11 +337,22 @@ class RagnaroekWorkspaceManager implements WorkspaceManager
 
     public function getStoredWorkspaceByPath($absPath)
     {
-        return null;
+        $ws = new MidgardWorkspace();
+        $this->getMidgardWorkspaceManager()->get_workspace_by_path($ws, $absPath);
+
+        return new RagnaroekStorableWorkspace($ws);
     }
 
     public function getStoredWorkspaceByName($name)
     {
+        /* TODO, Throw exception in case of ambigious, duplicate names */
+        $paths = $this->getStoredWorkspacesPaths();
+        foreach ($paths as $path) {
+            $elements = explode('/', $path);
+            if ($elements[count($elements)-1] === $name) {
+                return $this->getStoredWorkspaceByPath($path);
+            }
+        }
         return null;
     }
 }

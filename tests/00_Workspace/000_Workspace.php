@@ -12,24 +12,24 @@ class WorkspaceTest extends RakiTest
     {
         $this->manager = new RagnaroekWorkspaceManager();
         $this->midgardWorkspaceManager = new midgard_workspace_manager(MidgardConnection::get_instance());
-        $this->defaultFixture = $this->getDefaultFixture();
     }
 
-    private function getDefaultFixture()
+    private function getFixture($name = 'shared')
     {
         $yaml = __CLASS__ . '.yaml';
-        return new ResultFixture( __DIR__ . '/' . $yaml, 'shared'); 
+        return new ResultFixture( __DIR__ . '/' . $yaml, $name); 
     }
 
     public function testPossibleWorkspacesNames()
     {
-        $this->assertEquals($this->defaultFixture->getWorkspaceNames(), $this->manager->getPossibleWorkspacesNames());
+        $rf = $this->getFixture(__FUNCTION__);
+        $this->assertEquals($rf->getWorkspaceNames(), $this->manager->getPossibleWorkspacesNames());
     }
 
     public function testPossibleWorkspacesPaths()
     {
-
-        $this->assertEquals($this->defaultFixture->getWorkspacePaths(), $this->manager->getPossibleWorkspacesPaths());
+        $rf = $this->getFixture(__FUNCTION__);
+        $this->assertEquals($rf->getWorkspacePaths(), $this->manager->getPossibleWorkspacesPaths());
     }
 
     public function testCreateWorkspaceSG0()
@@ -57,31 +57,45 @@ class WorkspaceTest extends RakiTest
     public function testCreateWorkspaceAll()
     { 
         $this->manager->createWorkspacesAll();
-        $this->assertTrue($this->midgardWorkspaceManager->path_exists('/SG0'));
-        $this->assertTrue($this->midgardWorkspaceManager->path_exists('/SG0/Raki SG1'));
-        $this->assertTrue($this->midgardWorkspaceManager->path_exists('/SG0/Raki SG1/multilang'));
-        $this->assertTrue($this->midgardWorkspaceManager->path_exists('/SG0/Raki SG1/multilang/fi'));
-        $this->assertTrue($this->midgardWorkspaceManager->path_exists('/SG0/Raki SG1/multilang/ru'));
+        $rf = $this->getFixture(__FUNCTION__);
+        $paths = $rf->getWorkspacePaths();
+        foreach ($paths as $path) {
+            $this->assertTrue($this->midgardWorkspaceManager->path_exists($path));
+        }
     }
 
     public function testStoredWorkspacesNames()
     {
-        $this->assertEquals($this->defaultFixture->getWorkspaceNames(), $this->manager->getStoredWorkspacesNames());
+        $rf = $this->getFixture(__FUNCTION__);
+        $this->assertEquals($rf->getWorkspaceNames(), $this->manager->getStoredWorkspacesNames());
     }
 
     public function testStoredWorkspacesPaths()
     {
-        $this->assertEquals($this->defaultFixture->getWorkspacePaths(), $this->manager->getStoredWorkspacesPaths());
+        $rf = $this->getFixture(__FUNCTION__);
+        $this->assertEquals($rf->getWorkspacePaths(), $this->manager->getStoredWorkspacesPaths());
     }
 
     public function testGetStoredWorkspaceByPath()
     {
-        $this->assertEquals("/TODO", $this->manager->getStoredWorkspaceByPath("/TODO"));
+        $rf = $this->getFixture(__FUNCTION__);
+        $paths = $rf->getWorkspacePaths();
+        foreach ($paths as $path) {
+            $ws = $this->manager->getStoredWorkspaceByPath($path);
+            $this->assertTrue($ws instanceof StorableWorkspace);
+            $this->assertEquals($path, $ws->getPath());
+        }
     }
 
     public function testGetStoredWorkspaceByName()
     {
-        $this->assertEquals("TODO", $this->manager->getStoredWorkspaceByName("TODO"));
+        $rf = $this->getFixture(__FUNCTION__);
+        $names = $rf->getWorkspaceNames();
+        foreach ($names as $name) {
+            $ws = $this->manager->getStoredWorkspaceByName($name);
+            $this->assertTrue($ws instanceof StorableWorkspace);
+            $this->assertEquals($name, $ws->getName());
+        }
     }
 }
 
