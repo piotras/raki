@@ -13,3 +13,11 @@ shared:
                         fi: []
                         ru: []
 
+testGetStoredWorkspaceByName:
+    workspace:
+        names:
+            - SG0
+            - Raki SG1
+            - multilang
+            - fi
+            - ru
