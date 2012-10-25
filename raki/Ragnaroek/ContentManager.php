@@ -22,7 +22,7 @@ class RagnaroekContentManager implements ContentManager
         return array();
     }
 
-    public function getItemByPath(StorableWorkspace $workspace, $absPath)
+    public function getItemByPath(StorableWorkspace $workspace, $relPath)
     {
         return null;
     } 
