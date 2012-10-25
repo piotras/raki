@@ -3,14 +3,14 @@
 interface StorableWorkspace extends Storable 
 {
     /**
-     * Returns the names of children workspaces
+     * Returns array with the names of children workspaces
      */
-    public function getWorkspacesNames();
+    public function getChildrenNames();
 
     /**
-     * Returns children workspaces
+     * Returns array of children workspaces
      */
-    public function getWorkspaces();
+    public function getChildren();
 }
 
 ?>
