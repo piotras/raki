@@ -40,3 +40,22 @@ testGetChildrenNames:
                 - ru
             fi: []
             ru: []
+
+testGetChildren:
+    workspace:
+        names:
+            - SG0
+            - Raki SG1
+            - multilang
+            - fi
+            - ru
+        children:
+            SG0:
+                - Raki SG1
+            Raki SG1:
+                - multilang
+            multilang:
+                - fi
+                - ru
+            fi: []
+            ru: []
