@@ -42,4 +42,10 @@ class RakiTest extends PHPUnit_Framework_TestCase
     {   
     
     }
+
+    static protected function getFixture($name = 'shared')
+    {
+        $yaml = get_called_class() . '.yaml';
+        return new ResultFixture( __DIR__ . '/fixtures/' . $yaml, $name);
+    }
 }

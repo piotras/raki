@@ -14,21 +14,15 @@ class WorkspaceTest extends RakiTest
         $this->midgardWorkspaceManager = new midgard_workspace_manager(MidgardConnection::get_instance());
     }
 
-    private function getFixture($name = 'shared')
-    {
-        $yaml = __CLASS__ . '.yaml';
-        return new ResultFixture( __DIR__ . '/' . $yaml, $name); 
-    }
-
     public function testPossibleWorkspacesNames()
     {
-        $rf = $this->getFixture(__FUNCTION__);
+        $rf = self::getFixture(__FUNCTION__);
         $this->assertEquals($rf->getWorkspaceNames(), $this->manager->getPossibleWorkspacesNames());
     }
 
     public function testPossibleWorkspacesPaths()
     {
-        $rf = $this->getFixture(__FUNCTION__);
+        $rf = self::getFixture(__FUNCTION__);
         $this->assertEquals($rf->getWorkspacePaths(), $this->manager->getPossibleWorkspacesPaths());
     }
 
@@ -57,7 +51,7 @@ class WorkspaceTest extends RakiTest
     public function testCreateWorkspaceAll()
     { 
         $this->manager->createWorkspacesAll();
-        $rf = $this->getFixture(__FUNCTION__);
+        $rf = self::getFixture(__FUNCTION__);
         $paths = $rf->getWorkspacePaths();
         foreach ($paths as $path) {
             $this->assertTrue($this->midgardWorkspaceManager->path_exists($path));
@@ -66,19 +60,19 @@ class WorkspaceTest extends RakiTest
 
     public function testStoredWorkspacesNames()
     {
-        $rf = $this->getFixture(__FUNCTION__);
+        $rf = self::getFixture(__FUNCTION__);
         $this->assertEquals($rf->getWorkspaceNames(), $this->manager->getStoredWorkspacesNames());
     }
 
     public function testStoredWorkspacesPaths()
     {
-        $rf = $this->getFixture(__FUNCTION__);
+        $rf = self::getFixture(__FUNCTION__);
         $this->assertEquals($rf->getWorkspacePaths(), $this->manager->getStoredWorkspacesPaths());
     }
 
     public function testGetStoredWorkspaceByPath()
     {
-        $rf = $this->getFixture(__FUNCTION__);
+        $rf = self::getFixture(__FUNCTION__);
         $paths = $rf->getWorkspacePaths();
         foreach ($paths as $path) {
             $ws = $this->manager->getStoredWorkspaceByPath($path);
@@ -89,7 +83,7 @@ class WorkspaceTest extends RakiTest
 
     public function testGetStoredWorkspaceByName()
     {
-        $rf = $this->getFixture(__FUNCTION__);
+        $rf = self::getFixture(__FUNCTION__);
         $names = $rf->getWorkspaceNames();
         foreach ($names as $name) {
             $ws = $this->manager->getStoredWorkspaceByName($name);

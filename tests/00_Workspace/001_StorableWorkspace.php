@@ -30,7 +30,6 @@ class StorableWorkspaceTest extends RakiTest
     {
         $this->assertEquals("TODO", "DONE");
     }
-
 }
 
 ?>
