@@ -338,7 +338,9 @@ class RagnaroekWorkspaceManager implements WorkspaceManager
     public function getStoredWorkspaceByPath($absPath)
     {
         $ws = new MidgardWorkspace();
-        $this->getMidgardWorkspaceManager()->get_workspace_by_path($ws, $absPath);
+        if (!$this->getMidgardWorkspaceManager()->get_workspace_by_path($ws, $absPath)) {
+            throw new WorkspaceNotFoundException("Workspace doesn't exist at '{$absPath}' path");
+        }
 
         return new RagnaroekStorableWorkspace($ws);
     }
@@ -353,7 +355,8 @@ class RagnaroekWorkspaceManager implements WorkspaceManager
                 return $this->getStoredWorkspaceByPath($path);
             }
         }
-        return null;
+
+        throw new WorkspaceNotFoundException("Workspace identified by '{$name}' doesn't exist");
     }
 }
 
