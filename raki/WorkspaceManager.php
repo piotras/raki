@@ -46,11 +46,15 @@ interface WorkspaceManager
 
     /**
      * Get stored workspace by given path
+     *
+     * @throws WorkspaceNotFoundException if workspace doesn't exists at given path
      */
     public function getStoredWorkspaceByPath($absPath); 
 
     /**
      * Get stored workspace by given name
+     *
+     * @throws WorkspaceNotFoundException if workspace identified by name is not found
      */
     public function getStoredWorkspaceByName($name); 
 }
