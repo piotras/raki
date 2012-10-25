@@ -10,6 +10,7 @@ class ResultFixture
     const   WORKSPACE = 'workspace';
     const   PATHS = 'paths';
     const   NAMES = 'names';
+    const   CHILDREN = 'children';
 
     public function __construct($yamlFile, $name)
     {
@@ -46,6 +47,12 @@ class ResultFixture
     public function getWorkspaceNames()
     {
         return $this->getYamlWorkspaceKeyByName(self::NAMES);
+    }
+
+    public function getWorkspaceChildrenNames($workspaceName)
+    {
+        $names = $this->getYamlWorkspaceKeyByName(self::CHILDREN);
+        return $names[$workspaceName];
     }
 }
 ?>
