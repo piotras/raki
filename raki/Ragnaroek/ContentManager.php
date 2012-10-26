@@ -12,12 +12,16 @@ class RagnaroekContentManager implements ContentManager
         $re = new ReflectionExtension("midgard2");
         $names = array();
         foreach ($re->getClasses() as $class_ref) {
-            $class_mgd_ref = new midgard_reflection_class($class_ref->getName());
-            $name = $class_mgd_ref->getName();
-            if (!is_subclass_of ($name, 'MidgardDBObject')
-                || $class_mgd_ref->isAbstract()) {
+
+            if ($class_ref->isAbstract() || $class_ref->isInterface()) {
+                continue;
+            }
+
+            $name = $class_ref->getName();
+            if (!is_subclass_of ($name, 'MidgardDBObject')) {
                     continue;
             }
+
             $names[] = $name;
         }
         return $names;
