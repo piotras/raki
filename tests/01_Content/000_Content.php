@@ -38,8 +38,10 @@ class ContentManagerTest extends RakiTest
 
     public function testImportType()
     {
-        $rf = self::getFixture(__FUNCTION__);
-        $this->assertEquals("DONE", "TODO");
+        $types = $this->manager->getPossibleTypeNames();
+        foreach ($types as $type) {
+            $this->manager->importType($type);
+        }
     }
 
     public function testZGetItemByPath()
