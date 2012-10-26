@@ -11,6 +11,9 @@ class ResultFixture
     const   PATHS = 'paths';
     const   NAMES = 'names';
     const   CHILDREN = 'children';
+    const   TYPES = 'types';
+    const   POSSIBLE = 'possible';
+    const   STORED = 'stored';
 
     public function __construct($yamlFile, $name)
     {
@@ -18,20 +21,20 @@ class ResultFixture
         $this->yaml = Spyc::YAMLLoad($yamlFile);   
     }
 
-    private function getYamlWorkspaceKey()
+    private function getYamlKeyByName($name)
     {
         if (isset($this->yaml[$this->testName])) {
-            return $this->yaml[$this->testName][self::WORKSPACE];
+            return $this->yaml[$this->testName][$name];
         }
         if (isset($this->yaml['shared'])) {
-            return $this->yaml['shared'][self::WORKSPACE];
+            return $this->yaml['shared'][$name];
         }
         throw new Exception("Neither {$this->testName} nor 'shared' fixture found");
     }
 
-    private function getYamlWorkspaceKeyByName($name)
+    private function getYamlTypeKeyByName($type, $name)
     {
-        $wsKey = $this->getYamlWorkspaceKey();
+        $wsKey = $this->getYamlKeyByName($type);
         $values = $wsKey[$name];
         if (empty($values)) {
             return array();
@@ -41,18 +44,28 @@ class ResultFixture
 
     public function getWorkspacePaths()
     {
-         return $this->getYamlWorkspaceKeyByName(self::PATHS);
+         return $this->getYamlTypeKeyByName(self::WORKSPACE, self::PATHS);
     }
 
     public function getWorkspaceNames()
     {
-        return $this->getYamlWorkspaceKeyByName(self::NAMES);
+        return $this->getYamlTypeKeyByName(self::WORKSPACE, self::NAMES);
     }
 
     public function getWorkspaceChildrenNames($workspaceName)
     {
-        $names = $this->getYamlWorkspaceKeyByName(self::CHILDREN);
+        $names = $this->getYamlTypeKeyByName(self::WORKSPACE, self::CHILDREN);
         return $names[$workspaceName];
+    }
+
+    public function getTypesPossible()
+    {
+        return $this->getYamlTypeKeyByName(self::TYPES, self::POSSIBLE);
+    }
+
+    public function getTypesStored()
+    {
+        return $this->getYamlTypeKeyByName(self::TYPES, self::STORED);
     }
 }
 ?>
