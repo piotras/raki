@@ -1,0 +1,35 @@
+shared:
+    types:
+        possible:
+            - ragnaroek_topic
+            - midgard_language
+            - ragnaroek_article
+            - ragnaroek_article_lang
+            - ragnaroek_sitegroup
+            - ragnaroek_topic
+            - ragnaroek_topic_lang
+            - ratatoskr_topic
+            - midgard_node
+            - nt_folder
+        stored:
+            - ragnaroek_topic
+            - midgard_language
+            - ragnaroek_article
+            - ragnaroek_article_lang
+            - ragnaroek_sitegroup
+            - ragnaroek_topic
+            - ragnaroek_topic_lang
+            - ratatoskr_topic
+    workspace:
+        paths:
+            - '/SG0'
+            - '/SG0/Raki SG1'
+            - '/SG0/Raki SG1/multilang'
+            - '/SG0/Raki SG1/multilang/fi'
+            - '/SG0/Raki SG1/multilang/ru'
+        names:
+            SG0:
+                Raki SG1:
+                    multilang:
+                        fi: []
+                        ru: []
