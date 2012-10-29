@@ -22,7 +22,7 @@ interface ContentManager
      *
      * The path given as argument should be relative to given workspace's one.
      */
-    public function getItemByPath(StorableWorkspace $workspace, $relPath); 
+    public function getItemByPath(StorableWorkspace $workspace, $typeName, $relPath); 
 }
 
 ?>
