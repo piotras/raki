@@ -29,6 +29,9 @@ class RagnaroekContentManager implements ContentManager
 
     public function importType($typename)
     {
+        if ($typename != 'ragnaroek_topic') {
+            return;
+        }
         $command = "sudo mysql midgard_raki < temporary_topic_update.sql";
         exec($command);
     }
@@ -51,9 +54,39 @@ class RagnaroekContentManager implements ContentManager
         return $stroedTypes;
     }
 
-    public function getItemByPath(StorableWorkspace $workspace, $relPath)
+    public function getItemByPath(StorableWorkspace $workspace, $typeName, $relPath)
     {
-        return null;
+        $mgd = MidgardConnection::get_instance();
+
+        /* Get workspace so we can set it back */
+        $wsInitial = $mgd->get_workspace();
+        $mgd->set_workspace($workspace->getMidgardWorkspace());
+        
+        $item = null;
+        $qs = new MidgardQuerySelect(
+            new MidgardQueryStorage($typeName)
+        );
+
+        $qs->set_constraint(
+            new MidgardQueryConstraint(
+                new MidgardQueryProperty("name"), 
+                "=", 
+                new MidgardQueryValue($relPath)
+            )
+        );
+        //$mgd->set_loglevel("debug");
+        $qs->execute();
+        //$mgd->set_loglevel("warn");
+        if ($qs->get_results_count() > 0) {
+            $objects = $qs->list_objects();
+            $item = new RagnaroekStorableItem($objects[0]);
+        }
+
+        if ($wsInitial != null) {
+            $mgd->set_workspace($wsInitial);
+        }
+
+        return $item;
     } 
 }
 
