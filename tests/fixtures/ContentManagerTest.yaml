@@ -22,14 +22,42 @@ shared:
             - ratatoskr_topic
     workspace:
         paths:
-            - '/SG0'
-            - '/SG0/Raki SG1'
-            - '/SG0/Raki SG1/multilang'
-            - '/SG0/Raki SG1/multilang/fi'
-            - '/SG0/Raki SG1/multilang/ru'
+            - /SG0
+            - /SG0/Raki SG1
+            - /SG0/Raki SG1/multilang
+            - /SG0/Raki SG1/multilang/fi
+            - /SG0/Raki SG1/multilang/ru
         names:
             SG0:
                 Raki SG1:
                     multilang:
                         fi: []
                         ru: []
+
+testZGetItemByPath:
+    workspace:
+        paths:
+            - /SG0
+            - /SG0/Raki SG1
+            - /SG0/Raki SG1/multilang
+            - /SG0/Raki SG1/multilang/fi
+            - /SG0/Raki SG1/multilang/ru
+        items:
+            /SG0:
+                ratatoskr_topic:
+                    - SG0 first topic
+            /SG0/Raki SG1: []
+            /SG0/Raki SG1/multilang: 
+                ratatoskr_topic:
+                    - Multilang
+            /SG0/Raki SG1/multilang/fi: 
+                ratatoskr_topic:
+                    - Multilang
+            /SG0/Raki SG1/multilang/ru: 
+                ratatoskr_topic:
+                    - Multilang
+    items:
+        names:
+            - Good
+            - Hyvä
+            - Xороший
