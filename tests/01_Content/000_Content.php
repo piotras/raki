@@ -5,10 +5,12 @@ require_once 'ResultFixture.php';
 class ContentManagerTest extends RakiTest 
 {
     private $manager = null;
+    private $workspaceManager = null;
 
     public function setUp() 
     {
         $this->manager = new RagnaroekContentManager();
+        $this->workspaceManager = new RagnaroekWorkspaceManager();
     }
 
     public function testGetPossibleTypeNames()
@@ -47,7 +49,19 @@ class ContentManagerTest extends RakiTest
     public function testZGetItemByPath()
     {
         $rf = self::getFixture(__FUNCTION__);
-        $this->assertEquals("DONE", "TODO");
+        $paths = $rf->getWorkspacePaths();
+        foreach ($paths as $path) {
+            $types = $rf->getTypesByWorkspacePath($path);
+            foreach ($types as $type) {
+                $itemPaths = $rf->getItemsByWorkspacePath($path, $type);
+                foreach ($itemPaths as $itemPath) {
+                    $ws = $this->workspaceManager->getStoredWorkspaceByPath($path);
+                    $item = $this->manager->getItemByPath($ws, $type, $itemPath);
+                    $this->assertInstanceOf('StorableItem', $item);
+                    //$this->assertEquals("DONE CHECK DEFINED NAMES", "TODO");
+                }
+            }
+        }
     }
 }
 
