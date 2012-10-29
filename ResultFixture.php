@@ -14,11 +14,12 @@ class ResultFixture
     const   TYPES = 'types';
     const   POSSIBLE = 'possible';
     const   STORED = 'stored';
+    const   ITEMS = 'items';
 
     public function __construct($yamlFile, $name)
     {
         $this->testName = $name;
-        $this->yaml = Spyc::YAMLLoad($yamlFile);   
+        $this->yaml = Spyc::YAMLLoad($yamlFile);  
     }
 
     private function getYamlKeyByName($name)
@@ -50,6 +51,34 @@ class ResultFixture
     public function getWorkspaceNames()
     {
         return $this->getYamlTypeKeyByName(self::WORKSPACE, self::NAMES);
+    }
+
+    public function getTypesByWorkspacePath($path)
+    {
+        $items = $this->getYamlTypeKeyByName(self::WORKSPACE, self::ITEMS); 
+        if (!isset($items)) {
+            if (!is_array($items)) {
+                throw new Exception("No items defined for '{$path}' workspace");
+            }
+        }
+        if (!isset($items[$path])) {
+            return array();
+        }
+        return array_keys($items[$path]);
+    }
+
+    public function getItemsByWorkspacePath($path, $typeName)
+    {
+        $items = $this->getYamlTypeKeyByName(self::WORKSPACE, self::ITEMS); 
+        if (!isset($items)) {
+            if (!is_array($items)) {
+                throw new Exception("No items defined for '{$path}' workspace");
+            }
+        }
+        if (!isset($items[$path][$typeName])) {
+            return array();
+        }
+        return $items[$path][$typeName];
     }
 
     public function getWorkspaceChildrenNames($workspaceName)
