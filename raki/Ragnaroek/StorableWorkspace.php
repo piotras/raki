@@ -38,6 +38,11 @@ class RagnaroekStorableWorkspace implements StorableWorkspace
 
         return $ret;
     }
+
+    public function getMidgardWorkspace()
+    {
+        return $this->workspace;
+    }
 }
 
 ?>
