@@ -1,0 +1,31 @@
+testGetPath:
+    workspace:
+        paths:
+            - /SG0
+            - /SG0/Raki SG1
+            - /SG0/Raki SG1/multilang
+            - /SG0/Raki SG1/multilang/fi
+            - /SG0/Raki SG1/multilang/ru
+        items:
+            /SG0:
+                ratatoskr_topic:
+                    SG0 first topic:
+                        name: SG0 first topic
+                        title: ''
+            /SG0/Raki SG1: []
+            /SG0/Raki SG1/multilang: 
+                ratatoskr_topic:
+                    Multilang:
+                        name: Multilang
+                        title: Good
+            /SG0/Raki SG1/multilang/fi: 
+                ratatoskr_topic:
+                    Multilang:
+                        name: Multilang
+                        title: Hyvä
+            /SG0/Raki SG1/multilang/ru: 
+                ratatoskr_topic:
+                    Multilang:
+                        name: Multilang
+                        title: Xороший
+
