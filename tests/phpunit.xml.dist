@@ -24,6 +24,7 @@
 	    <file>tests/00_Workspace/000_Workspace.php</file>
 	    <file>tests/00_Workspace/001_StorableWorkspace.php</file>
 	    <file>tests/01_Content/000_Content.php</file>
+	    <file>tests/02_Item/000_Item.php</file>
 	    <!-- <directory>tests/00_Workspace/</directory> -->
         </testsuite>
     </testsuites>
