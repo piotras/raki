@@ -13,11 +13,6 @@ class StorableItemTest extends RakiTest
         $this->workspaceManager = new RagnaroekWorkspaceManager();
     }
 
-    private function getItems()
-    {
-
-    }
-
     public function testGetPath()
     {
         $rf = self::getFixture(__FUNCTION__);
@@ -49,6 +44,27 @@ class StorableItemTest extends RakiTest
                     $item = $this->manager->getItemByPath($ws, $type, $itemPath);
                     $this->assertInstanceOf('StorableItem', $item);
                     $this->assertEquals($props['name'], $item->getName());
+                }
+            }
+        }
+    }
+
+    public function testGetProperty()
+    {
+        $rf = self::getFixture(__FUNCTION__);
+        $paths = $rf->getWorkspacePaths();
+        foreach ($paths as $path) {
+            $types = $rf->getTypesByWorkspacePath($path);
+            foreach ($types as $type) {
+                $itemPaths = $rf->getItemsByWorkspacePath($path, $type);
+                foreach ($itemPaths as $itemPath => $props) {
+                    $ws = $this->workspaceManager->getStoredWorkspaceByPath($path);
+                    $item = $this->manager->getItemByPath($ws, $type, $itemPath);
+                    $this->assertInstanceOf('StorableItem', $item);
+                    foreach ($props as $name => $value) {
+                        //echo "PROPERTY {$name} : {$item->getProperty($name)} \n";
+                        $this->assertEquals($value, $item->getProperty($name));
+                    }
                 }
             }
         }
