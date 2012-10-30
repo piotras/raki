@@ -23,16 +23,32 @@ class StorableItemTest extends RakiTest
         $rf = self::getFixture(__FUNCTION__);
         $paths = $rf->getWorkspacePaths();
         foreach ($paths as $path) {
-            echo "PATH {$path} \n";
             $types = $rf->getTypesByWorkspacePath($path);
             foreach ($types as $type) {
                 $itemPaths = $rf->getItemsByWorkspacePath($path, $type);
-                print_r($itemPaths);
                 foreach ($itemPaths as $itemPath => $props) {
                     $ws = $this->workspaceManager->getStoredWorkspaceByPath($path);
                     $item = $this->manager->getItemByPath($ws, $type, $itemPath);
                     $this->assertInstanceOf('StorableItem', $item);
                     $this->assertEquals($itemPath, $item->getPath());
+                }
+            }
+        }
+    }
+
+    public function testGetName()
+    {
+        $rf = self::getFixture(__FUNCTION__);
+        $paths = $rf->getWorkspacePaths();
+        foreach ($paths as $path) {
+            $types = $rf->getTypesByWorkspacePath($path);
+            foreach ($types as $type) {
+                $itemPaths = $rf->getItemsByWorkspacePath($path, $type);
+                foreach ($itemPaths as $itemPath => $props) {
+                    $ws = $this->workspaceManager->getStoredWorkspaceByPath($path);
+                    $item = $this->manager->getItemByPath($ws, $type, $itemPath);
+                    $this->assertInstanceOf('StorableItem', $item);
+                    $this->assertEquals($props['name'], $item->getName());
                 }
             }
         }
