@@ -54,11 +54,10 @@ class ContentManagerTest extends RakiTest
             $types = $rf->getTypesByWorkspacePath($path);
             foreach ($types as $type) {
                 $itemPaths = $rf->getItemsByWorkspacePath($path, $type);
-                foreach ($itemPaths as $itemPath) {
+                foreach ($itemPaths as $itemPath => $properties) {
                     $ws = $this->workspaceManager->getStoredWorkspaceByPath($path);
                     $item = $this->manager->getItemByPath($ws, $type, $itemPath);
                     $this->assertInstanceOf('StorableItem', $item);
-                    //$this->assertEquals("DONE CHECK DEFINED NAMES", "TODO");
                 }
             }
         }
