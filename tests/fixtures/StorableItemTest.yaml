@@ -1,4 +1,4 @@
-testGetPath:
+shared:
     workspace:
         paths:
             - /SG0
