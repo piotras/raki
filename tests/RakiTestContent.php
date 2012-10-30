@@ -8,6 +8,7 @@ class RakiTestContent
     {
     
         /* Create storage for registered types */
+        echo "Create Midgard storage. Please wait...";
         midgard_storage::create_base_storage();
         
         $re = new ReflectionExtension("midgard2");
@@ -21,11 +22,14 @@ class RakiTestContent
                     continue;
                 }
         
-            echo 'midgard_storage: create_class_storage('.$name.")\n";
+            //echo 'midgard_storage: create_class_storage('.$name.")\n";
+            echo ".";
             if (true !== midgard_storage::create_class_storage($name)) {
                 throw new Exception('Failed to create storage for "'.$name.': "'.midgard_connection::get_instance()->get_error_string());
             }
         }
+
+        echo " OK. Done. \n";
     }
 
     public static function importLanguages()
