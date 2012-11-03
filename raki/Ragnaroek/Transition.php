@@ -10,6 +10,7 @@ class RagnaroekTransition implements Transition
     public function __construct(MidgardConnection $mgd, $fixtureDir)
     {
         $this->mgd = $mgd;
+        $this->fixtureDir = $fixtureDir;
     } 
 
     public function getContentManager()
