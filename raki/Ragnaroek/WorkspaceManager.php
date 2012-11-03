@@ -12,8 +12,9 @@ class RagnaroekWorkspaceManager implements WorkspaceManager
     private $workspaces = array();
     private $possible_workspaces = null;
     private $possible_paths= null;
+    private $transition;
 
-    public function __construct($default_language = null)
+    public function __construct($transition, $default_language = null)
     {
         $this->mgd = MidgardConnection::get_instance();
         if ($default_language == null) {
@@ -23,6 +24,7 @@ class RagnaroekWorkspaceManager implements WorkspaceManager
             $this->default_language = $this->getLangByCode($default_language);
         }
         $this->default_sitegroup = new ragnaroek_sitegroup();
+        $this->transition = $transition;
     }
 
     public function getLangByCode($code) 

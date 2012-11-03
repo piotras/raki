@@ -25,7 +25,7 @@ class RagnaroekTransition implements Transition
     public function getWorkspaceManager()
     {
         if ($this->workspaceManager == null) {
-            $this->workspaceManager == new RagnaroekWorkspaceManager($this);
+            $this->workspaceManager = new RagnaroekWorkspaceManager($this);
         }
 
         return $this->workspaceManager;

@@ -6,7 +6,7 @@ class StorableWorkspaceTest extends RakiTest
 
     public function setUp() 
     {
-        $this->manager = new RagnaroekWorkspaceManager();
+        $this->manager = $this->getTransition()->getWorkspaceManager();
     }
 
     public function testGetName()

@@ -6,11 +6,10 @@ class WorkspaceTest extends RakiTest
 {
     private $manager = null;
     private $midgardWorkspaceManager = null;
-    private $defaultFixture = null;
 
     public function setUp() 
     {
-        $this->manager = new RagnaroekWorkspaceManager();
+        $this->manager = $this->getTransition()->getWorkspaceManager();
         $this->midgardWorkspaceManager = new midgard_workspace_manager(MidgardConnection::get_instance());
     }
 

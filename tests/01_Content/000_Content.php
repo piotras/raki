@@ -9,8 +9,8 @@ class ContentManagerTest extends RakiTest
 
     public function setUp() 
     {
-        $this->manager = new RagnaroekContentManager();
-        $this->workspaceManager = new RagnaroekWorkspaceManager();
+        $this->manager = $this->getTransition()->getContentManager();
+        $this->workspaceManager = $this->getTransition()->getWorkspaceManager();
     }
 
     public function testGetPossibleTypeNames()

@@ -38,9 +38,20 @@ spl_autoload_register(function($class) {
 
 class RakiTest extends PHPUnit_Framework_TestCase
 {
+    public $transition = null;
+
     public function testFake() 
     {   
     
+    }
+
+    public function getTransition()
+    {
+        if ($this->transition == null) {
+            $this->transition = new RagnaroekTransition(MidgardConnection::get_instance(), __DIR__ . '/fixtures/');
+        }
+
+        return $this->transition;
     }
 
     static protected function getFixture($name = 'shared')
