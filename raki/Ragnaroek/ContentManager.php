@@ -2,9 +2,16 @@
 
 class RagnaroekContentManager implements ContentManager 
 {
-    public function __construct()
-    {
+    private $transition = null;
 
+    public function __construct($transition)
+    {
+        $this->transition = $transition;
+    }
+
+    public function getTransition()
+    {
+        return $this->transition;
     }
 
     public function getPossibleTypeNames()

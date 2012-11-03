@@ -2,7 +2,12 @@
 
 interface WorkspaceManager 
 {
-
+    
+    /**
+     * Get transition associated with this manager.
+     */
+    public function getTransition();  
+    
     /**
      * Returns array of all storable type names.
      */

@@ -27,6 +27,11 @@ class RagnaroekWorkspaceManager implements WorkspaceManager
         $this->transition = $transition;
     }
 
+    public function getTransition()
+    {
+        return $this->transition;
+    }
+
     public function getLangByCode($code) 
     {
         $storage = new MidgardQueryStorage('midgard_language');

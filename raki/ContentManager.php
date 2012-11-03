@@ -3,6 +3,11 @@
 interface ContentManager 
 {
     /**
+     * Get transition associated with this manager.
+     */ 
+    public function getTransition();
+
+    /**
      * Returns array of all possible type names.
      */
     public function getPossibleTypeNames();
