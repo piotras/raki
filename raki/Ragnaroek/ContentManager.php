@@ -36,6 +36,8 @@ class RagnaroekContentManager implements ContentManager
 
     public function importType($typename)
     {
+        $schemaDirs = $this->getTransition()->getSchemaDirs();
+
         if ($typename != 'ragnaroek_topic') {
             return;
         }
