@@ -366,6 +366,11 @@ class RagnaroekWorkspaceManager implements WorkspaceManager
         throw new WorkspaceNotFoundException("Workspace identified by '{$name}' doesn't exist");
     }
 
+    public function getDefaultLanguage()
+    {
+        return $this->default_language;
+    }
+
     public function getMidgardSitegroups()
     {
         $this->populateSitegroups();
