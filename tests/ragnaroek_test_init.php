@@ -40,10 +40,6 @@ class RakiTest extends PHPUnit_Framework_TestCase
 {
     public $transition = null;
 
-    private $schemaDirs = array(
-        __DIR__ . '/data/ragnaroek'
-    );
-
     public function testFake() 
     {   
     
@@ -52,7 +48,7 @@ class RakiTest extends PHPUnit_Framework_TestCase
     public function getTransition()
     {
         if ($this->transition == null) {
-            $this->transition = new RagnaroekTransition(MidgardConnection::get_instance(), __DIR__ . '/fixtures/', $this->schemaDirs);
+            $this->transition = new RagnaroekTransition(MidgardConnection::get_instance(), __DIR__ . '/fixtures/', __DIR__ . '/../data/ragnaroek');
         }
 
         return $this->transition;
