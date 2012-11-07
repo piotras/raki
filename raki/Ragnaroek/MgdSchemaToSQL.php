@@ -40,6 +40,9 @@ class RagnaroekMgdSchemaToSQL extends DomDocument
     public function isMultilang($typeName)
     {
         $node = $this->getNodeByMidgardType($typeName);
+        if ($node == null) {
+            return false;
+        }
         $nodes = $node->getElementsByTagName(self::ATTR_PROP);
         foreach ($nodes as $prop) {
             $attr = $prop->getAttribute('multilang');
