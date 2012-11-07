@@ -3,6 +3,7 @@
 class RagnaroekContentManager implements ContentManager 
 {
     private $transition = null;
+    private $mgdSchemaToSQL = null;
 
     public function __construct($transition)
     {
@@ -31,18 +32,53 @@ class RagnaroekContentManager implements ContentManager
 
             $names[] = $name;
         }
+
+        $sts = $this->getMgdSchemaToSQL();
+        $types = $sts->getMidgardTypes();
+        foreach ($types as $name) {
+            $names[] = $name;
+        }
+
         return $names;
     }
 
-    public function importType($typename)
+    private function getMgdSchemaToSQL()
     {
-        $schemaDirs = $this->getTransition()->getSchemaDirs();
+        if ($this->mgdSchemaToSQL == null) {
+            $this->mgdSchemaToSQL = new RagnaroekMgdSchemaToSQL();
+            $files = $this->getTransition()->getSchemaPaths();
+            foreach ($files as $file) {
+                $this->mgdSchemaToSQL->addFile($file);
+            }
+        }
 
+        return $this->mgdSchemaToSQL;
+    }
+
+    public function importType($typeName)
+    {
+        //echo "IMPORT {$typename} \n";
+        //echo $this->getMgdSchemaToSQL()->getSQLUpdateTypePre($typename);
         if ($typename != 'ragnaroek_topic') {
+            //return;
+        }
+        
+        if ($typeName != 'midgard_topic') {
             return;
         }
-        $command = "sudo mysql midgard_raki < temporary_topic_update.sql";
-        exec($command);
+
+        $workspaceManager = $this->getTransition()->getWorkspaceManager();
+        $wsPaths = $workspaceManager->getStoredWorkspacesPaths();
+        $sitegroups = $workspaceManager->getMidgardSitegroups(); 
+        $dLang = $workspaceManager->getDefaultLanguage();
+        $ws = $workspaceManager->getStoredWorkspaceByName($dLang->code)->getMidgardWorkspace();
+        /* Copy content to one table - for every sitegroup and default language */
+        foreach ($sitegroups as $sg) {  
+            echo $this->getMgdSchemaToSQL()->getSQLUpdateTypePre($typeName, $ws->id, $sg->id, $dLang->id);
+        }
+        /* Delete content with default language */
+        /* Avoid duplicates in following bulk update */
+        echo $this->getMgdSchemaToSQL()->getSQLDeleteTypePre($typeName, $dLang->id);
     }
 
     public function getStoredTypeNames()
