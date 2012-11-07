@@ -48,7 +48,7 @@ class RakiTest extends PHPUnit_Framework_TestCase
     public function getTransition()
     {
         if ($this->transition == null) {
-            $this->transition = new RagnaroekTransition(MidgardConnection::get_instance(), __DIR__ . '/fixtures/', __DIR__ . '/../data/ragnaroek');
+            $this->transition = new RagnaroekTransition(MidgardConnection::get_instance(), __DIR__ . '/fixtures/', __DIR__ . '/../data/ragnaroek/schema');
         }
 
         return $this->transition;
