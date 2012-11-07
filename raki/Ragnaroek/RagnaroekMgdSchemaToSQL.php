@@ -2,17 +2,29 @@
 
 class RagnaroekMgdSchemaToSQL extends DomDocument
 {
-    protected $filePath;
-
     const ATTR_NAME = 'name';
     const ATTR_TYPE = 'type';
     const ATTR_PROP = 'property';
 
-    public function __construct($filePath)
+    public function __construct()
     {
         parent::__construct('1.0', 'UTF-8');
-        $this->load($filePath);
-        $this->filepath = $filePath;
+    }
+
+    public function addFile($filePath)
+    {
+        if ($this->documentElement == null) {
+            $this->load($filePath);
+            return;
+        }
+
+        $dd = new DomDocument();
+        $dd->load($filePath);
+
+        foreach ($dd->documentElement->getElementsByTagName(self::ATTR_TYPE) as $node) {
+            $n = $this->importNode($node, true);
+            $this->documentElement->appendChild($n);
+        }
     }
 
     public function getMidgardTypes()
