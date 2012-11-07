@@ -168,6 +168,8 @@ class RagnaroekMgdSchemaToSQL extends DomDocument
         }
 
         $sql = "DELETE FROM {$typeTable} WHERE lang = {$languageID} \n";
+
+        return $sql;
     }
 
     public function getSQLInsertType($typename, $workspace, $language)
