@@ -4,20 +4,46 @@ class RagnaroekTransition implements Transition
 {
     private $mgd = null;
     private $fixtureDir = null;
-    private $schemaDirs = null;
+    private $schemaDir = null;
     private $contentManager = null;
     private $workspaceManager = null;
     
-    public function __construct(MidgardConnection $mgd, $fixtureDir, array $schemaDirs)
+    public function __construct(MidgardConnection $mgd, $fixtureDir, $schemaDir)
     {
         $this->mgd = $mgd;
         $this->fixtureDir = $fixtureDir;
-        $this->schemaDirs = $schemaDirs;
+        $this->schemaDir = $schemaDir;
     } 
 
-    public function getSchemaDirs()
+    private function getFilePaths($dir, &$paths)
     {
-        return $this->schemaDirs;
+        if ($handle = opendir($dir)) {
+            while (($entry = readdir($handle)) == true) {
+                /* Ignore parent and self directory */
+                if ($entry == '.' || $entry == '..') {
+                    continue;
+                }
+                $absPath = $dir . '/' . $entry;
+                /* Get files from sub directory */
+                if (is_dir($absPath)) {
+                    $this->getFilePaths($absPath, $paths);
+                    continue;
+                }
+                $info = pathinfo($absPath);
+                /* Ignore non xml files */
+                if ($info['extension'] != 'xml') {
+                    continue;
+                }
+                $paths[] = $absPath;
+            }
+        } 
+    }
+
+    public function getSchemaPaths()
+    {
+        $paths = array();
+        $this->getFilePaths($this->schemaDir, $paths);
+        return $paths;
     }
 
     public function getContentManager()
