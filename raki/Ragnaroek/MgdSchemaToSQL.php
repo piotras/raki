@@ -61,6 +61,15 @@ class RagnaroekMgdSchemaToSQL extends DomDocument
         return $node->getAttribute('table');
     }
 
+    public function getTableByType($typeName)
+    {
+        $node = $this->getNodeByMidgardType($typeName);
+        if ($node == null) {
+            return null;
+        }    
+        return $this->getTable($node);
+    }
+
     protected function getField($node)
     {
         $attr = $node->getAttribute('field');
@@ -172,7 +181,7 @@ class RagnaroekMgdSchemaToSQL extends DomDocument
         return $sql;
     }
 
-    public function getSQLInsertType($typename, $workspace, $language)
+    public function getSQLInsertType($typename, $workspaceID, $languageID)
     {
 
     }
