@@ -7,13 +7,15 @@ class RagnaroekTransition implements Transition
     private $schemaDir = null;
     private $contentManager = null;
     private $workspaceManager = null;
+    private $mysql;
     
-    public function __construct(MidgardConnection $mgd, $fixtureDir, $schemaDir)
+    public function __construct(MidgardConnection $mgd, $config, $fixtureDir, $schemaDir)
     {
         $this->mgd = $mgd;
         $this->fixtureDir = $fixtureDir;
         $this->schemaDir = $schemaDir;
-    } 
+        $this->mysql = new RagnaroekMySQL($config->dbhost, $config->database, $config->dbuser, $config->dbpass);
+    }
 
     private function getFilePaths($dir, &$paths)
     {
@@ -68,6 +70,11 @@ class RagnaroekTransition implements Transition
     {
         return $this->fixtureDir;
     } 
+
+    public function getMySQL()
+    {
+        return $this->mysql;
+    }
 }
 
 ?>  
