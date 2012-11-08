@@ -7,6 +7,10 @@ if (gc_enabled()) {
     gc_disable(); 
 }
 
+if (!extension_loaded('mysql')) {
+    throw new Exception('MySQL extension not loaded!');
+}
+
 exec (__DIR__ . '/bootstrap.sh');
 
 //PHPUnit 3.4 compat
@@ -19,8 +23,8 @@ require_once 'RakiTestContent.php';
 $config = new MidgardConfig();
 $config->dbtype = $GLOBALS['midgard2.configuration.db.type'];
 $config->database = $GLOBALS['midgard2.configuration.db.name'];
-$config->database = $GLOBALS['midgard2.configuration.db.dbuser'];
-$config->database = $GLOBALS['midgard2.configuration.db.dbpass'];
+$config->dbuser = $GLOBALS['midgard2.configuration.db.dbuser'];
+$config->dbpass = $GLOBALS['midgard2.configuration.db.dbpass'];
 $config->dbdir = $GLOBALS['midgard2.configuration.db.dir'];
 $config->blobdir = $GLOBALS['midgard2.configuration.blobdir'];
 $config->loglevel = $GLOBALS['midgard2.configuration.loglevel'];
@@ -48,7 +52,13 @@ class RakiTest extends PHPUnit_Framework_TestCase
     public function getTransition()
     {
         if ($this->transition == null) {
-            $this->transition = new RagnaroekTransition(MidgardConnection::get_instance(), __DIR__ . '/fixtures/', __DIR__ . '/../data/ragnaroek/schema');
+
+            $config = new MidgardConfig();
+            $config->database = $GLOBALS['midgard2.configuration.db.name'];
+            $config->dbuser = $GLOBALS['midgard2.configuration.db.dbuser'];
+            $config->dbpass = $GLOBALS['midgard2.configuration.db.dbpass'];
+
+            $this->transition = new RagnaroekTransition(MidgardConnection::get_instance(), $config, __DIR__ . '/fixtures/', __DIR__ . '/../data/ragnaroek/schema');
         }
 
         return $this->transition;
