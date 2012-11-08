@@ -376,6 +376,23 @@ class RagnaroekWorkspaceManager implements WorkspaceManager
         $this->populateSitegroups();
         return $this->sitegroups;
     }
+
+    public function getMidgardLanguagesByType($sts, $typeName)
+    {
+        $languages = array();
+
+        $table = $sts->getTableByType($typeName) . "_i";
+        $sql = "SELECT DISTINCT lang FROM {$table} \n";
+        $mysql = $this->getTransition()->getMySQL();
+
+        $mysql->query($sql);
+        while (($result = $mysql->getQueryResult()) != null) {
+            print_r($result);
+            $languages[] = $result['lang'];
+        } 
+
+        return $languages;
+    }
 }
 
 ?>
