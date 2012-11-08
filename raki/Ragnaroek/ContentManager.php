@@ -72,13 +72,28 @@ class RagnaroekContentManager implements ContentManager
         $sitegroups = $workspaceManager->getMidgardSitegroups(); 
         $dLang = $workspaceManager->getDefaultLanguage();
         $ws = $workspaceManager->getStoredWorkspaceByName($dLang->code)->getMidgardWorkspace();
+        $sts = $this->getMgdSchemaToSQL();
         /* Copy content to one table - for every sitegroup and default language */
         foreach ($sitegroups as $sg) {  
-            echo $this->getMgdSchemaToSQL()->getSQLUpdateTypePre($typeName, $ws->id, $sg->id, $dLang->id);
+            echo $sts->getSQLUpdateTypePre($typeName, $ws->id, $sg->id, $dLang->id);
         }
         /* Delete content with default language */
         /* Avoid duplicates in following bulk update */
-        echo $this->getMgdSchemaToSQL()->getSQLDeleteTypePre($typeName, $dLang->id);
+        echo $sts->getSQLDeleteTypePre($typeName, $dLang->id);
+
+        /* Create multilang content */
+        $languages = $workspaceManager->getMidgardLanguagesByType($sts, $typeName);
+        foreach ($languages as $langID) {
+            if ($langID == 0) {
+                continue;
+            }
+            $lang = new midgard_language($langID);
+            if ($lang->code === $dLang->code) {
+                continue;
+            }
+            $ws = $workspaceManager->getStoredWorkspaceByName($lang->code)->getMidgardWorkspace();
+            echo $sts->getSQLInsertType($typeName, $ws->id, $lang->id);
+        }
     }
 
     public function getStoredTypeNames()
