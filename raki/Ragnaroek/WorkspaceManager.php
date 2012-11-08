@@ -387,7 +387,6 @@ class RagnaroekWorkspaceManager implements WorkspaceManager
 
         $mysql->query($sql);
         while (($result = $mysql->getQueryResult()) != null) {
-            print_r($result);
             $languages[] = $result['lang'];
         } 
 
