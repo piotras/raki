@@ -181,6 +181,35 @@ class RagnaroekMgdSchemaToSQL extends DomDocument
         return $sql;
     }
 
+    private function getMetadataFields()
+    {
+        $fields = array(
+            "metadata_creator",
+            "metadata_created",
+            "metadata_revisor",
+            "metadata_revised",
+            "metadata_revision",
+            "metadata_locker",
+            "metadata_locked", 
+            "metadata_approver",
+            "metadata_approved",
+            "metadata_authors",
+            "metadata_owner",
+            "metadata_schedule_start",
+            "metadata_schedule_end",
+            "metadata_hidden",
+            "metadata_nav_noentry",
+            "metadata_size",
+            "metadata_published",
+            "metadata_score",
+            "metadata_exported",
+            "metadata_imported",
+            "metadata_deleted" 
+        );
+
+        return $fields;
+    }
+
     public function getSQLInsertType($typeName, $sitegroupID, $workspaceID, $languageID)
     {
         /* TODO & FIXME 
@@ -203,11 +232,11 @@ class RagnaroekMgdSchemaToSQL extends DomDocument
             $typeTable = $typeName;
         }
 
-        $sql = "INSERT INTO " . $typeTable . " \n";
-        $sql .= "\t\t(";
+        $sql = "INSERT INTO {$typeTable} \n";
+        $sql .= "\t\t({$typeTable}.guid, {$typeTable}.sitegroup";
        
         /* Add Sql part for every property */
-        $select = "";
+        $select = "{$typeTable}.guid, {$typeTable}.sitegroup, ";
         $props = $node->getElementsByTagName(self::ATTR_PROP);
 
         foreach ($props as $property) {
