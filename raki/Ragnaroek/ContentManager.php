@@ -61,6 +61,8 @@ class RagnaroekContentManager implements ContentManager
             return;
         }
 
+        $mysql = $this->getTransition()->getMySQL();
+
         $workspaceManager = $this->getTransition()->getWorkspaceManager();
         $wsPaths = $workspaceManager->getStoredWorkspacesPaths();
         $sitegroups = $workspaceManager->getMidgardSitegroups(); 
@@ -69,20 +71,29 @@ class RagnaroekContentManager implements ContentManager
         $sts = $this->getMgdSchemaToSQL();
         /* Copy content to one table - for every sitegroup and default language */
         foreach ($sitegroups as $sg) {  
-            echo $sts->getSQLUpdateTypePre($typeName, $ws->id, $sg->id, $dLang->id);
+            $q = $sts->getSQLUpdateTypePre($typeName, $ws->id, $sg->id, $dLang->id);
+            echo $q;
+            $mysql->query($q);
+
         }
         /* Delete content with default language */
         /* Avoid duplicates in following bulk update */
-        echo $sts->getSQLDeleteTypePre($typeName, $dLang->id);
+        $q = $sts->getSQLDeleteTypePre($typeName, $dLang->id);
+        echo $q;
+        $mysql->query($q);
 
         /* For every sitegroup, create multilang content */
         $languages = $workspaceManager->getMidgardLanguagesByType($sts, $typeName);
         foreach ($sitegroups as $sg) {
-            echo $sts->getSQLInsertType($typeName, $sg->id, 0, 0);
+            $q = $sts->getSQLInsertType($typeName, $sg->id, 0, 0);
+            echo $q;
+            $mysql->query($q);
         }
 
         /* Set unique object's id in workspace */
-        echo $sts->getSQLUpdateTypePost($typeName);
+        $q = $sts->getSQLUpdateTypePost($typeName);
+        echo $q;
+        $mysql->query($q);
     }
 
     public function getStoredTypeNames()
