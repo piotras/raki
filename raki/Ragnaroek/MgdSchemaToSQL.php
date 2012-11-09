@@ -232,11 +232,18 @@ class RagnaroekMgdSchemaToSQL extends DomDocument
             $typeTable = $typeName;
         }
 
+        $metadataFieldsInsert = "";
+        $metadataFieldsSelect = "";
+        foreach ($this->getMetadataFields() as $field) {
+            $metadataFieldsInsert .= "{$field}, ";
+            $metadataFieldsSelect .= "{$typeTable}.{$field}, ";
+        }
+
         $sql = "INSERT INTO {$typeTable} \n";
-        $sql .= "\t\t({$typeTable}.guid, {$typeTable}.sitegroup";
+        $sql .= "\t\t({$metadataFieldsInsert} guid, sitegroup, ";
        
         /* Add Sql part for every property */
-        $select = "{$typeTable}.guid, {$typeTable}.sitegroup, ";
+        $select = "{$metadataFieldsSelect} {$typeTable}.guid, {$typeTable}.sitegroup, ";
         $props = $node->getElementsByTagName(self::ATTR_PROP);
 
         foreach ($props as $property) {
