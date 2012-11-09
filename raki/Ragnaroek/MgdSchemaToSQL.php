@@ -249,18 +249,17 @@ class RagnaroekMgdSchemaToSQL extends DomDocument
         foreach ($props as $property) {
             $table = $this->getTable($property);
             if ($table === null || $table === '') {
-                $table = $typeName;
+                $table = $typeTable;
             }
-
-            /* add _i suffix in case of multilang */
-            $ml = $property->getAttribute('multilang');
-            if ($ml === 'true' || $ml === 'yes') {
-                $table = $table . '_i';
-            }
-
+ 
             $field = $this->getField($property);
             if ($field === '' || $field === null) {
                 $field = $property->getAttribute('name');
+            }
+
+            /* Ignore id field */
+            if ($field === 'id') {
+                continue;
             }
 
             $sql .= $field . ", ";
@@ -271,12 +270,12 @@ class RagnaroekMgdSchemaToSQL extends DomDocument
         $sql .= "midgard_ws_oid_id, midgard_ws_id) \n";
 
         /* Select data to insert */
-        $sql .= "\tSELECT " . $select . "\n";
+        $sql .= "\tSELECT {$select} {$typeTable}.id, \n";
 
         $table = $this->getTable($node); 
 
         /* Select workspace id */
-        $sql .= "\t\tSELECT
+        $sql .= "\t\t(SELECT
                     midgard_workspace.id
                 FROM
                     midgard_workspace, midgard_language
