@@ -157,8 +157,35 @@ class RagnaroekMgdSchemaToSQL extends DomDocument
         return $sql;
     }
 
-    public function getSQLDeleteTypePre($typename, $languageID = 0)
+    public function getSQLDeleteTypePre($typeName, $languageID = 0)
     {
+        /* Get named node */
+        $node = $this->getNodeByMidgardType($typeName);
+
+        /* Determine multilang */
+        $isMultilang = $this->isMultilang($typeName);
+
+        /* No need to move content in case of non multilang type */
+        if ($isMultilang === false) {
+            return 'ML FALSE';
+        }
+
+        /* Get table */
+        $typeTable = $this->getTable($node);
+        if ($typeTable === null || $typeTable === '') {
+            $typeTable = $typeName;
+        }
+
+        $sql = "DELETE FROM {$typeTable}_i WHERE lang = {$languageID} \n";
+
+        return $sql;
+    }
+
+    public function getSQLInsertType($typeName, $sitegroupID, $workspaceID, $languageID)
+    {
+        /* TODO & FIXME 
+         * Set metadata fields */
+
         /* Get named node */
         $node = $this->getNodeByMidgardType($typeName);
 
@@ -176,19 +203,72 @@ class RagnaroekMgdSchemaToSQL extends DomDocument
             $typeTable = $typeName;
         }
 
-        $sql = "DELETE FROM {$typeTable} WHERE lang = {$languageID} \n";
+        $sql = "INSERT INTO " . $typeTable . " \n";
+        $sql .= "\t\t(";
+       
+        /* Add Sql part for every property */
+        $select = "";
+        $props = $node->getElementsByTagName(self::ATTR_PROP);
+
+        foreach ($props as $property) {
+            $table = $this->getTable($property);
+            if ($table === null || $table === '') {
+                $table = $typeName;
+            }
+
+            /* add _i suffix in case of multilang */
+            $ml = $property->getAttribute('multilang');
+            if ($ml === 'true' || $ml === 'yes') {
+                $table = $table . '_i';
+            }
+
+            $field = $this->getField($property);
+            if ($field === '' || $field === null) {
+                $field = $property->getAttribute('name');
+            }
+
+            $sql .= $field . ", ";
+            $select .= $table . "." . $field . ", ";
+        }
+
+        /* Add workspaces fields */
+        $sql .= "midgard_ws_oid_id, midgard_ws_id) \n";
+
+        /* Select data to insert */
+        $sql .= "\tSELECT " . $select . "\n";
+
+        $table = $this->getTable($node); 
+
+        /* Select workspace id */
+        $sql .= "\t\tSELECT
+                    midgard_workspace.id
+                FROM
+                    midgard_workspace, midgard_language
+                WHERE
+                    midgard_workspace.name = midgard_language.code AND midgard_language.id = {$table}_i.lang)";
+
+        /* Add FROM and constraint */ 
+        $sql .= "\n\tFROM
+            {$table}, {$table}_i
+            WHERE
+            {$table}.sitegroup = {$sitegroupID} AND {$table}.id = {$table}_i.sid \n";
 
         return $sql;
     }
 
-    public function getSQLInsertType($typename, $workspaceID, $languageID)
+    public function getSQLUpdateTypePost($typeName)
     {
+        /* Set unique object's id in workspace */
 
-    }
+        /* Get named node */
+        $node = $this->getNodeByMidgardType($typeName);
 
-    public function getSQLUpdateTypePost($typename, $workspace, $language)
-    {
+        /* Get table */
+        $table = $this->getTable($node);
 
+        $sql = "UPDATE {$table} SET midgard_ws_oid_id = {$table}.id";
+
+        return $sql;
     }
 }
 
