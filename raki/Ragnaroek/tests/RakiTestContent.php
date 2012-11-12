@@ -35,7 +35,7 @@ class RakiTestContent
     public static function importLanguages()
     {   
         /* Import languages */
-        $filepath = "data/midgard_languages.xml";
+        $filepath = __DIR__ . "/../data/midgard_languages.xml";
         $xml = file_get_contents($filepath);
         $rv = MidgardReplicator::import_from_xml($xml);
     }
