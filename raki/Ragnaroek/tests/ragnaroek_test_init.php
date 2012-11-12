@@ -37,7 +37,7 @@ $mgd->open_config ($config);
 RakiTestContent::prepareContent();
 
 spl_autoload_register(function($class) {
-    include dirname(__FILE__) . '/../raki/' . str_replace('Ragnaroek', 'Ragnaroek/', $class)  . '.php';
+    include dirname(__FILE__) . '/../../' . str_replace('Ragnaroek', 'Ragnaroek/', $class)  . '.php';
 });
 
 class RakiTest extends PHPUnit_Framework_TestCase
