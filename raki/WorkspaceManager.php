@@ -7,7 +7,12 @@ interface WorkspaceManager
      * Get transition associated with this manager.
      */
     public function getTransition();  
-    
+
+    /**
+     * Get the name of default workspace
+     */
+    public function getDefaultWorkspaceName(); 
+
     /**
      * Returns array of all storable type names.
      */
@@ -62,6 +67,11 @@ interface WorkspaceManager
      * @throws WorkspaceNotFoundException if workspace identified by name is not found
      */
     public function getStoredWorkspaceByName($name); 
+
+    /**
+     * Test whether workspace is stored at given path.
+     */
+    public function storedWorkspacePathExists($absPath);
 }
 
 ?>

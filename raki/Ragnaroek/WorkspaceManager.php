@@ -27,6 +27,11 @@ class RagnaroekWorkspaceManager implements WorkspaceManager
         $this->transition = $transition;
     }
 
+    public function getDefaultWorkspaceName()
+    {
+        return $this->default_sg_zero;
+    }
+
     public function getTransition()
     {
         return $this->transition;
@@ -391,6 +396,11 @@ class RagnaroekWorkspaceManager implements WorkspaceManager
         } 
 
         return $languages;
+    }
+
+    public function storedWorkspacePathExists($absPath)
+    {
+        return $this->getMidgardWorkspaceManager()->path_exists($absPath);
     }
 }
 
