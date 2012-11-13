@@ -33,10 +33,13 @@ class WorkspaceTest extends RakiTest
 
     public function testCreateWorkspaceSG1()
     {
-        $ws = new midgard_workspace();
-        $this->midgardWorkspaceManager->get_workspace_by_path($ws, '/SG0');
-        $this->manager->createWorkspace('Raki SG1', $ws);
-        $this->assertTrue($this->midgardWorkspaceManager->path_exists('/SG0/Raki SG1'));
+        $rf = self::getFixture(__FUNCTION__);
+        $names = $rf->getWorkspaceNames();
+        $dName = $this->manager->getDefaultWorkspaceName();
+        $wsName = key($names[$this->manager->getDefaultWorkspaceName()]);
+        $ws = $this->manager->getStoredWorkspaceByPath($dName);
+        $this->manager->createWorkspace($wsName, $ws);
+        $this->assertTrue($this->manager->storedWorkspacePathExists('/' . $dName . '/' . $wsName));
     }
 
     public function testCreateWorkspaceMultilang()
