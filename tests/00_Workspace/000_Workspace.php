@@ -25,13 +25,14 @@ class WorkspaceTest extends RakiTest
         $this->assertEquals($rf->getWorkspacePaths(), $this->manager->getPossibleWorkspacesPaths());
     }
 
-    public function testCreateWorkspaceSG0()
+    public function testCreateWorkspaceDefault()
     {
-        $this->manager->createWorkspace('SG0');   
-        $this->assertTrue($this->midgardWorkspaceManager->path_exists('/SG0'));
+        $dName = $this->manager->getDefaultWorkspaceName();
+        $this->manager->createWorkspace($dName);   
+        $this->assertTrue($this->manager->storedWorkspacePathExists('/' . $dName));
     }
 
-    public function testCreateWorkspaceSG1()
+    public function testCreateWorkspaceChild()
     {
         $rf = self::getFixture(__FUNCTION__);
         $names = $rf->getWorkspaceNames();
@@ -42,12 +43,23 @@ class WorkspaceTest extends RakiTest
         $this->assertTrue($this->manager->storedWorkspacePathExists('/' . $dName . '/' . $wsName));
     }
 
-    public function testCreateWorkspaceMultilang()
+    public function testCreateWorkspaceChildChild()
     {
-        $ws = new midgard_workspace();
-        $this->midgardWorkspaceManager->get_workspace_by_path($ws, '/SG0/Raki SG1');
-        $this->manager->createWorkspace('multilang', $ws);
-        $this->assertTrue($this->midgardWorkspaceManager->path_exists('/SG0/Raki SG1/multilang'));
+        $rf = self::getFixture(__FUNCTION__);
+        $names = $rf->getWorkspaceNames();
+        $dName = $this->manager->getDefaultWorkspaceName();
+        $wsName = key($names[$this->manager->getDefaultWorkspaceName()]);
+        $ws = $this->manager->getStoredWorkspaceByPath('/' . $dName . '/' . $wsName);
+        $childName = key(next($names[$this->manager->getDefaultWorkspaceName()]));
+        echo $childName;
+        $this->manager->createWorkspace($childName, $ws);
+        $this->assertTrue($this->manager->storedWorkspacePathExists('/' . $dName . '/' . $wsName . '/' . $childName));
+
+
+        //$ws = new midgard_workspace();
+        //$this->midgardWorkspaceManager->get_workspace_by_path($ws, '/SG0/Raki SG1');
+        //$this->manager->createWorkspace('multilang', $ws);
+        //$this->assertTrue($this->midgardWorkspaceManager->path_exists('/SG0/Raki SG1/multilang'));
     }
 
     public function testCreateWorkspaceAll()
