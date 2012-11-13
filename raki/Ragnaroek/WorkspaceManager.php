@@ -302,7 +302,7 @@ class RagnaroekWorkspaceManager implements WorkspaceManager
                     $parent_path = $elements;
                     unset($parent_path[$elements_count - 1]);
                     $parent_path = implode('/', $parent_path);
-                    $parent = $this->getMidgardWorkspaceByPath($parent_path);
+                    $parent = $this->getStoredWorkspaceByPath($parent_path);
                 }
                 $this->createWorkspace($name, $parent);
             } catch (Exception $e) {
