@@ -68,7 +68,7 @@ class StorableWorkspaceTest extends RakiTest
             /* Test if stored child name is defined in fixture */
             foreach ($children as $child) {
                 $this->assertNotNull($child->getName());
-                $this->assertContains($child->getName(), $childrenNames);
+                $this->assertContains($child->getName(), $childrenNames, "Not found as child of '{$name}'");
             }
         } 
     }
