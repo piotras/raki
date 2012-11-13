@@ -5,12 +5,10 @@ require_once 'ResultFixture.php';
 class WorkspaceTest extends RakiTest 
 {
     private $manager = null;
-    private $midgardWorkspaceManager = null;
 
     public function setUp() 
     {
         $this->manager = $this->getTransition()->getWorkspaceManager();
-        $this->midgardWorkspaceManager = new midgard_workspace_manager(MidgardConnection::get_instance());
     }
 
     public function testPossibleWorkspacesNames()
@@ -54,12 +52,6 @@ class WorkspaceTest extends RakiTest
         echo $childName;
         $this->manager->createWorkspace($childName, $ws);
         $this->assertTrue($this->manager->storedWorkspacePathExists('/' . $dName . '/' . $wsName . '/' . $childName));
-
-
-        //$ws = new midgard_workspace();
-        //$this->midgardWorkspaceManager->get_workspace_by_path($ws, '/SG0/Raki SG1');
-        //$this->manager->createWorkspace('multilang', $ws);
-        //$this->assertTrue($this->midgardWorkspaceManager->path_exists('/SG0/Raki SG1/multilang'));
     }
 
     public function testCreateWorkspaceAll()
@@ -68,7 +60,7 @@ class WorkspaceTest extends RakiTest
         $rf = self::getFixture(__FUNCTION__);
         $paths = $rf->getWorkspacePaths();
         foreach ($paths as $path) {
-            $this->assertTrue($this->midgardWorkspaceManager->path_exists($path));
+            $this->assertTrue($this->manager->storedWorkspacePathExists($path));
         }
     }
 
