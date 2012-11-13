@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 MIDGARD_TEST_DB="midgard_raki"
 MIDAGRD_TEST_DB_USER="midgard_raki"
 MIDGARD_TEST_DB_PASS="midgard_raki"
