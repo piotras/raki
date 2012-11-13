@@ -254,7 +254,7 @@ class RagnaroekWorkspaceManager implements WorkspaceManager
         return $this->findLanguageByName($elements[$elements_count - 1]);
     }   
 
-    public function createWorkspace($name, MidgardWorkspace $parent = null)
+    public function createWorkspace($name, StorableWorkspace $parent = null)
     {
         $parent ? $parent_path = $parent->get_path() : $parent_path = '';
         $absPath = $parent_path . '/' . $name;

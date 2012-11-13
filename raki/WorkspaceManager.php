@@ -37,7 +37,7 @@ interface WorkspaceManager
      *
      * Throws an exception if workspace with given name exists.
      */ 
-    public function createWorkspace($name, MidgardWorkspace $parent = null);
+    public function createWorkspace($name, StorableWorkspace $parent = null);
 
     /**
      * Create all possible workspaces.
