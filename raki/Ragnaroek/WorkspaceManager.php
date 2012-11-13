@@ -256,7 +256,7 @@ class RagnaroekWorkspaceManager implements WorkspaceManager
 
     public function createWorkspace($name, StorableWorkspace $parent = null)
     {
-        $parent ? $parent_path = $parent->get_path() : $parent_path = '';
+        $parent ? $parent_path = $parent->getPath() : $parent_path = '';
         $absPath = $parent_path . '/' . $name;
 
         $this->populatePaths();
