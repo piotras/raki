@@ -270,23 +270,23 @@ class RagnaroekMgdSchemaToSQL extends DomDocument
         $sql .= "midgard_ws_oid_id, midgard_ws_id) \n";
 
         /* Select data to insert */
-        $sql .= "\tSELECT {$select} {$typeTable}.id, \n";
+        $sql .= "\tSELECT {$select} {$typeTable}.id, {$workspaceID}\n";
 
         $table = $this->getTable($node); 
 
         /* Select workspace id */
-        $sql .= "\t\t(SELECT
+        /*$sql .= "\t\t(SELECT
                     midgard_workspace.id
                 FROM
                     midgard_workspace, midgard_language
                 WHERE
-                    midgard_workspace.name = midgard_language.code AND midgard_language.id = {$table}_i.lang)";
+                midgard_workspace.name = midgard_language.code AND midgard_language.id = {$table}_i.lang)";*/
 
         /* Add FROM and constraint */ 
         $sql .= "\n\tFROM
             {$table}, {$table}_i
             WHERE
-            {$table}.sitegroup = {$sitegroupID} AND {$table}.id = {$table}_i.sid \n";
+            {$table}.sitegroup = {$sitegroupID} AND {$table}.id = {$table}_i.sid AND {$table}_i.lang = {$languageID} \n";
 
         return $sql;
     }
