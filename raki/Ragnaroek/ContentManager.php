@@ -82,12 +82,31 @@ class RagnaroekContentManager implements ContentManager
         echo $q;
         $mysql->query($q);
 
-        /* For every sitegroup, create multilang content */
-        $languages = $workspaceManager->getMidgardLanguagesByType($sts, $typeName);
+
+        /* Get all workspaces which represent languages.
+         * It has to be done explicitly cause one *named* language can be represented by 
+         * different workspaces. 
+         * e.g. /SG1/multilang/en /SG2/multilang/en */
+        $paths = $workspaceManager->getStoredWorkspacesPaths();
+        $languages = array();
+        foreach ($paths as $path) {
+            $legacy = $workspaceManager->getLegacyMidgardType($path);
+            if ($legacy instanceof midgard_language) {
+                if ($legacy->id == 0) {
+                    continue;
+                }
+                $mws = $workspaceManager->getMidgardWorkspaceByPath($path);
+                $languages[$mws->id] = $legacy->id;
+            }
+        }
+
+        /* For every sitegroup, create multilang content */        
         foreach ($sitegroups as $sg) {
-            $q = $sts->getSQLInsertType($typeName, $sg->id, 0, 0);
-            echo $q;
-            $mysql->query($q);
+            foreach ($languages as $workspaceID => $langID) {
+                $q = $sts->getSQLInsertType($typeName, $sg->id, $workspaceID, $langID);
+                echo $q;
+                $mysql->query($q);
+            }
         }
 
         /* Set unique object's id in workspace */
