@@ -276,6 +276,14 @@ class RagnaroekWorkspaceManager implements WorkspaceManager
         $this->workspaces[$absPath]['legacy'] = $this->determineLegacyType($absPath);
     }
 
+    public function getLegacyMidgardType($absPath) 
+    {
+        $this->populateSitegroups();
+        $this->populateLanguages();
+
+        return $this->determineLegacyType($absPath);
+    }
+
     private function getMidgardWorkspaceByPath($absPath)
     {
         $ws = new MidgardWorkspace();
