@@ -284,7 +284,7 @@ class RagnaroekWorkspaceManager implements WorkspaceManager
         return $this->determineLegacyType($absPath);
     }
 
-    private function getMidgardWorkspaceByPath($absPath)
+    public function getMidgardWorkspaceByPath($absPath)
     {
         $ws = new MidgardWorkspace();
         try {
