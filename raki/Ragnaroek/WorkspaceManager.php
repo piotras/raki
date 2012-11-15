@@ -288,7 +288,7 @@ class RagnaroekWorkspaceManager implements WorkspaceManager
     {
         $ws = new MidgardWorkspace();
         try {
-            $this->midgardWorkspaceManager->get_workspace_by_path($ws, $absPath);
+            $this->getMidgardWorkspaceManager()->get_workspace_by_path($ws, $absPath);
         } catch (Exception $e) {
             throw new Exception($e->getMessage() . ". " . $absPath);
         }
