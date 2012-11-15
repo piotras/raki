@@ -64,14 +64,16 @@ class RagnaroekContentManager implements ContentManager
         $mysql = $this->getTransition()->getMySQL();
 
         $workspaceManager = $this->getTransition()->getWorkspaceManager();
-        $wsPaths = $workspaceManager->getStoredWorkspacesPaths();
         $sitegroups = $workspaceManager->getMidgardSitegroups(); 
+        $dSGName = $workspaceManager->getDefaultWorkspaceName();
         $dLang = $workspaceManager->getDefaultLanguage();
-        $ws = $workspaceManager->getStoredWorkspaceByName($dLang->code)->getMidgardWorkspace();
         $sts = $this->getMgdSchemaToSQL();
         /* Copy content to one table - for every sitegroup and default language */
-        foreach ($sitegroups as $sg) {  
-            $q = $sts->getSQLUpdateTypePre($typeName, $ws->id, $sg->id, $dLang->id);
+        foreach ($sitegroups as $sg) { 
+            $mlPath = '/' . $dSGName . '/' . $sg->name . '/' . $dLang->code;
+            $ws = $workspaceManager->getMidgardWorkspaceByPath($mlPath);
+            $lang = $workspaceManager->getLegacyMidgardType($mlPath);
+            $q = $sts->getSQLUpdateTypePre($typeName, $ws->id, $sg->id, $lang->id);
             echo $q;
             $mysql->query($q);
 
