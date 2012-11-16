@@ -57,10 +57,6 @@ class RagnaroekContentManager implements ContentManager
 
     public function importType($typeName)
     {       
-        if ($typeName != 'midgard_topic') {
-            return;
-        }
-
         $mysql = $this->getTransition()->getMySQL();
 
         $workspaceManager = $this->getTransition()->getWorkspaceManager();
