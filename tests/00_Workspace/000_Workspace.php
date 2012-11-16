@@ -49,7 +49,6 @@ class WorkspaceTest extends RakiTest
         $wsName = key($names[$this->manager->getDefaultWorkspaceName()]);
         $ws = $this->manager->getStoredWorkspaceByPath('/' . $dName . '/' . $wsName);
         $childName = key(next($names[$this->manager->getDefaultWorkspaceName()]));
-        echo $childName;
         $this->manager->createWorkspace($childName, $ws);
         $this->assertTrue($this->manager->storedWorkspacePathExists('/' . $dName . '/' . $wsName . '/' . $childName));
     }
