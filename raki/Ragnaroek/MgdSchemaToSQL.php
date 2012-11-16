@@ -119,7 +119,7 @@ class RagnaroekMgdSchemaToSQL extends DomDocument
 
         /* No need to move content in case of non multilang type */
         if ($isMultilang === false) {
-            return '';
+            return 'SELECT 1 LIMIT 0';
         }
 
         /* Get table */
@@ -167,7 +167,7 @@ class RagnaroekMgdSchemaToSQL extends DomDocument
 
         /* No need to move content in case of non multilang type */
         if ($isMultilang === false) {
-            return 'ML FALSE';
+            return 'SELECT 1 LIMIT 0';
         }
 
         /* Get table */
@@ -223,7 +223,7 @@ class RagnaroekMgdSchemaToSQL extends DomDocument
 
         /* No need to move content in case of non multilang type */
         if ($isMultilang === false) {
-            return '';
+            return 'SELECT 1 LIMIT 0';
         }
 
         /* Get table */
@@ -291,19 +291,29 @@ class RagnaroekMgdSchemaToSQL extends DomDocument
         return $sql;
     }
 
-    public function getSQLUpdateTypePost($typeName)
+    public function getSQLUpdateTypePost($typeName, $workspaceID = 0, $sitegroupID = 0)
     {
         /* Set unique object's id in workspace */
 
         /* Get named node */
         $node = $this->getNodeByMidgardType($typeName);
 
+        if ($node === null) {
+            echo "NODE FOR {$typeName} not found \n";
+            return "SELECT 1 LIMIT 0";
+        }
+
         /* Get table */
         $table = $this->getTable($node);
+        
+        /* Check if type is multilang */
+        $isMultilang = $this->isMultilang($typeName);
 
-        $sql = "UPDATE {$table} SET midgard_ws_oid_id = {$table}.id";
+        if ($isMultilang === true) {
+            return "UPDATE {$table} SET midgard_ws_oid_id = {$table}.id";
+        }
 
-        return $sql;
+        return "UPDATE {$table} SET midgard_ws_oid_id = {$table}.id, midgard_ws_id = {$workspaceID} WHERE sitegroup = {$sitegroupID}";
     }
 }
 
