@@ -119,7 +119,7 @@ class RagnaroekMgdSchemaToSQL extends DomDocument
 
         /* No need to move content in case of non multilang type */
         if ($isMultilang === false) {
-            return 'SELECT 1 LIMIT 0';
+            return null;
         }
 
         /* Get table */
@@ -167,7 +167,7 @@ class RagnaroekMgdSchemaToSQL extends DomDocument
 
         /* No need to move content in case of non multilang type */
         if ($isMultilang === false) {
-            return 'SELECT 1 LIMIT 0';
+            return null;
         }
 
         /* Get table */
@@ -223,7 +223,7 @@ class RagnaroekMgdSchemaToSQL extends DomDocument
 
         /* No need to move content in case of non multilang type */
         if ($isMultilang === false) {
-            return 'SELECT 1 LIMIT 0';
+            return null;
         }
 
         /* Get table */
@@ -300,7 +300,7 @@ class RagnaroekMgdSchemaToSQL extends DomDocument
 
         if ($node === null) {
             echo "NODE FOR {$typeName} not found \n";
-            return "SELECT 1 LIMIT 0";
+            return null;
         }
 
         /* Get table */
