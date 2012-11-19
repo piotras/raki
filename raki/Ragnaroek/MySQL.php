@@ -15,6 +15,10 @@ class RagnaroekMySQL
 
     public function query($sql)
     {
+        if ($sql === null) {
+            return;
+        }
+
         if ($this->result != null && (!is_bool($this->result))) {
             mysql_free_result($this->result);
         }
