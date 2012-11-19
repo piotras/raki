@@ -313,7 +313,7 @@ class RagnaroekMgdSchemaToSQL extends DomDocument
             return "UPDATE {$table} SET midgard_ws_oid_id = {$table}.id";
         }
 
-        return "UPDATE {$table} SET midgard_ws_oid_id = {$table}.id, midgard_ws_id = {$workspaceID} WHERE sitegroup = {$sitegroupID}";
+        return "UPDATE {$table} SET midgard_ws_oid_id = {$table}.id, midgard_ws_id = (SELECT midgard_workspace.id FROM midgard_workspace, sitegroup WHERE midgard_workspace.name = sitegroup.name and sitegroup.id = {$table}.sitegroup)";
     }
 }
 
