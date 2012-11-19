@@ -77,6 +77,10 @@ class RagnaroekWorkspaceManager implements WorkspaceManager
 
     private function populateSitegroups()
     {
+        if (!empty($this->sitegroups)) {
+            return $this->sitegroups;
+        }
+
         $storage = new MidgardQueryStorage("ragnaroek_sitegroup");
         $qs = new MidgardQuerySelect($storage);
         $qs->execute();
@@ -119,6 +123,10 @@ class RagnaroekWorkspaceManager implements WorkspaceManager
 
     private function populateLanguages()
     {
+        if (!empty($this->languages)) {
+            return $this->languages;
+        }
+
         $types = $this->getStorableTypeNames();
 
         /* Determine multilang type.
