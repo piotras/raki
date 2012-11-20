@@ -14,7 +14,7 @@ class RagnaroekTransition implements Transition
         $this->mgd = $mgd;
         $this->fixtureDir = $fixtureDir;
         $this->schemaDir = $schemaDir;
-        $this->mysql = new RagnaroekMySQL($config->dbhost, $config->database, $config->dbuser, $config->dbpass);
+        $this->mysql = new RagnaroekMySQL($config->host, $config->database, $config->dbuser, $config->dbpass);
     }
 
     private function getFilePaths($dir, &$paths)
