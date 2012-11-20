@@ -169,102 +169,6 @@
         </property>
     </type>
 
-    <type name="midgard_element" table="element" parent="midgard_style">
-        <property name="id" type="unsigned integer" primaryfield="id">
-            <description>Local non-replication-safe database identifier</description>
-        </property>
-        <property name="name"     type="string" index="yes">
-            <description>Path name of the element</description>
-        </property>
-        <property name="style"    type="unsigned integer" link="midgard_style:id" parentfield="style">
-            <description>Style the element is in</description>
-        </property>
-        <!-- Multilang features -->
-        <property name="value"    type="text" table="element_i" multilang="yes">
-            <description>Contents of the style element</description>
-        </property>
-        <property name="lang"     type="unsigned integer" link="midgard_language:id" table="element_i" multilang="yes">
-            <description>Language the element is in</description>
-        </property>
-        <property name="sid"      type="unsigned integer" table="element_i" multilang="yes">
-            <description>Reference to the local non-replication-safe database identifier of the object</description>
-        </property>
-    </type>
-
-    <type name="midgard_page" table="page">
-        <property name="id" type="unsigned integer" primaryfield="id">
-            <description>Local non-replication-safe database identifier</description>
-        </property>
-        <property name="name"     type="string" index="yes">
-            <description>Path name of the page</description>
-        </property>
-        <property name="info"     type="string" dbtype="set('auth','active')">
-            <description>Settings for active and authenticated pages</description>
-        </property>
-        <property name="style"    type="unsigned integer" link="midgard_style:id">
-            <description>Style used with the host</description>
-        </property>
-        <property name="up"       type="unsigned integer" link="midgard_page:id" upfield="up">
-            <description>Page the page is under</description>
-        </property>
-        <property name="component"    type="string" index="yes">
-            <description>Component used for the page</description>
-        </property>
-        <!-- Multilang features -->
-        <property name="title"    type="string"     table="page_i" multilang="yes">
-            <description>Title of the page</description>
-        </property>
-        <property name="content"  type="text"     table="page_i" multilang="yes">
-            <description>Content of the page</description>
-        </property>
-        <property name="lang"     type="unsigned integer" link="midgard_language:id" table="page_i" multilang="yes">
-            <description>Language of the page</description>
-        </property>
-        <property name="sid"      type="unsigned integer"     table="page_i" multilang="yes">
-            <description>Reference to the local non-replication-safe database identifier of the object</description>
-        </property>
-        <!-- Legacy -->
-				<!-- <property name="contentauthor" type="unsigned integer" link="midgard_person:id" table="page_i" field="author" multilang="yes">
-            <description>Author of the current language version of the page (legacy field)</description>
-				</property> 
-        <property name="contentowner"    type="unsigned integer" link="midgard_group:id" table="page_i" field="owner" multilang="yes">
-            <description>Owner of the current language version of the page (legacy field)</description>
-					</property> -->
-        <property name="contentchanged"  type="datetime" table="page_i" field="changed" multilang="yes">
-            <description>Time when the current language version has been changed (legacy field)</description>
-        </property>
-        <property name="owner"  type="unsigned integer"  link="midgard_group:id" field="owner">
-            <description>Owner of the page (legacy field)</description>
-        </property>
-        <property name="author"   type="unsigned integer" link="midgard_person:id">
-            <description>Author of the page (legacy field)</description>
-        </property>
-    </type>
-
-    <type name="midgard_pageelement" table="pageelement" parent="midgard_page">
-        <property name="id" type="unsigned integer" primaryfield="id">
-            <description>Local non-replication-safe database identifier</description>
-        </property>
-        <property name="name"     type="string" index="yes">
-            <description>Path name of the page element</description>
-        </property>
-        <property name="info"     type="string" dbtype="set('inherit')">
-            <description>Whether the page element is inherited</description>
-        </property>
-        <property name="page"     type="unsigned integer" link="midgard_page:id" parentfield="page">
-            <description>Page the element is under</description>
-        </property>
-        <!-- Multilang features -->
-        <property name="lang"     type="unsigned integer" link="midgard_language:id" table="pageelement_i" multilang="yes">
-            <description>Language of the page element</description>
-        </property>
-        <property name="sid"      type="unsigned integer"     table="pageelement_i" multilang="yes">
-            <description>Reference to the local non-replication-safe database identifier of the object</description>
-        </property>
-        <property name="value"    type="text" table="pageelement_i" multilang="yes">
-            <description>Value of the page element</description>
-        </property>
-    </type>
 
     <type name="midgard_group" table="grp">
         <property name="id" type="unsigned integer" primaryfield="id">
@@ -534,35 +438,6 @@
         </property>
     </type>
 
-    <type name="midgard_snippet" table="snippet" parent="midgard_snippetdir">
-        <property name="id" type="unsigned integer" primaryfield="id">
-            <description>Local non-replication-safe database identifier</description>
-        </property>
-        <property name="name"     type="string" index="yes">
-            <description>Path name of the snippet</description>
-        </property>
-        <property name="up"       type="unsigned integer" link="midgard_snippetdir:id" parentfield="up">
-            <description>Snippetdir the snippet is under</description>
-        </property>
-        <!-- Multilang features -->
-        <property name="code"     type="text"     table="snippet_i" multilang="yes">
-            <description>Code of the snippet</description>
-        </property>
-        <property name="doc"      type="text"     table="snippet_i" multilang="yes">
-            <description>Documentation of the snippet</description>
-        </property>
-        <property name="lang"     type="unsigned integer" link="midgard_language:id" table="snippet_i" multilang="yes">
-            <description>Language the snippet is in</description>
-        </property>
-        <property name="sid"      type="unsigned integer" table="snippet_i" multilang="yes">
-            <description>Reference to the local non-replication-safe database identifier of the object</description>
-        </property>
-        <!-- Legacy -->
-        <property name="author"   type="string"     table="snippet_i" multilang="yes">
-            <description>Author of the snippet (legacy field)</description>
-        </property>
-    </type>
-
     <type name="midgard_quota" table="quota">
         <property name="id" type="unsigned integer" primaryfield="id">
             <description>Local non-replication-safe database identifier</description>
@@ -643,15 +518,5 @@
         <property name="description"    type="text">
             <description>Description of the language</description>
         </property>
-    </type>
-
-    <!-- Only 1.8 compatible , do not use it! -->
-    <type name="__midgard_cache" table="cache">
-        <property name="id"        type="unsigned integer"  primaryfield="id"/>
-        <property name="host"       type="integer"/>
-        <property name="type"       type="integer"/>
-        <property name="page"       type="integer"/>
-        <property name="style"       type="integer"/>
-        <property name="lang"       type="integer"/>
     </type>
 </Schema>
