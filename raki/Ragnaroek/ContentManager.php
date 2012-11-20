@@ -70,14 +70,14 @@ class RagnaroekContentManager implements ContentManager
             $ws = $workspaceManager->getMidgardWorkspaceByPath($mlPath);
             $lang = $workspaceManager->getLegacyMidgardType($mlPath);
             $q = $sts->getSQLUpdateTypePre($typeName, $ws->id, $sg->id, $lang->id);
-            echo $q;
+            //echo $q;
             $mysql->query($q);
 
         }
         /* Delete content with default language */
         /* Avoid duplicates in following bulk update */
         $q = $sts->getSQLDeleteTypePre($typeName, $dLang->id);
-        echo $q;
+        //echo $q;
         $mysql->query($q);
 
 
@@ -102,14 +102,14 @@ class RagnaroekContentManager implements ContentManager
         foreach ($sitegroups as $sg) {
             foreach ($languages as $workspaceID => $langID) {
                 $q = $sts->getSQLInsertType($typeName, $sg->id, $workspaceID, $langID);
-                echo $q;
+                //echo $q;
                 $mysql->query($q);
             }
         }
 
         /* Set unique object's id in workspace */
         $q = $sts->getSQLUpdateTypePost($typeName);
-        echo $q;
+        //echo $q;
         $mysql->query($q);
     }
 
