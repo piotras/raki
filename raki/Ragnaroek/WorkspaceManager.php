@@ -135,15 +135,14 @@ class RagnaroekWorkspaceManager implements WorkspaceManager
             /* Workaround for missed "default properties" in php class */
             $tmp = new $type;
             if (!property_exists($tmp, 'sid')
-                && !property_exists($tmp,'lang')) {
+                || !property_exists($tmp,'lang')) {
                     continue;    
                 }
             $mlTypes[] = $type;
         }
 
-        /* Select language(s) id from every available multilang type */
-       
-        foreach ($mlTypes as $type) {
+        /* Select language(s) id from every available multilang type */   
+        foreach ($mlTypes as $type) { 
             $this->getTypeLanguages($type);
         }
     }
