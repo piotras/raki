@@ -12,20 +12,30 @@ class RakiTestContent
         midgard_storage::create_base_storage();
         
         $re = new ReflectionExtension("midgard2");
-        foreach ($re->getClasses() as $class_ref) {
-            $class_mgd_ref = new midgard_reflection_class($class_ref->getName());
-            $parent_class = $class_mgd_ref->getParentClass();
-        
-            $name = $class_mgd_ref->getName();
-            if (!is_subclass_of ($name, 'MidgardDBObject')
-                || $class_mgd_ref->isAbstract()) {
-                    continue;
-                }
-        
+        foreach ($re->getClasses() as $refclass) {
+
+            if ($refclass->isAbstract() || $refclass->isInterface()) {
+                continue;
+            }
+
+            $name = $refclass->getName();
+            if (!is_subclass_of($name, 'MidgardDBObject')) {
+                continue;
+            }
+
+            /* Ugly hack for pseudo abstract classes */
+            if (strrpos($name, "_abstract") != false) {
+                continue;
+            }
+
             //echo 'midgard_storage: create_class_storage('.$name.")\n";
             echo ".";
             if (true !== midgard_storage::create_class_storage($name)) {
                 throw new Exception('Failed to create storage for "'.$name.': "'.midgard_connection::get_instance()->get_error_string());
+            }
+
+            if (true !== midgard_storage::update_class_storage($name)) {
+                throw new Exception('Failed to update storage for "'.$name.': "'.midgard_connection::get_instance()->get_error_string());
             }
         }
 
