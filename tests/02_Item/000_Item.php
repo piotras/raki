@@ -24,7 +24,7 @@ class StorableItemTest extends RakiTest
                 foreach ($itemPaths as $itemPath => $props) {
                     $ws = $this->workspaceManager->getStoredWorkspaceByPath($path);
                     $item = $this->manager->getItemByPath($ws, $type, $itemPath);
-                    $this->assertInstanceOf('StorableItem', $item);
+                    $this->assertInstanceOf('StorableItem', $item, "Item '{$type}' not found at '{$path}' path\n");
                     $this->assertEquals($itemPath, $item->getPath());
                 }
             }
