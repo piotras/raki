@@ -299,7 +299,6 @@ class RagnaroekMgdSchemaToSQL extends DomDocument
         $node = $this->getNodeByMidgardType($typeName);
 
         if ($node === null) {
-            echo "NODE FOR {$typeName} not found \n";
             return null;
         }
 
