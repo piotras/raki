@@ -134,11 +134,15 @@ class XmlMidgardObjectWriter
     }
 
     public function serializeObject($object)
-    { 
+    {
         $objectNode = self::createNodeElement();
         $nodeAttr = $this->xmlDoc->createAttributeNS($this->ns, $this->prefix . ":" . 'name');
-        /* FIXME, TODO, get property if 'name' is missed */
-        $nodeAttr->value = $object->name;
+        $uniqueProperty = MidgardReflectorObject::get_property_unique(get_class($object));
+        if ($uniqueProperty) {
+            $nodeAttr->value = $object->$uniqueProperty;
+        } else {
+            $nodeAttr->value = $object->guid;
+        } 
         $objectNode->appendChild($nodeAttr);
 
         $this->serializeProperties($objectNode, $object);
