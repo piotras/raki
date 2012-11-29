@@ -83,6 +83,12 @@ class XmlMidgardObjectWriter
             case MGD_TYPE_TIMESTAMP:
                 return "Date";
 
+            case MGD_TYPE_FLOAT:
+                return "Double";
+
+            case MGD_TYPE_BOOLEAN:
+                return "Boolean";
+
             default:
                 return "String";
         }
