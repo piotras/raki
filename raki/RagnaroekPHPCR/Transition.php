@@ -37,7 +37,7 @@ class RagnaroekPHPCRTransition implements Transition
     public function getWorkspaceManager()
     {
         if ($this->workspaceManager == null) {
-            $this->workspaceManager = new RagnaroekPHPCRContentManager();
+            $this->workspaceManager = new RagnaroekPHPCRWorkspaceManager($this);
         }
 
         return $this->workspaceManager;
