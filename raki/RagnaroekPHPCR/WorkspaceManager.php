@@ -65,6 +65,12 @@ class RagnaroekPHPCRWorkspaceManager implements WorkspaceManager
         }
     }
 
+    public function getMidgardSitegroups()
+    {
+        $this->populateSitegroups();
+        return $this->sitegroups;
+    }
+
     public function getPossibleWorkspacesNames()
     {
         $this->populateSitegroups();
