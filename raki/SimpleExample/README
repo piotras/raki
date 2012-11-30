@@ -1,0 +1,17 @@
+Simple example how to init custom transition and test it.
+
+- midgard2.ini
+Defines custom directory from which schema files will be loaded.
+Those schemas should be Ratatoskr compatible, so no multilang types.
+Sitegroup and lang fields should be defined explicitly.
+
+- tests/phpunit.xml.dist
+Initial file for phpunit.
+
+- tests/ragnaroek_test_init.php
+Initializes database to convert and test entry class.
+
+- /data/ragnaroek/schema/
+Location for original Ragnaroek schema files. Those are not loaded in PHP.
+Instead they are parsed separately to generate SQL queries.
+

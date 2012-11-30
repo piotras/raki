@@ -1,0 +1,6143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<midgard_object xmlns="http://www.midgard-project.org/midgard_object/1.8">
+  <midgard_language purge="no" guid="65350da41d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:11</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:11</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>97</size>
+      <published>2006-07-27 17:36:11</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>1</id>
+    <locale></locale>
+    <code>aa</code>
+    <description></description>
+    <name>Afar</name>
+    <native>Afaraf</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="6541f8a21d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:11</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:11</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>103</size>
+      <published>2006-07-27 17:36:11</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>2</id>
+    <locale></locale>
+    <code>ab</code>
+    <description></description>
+    <name>Abkhaz</name>
+    <native>&amp;#x410;&amp;#x4A7;&amp;#x441;&amp;#x443;&amp;#x430;</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="654573ce1d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:11</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:11</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>100</size>
+      <published>2006-07-27 17:36:11</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>3</id>
+    <locale></locale>
+    <code>ae</code>
+    <description></description>
+    <name>Avestan</name>
+    <native>Avesta</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="6556e10e1d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:12</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:12</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>105</size>
+      <published>2006-07-27 17:36:12</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>4</id>
+    <locale></locale>
+    <code>af</code>
+    <description></description>
+    <name>Afrikaans</name>
+    <native>Afrikaans</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="655816461d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:12</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:12</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>91</size>
+      <published>2006-07-27 17:36:12</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>5</id>
+    <locale></locale>
+    <code>ak</code>
+    <description></description>
+    <name>Akan</name>
+    <native></native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="6562278a1d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:12</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:12</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>121</size>
+      <published>2006-07-27 17:36:12</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>6</id>
+    <locale></locale>
+    <code>ar</code>
+    <description></description>
+    <name>Arabic</name>
+    <native>&amp;#x627;&amp;#x644;&amp;#x644;&amp;#x63A;&amp;#x629; &amp;#x627;&amp;#x644;&amp;#x639;&amp;#x631;&amp;#x628;&amp;#x64A;&amp;#x629;&amp;#x200E;</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="656bc31c1d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:12</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:12</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>106</size>
+      <published>2006-07-27 17:36:12</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>7</id>
+    <locale></locale>
+    <code>am</code>
+    <description></description>
+    <name>Amharic</name>
+    <native>&amp;#x12A0;&amp;#x121B;&amp;#x122D;&amp;#x129B;</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="656cf3361d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:12</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:12</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>105</size>
+      <published>2006-07-27 17:36:12</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>8</id>
+    <locale></locale>
+    <code>an</code>
+    <description></description>
+    <name>Aragonese</name>
+    <native>Aragon&amp;#xE9;s</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="65768fea1d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:12</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:12</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>116</size>
+      <published>2006-07-27 17:36:12</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>9</id>
+    <locale></locale>
+    <code>as</code>
+    <description></description>
+    <name>Assamese</name>
+    <native>&amp;#x985;&amp;#x9B8;&amp;#x9AE;&amp;#x9C0;&amp;#x9AF;&amp;#x9BC;&amp;#x9BE;</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="6577bde81d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:12</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:12</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>137</size>
+      <published>2006-07-27 17:36:12</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>10</id>
+    <locale></locale>
+    <code>av</code>
+    <description></description>
+    <name>Avaric</name>
+    <native>&amp;#x430;&amp;#x432;&amp;#x430;&amp;#x440; &amp;#x43C;&amp;#x430;&amp;#x446;&amp;#x4C0;; &amp;#x43C;&amp;#x430;&amp;#x433;&amp;#x4C0;&amp;#x430;&amp;#x440;&amp;#x443;&amp;#x43B; &amp;#x43C;&amp;#x430;&amp;#x446;&amp;#x4C0;</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="657d92541d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:12</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:12</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>102</size>
+      <published>2006-07-27 17:36:12</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>11</id>
+    <locale></locale>
+    <code>ay</code>
+    <description></description>
+    <name>Aymara</name>
+    <native>Aymar aru</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="657eb9d61d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:12</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:12</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>111</size>
+      <published>2006-07-27 17:36:12</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>12</id>
+    <locale></locale>
+    <code>az</code>
+    <description></description>
+    <name>Azerbaijani</name>
+    <native>Az&amp;#x259;rbaycanca</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="65839d481d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:12</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:12</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>117</size>
+      <published>2006-07-27 17:36:12</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>13</id>
+    <locale></locale>
+    <code>ba</code>
+    <description></description>
+    <name>Bashkir</name>
+    <native>&amp;#x431;&amp;#x430;&amp;#x448;&amp;#x4A1;&amp;#x43E;&amp;#x440;&amp;#x442; &amp;#x442;&amp;#x435;&amp;#x43B;&amp;#x435;</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="658582e81d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:12</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:12</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>100</size>
+      <published>2006-07-27 17:36:12</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>14</id>
+    <locale></locale>
+    <code>eu</code>
+    <description></description>
+    <name>Basque</name>
+    <native>Euskara</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="6594ef8a1d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:12</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:12</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>126</size>
+      <published>2006-07-27 17:36:12</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>15</id>
+    <locale></locale>
+    <code>be</code>
+    <description></description>
+    <name>Belarusian</name>
+    <native>&amp;#x411;&amp;#x435;&amp;#x43B;&amp;#x430;&amp;#x440;&amp;#x443;&amp;#x441;&amp;#x43A;&amp;#x430;&amp;#x44F; &amp;#x43C;&amp;#x43E;&amp;#x432;&amp;#x430;</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="659643301d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:12</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:12</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>123</size>
+      <published>2006-07-27 17:36:12</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>16</id>
+    <locale></locale>
+    <code>bg</code>
+    <description></description>
+    <name>Bulgarian</name>
+    <native>&amp;#x431;&amp;#x44A;&amp;#x43B;&amp;#x433;&amp;#x430;&amp;#x440;&amp;#x441;&amp;#x43A;&amp;#x438; &amp;#x435;&amp;#x437;&amp;#x438;&amp;#x43A;</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="659ec3701d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:12</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:12</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>93</size>
+      <published>2006-07-27 17:36:12</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>17</id>
+    <locale></locale>
+    <code>bh</code>
+    <description></description>
+    <name>Bihari</name>
+    <native></native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="65a7d78a1d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:12</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:12</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>94</size>
+      <published>2006-07-27 17:36:12</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>18</id>
+    <locale></locale>
+    <code>bi</code>
+    <description></description>
+    <name>Bislama</name>
+    <native></native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="65a915c81d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:12</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:12</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>104</size>
+      <published>2006-07-27 17:36:12</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>19</id>
+    <locale></locale>
+    <code>bm</code>
+    <description></description>
+    <name>Bambara</name>
+    <native>Bamanankan</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="65b1969e1d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:12</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:12</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>108</size>
+      <published>2006-07-27 17:36:12</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>20</id>
+    <locale></locale>
+    <code>bn</code>
+    <description></description>
+    <name>Bangla</name>
+    <native>&amp;#x9AC;&amp;#x9BE;&amp;#x982;&amp;#x9B2;&amp;#x9BE;</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="65b2e53a1d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:12</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:12</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>102</size>
+      <published>2006-07-27 17:36:12</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>21</id>
+    <locale></locale>
+    <code>br</code>
+    <description></description>
+    <name>Breton</name>
+    <native>Brezhoneg</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="65bb6dae1d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:12</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:12</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>108</size>
+      <published>2006-07-27 17:36:12</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>22</id>
+    <locale></locale>
+    <code>bs</code>
+    <description></description>
+    <name>Bosnian</name>
+    <native>Bosanski jezik</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="65bca7f01d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:12</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:12</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>115</size>
+      <published>2006-07-27 17:36:12</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>23</id>
+    <locale></locale>
+    <code>my</code>
+    <description></description>
+    <name>Burmese</name>
+    <native>&amp;#x1019;&amp;#x1014;&amp;#x1039;&amp;#x1019;&amp;#x102C;&amp;#x1005;&amp;#x102C;</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="65c528301d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:12</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:12</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>101</size>
+      <published>2006-07-27 17:36:12</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>24</id>
+    <locale></locale>
+    <code>ca</code>
+    <description></description>
+    <name>Catalan</name>
+    <native>Catal&amp;#xE0;</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="65ce27501d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:12</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:12</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>102</size>
+      <published>2006-07-27 17:36:12</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>25</id>
+    <locale></locale>
+    <code>ch</code>
+    <description></description>
+    <name>Chamorro</name>
+    <native>Chamoru</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="65cf4ec81d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:12</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:12</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>117</size>
+      <published>2006-07-27 17:36:12</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>26</id>
+    <locale></locale>
+    <code>ce</code>
+    <description></description>
+    <name>Chechen</name>
+    <native>&amp;#x43D;&amp;#x43E;&amp;#x445;&amp;#x447;&amp;#x438;&amp;#x439;&amp;#x43D; &amp;#x43C;&amp;#x43E;&amp;#x442;&amp;#x442;</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="65d7b7d41d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:12</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:12</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>115</size>
+      <published>2006-07-27 17:36:12</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>27</id>
+    <locale></locale>
+    <code>ny</code>
+    <description></description>
+    <name>Chichewa</name>
+    <native>chiChe&amp;#x175;a; chinyanja</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="65d924481d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:12</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:12</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>102</size>
+      <published>2006-07-27 17:36:12</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>28</id>
+    <locale></locale>
+    <code>cu</code>
+    <description></description>
+    <name>Church Slavonic</name>
+    <native></native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="65e186061d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:12</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:12</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>115</size>
+      <published>2006-07-27 17:36:12</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>29</id>
+    <locale></locale>
+    <code>cv</code>
+    <description></description>
+    <name>Chuvash</name>
+    <native>&amp;#x447;&amp;#x4D1;&amp;#x432;&amp;#x430;&amp;#x448; &amp;#x447;&amp;#x4D7;&amp;#x43B;&amp;#x445;&amp;#x438;</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="65e348a61d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:12</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:12</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>102</size>
+      <published>2006-07-27 17:36:12</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>30</id>
+    <locale></locale>
+    <code>kw</code>
+    <description></description>
+    <name>Cornish</name>
+    <native>Kernewek</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="65f2e3561d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:13</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:13</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>100</size>
+      <published>2006-07-27 17:36:13</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>31</id>
+    <locale></locale>
+    <code>co</code>
+    <description></description>
+    <name>Corsican</name>
+    <native>Corsu</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="65f40f421d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:13</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:13</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>91</size>
+      <published>2006-07-27 17:36:13</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>32</id>
+    <locale></locale>
+    <code>cr</code>
+    <description></description>
+    <name>Cree</name>
+    <native></native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="65fc7c901d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:13</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:13</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>98</size>
+      <published>2006-07-27 17:36:13</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>33</id>
+    <locale></locale>
+    <code>cs</code>
+    <description></description>
+    <name>Czech</name>
+    <native>&amp;#x10D;esky</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="65fddd101d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:13</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:13</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>98</size>
+      <published>2006-07-27 17:36:13</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>34</id>
+    <locale></locale>
+    <code>da</code>
+    <description></description>
+    <name>Danish</name>
+    <native>Dansk</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="660a575c1d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:13</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:13</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>100</size>
+      <published>2006-07-27 17:36:13</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>35</id>
+    <locale></locale>
+    <code>de</code>
+    <description></description>
+    <name>German</name>
+    <native>Deutsch</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="660bb14c1d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:13</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:13</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>105</size>
+      <published>2006-07-27 17:36:13</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>36</id>
+    <locale></locale>
+    <code>dv</code>
+    <description></description>
+    <name>Mahl</name>
+    <native>Kajin M&amp;#x327;aje&amp;#x13C;</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="66143ce01d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:13</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:13</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>115</size>
+      <published>2006-07-27 17:36:13</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>37</id>
+    <locale></locale>
+    <code>dz</code>
+    <description></description>
+    <name>Dzongkha 	&amp;#xF62;&amp;#xFAB;&amp;#xF7C;&amp;#xF44;&amp;#xF0B;&amp;#xF41;</name>
+    <native></native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="661573f81d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:13</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:13</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>101</size>
+      <published>2006-07-27 17:36:13</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>38</id>
+    <locale></locale>
+    <code>en</code>
+    <description></description>
+    <name>English</name>
+    <native>English</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="661dea601d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:13</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:13</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>105</size>
+      <published>2006-07-27 17:36:13</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>39</id>
+    <locale></locale>
+    <code>eo</code>
+    <description></description>
+    <name>Esperanto</name>
+    <native>Esperanto</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="661f436a1d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:13</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:13</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>105</size>
+      <published>2006-07-27 17:36:13</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>40</id>
+    <locale></locale>
+    <code>et</code>
+    <description></description>
+    <name>Estonian</name>
+    <native>Eesti keel</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="6627fc801d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:13</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:13</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>100</size>
+      <published>2006-07-27 17:36:13</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>41</id>
+    <locale></locale>
+    <code>ee</code>
+    <description></description>
+    <name>Ewe</name>
+    <native>&amp;#x190;&amp;#x28B;&amp;#x25B;gb&amp;#x25B;</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="662b524a1d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:13</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:13</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>103</size>
+      <published>2006-07-27 17:36:13</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>42</id>
+    <locale></locale>
+    <code>fo</code>
+    <description></description>
+    <name>Faroese</name>
+    <native>F&amp;#xF8;royskt</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="66387e0c1d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:13</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:13</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>105</size>
+      <published>2006-07-27 17:36:13</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>43</id>
+    <locale></locale>
+    <code>fj</code>
+    <description></description>
+    <name>Fijan</name>
+    <native>vosa Vakaviti</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="6639df5e1d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:13</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:13</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>99</size>
+      <published>2006-07-27 17:36:13</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>44</id>
+    <locale></locale>
+    <code>fi</code>
+    <description></description>
+    <name>Finnish</name>
+    <native>Suomi</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="6643c51e1d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:13</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:13</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>107</size>
+      <published>2006-07-27 17:36:13</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>45</id>
+    <locale></locale>
+    <code>fy</code>
+    <description></description>
+    <name>Western Frisian</name>
+    <native>Frysk</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="6645118a1d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:13</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:13</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>100</size>
+      <published>2006-07-27 17:36:13</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>46</id>
+    <locale></locale>
+    <code>ff</code>
+    <description></description>
+    <name>Fulah</name>
+    <native>Fulfulde</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="664d5ab61d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:13</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:13</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>102</size>
+      <published>2006-07-27 17:36:13</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>47</id>
+    <locale></locale>
+    <code>fa</code>
+    <description></description>
+    <name>Farsi</name>
+    <native>&amp;#x641;&amp;#x627;&amp;#x631;&amp;#x633;&amp;#x6CC;</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="664eaa2e1d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:13</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:13</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>101</size>
+      <published>2006-07-27 17:36:13</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>48</id>
+    <locale></locale>
+    <code>gl</code>
+    <description></description>
+    <name>Galician</name>
+    <native>Galego</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="665700841d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:13</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:13</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>99</size>
+      <published>2006-07-27 17:36:13</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>49</id>
+    <locale></locale>
+    <code>lg</code>
+    <description></description>
+    <name>Ganda</name>
+    <native>Luganda</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="666073761d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:13</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:13</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>126</size>
+      <published>2006-07-27 17:36:13</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>50</id>
+    <locale></locale>
+    <code>ka</code>
+    <description></description>
+    <name>Georgian</name>
+    <native>&amp;#x10E5;&amp;#x10D0;&amp;#x10E0;&amp;#x10D7;&amp;#x10E3;&amp;#x10DA;&amp;#x10D8; &amp;#x10D4;&amp;#x10DC;&amp;#x10D0;</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="6661a9b21d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:13</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:13</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>108</size>
+      <published>2006-07-27 17:36:13</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>51</id>
+    <locale></locale>
+    <code>el</code>
+    <description></description>
+    <name>Greek</name>
+    <native>&amp;#x395;&amp;#x3BB;&amp;#x3BB;&amp;#x3B7;&amp;#x3BD;&amp;#x3B9;&amp;#x3BA;&amp;#x3AC;</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="666a22ae1d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:13</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:13</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>109</size>
+      <published>2006-07-27 17:36:13</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>52</id>
+    <locale></locale>
+    <code>kl</code>
+    <description></description>
+    <name>Greenlandic</name>
+    <native>kalaallisut</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="666b98f01d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:13</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:13</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>114</size>
+      <published>2006-07-27 17:36:13</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>53</id>
+    <locale></locale>
+    <code>es</code>
+    <description></description>
+    <name>Spanish</name>
+    <native>espa&amp;#xF1;ol, castellano</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="6677d2a01d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:13</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:13</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>102</size>
+      <published>2006-07-27 17:36:13</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>54</id>
+    <locale></locale>
+    <code>fr</code>
+    <description></description>
+    <name>French</name>
+    <native>Fran&amp;#xE7;ais</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="667923121d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:13</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:13</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>104</size>
+      <published>2006-07-27 17:36:13</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>55</id>
+    <locale></locale>
+    <code>gn</code>
+    <description></description>
+    <name>Guarani</name>
+    <native>Ava&amp;#xF1;e'&amp;#x1EBD;</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="6681d17e1d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:13</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:13</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>117</size>
+      <published>2006-07-27 17:36:13</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>56</id>
+    <locale></locale>
+    <code>gu</code>
+    <description></description>
+    <name>Guajarati</name>
+    <native>&amp;#xA97;&amp;#xAC1;&amp;#xA9C;&amp;#xAB0;&amp;#xABE;&amp;#xAA4;&amp;#xAC0;</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="668333021d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:13</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:13</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>109</size>
+      <published>2006-07-27 17:36:13</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>57</id>
+    <locale></locale>
+    <code>ht</code>
+    <description></description>
+    <name>Haitian</name>
+    <native>Krey&amp;#xF2;l ayisyen</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="668c1c101d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:14</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:14</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>101</size>
+      <published>2006-07-27 17:36:14</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>58</id>
+    <locale></locale>
+    <code>ha</code>
+    <description></description>
+    <name>Hausa</name>
+    <native>Hausanc&amp;#x12B;</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="668dadfa1d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:14</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:14</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>121</size>
+      <published>2006-07-27 17:36:14</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>59</id>
+    <locale></locale>
+    <code>he</code>
+    <description></description>
+    <name>Hebrew</name>
+    <native>&amp;#x5E2;&amp;#x5B4;&amp;#x5D1;&amp;#x5B0;&amp;#x5E8;&amp;#x5B4;&amp;#x5D9;&amp;#x5EA;; &amp;#x5E2;&amp;#x5D1;&amp;#x5E8;&amp;#x5D9;&amp;#x5EA;</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="668ee6201d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:14</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:14</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>103</size>
+      <published>2006-07-27 17:36:14</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>60</id>
+    <locale></locale>
+    <code>hz</code>
+    <description></description>
+    <name>Herero</name>
+    <native>Otjiherero</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="669c6b2e1d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:14</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:14</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>110</size>
+      <published>2006-07-27 17:36:14</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>61</id>
+    <locale></locale>
+    <code>hi</code>
+    <description></description>
+    <name>Hindi</name>
+    <native>&amp;#x939;&amp;#x93F;&amp;#x928;&amp;#x94D;&amp;#x926;&amp;#x940;</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="669db83a1d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:14</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:14</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>96</size>
+      <published>2006-07-27 17:36:14</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>62</id>
+    <locale></locale>
+    <code>ho</code>
+    <description></description>
+    <name>Hiri Motu</name>
+    <native></native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="66a659181d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:14</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:14</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>102</size>
+      <published>2006-07-27 17:36:14</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>63</id>
+    <locale></locale>
+    <code>hu</code>
+    <description></description>
+    <name>Hungarian</name>
+    <native>Magyar</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="66a7f48a1d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:14</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:14</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>105</size>
+      <published>2006-07-27 17:36:14</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>64</id>
+    <locale></locale>
+    <code>is</code>
+    <description></description>
+    <name>Icelandic</name>
+    <native>&amp;#xED;slenska</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="66ad502e1d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:14</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:14</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>93</size>
+      <published>2006-07-27 17:36:14</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>65</id>
+    <locale></locale>
+    <code>io</code>
+    <description></description>
+    <name>Ido</name>
+    <native>Ido</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="66aff43c1d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:14</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:14</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>95</size>
+      <published>2006-07-27 17:36:14</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>66</id>
+    <locale></locale>
+    <code>ig</code>
+    <description></description>
+    <name>Igbo</name>
+    <native>Igbo</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="66b98e0c1d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:14</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:14</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>97</size>
+      <published>2006-07-27 17:36:14</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>67</id>
+    <locale></locale>
+    <code>id</code>
+    <description></description>
+    <name>Indonesian</name>
+    <native></native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="66baff9e1d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:14</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:14</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>109</size>
+      <published>2006-07-27 17:36:14</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>68</id>
+    <locale></locale>
+    <code>ia</code>
+    <description></description>
+    <name>Interlingua</name>
+    <native>Interlingua</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="66c3908c1d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:14</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:14</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>109</size>
+      <published>2006-07-27 17:36:14</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>69</id>
+    <locale></locale>
+    <code>ie</code>
+    <description></description>
+    <name>Interlingue</name>
+    <native>Interlingue</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="66c4bf021d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:14</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:14</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>102</size>
+      <published>2006-07-27 17:36:14</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>70</id>
+    <locale></locale>
+    <code>ik</code>
+    <description></description>
+    <name>Inupiaq</name>
+    <native>I&amp;#xF1;upiaq</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="66c631341d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:14</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:14</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>99</size>
+      <published>2006-07-27 17:36:14</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>71</id>
+    <locale></locale>
+    <code>ga</code>
+    <description></description>
+    <name>Irish</name>
+    <native>Gaeilge</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="66d387c61d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:14</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:14</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>104</size>
+      <published>2006-07-27 17:36:14</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>72</id>
+    <locale></locale>
+    <code>ja</code>
+    <description></description>
+    <name>Japanese</name>
+    <native>&amp;#x65E5;&amp;#x672C;&amp;#x8A9E;</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="66dc73721d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:14</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:14</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>104</size>
+      <published>2006-07-27 17:36:14</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>73</id>
+    <locale></locale>
+    <code>jv</code>
+    <description></description>
+    <name>Javanese</name>
+    <native>Basa Jawa</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="66ddcd801d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:14</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:14</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>109</size>
+      <published>2006-07-27 17:36:14</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>74</id>
+    <locale></locale>
+    <code>kn</code>
+    <description></description>
+    <name>Kannada</name>
+    <native>&amp;#xC95;&amp;#xCA8;&amp;#xCCD;&amp;#xCA8;&amp;#xCA1;</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="66e61cf61d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:14</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:14</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>122</size>
+      <published>2006-07-27 17:36:14</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>75</id>
+    <locale></locale>
+    <code>ks</code>
+    <description></description>
+    <name>Kashmiri</name>
+    <native>&amp;#x6A9;&amp;#x672;&amp;#x634;&amp;#x64F;&amp;#x631;, &amp;#x915;&amp;#x949;&amp;#x936;&amp;#x941;&amp;#x930;</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="66e7d28a1d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:14</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:14</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>112</size>
+      <published>2006-07-27 17:36:14</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>76</id>
+    <locale></locale>
+    <code>kk</code>
+    <description></description>
+    <name>Kazakh</name>
+    <native>&amp;#x49A;&amp;#x430;&amp;#x437;&amp;#x430;&amp;#x49B; &amp;#x442;&amp;#x456;&amp;#x43B;&amp;#x456;</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="66e90b1e1d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:14</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:14</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>92</size>
+      <published>2006-07-27 17:36:14</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>77</id>
+    <locale></locale>
+    <code>km</code>
+    <description></description>
+    <name>Khmer</name>
+    <native></native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="66f6a6701d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:14</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:14</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>102</size>
+      <published>2006-07-27 17:36:14</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>78</id>
+    <locale></locale>
+    <code>ki</code>
+    <description></description>
+    <name>Kikuyu</name>
+    <native>G&amp;#x129;k&amp;#x169;y&amp;#x169;</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="66f7e1de1d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:14</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:14</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>109</size>
+      <published>2006-07-27 17:36:14</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>79</id>
+    <locale></locale>
+    <code>rw</code>
+    <description></description>
+    <name>Kinyarwanda</name>
+    <native>kinyaRwanda</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="66f970e41d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:14</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:14</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>115</size>
+      <published>2006-07-27 17:36:14</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>80</id>
+    <locale></locale>
+    <code>ky</code>
+    <description></description>
+    <name>Kirghiz</name>
+    <native>&amp;#x43A;&amp;#x44B;&amp;#x440;&amp;#x433;&amp;#x44B;&amp;#x437; &amp;#x442;&amp;#x438;&amp;#x43B;&amp;#x438;</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="67072e141d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:14</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:14</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>103</size>
+      <published>2006-07-27 17:36:14</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>81</id>
+    <locale></locale>
+    <code>hr</code>
+    <description></description>
+    <name>Croatian</name>
+    <native>Hrvatski</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="67087e361d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:14</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:14</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>106</size>
+      <published>2006-07-27 17:36:14</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>82</id>
+    <locale></locale>
+    <code>kv</code>
+    <description></description>
+    <name>Komi</name>
+    <native>&amp;#x43A;&amp;#x43E;&amp;#x43C;&amp;#x438; &amp;#x43A;&amp;#x44B;&amp;#x432;</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="6709db281d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:14</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:14</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>99</size>
+      <published>2006-07-27 17:36:14</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>83</id>
+    <locale></locale>
+    <code>kg</code>
+    <description></description>
+    <name>Kongo</name>
+    <native>Kikongo</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="670b26041d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:14</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:14</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>102</size>
+      <published>2006-07-27 17:36:14</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>84</id>
+    <locale></locale>
+    <code>ko</code>
+    <description></description>
+    <name>Korean</name>
+    <native>&amp;#xD55C;&amp;#xAD6D;&amp;#xC5B4;</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="6718fb121d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:14</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:14</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>95</size>
+      <published>2006-07-27 17:36:14</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>85</id>
+    <locale></locale>
+    <code>kj</code>
+    <description></description>
+    <name>Kuanyama</name>
+    <native></native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="671a3bee1d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:14</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:14</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>100</size>
+      <published>2006-07-27 17:36:14</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>86</id>
+    <locale></locale>
+    <code>ku</code>
+    <description></description>
+    <name>Kurdish</name>
+    <native>Kurd&amp;#xEE;</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="671bbd981d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:14</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:14</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>111</size>
+      <published>2006-07-27 17:36:14</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>87</id>
+    <locale></locale>
+    <code>lo</code>
+    <description></description>
+    <name>Lao</name>
+    <native>&amp;#xE9E;&amp;#xEB2;&amp;#xEAA;&amp;#xEB2;&amp;#xEA5;&amp;#xEB2;&amp;#xEA7;</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="672951a61d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:15</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:15</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>98</size>
+      <published>2006-07-27 17:36:15</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>88</id>
+    <locale></locale>
+    <code>la</code>
+    <description></description>
+    <name>Latin</name>
+    <native>Latine</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="672a9d721d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:15</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:15</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>103</size>
+      <published>2006-07-27 17:36:15</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>89</id>
+    <locale></locale>
+    <code>lv</code>
+    <description></description>
+    <name>Latvian</name>
+    <native>Latvie&amp;#x161;u</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="672c07b61d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:15</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:15</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>105</size>
+      <published>2006-07-27 17:36:15</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>90</id>
+    <locale></locale>
+    <code>li</code>
+    <description></description>
+    <name>Limburgish</name>
+    <native>Limburgs</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="672ef75a1d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:15</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:15</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>101</size>
+      <published>2006-07-27 17:36:15</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>91</id>
+    <locale></locale>
+    <code>ln</code>
+    <description></description>
+    <name>Lingala</name>
+    <native>Lingala</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="67404f641d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:15</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:15</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>106</size>
+      <published>2006-07-27 17:36:15</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>92</id>
+    <locale></locale>
+    <code>lt</code>
+    <description></description>
+    <name>Lithuanian</name>
+    <native>Lietuvi&amp;#x173;</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="6741846a1d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:15</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:15</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>99</size>
+      <published>2006-07-27 17:36:15</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>93</id>
+    <locale></locale>
+    <code>lu</code>
+    <description></description>
+    <name>Luba Katanga</name>
+    <native></native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="6742f9801d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:15</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:15</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>115</size>
+      <published>2006-07-27 17:36:15</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>94</id>
+    <locale></locale>
+    <code>lb</code>
+    <description></description>
+    <name>Luxembourgish</name>
+    <native>L&amp;#xEB;tzebuergesch</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="675089421d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:15</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:15</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>120</size>
+      <published>2006-07-27 17:36:15</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>95</id>
+    <locale></locale>
+    <code>hy</code>
+    <description></description>
+    <name>Armenian</name>
+    <native>&amp;#x540;&amp;#x561;&amp;#x575;&amp;#x565;&amp;#x580;&amp;#x565;&amp;#x576; &amp;#x56C;&amp;#x565;&amp;#x566;&amp;#x578;&amp;#x582;</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="6751e4681d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:15</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:15</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>93</size>
+      <published>2006-07-27 17:36:15</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>96</id>
+    <locale></locale>
+    <code>kr</code>
+    <description></description>
+    <name>Kanuri</name>
+    <native></native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="67537c601d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:15</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:15</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>128</size>
+      <published>2006-07-27 17:36:15</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>97</id>
+    <locale></locale>
+    <code>mk</code>
+    <description></description>
+    <name>Macedonian</name>
+    <native>&amp;#x43C;&amp;#x430;&amp;#x43A;&amp;#x435;&amp;#x434;&amp;#x43E;&amp;#x43D;&amp;#x441;&amp;#x43A;&amp;#x438; &amp;#x458;&amp;#x430;&amp;#x437;&amp;#x438;&amp;#x43A;</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="675f835c1d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:15</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:15</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>110</size>
+      <published>2006-07-27 17:36:15</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>98</id>
+    <locale></locale>
+    <code>mg</code>
+    <description></description>
+    <name>Malagasy</name>
+    <native>Malagasy fiteny</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="6760f19c1d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:15</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:15</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>105</size>
+      <published>2006-07-27 17:36:15</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>99</id>
+    <locale></locale>
+    <code>ms</code>
+    <description></description>
+    <name>Malay</name>
+    <native>bahasa Melayu</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="67696a481d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:15</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:15</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>99</size>
+      <published>2006-07-27 17:36:15</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>100</id>
+    <locale></locale>
+    <code>mt</code>
+    <description></description>
+    <name>Maltese</name>
+    <native>Malti</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="676aa9ee1d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:15</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:15</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>96</size>
+      <published>2006-07-27 17:36:15</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>101</id>
+    <locale></locale>
+    <code>gv</code>
+    <description></description>
+    <name>Manx</name>
+    <native>Gaelg</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="676c226a1d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:15</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:15</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>106</size>
+      <published>2006-07-27 17:36:15</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>102</id>
+    <locale></locale>
+    <code>mi</code>
+    <description></description>
+    <name>M&amp;#x101;ori</name>
+    <native>te reo M&amp;#x101;ori</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="676d66841d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:15</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:15</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>109</size>
+      <published>2006-07-27 17:36:15</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>103</id>
+    <locale></locale>
+    <code>mr</code>
+    <description></description>
+    <name>Marathi</name>
+    <native>&amp;#x92E;&amp;#x930;&amp;#x93E;&amp;#x920;&amp;#x940;</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="677b49841d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:15</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:15</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>112</size>
+      <published>2006-07-27 17:36:15</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>104</id>
+    <locale></locale>
+    <code>mh</code>
+    <description></description>
+    <name>Marshallese</name>
+    <native>Kajin M&amp;#x327;aje&amp;#x13C;</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="677c9c261d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:15</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:15</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>114</size>
+      <published>2006-07-27 17:36:15</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>105</id>
+    <locale></locale>
+    <code>ml</code>
+    <description></description>
+    <name>Malayalam</name>
+    <native>&amp;#xD2E;&amp;#xD32;&amp;#xD2F;&amp;#xD3E;&amp;#xD33;&amp;#xD02;</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="677dfb3e1d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:15</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:15</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>131</size>
+      <published>2006-07-27 17:36:15</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>106</id>
+    <locale></locale>
+    <code>mo</code>
+    <description></description>
+    <name>Moldavian</name>
+    <native>&amp;#x43B;&amp;#x438;&amp;#x43C;&amp;#x431;&amp;#x430; &amp;#x43C;&amp;#x43E;&amp;#x43B;&amp;#x434;&amp;#x43E;&amp;#x432;&amp;#x435;&amp;#x43D;&amp;#x44F;&amp;#x441;&amp;#x43A;&amp;#x44D;</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="6789b3f21d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:15</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:15</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>115</size>
+      <published>2006-07-27 17:36:15</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>107</id>
+    <locale></locale>
+    <code>mn</code>
+    <description></description>
+    <name>Mongolian</name>
+    <native>&amp;#x43C;&amp;#x43E;&amp;#x43D;&amp;#x433;&amp;#x43E;&amp;#x43B; &amp;#x445;&amp;#x44D;&amp;#x43B;</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="678b09dc1d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:15</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:15</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>110</size>
+      <published>2006-07-27 17:36:15</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>108</id>
+    <locale></locale>
+    <code>na</code>
+    <description></description>
+    <name>Nauruan</name>
+    <native>Ekakair&amp;#x169; Naoero</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="67942f121d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:15</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:15</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>105</size>
+      <published>2006-07-27 17:36:15</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>109</id>
+    <locale></locale>
+    <code>na</code>
+    <description></description>
+    <name>Navajo</name>
+    <native>Din&amp;#xE9; bizaad</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="6795d18c1d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:15</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:15</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>110</size>
+      <published>2006-07-27 17:36:15</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>110</id>
+    <locale></locale>
+    <code>na</code>
+    <description></description>
+    <name>Ndebele North</name>
+    <native>isiNdebele</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="679762861d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:15</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:15</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>110</size>
+      <published>2006-07-27 17:36:15</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>111</id>
+    <locale></locale>
+    <code>na</code>
+    <description></description>
+    <name>Ndebele South</name>
+    <native>Nd&amp;#xE9;b&amp;#xE9;l&amp;#xE9;</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="67a065161d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:15</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:15</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>99</size>
+      <published>2006-07-27 17:36:15</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>112</id>
+    <locale></locale>
+    <code>na</code>
+    <description></description>
+    <name>Ndonga</name>
+    <native>Owambo</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="67a1b7e01d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:15</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:15</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>111</size>
+      <published>2006-07-27 17:36:15</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>113</id>
+    <locale></locale>
+    <code>ne</code>
+    <description></description>
+    <name>Nepali</name>
+    <native>&amp;#x928;&amp;#x947;&amp;#x92A;&amp;#x93E;&amp;#x932;&amp;#x940;</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="67ab49861d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:15</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:15</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>105</size>
+      <published>2006-07-27 17:36:15</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>114</id>
+    <locale></locale>
+    <code>se</code>
+    <description></description>
+    <name>Northern Sami</name>
+    <native>s&amp;#xE1;mi</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="67acf7681d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:15</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:15</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>117</size>
+      <published>2006-07-27 17:36:15</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>115</id>
+    <locale></locale>
+    <code>nb</code>
+    <description></description>
+    <name>Norwegian Bokm&amp;#xE5;l</name>
+    <native>Norsk Bokm&amp;#xE5;l</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="67ae5aae1d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:15</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:15</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>92</size>
+      <published>2006-07-27 17:36:15</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>116</id>
+    <locale></locale>
+    <code>nl</code>
+    <description></description>
+    <name>Dutch</name>
+    <native></native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="67d20d1e1d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:16</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:16</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>117</size>
+      <published>2006-07-27 17:36:16</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>117</id>
+    <locale></locale>
+    <code>nn</code>
+    <description></description>
+    <name>Norwegian Nynorsk</name>
+    <native>Norsk Nynorsk</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="67d3a17e1d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:16</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:16</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>101</size>
+      <published>2006-07-27 17:36:16</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>118</id>
+    <locale></locale>
+    <code>no</code>
+    <description></description>
+    <name>Norwegian</name>
+    <native>Norsk</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="67d654c81d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:16</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:16</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>101</size>
+      <published>2006-07-27 17:36:16</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>119</id>
+    <locale></locale>
+    <code>oc</code>
+    <description></description>
+    <name>Occitan</name>
+    <native>Occitan</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="67e5ca661d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:16</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:16</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>117</size>
+      <published>2006-07-27 17:36:16</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>120</id>
+    <locale></locale>
+    <code>oj</code>
+    <description></description>
+    <name>Ojibwa</name>
+    <native>&amp;#x140A;&amp;#x14C2;&amp;#x1511;&amp;#x14C7;&amp;#x142F;&amp;#x14A7;&amp;#x140F;&amp;#x1423;</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="67e705161d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:16</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:16</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>107</size>
+      <published>2006-07-27 17:36:16</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>121</id>
+    <locale></locale>
+    <code>or</code>
+    <description></description>
+    <name>Oriya</name>
+    <native>&amp;#xB13;&amp;#xB21;&amp;#xB3C;&amp;#xB3F;&amp;#xB06;</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="67e88d0a1d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:16</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:16</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>104</size>
+      <published>2006-07-27 17:36:16</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>122</id>
+    <locale></locale>
+    <code>om</code>
+    <description></description>
+    <name>Oromo</name>
+    <native>Afaan Oromoo</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="67f631261d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:16</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:16</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>114</size>
+      <published>2006-07-27 17:36:16</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>123</id>
+    <locale></locale>
+    <code>os</code>
+    <description></description>
+    <name>Ossetian</name>
+    <native>&amp;#x438;&amp;#x440;&amp;#x43E;&amp;#x43D; &amp;#x4D5;&amp;#x432;&amp;#x437;&amp;#x430;&amp;#x433;</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="67f7759a1d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:16</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:16</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>103</size>
+      <published>2006-07-27 17:36:16</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>124</id>
+    <locale></locale>
+    <code>pi</code>
+    <description></description>
+    <name>Pali</name>
+    <native>&amp;#x92A;&amp;#x93E;&amp;#x932;&amp;#x93F;</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="67f919401d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:16</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:16</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>99</size>
+      <published>2006-07-27 17:36:16</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>125</id>
+    <locale></locale>
+    <code>pl</code>
+    <description></description>
+    <name>Polish</name>
+    <native>Polski</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="68048b861d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:16</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:16</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>107</size>
+      <published>2006-07-27 17:36:16</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>126</id>
+    <locale></locale>
+    <code>pt</code>
+    <description></description>
+    <name>Portuguese</name>
+    <native>Portugu&amp;#xEA;s</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="6805d04a1d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:16</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:16</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>113</size>
+      <published>2006-07-27 17:36:16</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>127</id>
+    <locale></locale>
+    <code>pa</code>
+    <description></description>
+    <name>Punjabi</name>
+    <native>&amp;#xA2A;&amp;#xA70;&amp;#xA1C;&amp;#xA3E;&amp;#xA2C;&amp;#xA40; </native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="680e798e1d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:16</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:16</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>99</size>
+      <published>2006-07-27 17:36:16</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>128</id>
+    <locale></locale>
+    <code>ps</code>
+    <description></description>
+    <name>Pushto</name>
+    <native>&amp;#x67E;&amp;#x69A;&amp;#x62A;</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="680fc1cc1d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:16</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:16</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>103</size>
+      <published>2006-07-27 17:36:16</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>129</id>
+    <locale></locale>
+    <code>qu</code>
+    <description></description>
+    <name>Quechua</name>
+    <native>Runa Simi</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="681129d61d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:16</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:16</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>118</size>
+      <published>2006-07-27 17:36:16</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>130</id>
+    <locale></locale>
+    <code>rm</code>
+    <description></description>
+    <name>Raeto-Romance</name>
+    <native>Rumantsch grischun</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="681d3a781d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:16</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:16</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>103</size>
+      <published>2006-07-27 17:36:16</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>131</id>
+    <locale></locale>
+    <code>ro</code>
+    <description></description>
+    <name>Romanian</name>
+    <native>Rom&amp;#xE2;n&amp;#x103;</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="681e901c1d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:16</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:16</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>99</size>
+      <published>2006-07-27 17:36:16</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>132</id>
+    <locale></locale>
+    <code>rn</code>
+    <description></description>
+    <name>Rundi</name>
+    <native>Kirundi</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="6820019a1d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:16</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:16</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>117</size>
+      <published>2006-07-27 17:36:16</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>133</id>
+    <locale></locale>
+    <code>ru</code>
+    <description></description>
+    <name>Russian</name>
+    <native>&amp;#x440;&amp;#x443;&amp;#x441;&amp;#x441;&amp;#x43A;&amp;#x438;&amp;#x439; &amp;#x44F;&amp;#x437;&amp;#x44B;&amp;#x43A;</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="682d96d41d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:16</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:16</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>110</size>
+      <published>2006-07-27 17:36:16</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>134</id>
+    <locale></locale>
+    <code>sm</code>
+    <description></description>
+    <name>Samoan</name>
+    <native>gagana fa'a Samoa</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="682f06221d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:16</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:16</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>111</size>
+      <published>2006-07-27 17:36:16</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>135</id>
+    <locale></locale>
+    <code>sg</code>
+    <description></description>
+    <name>Sango</name>
+    <native>y&amp;#xE2;ng&amp;#xE2; t&amp;#xEE; s&amp;#xE4;ng&amp;#xF6;</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="6842d80a1d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:16</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:16</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>122</size>
+      <published>2006-07-27 17:36:16</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>136</id>
+    <locale></locale>
+    <code>sa</code>
+    <description></description>
+    <name>Sanskrit</name>
+    <native>&amp;#x938;&amp;#x902;&amp;#x938;&amp;#x94D;&amp;#x915;&amp;#x943;&amp;#x924;&amp;#x92E;&amp;#x94D;</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="684409961d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:16</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:16</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>101</size>
+      <published>2006-07-27 17:36:16</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>137</id>
+    <locale></locale>
+    <code>sc</code>
+    <description></description>
+    <name>Sardinian</name>
+    <native>sardu</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="684593561d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:16</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:16</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>102</size>
+      <published>2006-07-27 17:36:16</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>138</id>
+    <locale></locale>
+    <code>gd</code>
+    <description></description>
+    <name>Gaelic</name>
+    <native>G&amp;#xE0;idhlig</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="68532b2e1d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:17</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:17</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>117</size>
+      <published>2006-07-27 17:36:17</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>139</id>
+    <locale></locale>
+    <code>sr</code>
+    <description></description>
+    <name>Serbian</name>
+    <native>&amp;#x441;&amp;#x440;&amp;#x43F;&amp;#x441;&amp;#x43A;&amp;#x438; &amp;#x458;&amp;#x435;&amp;#x437;&amp;#x438;&amp;#x43A;</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="6854c5d81d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:17</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:17</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>100</size>
+      <published>2006-07-27 17:36:17</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>140</id>
+    <locale></locale>
+    <code>sn</code>
+    <description></description>
+    <name>Shona</name>
+    <native>chiShona</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="6857de1c1d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:17</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:17</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>103</size>
+      <published>2006-07-27 17:36:17</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>141</id>
+    <locale></locale>
+    <code>ii</code>
+    <description></description>
+    <name>Sichuan Yi</name>
+    <native>&amp;#xA187;&amp;#xA259;</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="6861c9181d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:17</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:17</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>134</size>
+      <published>2006-07-27 17:36:17</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>142</id>
+    <locale></locale>
+    <code>sd</code>
+    <description></description>
+    <name>Sindhi</name>
+    <native>&amp;#x633;&amp;#x646;&amp;#x68C;&amp;#x64A;&amp;#x60C; &amp;#x633;&amp;#x646;&amp;#x62F;&amp;#x6BE;&amp;#x6CC;, &amp;#x938;&amp;#x93F;&amp;#x928;&amp;#x94D;&amp;#x927;&amp;#x940;</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="68631a521d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:17</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:17</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>111</size>
+      <published>2006-07-27 17:36:17</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>143</id>
+    <locale></locale>
+    <code>si</code>
+    <description></description>
+    <name>Sinhalese</name>
+    <native>&amp;#xDC3;&amp;#xDD2;&amp;#xD82;&amp;#xDC4;&amp;#xDBD;</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="6864918e1d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:17</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:17</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>104</size>
+      <published>2006-07-27 17:36:17</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>144</id>
+    <locale></locale>
+    <code>sk</code>
+    <description></description>
+    <name>Slovak</name>
+    <native>sloven&amp;#x10D;ina</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="6865d3781d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:17</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:17</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>109</size>
+      <published>2006-07-27 17:36:17</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>145</id>
+    <locale></locale>
+    <code>sl</code>
+    <description></description>
+    <name>Slovenian</name>
+    <native>sloven&amp;#x161;&amp;#x10D;ina</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="68736efc1d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:17</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:17</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>116</size>
+      <published>2006-07-27 17:36:17</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>146</id>
+    <locale></locale>
+    <code>so</code>
+    <description></description>
+    <name>Somali</name>
+    <native>Soomaaliga; af Soomaali</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="6874deea1d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:17</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:17</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>99</size>
+      <published>2006-07-27 17:36:17</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>147</id>
+    <locale></locale>
+    <code>st</code>
+    <description></description>
+    <name>Sotho</name>
+    <native>seSotho</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="6876456e1d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:17</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:17</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>106</size>
+      <published>2006-07-27 17:36:17</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>148</id>
+    <locale></locale>
+    <code>su</code>
+    <description></description>
+    <name>Sundanese</name>
+    <native>basa Sunda</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="687784881d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:17</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:17</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>103</size>
+      <published>2006-07-27 17:36:17</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>149</id>
+    <locale></locale>
+    <code>sw</code>
+    <description></description>
+    <name>Swahili</name>
+    <native>kiswahili</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="68833abc1d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:17</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:17</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>99</size>
+      <published>2006-07-27 17:36:17</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>150</id>
+    <locale></locale>
+    <code>ss</code>
+    <description></description>
+    <name>Swati</name>
+    <native>siSwati</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="68847e2c1d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:17</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:17</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>101</size>
+      <published>2006-07-27 17:36:17</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>151</id>
+    <locale></locale>
+    <code>sv</code>
+    <description></description>
+    <name>Swedish</name>
+    <native>Svenska</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="688f496a1d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:17</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:17</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>101</size>
+      <published>2006-07-27 17:36:17</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>152</id>
+    <locale></locale>
+    <code>sh</code>
+    <description></description>
+    <name>Serbo-Croatian</name>
+    <native></native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="6890888e1d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:17</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:17</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>100</size>
+      <published>2006-07-27 17:36:17</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>153</id>
+    <locale></locale>
+    <code>sq</code>
+    <description></description>
+    <name>Albanian</name>
+    <native>Shqip</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="68922eb41d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:17</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:17</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>101</size>
+      <published>2006-07-27 17:36:17</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>154</id>
+    <locale></locale>
+    <code>tl</code>
+    <description></description>
+    <name>Tagalog</name>
+    <native>Tagalog</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="689d9e8e1d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:17</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:17</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>108</size>
+      <published>2006-07-27 17:36:17</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>155</id>
+    <locale></locale>
+    <code>ty</code>
+    <description></description>
+    <name>Tahitian</name>
+    <native>te reo Tahiti</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="689fbfb61d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:17</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:17</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>104</size>
+      <published>2006-07-27 17:36:17</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>156</id>
+    <locale></locale>
+    <code>tg</code>
+    <description></description>
+    <name>Tajik</name>
+    <native>&amp;#x442;&amp;#x43E;&amp;#x4B7;&amp;#x438;&amp;#x43A;&amp;#x4E3;</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="68a11bea1d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:17</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:17</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>107</size>
+      <published>2006-07-27 17:36:17</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>157</id>
+    <locale></locale>
+    <code>ta</code>
+    <description></description>
+    <name>Tamil</name>
+    <native>&amp;#xBA4;&amp;#xBAE;&amp;#xBBF;&amp;#xBB4;&amp;#xBCD;</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="68a7fd021d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:17</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:17</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>106</size>
+      <published>2006-07-27 17:36:17</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>158</id>
+    <locale></locale>
+    <code>tt</code>
+    <description></description>
+    <name>Tatar</name>
+    <native>&amp;#x442;&amp;#x430;&amp;#x442;&amp;#x430;&amp;#x440;&amp;#x447;&amp;#x430;</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="68a943921d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:17</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:17</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>111</size>
+      <published>2006-07-27 17:36:17</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>159</id>
+    <locale></locale>
+    <code>te</code>
+    <description></description>
+    <name>Telugu</name>
+    <native>&amp;#xC24;&amp;#xC46;&amp;#xC32;&amp;#xC41;&amp;#xC17;&amp;#xC41;</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="68b6b32e1d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:17</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:17</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>115</size>
+      <published>2006-07-27 17:36:17</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>160</id>
+    <locale></locale>
+    <code>bo</code>
+    <description></description>
+    <name>Tibetan</name>
+    <native>&amp;#xF56;&amp;#xF7C;&amp;#xF51;&amp;#xF0B;&amp;#xF61;&amp;#xF72;&amp;#xF42;</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="68b7f7e81d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:17</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:17</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>107</size>
+      <published>2006-07-27 17:36:17</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>161</id>
+    <locale></locale>
+    <code>ti</code>
+    <description></description>
+    <name>Tigrinya</name>
+    <native>&amp;#x1275;&amp;#x130D;&amp;#x122D;&amp;#x129B;</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="68b961f01d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:17</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:17</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>103</size>
+      <published>2006-07-27 17:36:17</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>162</id>
+    <locale></locale>
+    <code>to</code>
+    <description></description>
+    <name>Tongan</name>
+    <native>faka-Tonga</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="68c4ea5c1d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:17</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:17</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>101</size>
+      <published>2006-07-27 17:36:17</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>163</id>
+    <locale></locale>
+    <code>ts</code>
+    <description></description>
+    <name>Tsonga</name>
+    <native>xiTsonga</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="68c639521d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:17</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:17</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>101</size>
+      <published>2006-07-27 17:36:17</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>164</id>
+    <locale></locale>
+    <code>tn</code>
+    <description></description>
+    <name>Tswana</name>
+    <native>seTswana</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="68c7b0de1d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:17</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:17</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>108</size>
+      <published>2006-07-27 17:36:17</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>165</id>
+    <locale></locale>
+    <code>tk</code>
+    <description></description>
+    <name>Turkmen</name>
+    <native>&amp;#x422;&amp;#x4AF;&amp;#x440;&amp;#x43A;&amp;#x43C;&amp;#x435;&amp;#x43D;</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="68d36c9e1d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:17</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:17</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>90</size>
+      <published>2006-07-27 17:36:17</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>166</id>
+    <locale></locale>
+    <code>tw</code>
+    <description></description>
+    <name>Twi</name>
+    <native></native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="68d4a64a1d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:17</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:17</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>107</size>
+      <published>2006-07-27 17:36:17</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>167</id>
+    <locale></locale>
+    <code>ug</code>
+    <description></description>
+    <name>Uighur</name>
+    <native>&amp;#x626;&amp;#x6C7;&amp;#x64A;&amp;#x63A;&amp;#x6C7;&amp;#x631;&amp;#x686;</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="68dd1adc1d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:17</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:17</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>125</size>
+      <published>2006-07-27 17:36:17</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>168</id>
+    <locale></locale>
+    <code>uk</code>
+    <description></description>
+    <name>Ukrainian</name>
+    <native>&amp;#x443;&amp;#x43A;&amp;#x440;&amp;#x430;&amp;#x457;&amp;#x43D;&amp;#x441;&amp;#x44C;&amp;#x43A;&amp;#x430; &amp;#x43C;&amp;#x43E;&amp;#x432;&amp;#x430;</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="68de78141d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:17</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:17</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>99</size>
+      <published>2006-07-27 17:36:17</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>169</id>
+    <locale></locale>
+    <code>ur</code>
+    <description></description>
+    <name>Urdu</name>
+    <native>&amp;#x627;&amp;#x631;&amp;#x62F;&amp;#x648;</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="68dfe1221d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:17</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:17</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>102</size>
+      <published>2006-07-27 17:36:17</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>170</id>
+    <locale></locale>
+    <code>uz</code>
+    <description></description>
+    <name>Uzbek</name>
+    <native>&amp;#x40E;&amp;#x437;&amp;#x431;&amp;#x435;&amp;#x43A;</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="68e126361d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:17</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:17</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>103</size>
+      <published>2006-07-27 17:36:17</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>171</id>
+    <locale></locale>
+    <code>ve</code>
+    <description></description>
+    <name>Venda</name>
+    <native>tshiVen&amp;#x1E13;a</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="68ecef3e1d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:18</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:18</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>111</size>
+      <published>2006-07-27 17:36:18</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>172</id>
+    <locale></locale>
+    <code>vi</code>
+    <description></description>
+    <name>Vietnamese</name>
+    <native>Ti&amp;#x1EBF;ng Vi&amp;#x1EC7;t</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="68ee33d01d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:18</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:18</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>103</size>
+      <published>2006-07-27 17:36:18</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>173</id>
+    <locale></locale>
+    <code>vo</code>
+    <description></description>
+    <name>Volap&amp;#xFC;k</name>
+    <native>Volap&amp;#xFC;k</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="68f5adb81d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:18</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:18</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>99</size>
+      <published>2006-07-27 17:36:18</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>174</id>
+    <locale></locale>
+    <code>wa</code>
+    <description></description>
+    <name>Walloon</name>
+    <native>walon</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="68f70e7e1d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:18</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:18</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>99</size>
+      <published>2006-07-27 17:36:18</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>175</id>
+    <locale></locale>
+    <code>cy</code>
+    <description></description>
+    <name>Welsh</name>
+    <native>Cymraeg</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="68ff94681d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:18</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:18</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>97</size>
+      <published>2006-07-27 17:36:18</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>176</id>
+    <locale></locale>
+    <code>wo</code>
+    <description></description>
+    <name>Wolof</name>
+    <native>Wolof</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="6900fe3e1d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:18</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:18</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>92</size>
+      <published>2006-07-27 17:36:18</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>177</id>
+    <locale></locale>
+    <code>xh</code>
+    <description></description>
+    <name>Xhosa</name>
+    <native></native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="690294241d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:18</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:18</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>106</size>
+      <published>2006-07-27 17:36:18</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>178</id>
+    <locale></locale>
+    <code>yi</code>
+    <description></description>
+    <name>Yiddish</name>
+    <native>&amp;#x5D9;&amp;#x5D9;&amp;#x5B4;&amp;#x5D3;&amp;#x5D9;&amp;#x5E9;</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="690e17d61d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:18</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:18</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>101</size>
+      <published>2006-07-27 17:36:18</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>179</id>
+    <locale></locale>
+    <code>yo</code>
+    <description></description>
+    <name>Yoruba</name>
+    <native>Yor&amp;#xF9;b&amp;#xE1;</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="690f531c1d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:18</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:18</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>93</size>
+      <published>2006-07-27 17:36:18</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>180</id>
+    <locale></locale>
+    <code>za</code>
+    <description></description>
+    <name>Zhuang</name>
+    <native></native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="6910ccd81d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:18</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:18</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>112</size>
+      <published>2006-07-27 17:36:18</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>181</id>
+    <locale></locale>
+    <code>th</code>
+    <description></description>
+    <name>Thai</name>
+    <native>&amp;#xE20;&amp;#xE32;&amp;#xE29;&amp;#xE32;&amp;#xE44;&amp;#xE17;&amp;#xE22;</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="691c62321d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:18</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:18</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>102</size>
+      <published>2006-07-27 17:36:18</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>182</id>
+    <locale></locale>
+    <code>tr</code>
+    <description></description>
+    <name>Turkish</name>
+    <native>T&amp;#xFC;rk&amp;#xE7;e</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="691dc0781d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:18</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:18</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>96</size>
+      <published>2006-07-27 17:36:18</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>183</id>
+    <locale></locale>
+    <code>iu</code>
+    <description></description>
+    <name>Inuktitut</name>
+    <native></native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="691f2aa81d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:18</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:18</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>94</size>
+      <published>2006-07-27 17:36:18</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>184</id>
+    <locale></locale>
+    <code>zh</code>
+    <description></description>
+    <name>Chinese</name>
+    <native>&amp;#x4E2D;&amp;#x6587;</native>
+  </midgard_language>
+
+  <midgard_language purge="no" guid="692ab5121d9611db8191d7401a2b650e650e">
+    <metadata>
+      <creator></creator>
+      <created>2006-07-27 17:36:18</created>
+      <revisor></revisor>
+      <revised>2006-07-27 17:36:18</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>98</size>
+      <published>2006-07-27 17:36:18</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+    </metadata>
+    <action></action>
+    <id>185</id>
+    <locale></locale>
+    <code>zu</code>
+    <description></description>
+    <name>Zulu</name>
+    <native>isiZulu</native>
+  </midgard_language>
+
+  <midgard_language purge="no" action="created" guid="1de75e86e7f2d5675e811deac9149c6b77cd997d997">
+    <metadata>
+      <creator></creator>
+      <created>2009-07-21 11:20:01</created>
+      <revisor></revisor>
+      <revised>2009-07-21 11:20:01</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked></locked>
+      <approver></approver>
+      <approved></approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart></schedulestart>
+      <scheduleend></scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>146</size>
+      <published>2009-07-21 11:20:01</published>
+      <score>0</score>
+      <imported></imported>
+      <exported></exported>
+      <deleted>0</deleted>
+      <islocked>0</islocked>
+      <isapproved>0</isapproved>
+    </metadata>
+    <action></action>
+    <name>Italian</name>
+    <id>186</id>
+    <native>italiano</native>
+    <description></description>
+    <code>it</code>
+    <locale></locale>
+  </midgard_language>
+
+</midgard_object>
