@@ -2,22 +2,22 @@
 
 class RagnaroekPHPCRTransition implements Transition
 {
-    private $session = null;
+    private $defaultSession = null;
     private $mgd = null;
     private $contentManager = null;
     private $workspaceManager = null;
     private $fixturePath = null;
 
-    public function __construct($session, $mgd, $fixturePath)
+    public function __construct($defaultSession, $mgd, $fixturePath)
     {
-        $this->session = $session;
+        $this->defaultSession = $defaultSession;
         $this->mgd = $mgd;
         $this->fixturePath = $fixturePath;
     }
 
-    public function getPHPCRSession()
+    public function getDefaultPHPCRSession()
     {
-        return $this->session;
+        return $this->defaultSession;
     }
 
     public function getMidgardConnection()

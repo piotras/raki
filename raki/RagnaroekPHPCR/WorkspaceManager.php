@@ -96,7 +96,7 @@ class RagnaroekPHPCRWorkspaceManager implements WorkspaceManager
 
     public function createWorkspace($name, StorableWorkspace $parent = null)
     {
-        $phpcrSession = $this->getTransition()->getPHPCRSession();
+        $phpcrSession = $this->getTransition()->getDefaultPHPCRSession();
         $phpcrSession->getWorkspace()->createWorkspace($name);
     }
 
@@ -110,7 +110,7 @@ class RagnaroekPHPCRWorkspaceManager implements WorkspaceManager
 
     public function getStoredWorkspacesNames()
     {
-        return $this->getTransition()->getPHPCRSession->getWorkspace()->getAccessibleWorkspaceNames();
+        return $this->getTransition()->getDefaultPHPCRSession->getWorkspace()->getAccessibleWorkspaceNames();
     }
 
     public function getStoredWorkspacesPaths()
