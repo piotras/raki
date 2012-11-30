@@ -7,11 +7,6 @@ class RagnaroekPHPCRStorableWorkspace implements StorableWorkspace
 
     }
 
-    public function getProperty($name)
-    {
-        throw new Exception("Not implemented");
-    }
-
     public function getName()
     {
         throw new Exception("Not implemented");
