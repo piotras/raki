@@ -111,6 +111,7 @@ class RagnaroekPHPCRContentManager implements ContentManager
         $this->getXmlWriter()->save();
 
         /* Import document using currrent session */
+        /* TODO, create new session if data is imported per sitegroup */
         $this->getTransition()->getDefaultPHPCRSession()->importXML("/", $this->getXmlWriter()->getFilePath());
     }
 
