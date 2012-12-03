@@ -1,7 +1,10 @@
 {
     "name": "Midgard/Raki",
     "require": {
-        "lespoilus/spyc": "dev-master"
+        "lespoilus/spyc": "dev-master",
+        "phpcr/phpcr": ">=2.1.0-beta5",
+        "phpcr/phpcr-utils": "@dev",
+        "midgard/phpcr": "dev-master"
     },
     "authors": [
         {
