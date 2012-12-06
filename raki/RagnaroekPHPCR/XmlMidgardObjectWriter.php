@@ -10,7 +10,7 @@ class XmlMidgardObjectWriter
     private $filePath = null;
     private $xmlRootNode = null; 
 
-    public function __construct()
+    public function __construct($filePath, $typeName)
     {
         $this->xmlDoc = new DOMDocument('1.0', 'UTF-8');
         $this->xmlDoc->formatOutput = true;
@@ -19,8 +19,9 @@ class XmlMidgardObjectWriter
         $this->xmlRootNode = self::createNodeElement();
         $this->xmlDoc->appendChild($this->xmlRootNode);
         $nodeAttr = $this->xmlDoc->createAttributeNS($this->ns, $this->prefix . ":" . 'name');
-        $nodeAttr->value = "Midgard";
+        $nodeAttr->value = $typeName;
         $this->xmlRootNode->appendChild($nodeAttr);
+        $this->filePath = $filePath;
     }
 
     private function createNodeElement()
@@ -30,7 +31,7 @@ class XmlMidgardObjectWriter
 
     public function getRootNode()
     {
-        return $this->xmlDoc; 
+        return $this->xmlRootNode; 
     }   
 
     public function addTypeNode($typeName)
@@ -63,7 +64,7 @@ class XmlMidgardObjectWriter
 
     private function addValue($xmlNode, $value)
     {
-        $pValue = $this->xmlDoc->createElementNS($this->ns, $this->prefix . ":" . 'value', $value);
+        $pValue = $this->xmlDoc->createElementNS($this->ns, $this->prefix . ":" . 'value', htmlentities($value));
         $xmlNode->appendChild($pValue);
     }
 
@@ -73,8 +74,10 @@ class XmlMidgardObjectWriter
         {
             case MGD_TYPE_STRING:
             case MGD_TYPE_LONGTEXT:
-            case MGD_TYPE_GUID:
                 return "String";
+
+            case MGD_TYPE_GUID:
+                return "Reference";
 
             case MGD_TYPE_UINT:
             case MGD_TYPE_INT:
@@ -167,7 +170,7 @@ class XmlMidgardObjectWriter
 
     public function save()
     {
-        echo $this->xmlDoc->saveXML();
+        //echo $this->xmlDoc->saveXML();
         $this->xmlDoc->save($this->getFilePath());
     } 
 }
