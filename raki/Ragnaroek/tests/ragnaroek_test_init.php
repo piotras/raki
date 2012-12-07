@@ -11,7 +11,7 @@ if (!extension_loaded('mysql')) {
     throw new Exception('MySQL extension not loaded!');
 }
 
-exec (__DIR__ . '/bootstrap.sh');
+passthru(__DIR__ . '/bootstrap.sh');
 
 //PHPUnit 3.4 compat
 if (method_exists('PHPUnit_Util_Filter', 'addDirectoryToFilter')) {
@@ -36,9 +36,7 @@ $mgd->open_config ($config);
 /* Initialize storage and content */
 RakiTestContent::prepareContent();
 
-spl_autoload_register(function($class) {
-    include dirname(__FILE__) . '/../../' . str_replace('Ragnaroek', 'Ragnaroek/', $class)  . '.php';
-});
+require __DIR__ . '/../vendor/autoload.php';
 
 class RakiTest extends PHPUnit_Framework_TestCase
 {
@@ -58,7 +56,7 @@ class RakiTest extends PHPUnit_Framework_TestCase
             $config->dbuser = $GLOBALS['midgard2.configuration.db.dbuser'];
             $config->dbpass = $GLOBALS['midgard2.configuration.db.dbpass'];
 
-            $this->transition = new RagnaroekTransition(MidgardConnection::get_instance(), $config, __DIR__ . '/fixtures/', __DIR__ . '/../data/ragnaroek/schema');
+            $this->transition = new \Ragnaroek\Ratatoskr\Transition(MidgardConnection::get_instance(), $config, __DIR__ . '/fixtures/', __DIR__ . '/../data/ragnaroek/schema');
         }
 
         return $this->transition;
@@ -67,6 +65,6 @@ class RakiTest extends PHPUnit_Framework_TestCase
     static public function getFixture($name = 'shared')
     {
         $yaml = get_called_class() . '.yaml';
-        return new ResultFixture( __DIR__ . '/fixtures/' . $yaml, $name);
+        return new \CRTransition\ResultFixture( __DIR__ . '/fixtures/' . $yaml, $name);
     }
 }
