@@ -79,14 +79,14 @@ class ContentManager implements \CRTransition\ContentManager
             $ws = $workspaceManager->getMidgardWorkspaceByPath($mlPath);
             $lang = $workspaceManager->getLegacyMidgardType($mlPath);
             $q = $sts->getSQLUpdateTypePre($typeName, $ws->id, $sg->id, $lang->id);
-            //echo $q;
+            //echo $q . "\n";
             $mysql->query($q);
 
         }
         /* Delete content with default language */
         /* Avoid duplicates in following bulk update */
         $q = $sts->getSQLDeleteTypePre($typeName, $dLang->id);
-        //echo $q;
+        //echo $q . "\n";
         $mysql->query($q);
 
 
@@ -98,7 +98,7 @@ class ContentManager implements \CRTransition\ContentManager
         $languages = array();
         foreach ($paths as $path) {
             $legacy = $workspaceManager->getLegacyMidgardType($path);
-            if ($legacy instanceof midgard_language) {
+            if ($legacy instanceof \midgard_language) {
                 if ($legacy->id == 0) {
                     continue;
                 }
@@ -111,14 +111,14 @@ class ContentManager implements \CRTransition\ContentManager
         foreach ($sitegroups as $sg) {
             foreach ($languages as $workspaceID => $langID) {
                 $q = $sts->getSQLInsertType($typeName, $sg->id, $workspaceID, $langID);
-                //echo $q;
+                //echo $q . "\n";
                 $mysql->query($q);
             }
         }
 
         /* Set unique object's id in workspace */
         $q = $sts->getSQLUpdateTypePost($typeName);
-        //echo $q;
+        //echo $q . "\n";
         $mysql->query($q);
     }
 
