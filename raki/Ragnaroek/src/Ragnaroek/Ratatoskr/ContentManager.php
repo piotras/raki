@@ -1,6 +1,15 @@
 <?php
 
-class RagnaroekContentManager implements ContentManager 
+namespace Ragnaroek\Ratatoskr;
+
+use \MidgardConnection;
+use \MidgardQueryStorage;
+use \MidgardQuerySelect;
+use \MidgardQueryProperty;
+use \MidgardQueryValue;
+use \MidgardQueryConstraint;
+
+class ContentManager implements \CRTransition\ContentManager 
 {
     private $transition = null;
     private $mgdSchemaToSQL = null;
@@ -17,7 +26,7 @@ class RagnaroekContentManager implements ContentManager
 
     public function getPossibleTypeNames()
     {
-        $re = new ReflectionExtension("midgard2");
+        $re = new \ReflectionExtension("midgard2");
         $names = array();
         foreach ($re->getClasses() as $class_ref) {
 
@@ -45,7 +54,7 @@ class RagnaroekContentManager implements ContentManager
     private function getMgdSchemaToSQL()
     {
         if ($this->mgdSchemaToSQL == null) {
-            $this->mgdSchemaToSQL = new RagnaroekMgdSchemaToSQL();
+            $this->mgdSchemaToSQL = new \Ragnaroek\Ratatoskr\MgdSchemaToSQL();
             $files = $this->getTransition()->getSchemaPaths();
             foreach ($files as $file) {
                 $this->mgdSchemaToSQL->addFile($file);
@@ -131,7 +140,7 @@ class RagnaroekContentManager implements ContentManager
         return $stroedTypes;
     }
 
-    public function getItemByPath(StorableWorkspace $workspace, $typeName, $relPath)
+    public function getItemByPath(\CRTransition\StorableWorkspace $workspace, $typeName, $relPath)
     {
         $mgd = MidgardConnection::get_instance();
 
@@ -156,7 +165,7 @@ class RagnaroekContentManager implements ContentManager
         //$mgd->set_loglevel("warn");
         if ($qs->get_results_count() > 0) {
             $objects = $qs->list_objects();
-            $item = new RagnaroekStorableItem($objects[0]);
+            $item = new \Ragnaroek\Ratatoskr\StorableItem($objects[0]);
         }
 
         if ($wsInitial != null) {

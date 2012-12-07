@@ -1,6 +1,19 @@
 <?php
 
-class RagnaroekWorkspaceManager implements WorkspaceManager 
+namespace Ragnaroek\Ratatoskr;
+
+use \MidgardConnection;
+use \MidgardQueryStorage;
+use \MidgardQuerySelect;
+use \MidgardQueryConstraint;
+use \MidgardQueryValue;
+use \MidgardQueryProperty;
+use \MidgardSqlQuerySelectData;
+use \MidgardSqlQueryColumn;
+use \MidgardWorkspace;
+use \ReflectionExtension;
+
+class WorkspaceManager implements \CRTransition\WorkspaceManager 
 {
     private $default_sg_zero = 'SG0';
     private $default_language;
@@ -18,12 +31,12 @@ class RagnaroekWorkspaceManager implements WorkspaceManager
     {
         $this->mgd = MidgardConnection::get_instance();
         if ($default_language == null) {
-            $this->default_language = new midgard_language();
+            $this->default_language = new \midgard_language();
             $this->default_language->code = 'multilang';
         } else {
             $this->default_language = $this->getLangByCode($default_language);
         }
-        $this->default_sitegroup = new ragnaroek_sitegroup();
+        $this->default_sitegroup = new \ragnaroek_sitegroup();
         $this->transition = $transition;
     }
 
@@ -42,10 +55,10 @@ class RagnaroekWorkspaceManager implements WorkspaceManager
         $storage = new MidgardQueryStorage('midgard_language');
         $qs = new MidgardQuerySelect($storage);
         $qs->set_constraint(
-            new midgard_query_constraint(
-                new midgard_query_property('code'),
+            new MidgardQueryConstraint(
+                new MidgardQueryProperty('code'),
                 '=',
-                new midgard_query_value($code)
+                new MidgardQueryValue($code)
             )
         );
         $qs->execute();
@@ -62,7 +75,8 @@ class RagnaroekWorkspaceManager implements WorkspaceManager
         $re = new ReflectionExtension("midgard2");
         $names = array();
         foreach ($re->getClasses() as $class_ref) {
-            $class_mgd_ref = new midgard_reflection_class($class_ref->getName());
+            /* FIXME, use MidgardReflectionObject and standard reflection class */
+            $class_mgd_ref = new \midgard_reflection_class($class_ref->getName());
             $name = $class_mgd_ref->getName();
             if (!is_subclass_of ($name, 'MidgardDBObject')
                 || $class_mgd_ref->isAbstract()) {
@@ -117,7 +131,7 @@ class RagnaroekWorkspaceManager implements WorkspaceManager
             if ($lang == $this->default_language->id) {
                 continue;
             }
-            $this->languages[] = new midgard_language($lang);
+            $this->languages[] = new \midgard_language($lang);
         }
     }
 
@@ -206,7 +220,7 @@ class RagnaroekWorkspaceManager implements WorkspaceManager
     private function getMidgardWorkspaceManager()
     {
         if ($this->midgardWorkspaceManager == null) {
-            $this->midgardWorkspaceManager = new midgard_workspace_manager($this->mgd);
+            $this->midgardWorkspaceManager = new \midgard_workspace_manager($this->mgd);
         }
         return $this->midgardWorkspaceManager;
     }
@@ -261,7 +275,7 @@ class RagnaroekWorkspaceManager implements WorkspaceManager
         return $this->findLanguageByName($elements[$elements_count - 1]);
     }   
 
-    public function createWorkspace($name, StorableWorkspace $parent = null)
+    public function createWorkspace($name, \CRTransition\StorableWorkspace $parent = null)
     {
         $parent ? $parent_path = $parent->getPath() : $parent_path = '';
         $absPath = $parent_path . '/' . $name;
@@ -273,7 +287,7 @@ class RagnaroekWorkspaceManager implements WorkspaceManager
                 throw new Exception ("Can not create workspace at '{$absPath}' path. Not defined in possible workspaces");
             }
 
-        $ws = new midgard_workspace();
+        $ws = new MidgardWorkspace();
         $ws->name = $name;
         $this->getMidgardWorkspaceManager()->create_workspace($ws, $parent_path); 
 
@@ -320,7 +334,7 @@ class RagnaroekWorkspaceManager implements WorkspaceManager
                     $parent = $this->getStoredWorkspaceByPath($parent_path);
                 }
                 $this->createWorkspace($name, $parent);
-            } catch (Exception $e) {
+            } catch (\Exception $e) {
                 if ($e->getMessage() != "Failed to create workspace. WorkspaceStorage at path '{$path}' already exists") {
                     throw $e;
                 }
@@ -366,10 +380,10 @@ class RagnaroekWorkspaceManager implements WorkspaceManager
     {
         $ws = new MidgardWorkspace();
         if (!$this->getMidgardWorkspaceManager()->get_workspace_by_path($ws, $absPath)) {
-            throw new WorkspaceNotFoundException("Workspace doesn't exist at '{$absPath}' path");
+            throw new \CRTransition\WorkspaceNotFoundException("Workspace doesn't exist at '{$absPath}' path");
         }
 
-        return new RagnaroekStorableWorkspace($ws);
+        return new \Ragnaroek\Ratatoskr\StorableWorkspace($ws);
     }
 
     public function getStoredWorkspaceByName($name)

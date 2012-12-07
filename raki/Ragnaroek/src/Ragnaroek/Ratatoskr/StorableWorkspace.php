@@ -1,6 +1,10 @@
 <?php
 
-class RagnaroekStorableWorkspace implements StorableWorkspace
+namespace Ragnaroek\Ratatoskr;
+
+use \MidgardWorkspace;
+
+class StorableWorkspace implements \CRTransition\StorableWorkspace
 {
     private $workspace = null;
 
@@ -33,7 +37,7 @@ class RagnaroekStorableWorkspace implements StorableWorkspace
 
         $ret = array();
         foreach ($children as $child) {
-            $ret[] = new RagnaroekStorableWorkspace($child);
+            $ret[] = new \Ragnaroek\Ratatoskr\StorableWorkspace($child);
         }
 
         return $ret;

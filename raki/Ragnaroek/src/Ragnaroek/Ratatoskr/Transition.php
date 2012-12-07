@@ -1,6 +1,8 @@
 <?php
 
-class RagnaroekTransition implements Transition
+namespace Ragnaroek\Ratatoskr;
+
+class Transition implements \CRTransition\Transition
 {
     private $mgd = null;
     private $fixtureDir = null;
@@ -9,12 +11,12 @@ class RagnaroekTransition implements Transition
     private $workspaceManager = null;
     private $mysql;
     
-    public function __construct(MidgardConnection $mgd, $config, $fixtureDir, $schemaDir)
+    public function __construct(\MidgardConnection $mgd, $config, $fixtureDir, $schemaDir)
     {
         $this->mgd = $mgd;
         $this->fixtureDir = $fixtureDir;
         $this->schemaDir = $schemaDir;
-        $this->mysql = new RagnaroekMySQL($config->host, $config->database, $config->dbuser, $config->dbpass);
+        $this->mysql = new \Ragnaroek\Ratatoskr\MySQL($config->host, $config->database, $config->dbuser, $config->dbpass);
     }
 
     private function getFilePaths($dir, &$paths)
@@ -51,7 +53,7 @@ class RagnaroekTransition implements Transition
     public function getContentManager()
     {
         if ($this->contentManager == null) {
-            $this->contentManager = new RagnaroekContentManager($this);
+            $this->contentManager = new \Ragnaroek\Ratatoskr\ContentManager($this);
         }
 
         return $this->contentManager;
@@ -60,7 +62,7 @@ class RagnaroekTransition implements Transition
     public function getWorkspaceManager()
     {
         if ($this->workspaceManager == null) {
-            $this->workspaceManager = new RagnaroekWorkspaceManager($this);
+            $this->workspaceManager = new \Ragnaroek\Ratatoskr\WorkspaceManager($this);
         }
 
         return $this->workspaceManager;

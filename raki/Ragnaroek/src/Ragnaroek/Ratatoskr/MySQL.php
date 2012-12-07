@@ -1,6 +1,8 @@
 <?php
 
-class RagnaroekMySQL 
+namespace Ragnaroek\Ratatoskr;
+
+class MySQL 
 {
     private $cnc = null;
     private $result = null;

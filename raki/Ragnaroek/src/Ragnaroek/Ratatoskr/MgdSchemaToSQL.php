@@ -1,6 +1,8 @@
 <?php
 
-class RagnaroekMgdSchemaToSQL extends DomDocument
+namespace Ragnaroek\Ratatoskr;
+
+class MgdSchemaToSQL extends \DomDocument
 {
     const ATTR_NAME = 'name';
     const ATTR_TYPE = 'type';

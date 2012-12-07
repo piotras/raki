@@ -1,10 +1,12 @@
 <?php
 
-class RagnaroekStorableItem implements StorableItem
+namespace Ragnaroek\Ratatoskr;
+
+class StorableItem implements \CRTransition\StorableItem
 {
     private $midgardObject = null;
 
-    public function __construct(MidgardObject $contentObject)
+    public function __construct(\MidgardObject $contentObject)
     {
         $this->midgardObject = $contentObject;
     }
