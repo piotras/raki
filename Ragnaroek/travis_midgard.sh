@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ -n "$MIDGARD_EXT_VERSION:" ] ; then
-	MIDGARD_EXT_VERSION="ratatoskr"
+	MIDGARD_EXT_VERSION="master"
 fi
 
 # Install Pake
