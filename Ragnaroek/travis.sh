@@ -4,4 +4,4 @@
 wget -q http://getcomposer.org/composer.phar
 php composer.phar install --dev
 
-php -c midgard2.ini /usr/bin/phpunit -c tests/phpunit.xml.dist
+php -c midgard2.ini `which phpunit` -c tests/phpunit.xml.dist
