@@ -1,23 +1,41 @@
 <?php
 
-class RagnaroekPHPCRTransition implements Transition
+namespace RagnaroekPHPCR;
+
+class Transition implements Transition
 {
-    private $defaultSession = null;
     private $mgd = null;
     private $contentManager = null;
     private $workspaceManager = null;
     private $fixturePath = null;
+    private $phpcrRepositoryFactory = null;
+    private $phpcrRepository = null;
+    private $phpcrConfigurationKeys = null;
+    private $defaultPHPCRSession = null;
 
-    public function __construct($defaultSession, $mgd, $fixturePath)
+    public function __construct($phpcrRepositoryFactory, $phpcrConfigurationKeys, $mgd, $fixturePath)
     {
-        $this->defaultSession = $defaultSession;
+        $this->phpcrRepositoryFactory = $phpcrRepositoryFactory;
+        $this->phpcrConfigurationKeys = $phpcrConfigurationKeys;
         $this->mgd = $mgd;
         $this->fixturePath = $fixturePath;
     }
 
+    public function getPHPCRRepository()
+    {
+        if ($this->phpcrRepository == null) {
+            $this->phpcrRepository = $this->phpcrRepositoryFactory->getRepository($this->phpcrConfigurationKeys);
+        }
+
+        return $this->phpcrRepository;
+    }
+
     public function getDefaultPHPCRSession()
     {
-        return $this->defaultSession;
+        if ($this->defaultPHPCRSession == null) {
+            $this->defaultPHPCRSession = $this->phpcrRepository->login(null, "default");
+        }
+        return $this->defaultPHPCRSession;
     }
 
     public function getMidgardConnection()
