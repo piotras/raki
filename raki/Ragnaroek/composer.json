@@ -1,0 +1,30 @@
+{
+    "name": "midgard/ragnaroekratatoskr",
+    "type": "library",
+    "description": "Midgard Ragnaroek to Ratatoskr transition",
+    "keywords": ["transition", "contentrepository", "midgard", "midgard2"],
+    "homepage": "http://midgard-project.org/",
+    "license": "GNU LGPL",
+    "authors": [
+        {
+            "name": "Piotr Pokora",
+            "email": "piotrek.pokora@gmail.com",
+            "homepage": "http://blogs.nemein.com/people/piotras/"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.3.0",
+        "ext-midgard2": ">=12.09",
+        "midgard/crtransition": "dev-master"
+    },
+    "require-dev": {
+        "midgard/crtransition": "dev-master",
+        "ext-midgard2": ">=12.09"
+    },
+    "autoload": {
+        "psr-0": {
+            "Ragnaroek\\Ratatoskr\\": "src"
+        }
+    }
+}
