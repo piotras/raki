@@ -1,0 +1,32 @@
+{
+    "name": "midgard/ragnaroekphpcr",
+    "type": "library",
+    "description": "Midgard Ragnaroek to PHPCR transition",
+    "keywords": ["transition", "contentrepository", "midgard", "midgard2", "phpcr"],
+    "homepage": "http://midgard-project.org/",
+    "license": "GNU LGPL",
+    "authors": [
+        {
+            "name": "Piotr Pokora",
+            "email": "piotrek.pokora@gmail.com",
+            "homepage": "http://blogs.nemein.com/people/piotras/"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.3.0",
+        "phpcr/phpcr": ">=2.1.0-beta5",
+        "phpcr/phpcr-utils": "@dev",
+        "ext-midgard2": ">=12.09",
+        "midgard/crtransition": "dev-master"
+    },
+    "require-dev": {
+        "midgard/crtransition": "dev-master",
+        "ext-midgard2": ">=12.09"
+    },
+    "autoload": {
+        "psr-0": {
+            "Ragnaroek\\PHPCR\\": "src"
+        }
+    }
+}
