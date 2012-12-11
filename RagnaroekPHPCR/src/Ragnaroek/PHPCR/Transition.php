@@ -1,8 +1,8 @@
 <?php
 
-namespace RagnaroekPHPCR;
+namespace Ragnaroek\PHPCR;
 
-class Transition implements Transition
+class Transition implements \CRTransition\Transition
 {
     private $mgd = null;
     private $contentManager = null;

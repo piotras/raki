@@ -1,6 +1,16 @@
 <?php
 
-class RagnaroekPHPCRContentExporter 
+namespace Ragnaroek\PHPCR;
+
+use \MidgardReflectorObject;
+use \MidgardQueryStorage;
+use \MidgardQuerySelect;
+use \MidgardQueryValue;
+use \MidgardQueryProperty;
+use \MidgardQueryConstraint;
+use \MidgardQueryConstraintGroup;
+
+class ContentExporter 
 {
     private $exportDir = null;
     private $sitegroups = null;
@@ -12,10 +22,10 @@ class RagnaroekPHPCRContentExporter
 
     public function getStorableTypeNames()
     {
-        $re = new ReflectionExtension("midgard2");
+        $re = new \ReflectionExtension("midgard2");
         $names = array();
         foreach ($re->getClasses() as $class_ref) {
-            $class_mgd_ref = new midgard_reflection_class($class_ref->getName());
+            $class_mgd_ref = new \midgard_reflection_class($class_ref->getName());
             $name = $class_mgd_ref->getName();
             /* Ignore non MidgardDBObject derived types */
             if (!is_subclass_of ($name, 'MidgardDBObject')) {
@@ -45,7 +55,7 @@ class RagnaroekPHPCRContentExporter
         $qs = new MidgardQuerySelect($storage);
         $qs->execute();
 
-        if ($qs->get_results_count() > 1) {
+        if ($qs->get_results_count() > 0) {
             foreach ($qs->list_objects() as $sg) {
                 $this->sitegroups[] = $sg;
             }

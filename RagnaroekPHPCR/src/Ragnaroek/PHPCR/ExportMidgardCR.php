@@ -1,7 +1,6 @@
 <?php
 
-require_once 'XmlMidgardObjectWriter.php';
-require_once 'RagnaroekPHPCRContentExporter.php';
+require __DIR__ . '/../../../vendor/autoload.php';
 
 $config = new MidgardConfig();
 
@@ -13,7 +12,7 @@ $config->dbpass = "midgard_raki";
 $mgd = MidgardConnection::get_instance();
 $mgd->open_config($config);
 
-$ce = new RagnaroekPHPCRContentExporter();
+$ce = new \Ragnaroek\PHPCR\ContentExporter();
 
 $sitegroups = $ce->getSitegroups();
 $types = $ce->getStorableTypeNames();

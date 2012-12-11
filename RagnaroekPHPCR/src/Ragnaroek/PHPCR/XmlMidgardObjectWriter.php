@@ -1,5 +1,11 @@
 <?php
 
+namespace Ragnaroek\PHPCR;
+
+use \DomDocument;
+use \MidgardReflectorProperty;
+use \MidgardReflectorObject;
+
 class XmlMidgardObjectWriter 
 {
     private $xmlDoc = null;
@@ -115,7 +121,7 @@ class XmlMidgardObjectWriter
             $xmlNode->appendChild($pNode);
         } 
 
-        if (midgard_reflector_object::has_metadata_class(get_class($object)) === false) {
+        if (MidgardReflectorObject::has_metadata_class(get_class($object)) === false) {
             return;
         }
 

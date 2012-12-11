@@ -4,6 +4,8 @@ if (!extension_loaded('mysql')) {
     throw new Exception('MySQL extension not loaded!');
 }
 
+require __DIR__ . '/vendor/autoload.php';
+
 require_once __DIR__ . '/../raki/Transition.php';
 require_once __DIR__ . '/../raki/Ragnaroek/Transition.php';
 require_once __DIR__ . '/../raki/Ragnaroek/MySQL.php';
