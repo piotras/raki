@@ -24,7 +24,8 @@ class Transition implements \CRTransition\Transition
     public function getPHPCRRepository()
     {
         if ($this->phpcrRepository == null) {
-            $this->phpcrRepository = $this->phpcrRepositoryFactory->getRepository($this->phpcrConfigurationKeys);
+            $factory = $this->phpcrRepositoryFactory;
+            $this->phpcrRepository = $factory::getRepository($this->phpcrConfigurationKeys);
         }
 
         return $this->phpcrRepository;
@@ -33,7 +34,7 @@ class Transition implements \CRTransition\Transition
     public function getDefaultPHPCRSession()
     {
         if ($this->defaultPHPCRSession == null) {
-            $this->defaultPHPCRSession = $this->phpcrRepository->login(null, "default");
+            $this->defaultPHPCRSession = $this->getPHPCRRepository()->login(null, "default");
         }
         return $this->defaultPHPCRSession;
     }
@@ -46,7 +47,7 @@ class Transition implements \CRTransition\Transition
     public function getContentManager()
     {
         if ($this->contentManager == null) {
-            $this->contentManager = new RagnaroekPHPCRContentManager();
+            $this->contentManager = new \Ragnaroek\PHPCR\ContentManager();
         } 
 
         return $this->contentManager;
@@ -55,7 +56,7 @@ class Transition implements \CRTransition\Transition
     public function getWorkspaceManager()
     {
         if ($this->workspaceManager == null) {
-            $this->workspaceManager = new RagnaroekPHPCRWorkspaceManager($this);
+            $this->workspaceManager = new \Ragnaroek\PHPCR\WorkspaceManager($this);
         }
 
         return $this->workspaceManager;
