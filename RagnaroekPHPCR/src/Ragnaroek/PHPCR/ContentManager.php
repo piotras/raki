@@ -130,7 +130,7 @@ class ContentManager implements \CRTransition\ContentManager
         throw new Exception("Not Implemented");
     }
 
-    public function getItemByPath(StorableWorkspace $workspace, $typeName, $relPath)
+    public function getItemByPath(\CRTransition\StorableWorkspace $workspace, $typeName, $relPath)
     {
         throw new Exception("Not Implemented");
     } 
