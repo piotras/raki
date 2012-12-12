@@ -18,10 +18,12 @@
         "phpcr/phpcr": ">=2.1.0-beta5",
         "phpcr/phpcr-utils": "@dev",
         "ext-midgard2": ">=12.09",
-        "midgard/crtransition": "dev-master"
+        "midgard/crtransition": "dev-master",
+        "midgard/phpcr": "dev-master"
     },
     "require-dev": {
         "midgard/crtransition": "dev-master",
+        "midgard/phpcr": "dev-master",
         "ext-midgard2": ">=12.09"
     },
     "autoload": {
