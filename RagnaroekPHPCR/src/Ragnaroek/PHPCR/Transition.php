@@ -12,13 +12,20 @@ class Transition implements \CRTransition\Transition
     private $phpcrRepository = null;
     private $phpcrConfigurationKeys = null;
     private $defaultPHPCRSession = null;
+    private $exportDir = null;
 
-    public function __construct($phpcrRepositoryFactory, $phpcrConfigurationKeys, $mgd, $fixturePath)
+    public function __construct($phpcrRepositoryFactory, $phpcrConfigurationKeys, $mgd, $fixturePath, $exportDir)
     {
         $this->phpcrRepositoryFactory = $phpcrRepositoryFactory;
         $this->phpcrConfigurationKeys = $phpcrConfigurationKeys;
         $this->mgd = $mgd;
         $this->fixturePath = $fixturePath;
+        $this->exportDir = $exportDir;
+    }
+
+    public function getExportDir()
+    {
+        return $this->exportDir;
     }
 
     public function getPHPCRRepository()
