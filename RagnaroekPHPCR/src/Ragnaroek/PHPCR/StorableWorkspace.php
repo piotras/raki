@@ -1,6 +1,8 @@
 <?php
 
-class RagnaroekPHPCRStorableWorkspace implements StorableWorkspace
+namespace Ragnaroek\PHPCR;
+
+class StorableWorkspace implements \CRTransition\StorableWorkspace
 {
     public function __construct()
     {

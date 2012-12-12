@@ -1,6 +1,12 @@
 <?php
 
-class RagnaroekPHPCRWorkspaceManager implements WorkspaceManager 
+namespace Ragnaroek\PHPCR;
+
+use \MidgardReflectorObject;
+use \MidgardQueryStorage;
+use \MidgardQuerySelect;
+
+class WorkspaceManager implements \CRTransition\WorkspaceManager 
 {
     private $transition = null;
     private $defaultWorkspaceName = null;
@@ -28,7 +34,7 @@ class RagnaroekPHPCRWorkspaceManager implements WorkspaceManager
         $re = new ReflectionExtension("midgard2");
         $names = array();
         foreach ($re->getClasses() as $class_ref) {
-            $class_mgd_ref = new midgard_reflection_class($class_ref->getName());
+            $class_mgd_ref = new \midgard_reflection_class($class_ref->getName());
             $name = $class_mgd_ref->getName();
             /* Ignore non MidgardDBObject derived types */
             if (!is_subclass_of ($name, 'MidgardDBObject')) {
@@ -94,7 +100,7 @@ class RagnaroekPHPCRWorkspaceManager implements WorkspaceManager
         return $paths;
     }
 
-    public function createWorkspace($name, StorableWorkspace $parent = null)
+    public function createWorkspace($name, \CRTransition\StorableWorkspace $parent = null)
     {
         $phpcrSession = $this->getTransition()->getDefaultPHPCRSession();
         $phpcrSession->getWorkspace()->createWorkspace($name);
