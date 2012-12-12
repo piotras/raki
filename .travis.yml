@@ -7,7 +7,7 @@ php:
 before_script:
   - ./Ragnaroek/travis_midgard.sh
   - cd Ragnaroek && wget -q http://getcomposer.org/composer.phar
-  - cd Ragnaroek && php composer.phar install --dev
+  - php composer.phar install --dev
 
 script: cd Ragnaroek && php -c midgard2.ini `which phpunit` -c tests/phpunit.xml.dist
 
