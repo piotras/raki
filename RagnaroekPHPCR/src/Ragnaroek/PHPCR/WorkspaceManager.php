@@ -10,10 +10,10 @@ class WorkspaceManager implements \CRTransition\WorkspaceManager
 {
     private $transition = null;
     private $defaultWorkspaceName = null;
-    private $sitegroups = array();
     private $possibleWorkspaces = null;
+    private $workspaces = null;
 
-    public function __construct($transition, $workspaceName = "")
+    public function __construct($transition, $workspaceName = "Root")
     {
         $this->transition = $transition;
         $this->defaultWorkspaceName = $workspaceName;
@@ -52,41 +52,22 @@ class WorkspaceManager implements \CRTransition\WorkspaceManager
         return $names;
     }
 
-    private function populateSitegroups()
-    {
-        if (!empty($this->sitegroups)) {
-            return $this->sitegroups;
-        }
-
-        $storage = new MidgardQueryStorage("ragnaroek_sitegroup");
-        $qs = new MidgardQuerySelect($storage);
-        $qs->execute();
-
-        if ($qs->get_results_count() < 1) {
-            return;
-        }
-
-        foreach ($qs->list_objects() as $sg) {
-            $this->sitegroups[] = $sg;
-        }
-    }
-
-    public function getMidgardSitegroups()
-    {
-        $this->populateSitegroups();
-        return $this->sitegroups;
-    }
-
     public function getPossibleWorkspacesNames()
     {
-        $this->populateSitegroups();
-        $names = array();
+        if (!empty($this->possibleWorkspaces)) {
+            return $this->possibleWorkspaces;
+        }
 
-        foreach ($this->sitegroups as $sg) {
-            $names[] = $sg->name;
-        }    
+        $d = dir($this->getTransition()->getExportDir());
+        while (($entry = $d->read()) !== false) {
+            if ($entry == '.' || $entry == '..') {
+                continue;
+            }
+            $this->possibleWorkspaces[] = $entry;
+        }
+        $d->close();
 
-        return $names;
+        return $this->possibleWorkspaces;
     }
 
     public function getPossibleWorkspacesPaths()
@@ -133,17 +114,17 @@ class WorkspaceManager implements \CRTransition\WorkspaceManager
 
     public function getStoredWorkspaceByPath($absPath)
     {
-        throw new Exception("Not implemented");
+        throw new \Exception("Not implemented");
     }
 
     public function getStoredWorkspaceByName($name)
     {
-        throw new Exception("Not implemented");
+        throw new \Exception("Not implemented");
     }
 
     public function storedWorkspacePathExists($absPath)
     {
-        throw new Exception("Not implemented");
+        throw new \Exception("Not implemented");
     }
 }
 ?>
