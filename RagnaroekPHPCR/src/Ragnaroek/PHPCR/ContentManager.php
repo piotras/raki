@@ -1,6 +1,16 @@
 <?php
 
-class RagnaroekPHPCRContentManager implements ContentManager 
+namespace Ragnaroek\PHPCR;
+
+use \MidgardReflectorProperty;
+use \MidgardReflectorObject;
+use \MidgardQueryStorage;
+use \MidgardQuerySelect;
+use \MidgardQueryConstraint;
+use \MidgardQueryProperty;
+use \MidgardQueryValue;
+
+class ContentManager implements \CRTransition\ContentManager 
 {
     private $transition = null;
     private $xmlWriter = null;
@@ -26,7 +36,7 @@ class RagnaroekPHPCRContentManager implements ContentManager
 
     public function getPossibleTypeNames()
     {
-        $re = new ReflectionExtension("midgard2");
+        $re = new \ReflectionExtension("midgard2");
         $names = array();
         foreach ($re->getClasses() as $class_ref) {
 
