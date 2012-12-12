@@ -101,7 +101,7 @@ class ContentExporter
         return $qs->list_objects();
     }
 
-    private function serializeObjects($sitegroupID, $xmlWriter, $typeName, $upProperty, $upValue, $xmlParentNode)
+    private function serializeObjects($sitegroupID, $xmlWriter, $typeName, $upProperty, $upValue)
     {
         $parentProperty = MidgardReflectorObject::get_property_parent($typeName);
         $upPropertyLocal = MidgardReflectorObject::get_property_up($typeName);
@@ -112,22 +112,22 @@ class ContentExporter
         if (count($objects) == 0) return;
         foreach ($objects as $object) {
             /* Create xml node from object */
-            $xmlNode = $xmlWriter->serializeObject($object);
-            /* Append node to document */
-            $xmlParentNode->appendChild($xmlNode);
+            $xmlWriter->serializeObject($object);
 
             /* Serialize possible children objects of the same type */
             if ($upProperty != null) {
-                $this->serializeObjects($sitegroupID, $xmlWriter, $typeName, $upPropertyLocal, $object->id, $xmlNode);
+                $this->serializeObjects($sitegroupID, $xmlWriter, $typeName, $upPropertyLocal, $object->id);
             }
 
             /* Serialize possible children objects of different type */
             if (!empty($childrenTypes)) {
                 foreach ($childrenTypes as $childType => $v) {
                     $childParentProperty = MidgardReflectorObject::get_property_parent($childType);
-                    $this->serializeObjects($sitegroupID, $xmlWriter, $childType, $childParentProperty, $object->id, $xmlNode);
+                    $this->serializeObjects($sitegroupID, $xmlWriter, $childType, $childParentProperty, $object->id);
                 }
             }
+
+            $xmlWriter->endElement();
         }
     }
 
@@ -155,9 +155,8 @@ class ContentExporter
         }
 
         $typeDir = $sgDir . "/" . $typeName;
-        $xmlWriter = new XmlMidgardObjectWriter($typeDir, $typeName);
-        $typeNode = $xmlWriter->getRootNode();
-        $this->serializeObjects($sitegroup->id, $xmlWriter, $typeName, $upProperty, 0, $typeNode);
+        $xmlWriter = new XmlMidgardObjectWriter($typeDir, $typeName); 
+        $this->serializeObjects($sitegroup->id, $xmlWriter, $typeName, $upProperty, 0);
 
         /* Dump xml to a file */
         $xmlWriter->save();

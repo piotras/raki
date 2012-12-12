@@ -2,76 +2,43 @@
 
 namespace Ragnaroek\PHPCR;
 
-use \DomDocument;
 use \MidgardReflectorProperty;
 use \MidgardReflectorObject;
 
 class XmlMidgardObjectWriter 
 {
-    private $xmlDoc = null;
     private $ns = "http://www.midgard-project.org/repligard/1.4";
     private $prefix = "mgd";
     // private $ns = "http://www.jcp.org/jcr/sv/1.0";
     // private $prefix = "sv";
     private $filePath = null;
-    private $xmlRootNode = null; 
+    private $xmlWriter = null;
 
     public function __construct($filePath, $typeName)
     {
-        $this->xmlDoc = new DOMDocument('1.0', 'UTF-8');
-        $this->xmlDoc->formatOutput = true;
-
-        /* FIXME, this might be sitegroup or language */
-        $this->xmlRootNode = self::createNodeElement();
-        $this->xmlDoc->appendChild($this->xmlRootNode);
-        $nodeAttr = $this->xmlDoc->createAttributeNS($this->ns, $this->prefix . ":" . 'name');
-        $nodeAttr->value = $typeName;
-        $this->xmlRootNode->appendChild($nodeAttr);
         $this->filePath = $filePath;
+
+        $this->xmlWriter = new \XMLWriter();
+        $this->xmlWriter->openURI($this->filePath);
+        $this->xmlWriter->startDocument("1.0", "UTF-8");
+
+        $this->xmlWriter->setIndent(4);
+
+        $this->xmlWriter->startElement($this->prefix . ':node');
+        $this->xmlWriter->writeAttribute('xmlns:' . $this->prefix, $this->ns);
+        $this->xmlWriter->writeAttribute($this->prefix . ':name', $typeName);
+
+        /* Add jcr:primaryType to the main node*/
+        $this->createPropertyNode("jcr:primaryType", "Name", "nt:unstructured");
     }
 
-    private function createNodeElement()
+    private function createPropertyNode($name, $type = 'String', $value)
     {
-        return $this->xmlDoc->createElementNS($this->ns, $this->prefix . ":" . 'node');
-    }
-
-    public function getRootNode()
-    {
-        return $this->xmlRootNode; 
-    }   
-
-    public function addTypeNode($typeName)
-    {
-        $xmlNode = self::createNodeElement();
-        $this->xmlRootNode->appendChild($xmlNode);
-        $nodeAttr = $this->xmlDoc->createAttributeNS($this->ns, $this->prefix . ":" . 'name');
-        $nodeAttr->value = $typeName;
-        $xmlNode->appendChild($nodeAttr);
-
-        return $xmlNode;
-    }
-
-    private function createPropertyNode($name, $type = 'String')
-    {
-        $pNode = $this->xmlDoc->createElementNS($this->ns, $this->prefix . ":" . 'property');
-
-        /* Add name attribute */
-        $nodeAttr = $this->xmlDoc->createAttributeNS($this->ns, $this->prefix . ":" . 'name');
-        $nodeAttr->value = $name;
-        $pNode->appendChild($nodeAttr);
-
-        /* Add type attribute */
-        $nodeAttr = $this->xmlDoc->createAttributeNS($this->ns, $this->prefix . ":" . 'type');
-        $nodeAttr->value = $type;
-        $pNode->appendChild($nodeAttr);
-
-        return $pNode;
-    }
-
-    private function addValue($xmlNode, $value)
-    {
-        $pValue = $this->xmlDoc->createElementNS($this->ns, $this->prefix . ":" . 'value', htmlentities($value));
-        $xmlNode->appendChild($pValue);
+        $this->xmlWriter->startElement($this->prefix . ":property");
+        $this->xmlWriter->writeAttribute($this->prefix . ":name", $name);
+        $this->xmlWriter->writeAttribute($this->prefix . ":type", $type);
+        $this->xmlWriter->text($value);
+        $this->xmlWriter->endElement(); /* property */
     }
 
     private function getPHPCRPropertyType($reflector, $property)
@@ -103,22 +70,17 @@ class XmlMidgardObjectWriter
         }
     }
 
-    private function serializeProperties($xmlNode, $object)
+    private function serializeProperties($object)
     {
         /* Add jcr:primaryType */
-        $pType = $this->createPropertyNode("jcr:primaryType", "Name");
-        $this->addValue($pType, "nt:unstructured");
-        $xmlNode->appendChild($pType);
+        $this->createPropertyNode("jcr:primaryType", "Name", "nt:unstructured");
 
         $reflector = new MidgardReflectorProperty(get_class($object));
-
         foreach ($object as $property => $value) {
-            $pNode = $this->createPropertyNode($property, $this->getPHPCRPropertyType($reflector, $property));
             if (is_object($value)) {
                 continue;
             } 
-            $this->addValue($pNode, $value);
-            $xmlNode->appendChild($pNode);
+            $this->createPropertyNode($property, $this->getPHPCRPropertyType($reflector, $property), $value);
         } 
 
         if (MidgardReflectorObject::has_metadata_class(get_class($object)) === false) {
@@ -128,56 +90,48 @@ class XmlMidgardObjectWriter
         $metadata = $object->metadata;
 
         /* Add mix:created properties */
-        $pType = $this->createPropertyNode("jcr:created", "Date");
-        $this->addValue($pType, $metadata->created->format("c"));
-        $xmlNode->appendChild($pType);
+        $pType = $this->createPropertyNode("jcr:created", "Date", $metadata->created->format("c"));
 
         /* FIXME, get person firstname and lastname */
-        $pType = $this->createPropertyNode("jcr:createdBy");
-        $this->addValue($pType, $metadata->creator);
-        $xmlNode->appendChild($pType);
+        $pType = $this->createPropertyNode("jcr:createdBy", "String", $metadata->creator);
 
         /* Add mix:lastModified properties */
-        $pType = $this->createPropertyNode("jcr:lastModified", "Date");
-        $this->addValue($pType, $metadata->revised->format("c"));
-        $xmlNode->appendChild($pType);
+        $pType = $this->createPropertyNode("jcr:lastModified", "Date", $metadata->revised->format("c"));
 
         /* FIXME, get person firstname and lastname */
-        $pType = $this->createPropertyNode("jcr:lastModifiedBy");
-        $this->addValue($pType, $metadata->revisor);
-        $xmlNode->appendChild($pType);
+        $pType = $this->createPropertyNode("jcr:lastModifiedBy", "String", $metadata->revisor);
     }
 
     public function serializeObject($object)
     {
-        $objectNode = self::createNodeElement();
-        $nodeAttr = $this->xmlDoc->createAttributeNS($this->ns, $this->prefix . ":" . 'name');
-        $uniqueProperty = MidgardReflectorObject::get_property_unique(get_class($object));
+        $uniqueProperty = \midgard_reflector_object::get_property_unique(get_class($object));
+        $name = "";
         if ($uniqueProperty) {
-            $nodeAttr->value = $object->$uniqueProperty;
+            $name = $object->$uniqueProperty;
         } else {
-            $nodeAttr->value = $object->guid;
+            if (property_exists($object, "name")) {
+                $name = $object->name;
+            } else {
+                $name = $object->guid;
+            }
         } 
-        $objectNode->appendChild($nodeAttr);
 
-        $this->serializeProperties($objectNode, $object);
-  
-        return $objectNode;
+        $this->xmlWriter->startElement($this->prefix . ":node" );
+        $this->xmlWriter->writeAttribute($this->prefix . ":name", $name);
+
+        $this->serializeProperties($object); 
     }
 
-    public function getFilePath()
+    public function endElement()
     {
-        if ($this->filePath == null) {
-            $this->filePath = tempnam("/tmp", "mgd_phpcr_");
-        }
-
-        return $this->filePath;
+        $this->xmlWriter->endElement();
     }
 
     public function save()
     {
-        //echo $this->xmlDoc->saveXML();
-        $this->xmlDoc->save($this->getFilePath());
+        $this->xmlWriter->endElement(); /* First node created in constructor */
+        $this->xmlWriter->endDocument();
+        $this->xmlWriter->flush();
     } 
 }
 
