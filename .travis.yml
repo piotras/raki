@@ -9,7 +9,7 @@ before_script:
   - cd Ragnaroek && wget -q http://getcomposer.org/composer.phar
   - php composer.phar install --dev
 
-script: cd Ragnaroek && php -c midgard2.ini `which phpunit` -c tests/phpunit.xml.dist
+script: php -c midgard2.ini `which phpunit` -c tests/phpunit.xml.dist
 
 notifications:
     irc: "irc.freenode.org#midgard"
