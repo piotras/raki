@@ -20,20 +20,24 @@ class ContentManager implements \CRTransition\ContentManager
 
     public function getPossibleTypeNames()
     {
-        $re = new \ReflectionExtension("midgard2");
+        $exportDir = $this->getTransition()->getExportDir();
         $names = array();
-        foreach ($re->getClasses() as $class_ref) {
 
-            if ($class_ref->isAbstract() || $class_ref->isInterface()) {
+        $d = dir($exportDir);
+        /* Read possible workspaces */
+        while (($entry = $d->read()) !== false) {
+            if ($entry == "." || $entry == "..") {
                 continue;
             }
-
-            $name = $class_ref->getName();
-            if (!is_subclass_of ($name, 'MidgardDBObject')) {
-                continue;
+            /* Read possible types */
+            $wsName = $exportDir . "/" . $entry;
+            $t = dir($wsName);
+            while (($e = $t->read()) !== false) {
+                if ($e == "." || $e == "..") {
+                    continue;
+                }
+                $names[$e] = $e;
             }
-
-            $names[] = $name;
         }
 
         return $names;
