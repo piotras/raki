@@ -13,7 +13,7 @@ class WorkspaceManager implements \CRTransition\WorkspaceManager
     private $possibleWorkspaces = null;
     private $workspaces = null;
 
-    public function __construct($transition, $workspaceName = "Root")
+    public function __construct($transition, $workspaceName = "root")
     {
         $this->transition = $transition;
         $this->defaultWorkspaceName = $workspaceName;
@@ -97,7 +97,7 @@ class WorkspaceManager implements \CRTransition\WorkspaceManager
 
     public function getStoredWorkspacesNames()
     {
-        return $this->getTransition()->getDefaultPHPCRSession->getWorkspace()->getAccessibleWorkspaceNames();
+        return $this->getTransition()->getDefaultPHPCRSession()->getWorkspace()->getAccessibleWorkspaceNames();
     }
 
     public function getStoredWorkspacesPaths()
@@ -114,17 +114,28 @@ class WorkspaceManager implements \CRTransition\WorkspaceManager
 
     public function getStoredWorkspaceByPath($absPath)
     {
-        throw new \Exception("Not implemented");
+        if ($this->storedWorkspacePathExists($absPath)) {
+            return new StorableWorkspace(substr($absPath, 1));
+        }
+        return null;
     }
 
     public function getStoredWorkspaceByName($name)
     {
-        throw new \Exception("Not implemented");
+        $names = $this->getStoredWorkspacesNames();
+        if (in_array($name, $names)) {
+            return new StorableWorkspace($name);
+        }
+        return null;
     }
 
     public function storedWorkspacePathExists($absPath)
     {
-        throw new \Exception("Not implemented");
+        $paths = $this->getStoredWorkspacesPaths();
+        if (in_array($absPath, $paths)) {
+            return true;
+        }
+        return false;
     }
 }
 ?>
