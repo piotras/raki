@@ -48,7 +48,7 @@ class ContentManager implements \CRTransition\ContentManager
             }
         }
 
-        return $this->sessions();
+        return $this->sessions;
     }
 
     public function importType($typeName)
