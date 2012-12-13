@@ -4,29 +4,31 @@ namespace Ragnaroek\PHPCR;
 
 class StorableWorkspace implements \CRTransition\StorableWorkspace
 {
-    public function __construct()
-    {
+    private $name = null;
 
+    public function __construct($name)
+    {
+        $this->name = $name;
     }
 
     public function getName()
     {
-        throw new Exception("Not implemented");
+        return $this->name;
     }
 
     public function getPath()
     {
-        throw new Exception("Not implemented");
+        return "/" . $this->getName();
     } 
 
     public function getChildrenNames()
     {
-        throw new Exception("Not implemented");
+        return array();
     } 
 
     public function getChildren()
     {
-        throw new Exception("Not implemented");
+        return null;
     }    
 }
 
