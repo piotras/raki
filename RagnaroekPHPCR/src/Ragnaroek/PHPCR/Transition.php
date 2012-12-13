@@ -54,7 +54,7 @@ class Transition implements \CRTransition\Transition
     public function getContentManager()
     {
         if ($this->contentManager == null) {
-            $this->contentManager = new \Ragnaroek\PHPCR\ContentManager();
+            $this->contentManager = new \Ragnaroek\PHPCR\ContentManager($this);
         } 
 
         return $this->contentManager;
