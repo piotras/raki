@@ -7,10 +7,10 @@ use \MidgardReflectorObject;
 
 class XmlMidgardObjectWriter 
 {
-    private $ns = "http://www.midgard-project.org/repligard/1.4";
-    private $prefix = "mgd";
-    // private $ns = "http://www.jcp.org/jcr/sv/1.0";
-    // private $prefix = "sv";
+    private $mgdNS = "http://www.midgard-project.org/repligard/1.4";
+    private $mgdPrefix = "mgd";
+    private $ns = "http://www.jcp.org/jcr/sv/1.0";
+    private $prefix = "sv";
     private $filePath = null;
     private $xmlWriter = null;
 
@@ -26,6 +26,7 @@ class XmlMidgardObjectWriter
 
         $this->xmlWriter->startElement($this->prefix . ':node');
         $this->xmlWriter->writeAttribute('xmlns:' . $this->prefix, $this->ns);
+        $this->xmlWriter->writeAttribute('xmlns:' . $this->mgdPrefix, $this->mgdNS);
         $this->xmlWriter->writeAttribute($this->prefix . ':name', $typeName);
 
         /* Add jcr:primaryType to the main node*/
