@@ -103,7 +103,7 @@ class XmlMidgardObjectWriter
         $pType = $this->createPropertyNode("jcr:lastModifiedBy", "String", $metadata->revisor);
     }
 
-    public function serializeObject($object)
+    public function serializeObject($object, $safeWsName)
     {
         $uniqueProperty = \midgard_reflector_object::get_property_unique(get_class($object));
         $name = "";
@@ -118,7 +118,7 @@ class XmlMidgardObjectWriter
         } 
 
         $this->xmlWriter->startElement($this->prefix . ":node" );
-        $this->xmlWriter->writeAttribute($this->prefix . ":name", $name);
+        $this->xmlWriter->writeAttribute($this->prefix . ":name", $safeWsName === "" ? $name : $safeWsName . "-" . $name);
 
         $this->serializeProperties($object); 
     }

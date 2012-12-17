@@ -14,11 +14,11 @@ $mgd->open_config($config);
 
 $ce = new \Ragnaroek\PHPCR\ContentExporter();
 
-$sitegroups = $ce->getSitegroups();
+$workspaces = $ce->getWorkspaces();
 $types = $ce->getStorableTypeNames();
 
 /* Export each sitegroup */
-foreach ($sitegroups as $sg) {
+foreach ($workspaces as $ws) {
     /* Export each type in a sitegroup */
     foreach($types as $type) {
         if (MidgardReflectorObject::is_mixin($type)
@@ -30,8 +30,8 @@ foreach ($sitegroups as $sg) {
         if ($refClass->isAbstract() || $refClass->isInterface()) {
             continue;
         }
-        echo "Exporting ({$sg->name}) : {$type}. Please wait...\n";
-        $ce->exportType($sg, $type);
+        echo "Exporting ({$ws->name}) : {$type}. Please wait...\n";
+        $ce->exportType($ws, $type);
     }
 }
 

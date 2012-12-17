@@ -14,10 +14,14 @@ class ContentExporter
 {
     private $exportDir = null;
     private $sitegroups = null;
+    private $defaultSitegroup = null;
+    private $mgd = null;
 
-    public function __construct($exportDir = "/tmp/Midgard-Ragnaroek-PHPCR-Export")
+    public function __construct($exportDir = "/tmp/Midgard-Ragnaroek-PHPCR-Export", $defaultSitegroup = "SG0")
     {
         $this->exportDir = $exportDir;
+        $this->defaultSitegroup = $defaultSitegroup;
+        $this->mgd = \MidgardConnection::get_instance();
     }
 
     public function getStorableTypeNames()
@@ -43,43 +47,43 @@ class ContentExporter
         return $names;
     }
 
-    public function getSitegroups()
+    private function getMultilangWorkspaces($targetName, $ws, &$names) 
     {
-        if (!empty($this->sitegroups)) {
-            return $this->sitegroups;
+        $children = $ws->list_children();
+
+        $path = substr(strstr($ws->path, $targetName), strlen($targetName)+1);
+        $path = str_replace("/", "-", $path);
+        if ($path != "") {
+            $names[$path] = $ws; 
         }
 
-        $this->sitegroups = array();
-
-        $storage = new MidgardQueryStorage("ragnaroek_sitegroup");
-        $qs = new MidgardQuerySelect($storage);
-        $qs->execute();
-
-        if ($qs->get_results_count() > 0) {
-            foreach ($qs->list_objects() as $sg) {
-                $this->sitegroups[] = $sg;
-            }
+        if (empty($children)) {
+            return;
         }
 
-        return $this->sitegroups;
+        foreach ($children as $child) {
+            $this->getMultilangWorkspaces($targetName, $child, $names);
+        }
     }
 
-    public function exportSitegroup($sitegroup)
+    public function getWorkspaces()
     {
-        mkdir($this->exportDir . "/" . $sitegroup->name, 0700, true);
+        $ws = new \MidgardWorkspace();
+        $manager = new \MidgardWorkspaceManager($this->mgd);
+        $manager->get_workspace_by_path($ws, "/" . $this->defaultSitegroup);
+
+        return $ws->list_children();
     }
 
-    private function getObjects($typeName, $sitegroupID, $upProperty = null, $upValue = 0)
+    public function exportWorkspace($workspace)
+    {
+        mkdir($this->exportDir . "/" . $workspace->name, 0700, true);
+    }
+
+    private function getObjects($typeName, $upProperty = null, $upValue = 0)
     {
         $qs = new MidgardQuerySelect(
             new MidgardQueryStorage($typeName)
-        );
-
-        /* Add sitegroup constraint */
-        $cnstrGrp = new MidgardQueryConstraint(
-            new MidgardQueryProperty("sitegroup"),
-            "=",
-            new MidgardQueryValue($sitegroupID)
         );
 
         if ($upProperty != null) {
@@ -88,54 +92,58 @@ class ContentExporter
                 "=",
                 new MidgardQueryValue($upValue)
             );
-
-            $cnstrSG = $cnstrGrp;
-            $cnstrGrp = new MidgardQueryConstraintGroup("AND");
-            $cnstrGrp->add_constraint($cnstr);
-            $cnstrGrp->add_constraint($cnstrSG);
+            $qs->set_constraint($cnstr);
         }
-
-        $qs->set_constraint($cnstrGrp);
 
         $qs->execute();
         return $qs->list_objects();
     }
 
-    private function serializeObjects($sitegroupID, $xmlWriter, $typeName, $upProperty, $upValue)
+    private function serializeObjects($workspace, $safeWsName, $xmlWriter, $typeName, $upProperty, $upValue)
     {
+        $this->mgd->enable_workspace(true);   
+        $this->mgd->set_workspace($workspace);
+
         $parentProperty = MidgardReflectorObject::get_property_parent($typeName);
         $upPropertyLocal = MidgardReflectorObject::get_property_up($typeName);
         $childrenTypes = MidgardReflectorObject::list_children($typeName);
 
         /* Get all objects or root ones in case of tree */
-        $objects = $this->getObjects($typeName, $sitegroupID, $upProperty, $upValue);
+        $objects = $this->getObjects($typeName, $upProperty, $upValue);
         if (count($objects) == 0) return;
         foreach ($objects as $object) {
             /* Create xml node from object */
-            $xmlWriter->serializeObject($object);
+            $xmlWriter->serializeObject($object, $safeWsName);
 
             /* Serialize possible children objects of the same type */
             if ($upProperty != null) {
-                $this->serializeObjects($sitegroupID, $xmlWriter, $typeName, $upPropertyLocal, $object->id);
+                $this->serializeObjects($workspace, $safeWsName, $xmlWriter, $typeName, $upPropertyLocal, $object->id);
             }
 
             /* Serialize possible children objects of different type */
             if (!empty($childrenTypes)) {
                 foreach ($childrenTypes as $childType => $v) {
                     $childParentProperty = MidgardReflectorObject::get_property_parent($childType);
-                    $this->serializeObjects($sitegroupID, $xmlWriter, $childType, $childParentProperty, $object->id);
+                    $this->serializeObjects($workspace, $safeWsName, $xmlWriter, $childType, $childParentProperty, $object->id);
                 }
             }
 
             $xmlWriter->endElement();
         }
+
+        $workspaces = array();
+        $this->getMultilangWorkspaces($workspace->name, $workspace, $workspaces);
+        foreach ($workspaces as $path => $ws) {
+            /* pass wsA-wsB-wsC path as safe workspace name */ 
+            $this->serializeObjects($ws, $path, $xmlWriter, $typeName, $upProperty, $upValue); 
+        }
     }
 
-    public function exportType($sitegroup, $typeName)
+    public function exportType($workspace, $typeName)
     {
-        $sgDir = $this->exportDir . "/" . $sitegroup->name;
+        $sgDir = $this->exportDir . "/" . $workspace->name;
         if (!is_dir($sgDir)) {
-            $this->exportSitegroup($sitegroup);
+            $this->exportWorkspace($workspace);
         }
 
         /* Determine if type can be parent or child in a tree.
@@ -155,8 +163,8 @@ class ContentExporter
         }
 
         $typeDir = $sgDir . "/" . $typeName;
-        $xmlWriter = new XmlMidgardObjectWriter($typeDir, $typeName); 
-        $this->serializeObjects($sitegroup->id, $xmlWriter, $typeName, $upProperty, 0);
+        $xmlWriter = new XmlMidgardObjectWriter($typeDir, $typeName);
+        $this->serializeObjects($workspace, "", $xmlWriter, $typeName, $upProperty, 0);
 
         /* Dump xml to a file */
         $xmlWriter->save();
