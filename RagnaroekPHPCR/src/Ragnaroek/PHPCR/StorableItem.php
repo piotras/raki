@@ -2,24 +2,26 @@
 
 class RagnaroekPHPCRStorableItem implements StorableItem 
 {
-    public function __construct()
-    {
+    private $node;
 
+    public function __construct(\PHPCR\Node $node)
+    {
+        $this->node = $node;
     }
 
     public function getProperty($name)
     {
-        throw new Exception("Not implemented");
+        return $this->node->getProperty($name); 
     }
 
     public function getName()
     {
-        throw new Exception("Not implemented");
+        return $this->node->getName();
     }
 
     public function getPath()
     {
-        throw new Exception("Not implemented");
+        return $this->node->getPath();
     }  
 }
 

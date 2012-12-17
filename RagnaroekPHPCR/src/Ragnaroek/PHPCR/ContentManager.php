@@ -73,12 +73,18 @@ class ContentManager implements \CRTransition\ContentManager
 
     public function getStoredTypeNames()
     {
-        throw new Exception("Not Implemented");
+        throw new \Exception("Not Implemented");
     }
 
     public function getItemByPath(\CRTransition\StorableWorkspace $workspace, $typeName, $relPath)
     {
-        throw new Exception("Not Implemented");
+        $sessions = $this->getSessions();
+        if (!isset($sessions[$workspace->getName()])) {
+            throw new \Exception("Session for {$workspace->getName()} workspace not found");
+        }
+
+        $node = $sessions[$workspace->getName()]->getNode($relPath);
+        return new StorableItem($node);   
     } 
 }
 
