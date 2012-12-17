@@ -62,6 +62,11 @@ class ContentManager implements \CRTransition\ContentManager
 
         foreach ($this->getSessions() as $name => $session) {
             $filePath = $exportDir . "/" . $name . "/" . $typeName;
+            /* Import only xml files */
+            $info = pathinfo($filePath);
+            if ($info['extension'] != 'xml') {
+                continue;
+            }
             $session->importXML("/", $filePath, 0); /* FIXME, ImportUUIDBehavior */
         }
     }

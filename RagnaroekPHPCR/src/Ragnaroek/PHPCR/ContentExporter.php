@@ -162,7 +162,7 @@ class ContentExporter
             return;
         }
 
-        $typeDir = $sgDir . "/" . $typeName;
+        $typeDir = $sgDir . "/" . $typeName . ".xml";
         $xmlWriter = new XmlMidgardObjectWriter($typeDir, $typeName);
         $this->serializeObjects($workspace, "", $xmlWriter, $typeName, $upProperty, 0);
 
