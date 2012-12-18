@@ -1,10 +1,12 @@
 <?php
 
-class RagnaroekPHPCRStorableItem implements StorableItem 
+namespace Ragnaroek\PHPCR;
+
+class StorableItem implements \CRTransition\StorableItem 
 {
     private $node;
 
-    public function __construct(\PHPCR\Node $node)
+    public function __construct($node)
     {
         $this->node = $node;
     }

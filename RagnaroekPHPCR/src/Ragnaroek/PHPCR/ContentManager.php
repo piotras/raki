@@ -68,6 +68,7 @@ class ContentManager implements \CRTransition\ContentManager
                 continue;
             }
             $session->importXML("/", $filePath, 0); /* FIXME, ImportUUIDBehavior */
+            $session->save();
         }
     }
 
