@@ -1,0 +1,16 @@
+shared:
+    workspace:
+        paths:
+            - /Raki SG1
+        items:
+            /Raki SG1: 
+                ratatoskr_topic:
+                    /ratatoskr_topic/multilang-Multilang:
+                        name: multilang-Multilang
+                        title: Good
+                    /ratatoskr_topic/multilang-fi-Multilang:
+                        name: multilang-fi-Multilang
+                        title: Hyvä
+                    /ratatoskr_topic/multilang-ru-Multilang:
+                        name: multilang-ru-Multilang
+                        title: Xороший

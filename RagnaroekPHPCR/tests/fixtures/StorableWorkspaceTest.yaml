@@ -1,0 +1,26 @@
+shared:
+    workspace:
+        paths:
+            - '/default'
+            - '/root'
+            - '/Raki SG1'
+        names:
+            Raki SG1: []
+
+testGetName:
+    workspace:
+        names:
+            - default
+            - root
+            - Raki SG1
+
+testGetChildrenNames:
+    workspace:
+        names: []
+        children: []
+
+testGetChildren:
+    workspace:
+        names: []
+        children: []
+

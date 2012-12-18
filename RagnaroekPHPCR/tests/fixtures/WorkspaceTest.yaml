@@ -1,0 +1,27 @@
+shared:
+    workspace:
+        paths:
+            - '/default'
+            - '/root'
+            - '/Raki SG1'
+        names:
+            - default
+            - root
+            - Raki SG1
+
+testPossibleWorkspacesNames:
+    workspace:
+        names:
+            - Raki SG1
+
+testPossibleWorkspacesPaths:
+    workspace:
+        paths:
+            - '/Raki SG1'
+
+testGetStoredWorkspaceByName:
+    workspace:
+        names:
+            - default
+            - root
+            - Raki SG1

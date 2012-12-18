@@ -1,0 +1,37 @@
+shared:
+    types:
+        possible:
+            - ragnaroek_topic
+            - midgard_language
+            - ragnaroek_article_lang
+            - ragnaroek_topic
+            - ragnaroek_topic_lang
+            - ratatoskr_topic
+        stored:
+            - ragnaroek_topic
+            - midgard_language
+            - ragnaroek_article
+            - ragnaroek_article_lang
+            - ragnaroek_sitegroup
+            - ragnaroek_topic
+            - ragnaroek_topic_lang
+            - ratatoskr_topic
+    workspace:
+        paths:
+            - /default
+            - root
+            - /Raki SG1
+        names:
+            default: []
+            root: []
+            Raki SG1: []
+
+testZGetItemByPath:
+    workspace:
+        paths:
+            - /Raki SG1
+        items:
+            /Raki SG1/: 
+                ratatoskr_topic:
+                    Multilang: []
+
