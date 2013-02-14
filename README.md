@@ -37,7 +37,7 @@ type defined as mgdschema one.
 ---------------------------------------------
 
 In Midgard1 we set sitegroup and language, and then we are able to request objects in sitegroup or language context.
-The same rule appplies in Midgard2, however we set workspaces instead of sitegroupor languages.
+The same rule appplies in Midgard2, however we set workspaces instead of sitegroup or languages.
 
 In Midgard1
 
@@ -51,4 +51,8 @@ In Midgard2
     MidgardConnection.set_workspace(ws)
     object.get_by_guid(xyz)
 
+In latter case, if 'ws' is MidgardWorkspace, then object identified by 'xyz' guid is queried in this workspace only. 
+When 'ws' is MidgardWorkspaceContext, then object is queried in the whole workspace's tree.  
+It means, that, if object is not found in 'en' workspace, then it's queried in 'My Company', and in 'ROOT' if not found 
+in upper workspace.
 
