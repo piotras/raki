@@ -8,6 +8,8 @@
 5. Copy schemas to data/schema directory (These schemas should contain all types you want to convert).
 6. Update every type (from copied schemas) so it registers 'sitegroup' property explicitly
 7. Copy all schemas to /usr/share/midgard2 directory, so they can be used after migration.
+8. Copy all configuration files from /etc/midgard/conf.d to /etc/midgard2/conf.d.
+ * change [Database] section (to [Midgarddatabase])
 
 Run:
 
