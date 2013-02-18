@@ -1,0 +1,14 @@
+
+1. Clone raki project
+2. Change directory to Ratatoskr
+3. Dump production database and copy dump file to currrent location
+4. Update transition-example.php script:
+ * set correct database name
+ * set correct database username and password
+5. Copy schemas to data/schema directory (These schemas should contain all types you want to convert).
+6. Update every type (from copied schemas) so it registers 'sitegroup' property explicitly
+
+Run:
+
+    php -c midgard2.ini ./transition-example.php
+
