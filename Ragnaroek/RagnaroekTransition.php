@@ -26,7 +26,7 @@ if (!extension_loaded('mysql')) {
     throw new Exception('MySQL extension not loaded!');
 }
 require __DIR__ . '/vendor/autoload.php';
-require __DIR__ . 'RagnaroekTransitionAbstract.php';
+require __DIR__ . '/RagnaroekTransitionAbstract.php';
 
 # Create class
 
