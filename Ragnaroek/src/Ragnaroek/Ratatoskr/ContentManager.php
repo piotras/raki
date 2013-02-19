@@ -130,8 +130,9 @@ class ContentManager implements \CRTransition\ContentManager
     public function convertPersonToUser()
     {
         $qs = new MidgardQuerySelect(
-            new MidgardQueryStorage("midgard_person")
+            new MidgardQueryStorage("ratatoskr_midgard_person")
         );
+        $qs->toggle_readonly(false);
         $qs->execute();
 
         foreach ($qs->list_objects() as $person)
@@ -151,6 +152,11 @@ class ContentManager implements \CRTransition\ContentManager
             $user->usertype = 0;
 
             $user->create();
+
+            /* to set user's person we expect explicitly named 'midgard_person' instance
+             *  so let's try this workaround */
+            $p = new \midgard_person($person->id);
+            $user->set_person($p);
         }
     }
 
