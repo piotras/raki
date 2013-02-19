@@ -15,7 +15,7 @@ $DB_TMP_PASSWORD='midgard_raki';
 $SCHEMA_LIVE_DIRECTORY='/usr/share/midgard/schema';
 
 # Directory for updated schemas (used for transition only)
-$SCHEMA_TMP_DIRECTORY='';
+$SCHEMA_TMP_DIRECTORY=__DIR__ . "/data/ragnaroek/schema";
 
 # working directory
 $SRC_TOP_DIR = __DIR__;
@@ -34,19 +34,19 @@ class RagnaroekTransition extends RagnaroekTransitionAbstract
 {
     public function __construct($db_live_name, $db_live_username, $db_live_password, $db_live_dump_file, $db_tmp_name, $db_tmp_username, $db_tmp_password, $schema_live_directory, $schema_tmp_directory, $scr_top_dir) 
     {
-        $db_live_name = $db_live_name;
-	    $db_live_username = $db_live_username;
-	    $db_live_password = $db_live_password;
-	    $db_live_dump_file = $db_live_dump_file;
+        $this->db_live_name = $db_live_name;
+	    $this->db_live_username = $db_live_username;
+	    $this->db_live_password = $db_live_password;
+	    $this->db_live_dump_file = $db_live_dump_file;
 
-	    $db_tmp_name = $db_tmp_name;
-	    $db_tmp_username = $db_tmp_username;
-	    $db_tmp_password = $db_tmp_password;
+	    $this->db_tmp_name = $db_tmp_name;
+	    $this->db_tmp_username = $db_tmp_username;
+	    $this->db_tmp_password = $db_tmp_password;
 
-	    $schema_live_directory = $schema_live_directory;
-	    $schema_tmp_directory = $schema_tmp_directory;
+	    $this->schema_live_directory = $schema_live_directory;
+	    $this->schema_tmp_directory = $schema_tmp_directory;
 
-	    $scr_top_dir = $scr_top_dir;
+	    $this->scr_top_dir = $scr_top_dir;
     }
 
     public function importContent()

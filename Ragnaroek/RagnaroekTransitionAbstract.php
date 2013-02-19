@@ -18,43 +18,43 @@ abstract class RagnaroekTransitionAbstract
 
     public function validate()
     {
-        if ($db_live_name == null) {
+        if ($this->db_live_name == null) {
             throw new Exception("Invalid value");
         }
 
-        if ($db_live_username == null) {
+        if ($this->db_live_username == null) {
             throw new Exception("Invalid value");
         }
 
-        if ($db_live_password == null) {
+        if ($this->db_live_password == null) {
             throw new Exception("Invalid value");
         }
 
-        if ($db_live_dump_file == null) {
+        if ($this->db_live_dump_file == null) {
             throw new Exception("Invalid value");
         }
 
-        if ($db_tmp_name == null) {
+        if ($this->db_tmp_name == null) {
             throw new Exception("Invalid value");
         }
 
-        if ($db_tmp_username == null) {
+        if ($this->db_tmp_username == null) {
             throw new Exception("Invalid value");
         }
 
-        if ($db_tmp_password == null) {
+        if ($this->db_tmp_password == null) {
             throw new Exception("Invalid value");
         }
 
-        if ($schema_live_directory == null) {
+        if ($this->schema_live_directory == null) {
             throw new Exception("Invalid value");
         }
 
-        if ($schema_tmp_directory == null) {
+        if ($this->schema_tmp_directory == null) {
             throw new Exception("Invalid value");
         }
     
-        if ($scr_top_dir == null) {
+        if ($this->scr_top_dir == null) {
             throw new Exception("Invalid value");
         }
     }
