@@ -8,6 +8,7 @@ use \MidgardQuerySelect;
 use \MidgardQueryProperty;
 use \MidgardQueryValue;
 use \MidgardQueryConstraint;
+use \MidgardUser;
 
 class ContentManager implements \CRTransition\ContentManager 
 {
@@ -120,6 +121,37 @@ class ContentManager implements \CRTransition\ContentManager
         $q = $sts->getSQLUpdateTypePost($typeName);
         //echo $q . "\n";
         $mysql->query($q);
+
+        if ($typeName == 'midgard_person') {
+            $this->convertPersonToUser();
+        }
+    }
+
+    public function convertPersonToUser()
+    {
+        $qs = new MidgardQuerySelect(
+            new MidgardQueryStorage("midgard_person")
+        );
+        $qs->execute();
+
+        foreach ($qs->list_objects() as $person)
+        {
+            $user = new MidgardUser();
+            $user->active = true;
+            $hasPlainText = false;
+            $pass = $person->password;
+            $plain = substr($pass, 0, 2);
+            if ($plain == "**") {
+                $hasPlainText = true;
+                $pass = substr($pass, 2);
+            }
+            $user->authtype = $hasPlainText ? "Plaintext" : "Legacy";
+            $user->login = $person->username;
+            $user->password = $pass;
+            $user->usertype = 0;
+
+            $user->create();
+        }
     }
 
     public function getStoredTypeNames()
