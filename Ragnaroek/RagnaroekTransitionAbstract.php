@@ -54,7 +54,7 @@ abstract class RagnaroekTransitionAbstract
             throw new Exception("Invalid value");
         }
     
-        if ($this->scr_top_dir == null) {
+        if ($this->src_top_dir == null) {
             throw new Exception("Invalid value");
         }
     }

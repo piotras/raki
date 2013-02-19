@@ -32,7 +32,7 @@ require __DIR__ . '/RagnaroekTransitionAbstract.php';
 
 class RagnaroekTransition extends RagnaroekTransitionAbstract
 {
-    public function __construct($db_live_name, $db_live_username, $db_live_password, $db_live_dump_file, $db_tmp_name, $db_tmp_username, $db_tmp_password, $schema_live_directory, $schema_tmp_directory, $scr_top_dir) 
+    public function __construct($db_live_name, $db_live_username, $db_live_password, $db_live_dump_file, $db_tmp_name, $db_tmp_username, $db_tmp_password, $schema_live_directory, $schema_tmp_directory, $src_top_dir) 
     {
         $this->db_live_name = $db_live_name;
 	    $this->db_live_username = $db_live_username;
@@ -46,7 +46,7 @@ class RagnaroekTransition extends RagnaroekTransitionAbstract
 	    $this->schema_live_directory = $schema_live_directory;
 	    $this->schema_tmp_directory = $schema_tmp_directory;
 
-	    $this->scr_top_dir = $scr_top_dir;
+        $this->src_top_dir = $src_top_dir;
     }
 
     public function importContent()
