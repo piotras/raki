@@ -146,7 +146,8 @@ class MgdSchemaToSQL extends \DomDocument
             }
             $table = $this->getTable($property);
             $sql .= $field . " = ";
-            $sql .= "(SELECT  {$table}.{$field} FROM {$table} WHERE {$table}.lang = {$languageID} AND {$table}.sid = {$typeTable}.id)";
+            $_select = "(SELECT  {$table}.{$field} FROM {$table} WHERE {$table}.lang = {$languageID} AND {$table}.sid = {$typeTable}.id)";
+            $sql .= "IF ($_select IS NULL, {$typeTable}.{$field}, $_select)";
             $sql .= ",\n";
         }
 
