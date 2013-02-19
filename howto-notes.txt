@@ -13,6 +13,7 @@
 7. Copy all schemas to /usr/share/midgard2 directory, so they can be used after migration.
 8. Copy all configuration files from /etc/midgard/conf.d to /etc/midgard2/conf.d.
  * change [Database] section (to [Midgarddatabase])
+9. Convert midgard_person to midgard_user
 
 Run:
 

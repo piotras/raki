@@ -141,6 +141,33 @@ abstract class RagnaroekTransitionAbstract
         }
         $tree->asXML($file);
     }
+
+    /*
+     * Copy schemas to data/schema directory (These schemas should contain all types you want to convert).
+     * Update every type (from copied schemas) so it registers 'sitegroup' property explicitly
+     */
+    public function copySchemasTypeConvert()
+    {
+
+    }
+
+    /*
+     *  Copy all schemas to data/ragnaroek/schema directory.
+     *  Rename types. E.g. add ragnaroek_transition prefix.
+     *  (These schemas are required to generate correct SQL queries, and are not used by extension itself)
+     */
+    public function copySchemasGenerateSQL()
+    {
+
+    }
+
+    /*
+     * Copy all schemas to /usr/share/midgard2 directory, so they can be used after migration.
+     */ 
+    public function copySchemasToRatatoskr()
+    {
+
+    }
 }
 
 ?>
