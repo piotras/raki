@@ -11,7 +11,8 @@ abstract class RagnaroekTransitionAbstract
     protected $db_tmp_username = null;
     protected $db_tmp_password = null;
 
-    protected $schema_live_directory = null;
+    protected $schema_ragnaroek_directory = null;
+    protected $schema_ratatoskr_directory = null;
     protected $schema_tmp_directory = null;
 
     protected $scr_top_dir = null;
@@ -46,7 +47,11 @@ abstract class RagnaroekTransitionAbstract
             throw new Exception("Invalid value");
         }
 
-        if ($this->schema_live_directory == null) {
+        if ($this->schema_ragnaroek_directory == null) {
+            throw new Exception("Invalid value");
+        }
+
+        if ($this->schema_ratatoskr_directory == null) {
             throw new Exception("Invalid value");
         }
 
@@ -142,13 +147,34 @@ abstract class RagnaroekTransitionAbstract
         $tree->asXML($file);
     }
 
+    protected static function copyXmlFiles($srcDir, $destDir)
+    {
+        if ($handle = opendir($srcDir)) {
+            while (($entry = readdir($handle)) == true) {
+                /* Ignore parent and self directory */
+                if ($entry == '.' || $entry == '..') {
+                    continue;
+                }
+
+                $absSrcPath = $srcDir . '/' . $entry;
+                $absDestPath = $destDir . '/' . $entry;
+                $info = pathinfo($absSrcPath);
+                /* Ignore non xml files */
+                if ($info['extension'] != 'xml') {
+                    continue;
+                }
+                copy($absSrcPath, $absDestPath);
+            }
+        }
+    }
+
     /*
      * Copy schemas to data/schema directory (These schemas should contain all types you want to convert).
      * Update every type (from copied schemas) so it registers 'sitegroup' property explicitly
      */
     public function copySchemasTypeConvert()
     {
-
+        self::copyXmlFiles($this->schema_ragnaroek_directory, $this->schema_ratatoskr_directory);
     }
 
     /*
@@ -158,7 +184,7 @@ abstract class RagnaroekTransitionAbstract
      */
     public function copySchemasGenerateSQL()
     {
-
+        self::copyXmlFiles($this->schema_ragnaroek_directory, $this->schema_tmp_directory);
     }
 
     /*

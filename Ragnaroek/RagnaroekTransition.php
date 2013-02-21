@@ -12,10 +12,13 @@ $DB_TMP_USERNAME='midgard_raki';
 $DB_TMP_PASSWORD='midgard_raki';
 
 # Directory with schemas which hold information about types to transform
-$SCHEMA_LIVE_DIRECTORY='/usr/share/midgard/schema';
+$SCHEMA_RAGNAROEK_DIRECTORY='/usr/share/midgard/schema';
 
 # Directory for updated schemas (used for transition only)
 $SCHEMA_TMP_DIRECTORY=__DIR__ . "/data/ragnaroek/schema";
+
+# Directory for schemas which should be used to generate classes
+$SCHEMA_RATATOSKR_DIRECTORY=__DIR__ . "/data/schema";
 
 # working directory
 $SRC_TOP_DIR = __DIR__;
@@ -32,7 +35,7 @@ require __DIR__ . '/RagnaroekTransitionAbstract.php';
 
 class RagnaroekTransition extends RagnaroekTransitionAbstract
 {
-    public function __construct($db_live_name, $db_live_username, $db_live_password, $db_live_dump_file, $db_tmp_name, $db_tmp_username, $db_tmp_password, $schema_live_directory, $schema_tmp_directory, $src_top_dir) 
+    public function __construct($db_live_name, $db_live_username, $db_live_password, $db_live_dump_file, $db_tmp_name, $db_tmp_username, $db_tmp_password, $schema_ragnaroek_directory, $schema_ratatoskr_directory, $schema_tmp_directory, $src_top_dir) 
     {
         $this->db_live_name = $db_live_name;
 	    $this->db_live_username = $db_live_username;
@@ -43,7 +46,8 @@ class RagnaroekTransition extends RagnaroekTransitionAbstract
 	    $this->db_tmp_username = $db_tmp_username;
 	    $this->db_tmp_password = $db_tmp_password;
 
-	    $this->schema_live_directory = $schema_live_directory;
+        $this->schema_ragnaroek_directory = $schema_ragnaroek_directory;
+        $this->schema_ratatoskr_directory = $schema_ratatoskr_directory;
 	    $this->schema_tmp_directory = $schema_tmp_directory;
 
         $this->src_top_dir = $src_top_dir;
@@ -86,7 +90,8 @@ $transition = new RagnaroekTransition(
     $DB_TMP_NAME,
     $DB_TMP_USERNAME,
     $DB_TMP_PASSWORD,
-    $SCHEMA_LIVE_DIRECTORY,
+    $SCHEMA_RAGNAROEK_DIRECTORY,
+    $SCHEMA_RATATOSKR_DIRECTORY,
     $SCHEMA_TMP_DIRECTORY,
     $SRC_TOP_DIR
     );
