@@ -46,9 +46,12 @@ foreach ($paths as $path) {
     foreach ($xml->type as $k => $type) {
         $hasSG = false;
         $old_name = $xml->type[$i]->attributes()->name;
-        $new_name = "ratatoskr_".$old_name;
-        echo "Rename {$old_name} to {$new_name} \n";
-        $xml->type[$i]->attributes()->name = $new_name;
+        # rename typeto avoid collision
+        if (strpos($old_name, "ratatoskr") === false) {
+            $new_name = "ratatoskr_".$old_name;
+            echo "Rename {$old_name} to {$new_name} \n";
+            $xml->type[$i]->attributes()->name = $new_name;
+        }
         # check if sitegroup property is already registered 
         foreach($xml->type[$i]->children() as $child => $property) {
             print_r($property);
