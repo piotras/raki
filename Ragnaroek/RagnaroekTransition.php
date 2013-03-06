@@ -1,27 +1,40 @@
 <?php
 
+if (!isset($argv[1])) {
+    throw new Exception("Config file needed as an argument");
+}
+
+$configFile = $argv[1];
+include $configFile;
+
+if (!isset($transition_config)) {
+    throw new Exception("'transition_config' not set");
+}
+
+# Set variables from given configuration
+
 # Database to transform
-$DB_LIVE_NAME='midgard';
-$DB_LIVE_USERNAME='midgard';
-$DB_LIVE_PASSWORD='midgard';
-$DB_LIVE_DUMP_FILE='midgard.sql';
+$DB_LIVE_NAME=$transition_config['ratatoskr_db_name'];
+$DB_LIVE_USERNAME=$transition_config['ratatoskr_db_username'];
+$DB_LIVE_PASSWORD=$transition_config['ratatoskr_db_password'];
+$DB_LIVE_DUMP_FILE=$transition_config['ratatoskr_db_dump_file'];
 
 # Temporary database
-$DB_TMP_NAME='midgard_raki';
-$DB_TMP_USERNAME='midgard_raki';
-$DB_TMP_PASSWORD='midgard_raki';
+$DB_TMP_NAME=$transition_config['temporary_database_name'];
+$DB_TMP_USERNAME=$transition_config['temporary_database_username'];
+$DB_TMP_PASSWORD=$transition_config['temporary_database_password'];
 
 # Directory with schemas which hold information about types to transform
-$SCHEMA_RAGNAROEK_DIRECTORY='/usr/share/midgard/schema';
+$SCHEMA_RAGNAROEK_DIRECTORY=$transition_config['schema_directory_ragnaroek'];
 
 # Directory for updated schemas (used for transition only)
-$SCHEMA_TMP_DIRECTORY=__DIR__ . "/data/ragnaroek/schema";
+$SCHEMA_TMP_DIRECTORY=__DIR__ . $transition_config['schema_directory_sql']; 
 
 # Directory for schemas which should be used to generate classes
-$SCHEMA_RATATOSKR_DIRECTORY=__DIR__ . "/data/schema";
+$SCHEMA_RATATOSKR_DIRECTORY=__DIR__ . $transition_config['schema_directory_transition'];
 
 # working directory
-$SRC_TOP_DIR = __DIR__;
+$SRC_TOP_DIR = $transition_config['working_directory'];
 
 # Load mandatory files
 
