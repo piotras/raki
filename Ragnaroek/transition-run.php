@@ -54,7 +54,6 @@ foreach ($paths as $path) {
         }
         # check if sitegroup property is already registered 
         foreach($xml->type[$i]->children() as $child => $property) {
-            print_r($property);
             if ($property->attributes()->name == "sitegroup") {
                 $hasSG = true;
                 continue;
