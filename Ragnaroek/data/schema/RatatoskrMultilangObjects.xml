@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Schema xmlns="http://www.midgard-project.org/repligard/1.4">
 
-    <type name="ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_midgard_article" table="article">
+    <type name="ratatoskr_midgard_article" table="article">
         <property name="id" type="unsigned integer" primaryfield="id">
             <description>Local non-replication-safe database identifier</description>
         </property>
@@ -73,7 +73,7 @@
 	<property name="sitegroup" type="unsigned integer"/>
      </type>
 
-    <type name="ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_midgard_topic" table="topic">
+    <type name="ratatoskr_midgard_topic" table="topic">
         <property name="id" type="unsigned integer" primaryfield="id">
             <description>Local non-replication-safe database identifier</description>
         </property>
@@ -122,7 +122,7 @@
 	<property name="sitegroup" type="unsigned integer"/>
      </type>
 
-    <type name="ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_midgard_host" table="host">
+    <type name="ratatoskr_midgard_host" table="host">
         <property name="id" type="unsigned integer" primaryfield="id">
             <description>Local non-replication-safe database identifier</description>
         </property>
@@ -157,7 +157,7 @@
 	<property name="sitegroup" type="unsigned integer"/>
      </type>
 
-    <type name="ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_midgard_style" table="style">
+    <type name="ratatoskr_midgard_style" table="style">
         <property name="id" type="unsigned integer" primaryfield="id">
             <description>Local non-replication-safe database identifier</description>
         </property>
@@ -173,7 +173,7 @@
 	<property name="sitegroup" type="unsigned integer"/>
      </type>
 
-    <type name="ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_midgard_element" table="element">
+    <type name="ratatoskr_midgard_element" table="element">
         <property name="id" type="unsigned integer" primaryfield="id">
             <description>Local non-replication-safe database identifier</description>
         </property>
@@ -196,7 +196,7 @@
 	<property name="sitegroup" type="unsigned integer"/>
      </type>
 
-    <type name="ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_midgard_page" table="page">
+    <type name="ratatoskr_midgard_page" table="page">
         <property name="id" type="unsigned integer" primaryfield="id">
             <description>Local non-replication-safe database identifier</description>
         </property>
@@ -247,7 +247,7 @@
 				<property name="sitegroup" type="unsigned integer"/>
      </type>
 
-    <type name="ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_midgard_pageelement" table="pageelement">
+    <type name="ratatoskr_midgard_pageelement" table="pageelement">
         <property name="id" type="unsigned integer" primaryfield="id">
             <description>Local non-replication-safe database identifier</description>
         </property>
@@ -273,7 +273,7 @@
 	<property name="sitegroup" type="unsigned integer"/>
      </type>
 
-    <type name="ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_midgard_group" table="grp">
+    <type name="ratatoskr_midgard_group" table="grp">
         <property name="id" type="unsigned integer" primaryfield="id">
             <description>Local non-replication-safe database identifier</description>
         </property>
@@ -316,7 +316,7 @@
 	<property name="sitegroup" type="unsigned integer"/>
      </type>
 
-    <type name="ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_midgard_member" table="member">
+    <type name="ratatoskr_midgard_member" table="member">
         <property name="id" type="unsigned integer" primaryfield="id">
             <description>Local non-replication-safe database identifier</description>
         </property>
@@ -336,7 +336,7 @@
 	<property name="sitegroup" type="unsigned integer"/>
      </type>
 
-    <type name="ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_midgard_person" table="person">
+    <type name="ratatoskr_midgard_person" table="person">
         <property name="id" type="unsigned integer" primaryfield="id">
             <description>Local non-replication-safe database identifier</description>
         </property>
@@ -407,7 +407,7 @@
 	<property name="sitegroup" type="unsigned integer"/>
      </type>
 
-    <type name="ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_midgard_event" table="event">
+    <type name="ratatoskr_midgard_event" table="event">
         <property name="id" type="unsigned integer" primaryfield="id">
             <description>Local non-replication-safe database identifier</description>
         </property>
@@ -439,7 +439,7 @@
 	<property name="sitegroup" type="unsigned integer"/>
      </type>
 
-    <type name="ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_midgard_eventmember" table="eventmember">
+    <type name="ratatoskr_midgard_eventmember" table="eventmember">
         <property name="id" type="unsigned integer" primaryfield="id">
             <description>Local non-replication-safe database identifier</description>
         </property>
@@ -462,7 +462,7 @@
 				<property name="sitegroup" type="unsigned integer"/>
      </type>
 
-    <type name="ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_midgard_attachment" table="blobs">
+    <type name="ratatoskr_midgard_attachment" table="blobs">
         <property name="id" type="unsigned integer" primaryfield="id">
             <description>Local non-replication-safe database identifier</description>
         </property>
@@ -500,7 +500,7 @@
 		<property name="sitegroup" type="unsigned integer"/>
      </type>
 
-    <type name="ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_midgard_parameter" table="record_extension">
+    <type name="ratatoskr_midgard_parameter" table="record_extension">
         <property name="id" type="unsigned integer" primaryfield="id">
             <description>Local non-replication-safe database identifier</description>
         </property>
@@ -529,7 +529,7 @@
 	<property name="sitegroup" type="unsigned integer"/>
      </type>
 
-    <type name="ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_midgard_snippetdir" table="snippetdir">
+    <type name="ratatoskr_midgard_snippetdir" table="snippetdir">
         <property name="id" type="unsigned integer" primaryfield="id">
             <description>Local non-replication-safe database identifier</description>
         </property>
@@ -549,7 +549,7 @@
 	<property name="sitegroup" type="unsigned integer"/>
      </type>
 
-    <type name="ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_midgard_snippet" table="snippet" parent="midgard_snippetdir">
+    <type name="ratatoskr_midgard_snippet" table="snippet" parent="midgard_snippetdir">
         <property name="id" type="unsigned integer" primaryfield="id">
             <description>Local non-replication-safe database identifier</description>
         </property>
@@ -579,7 +579,7 @@
 	<property name="sitegroup" type="unsigned integer"/>
      </type>
 
-    <type name="ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_midgard_quota" table="quota">
+    <type name="ratatoskr_midgard_quota" table="quota">
         <property name="id" type="unsigned integer" primaryfield="id">
             <description>Local non-replication-safe database identifier</description>
         </property>
@@ -641,7 +641,7 @@
 	<property name="sitegroup" type="unsigned integer"/>
      </type>
 
-    <type name="ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_midgard_language" table="midgard_language">
+    <type name="ratatoskr_midgard_language" table="midgard_language">
         <property name="id" type="unsigned integer" primaryfield="id">
             <description>Local non-replication-safe database identifier</description>
         </property>
