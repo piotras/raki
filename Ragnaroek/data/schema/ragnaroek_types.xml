@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Schema xmlns="http://www.midgard-project.org/repligard/1.4">
 
-	<type name="ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ragnaroek_sitegroup" table="sitegroup" metadata="false">
+	<type name="sitegroup" table="sitegroup" metadata="false">
 		<property name="id" type="unsigned integer" primaryfield="id"/>
 		<property name="name" type="string"/>
 	 <property name="sitegroup" type="unsigned integer"/></type>
 
-	<type name="ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ragnaroek_article" table="article" parent="ragnaroek_topic">
+	<type name="article" table="article" parent="ratatoskr_ragnaroek_topic">
 		<property name="id" type="unsigned integer" primaryfield="id"/>
 		<property name="name" type="string" index="yes"/>
 		<property name="extra1" type="string"/>
 		<property name="extra2" type="string"/>
 		<property name="extra3" type="string"/>
 		<property name="type" type="integer" index="yes"/>
-		<property name="up" type="unsigned integer" link="ragnaroek_article:id" upfield="up"/>
-		<property name="topic" type="unsigned integer" link="ragnaroek_topic:id" parentfield="topic"/>
+		<property name="up" type="unsigned integer" link="ratatoskr_article" upfield="up"/>
+		<property name="topic" type="unsigned integer" link="ratatoskr_article" parentfield="topic"/>
 		<property name="sitegroup" type="unsigned integer"/>
 	 </type>
 
 	<!-- Multilang features --> 
-	<type name="ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ragnaroek_article_lang" table="article_i"> 
+	<type name="article_lang" table="article_i"> 
 		<property name="id" type="unsigned integer" primaryfield="id"/>
 		<property name="title" type="string"/>
 		<property name="abstract" type="text"/>
 		<property name="content" type="text"/>
 		<property name="url" type="string" index="yes"/>
-		<property name="lang" type="unsigned integer" link="midgard_language:id"/>
+		<property name="lang" type="unsigned integer" link="ratatoskr_article_lang"/>
 		<property name="sid" type="unsigned integer"/>
-		<property name="contentauthor" type="unsigned integer" link="midgard_person:id" field="author"/>
+		<property name="contentauthor" type="unsigned integer" link="ratatoskr_article_lang" field="author"/>
 		<property name="contentcreated" type="datetime" field="created"/>
 		<property name="sitegroup" type="unsigned integer"/>
         <!-- Legacy -->
@@ -39,55 +39,55 @@
 		<property name="score" type="integer"/>
 	 </type>
 
-	<type name="ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ragnaroek_topic" table="topic">
+	<type name="topic" table="topic">
 		<property name="id" type="unsigned integer" primaryfield="id"/>
 		<property name="name" type="string" index="yes"/>
 		<property name="code" type="text"/>
-		<property name="up" link="ragnaroek_topic:id" type="unsigned integer" upfield="up"/>
+		<property name="up" link="ratatoskr_topic" type="unsigned integer" upfield="up"/>
 		<property name="sitegroup" type="unsigned integer"/>
         <!-- MidCOM properties -->
 		<property name="component" type="string" index="yes"/>
 		<property name="style" type="string" index="yes"/>
 		<property name="styleInherit" type="boolean" field="style_inherit" index="yes"/>
-		<property name="symlink" link="ragnaroek_topic:id" type="unsigned integer" index="yes"/>
+		<property name="symlink" link="ratatoskr_topic" type="unsigned integer" index="yes"/>
 	 </type>
 
 	<!-- Multilang properties -->
-	<type name="ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ragnaroek_topic_lang" table="topic_i">
+	<type name="topic_lang" table="topic_i">
 		<property name="id" type="unsigned integer" primaryfield="id"/>
 		<property name="title" type="string"/>
 		<property name="extra" type="text"/>
 		<property name="description" type="text"/>
-		<property name="lang" type="unsigned integer" link="midgard_language:id"/>
+		<property name="lang" type="unsigned integer" link="ratatoskr_topic_lang"/>
 		<property name="sid" type="unsigned integer"/>
 		<property name="sitegroup" type="unsigned integer"/>
         <!-- Legacy -->
 		<property name="score" type="integer"/>
 	 </type>
 
-	<type name="ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_topic" table="topic">
+	<type name="topic" table="topic">
 		<property name="id" type="unsigned integer" primaryfield="id"/>
 		<property name="name" type="string" index="yes"/>
 		<property name="code" type="text"/>
-		<property name="up" link="ragnaroek_topic:id" type="unsigned integer" upfield="up"/>
+		<property name="up" link="ratatoskr_topic" type="unsigned integer" upfield="up"/>
 		<property name="sitegroup" type="unsigned integer"/>
     <!-- MidCOM properties -->
 		<property name="component" type="string" index="yes"/>
 		<property name="style" type="string" index="yes"/>
 		<property name="styleInherit" type="boolean" field="style_inherit" index="yes"/>
-		<property name="symlink" link="ragnaroek_topic:id" type="unsigned integer" index="yes"/>
+		<property name="symlink" link="ratatoskr_topic" type="unsigned integer" index="yes"/>
 	
 		<!-- Multilang properties -->
 		<property name="title" type="string"/>
 		<property name="extra" type="text"/>
 		<property name="description" type="text"/>
-		<property name="lang" type="unsigned integer" link="midgard_language:id"/>
+		<property name="lang" type="unsigned integer" link="ratatoskr_topic"/>
 		<property name="sid" type="unsigned integer"/>
         <!-- Legacy -->
 		<property name="score" type="integer"/>
 	 </type>
 
-	<type name="ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_ratatoskr_midgard_language" table="midgard_language">
+	<type name="midgard_language" table="midgard_language">
 		<property name="id" type="unsigned integer" primaryfield="id"/>
 		<property name="code" type="string" dbtype="varchar(2)" index="yes"/>
 		<property name="name" type="string" index="yes"/>
