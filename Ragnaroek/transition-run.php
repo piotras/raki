@@ -42,7 +42,7 @@ if ($handle = opendir($schema_directory_transition)) {
 
 function renameElement($name, $msg) 
 {
-    $prefix = "ratatoskr_";
+    $prefix = "ragnaroek_";
     if (strpos($name, $prefix) !== false) {
         return $name;
     }
