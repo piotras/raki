@@ -40,6 +40,18 @@ if ($handle = opendir($schema_directory_transition)) {
     }
 }
 
+function renameElement($name, $msg) 
+{
+    $prefix = "ratatoskr_";
+    if (strpos($name, $prefix) !== false) {
+        return $name;
+    }
+    $old_name = $name;
+    $new_name = $prefix . $name;
+    echo "Rename {$msg} {$old_name} to {$new_name} \n";
+    return $new_name;    
+}
+
 foreach ($paths as $path) {
     $xml = simplexml_load_file($path);
     $i = 0;
@@ -47,29 +59,15 @@ foreach ($paths as $path) {
         $hasSG = false;
         $old_name = $xml->type[$i]->attributes()->name;
         # rename type to avoid collision
-        if (strpos($old_name, "ratatoskr") === false) {
-            $new_name = "ratatoskr_".$old_name;
-            echo "Rename {$old_name} to {$new_name} \n";
-            $xml->type[$i]->attributes()->name = $new_name;
-        }
+        $xml->type[$i]->attributes()->name = renameElement($xml->type[$i]->attributes()->name, "type");
         # rename parent type if set 
         if (isset($xml->type[$i]->attributes()->parent)) {
-            $old_parent = $xml->type[$i]->attributes()->parent;
-            if (strpos($old_parent, "ratatoskr") === false) {
-                $new_parent = "ratatoskr_".$old_parent;
-                echo "Rename parent {$old_parent} to {$new_parent} \n";
-                $xml->type[$i]->attributes()->parent = $new_parent;
-            }
+            $xml->type[$i]->attributes()->parent = renameElement($xml->type[$i]->attributes()->parent, "parent");
         }
         foreach($xml->type[$i]->children() as $child => $property) {
             # if there's a link, rename it 
             if (isset($property->attributes()->link)) {
-                $old_link = $property->attributes()->link;
-                if (strpos($old_link, "ratatoskr") === false) {
-                    $new_link = "ratatoskr_".$old_link;
-                    $property->attributes()->link = $new_link;
-                    echo "Rename {$old_link} to {$new_link} \n";
-                }
+                $property->attributes()->link = renameElement($property->attributes()->link, "link");
             }
             # check if sitegroup property is already registered 
             if ($property->attributes()->name == "sitegroup") {
