@@ -65,7 +65,7 @@
 		<property name="score" type="integer"/>
 	 </type>
 
-	<type name="topic" table="topic">
+	<type name="ratatoskr_topic" table="topic">
 		<property name="id" type="unsigned integer" primaryfield="id"/>
 		<property name="name" type="string" index="yes"/>
 		<property name="code" type="text"/>
