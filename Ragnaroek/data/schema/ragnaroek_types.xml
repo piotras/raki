@@ -6,15 +6,15 @@
 		<property name="name" type="string"/>
 	 <property name="sitegroup" type="unsigned integer"/></type>
 
-	<type name="article" table="article" parent="ratatoskr_ragnaroek_topic">
+	<type name="article" table="article" parent="topic">
 		<property name="id" type="unsigned integer" primaryfield="id"/>
 		<property name="name" type="string" index="yes"/>
 		<property name="extra1" type="string"/>
 		<property name="extra2" type="string"/>
 		<property name="extra3" type="string"/>
 		<property name="type" type="integer" index="yes"/>
-		<property name="up" type="unsigned integer" link="ratatoskr_article" upfield="up"/>
-		<property name="topic" type="unsigned integer" link="ratatoskr_article" parentfield="topic"/>
+		<property name="up" type="unsigned integer" link="article:id" upfield="up"/>
+		<property name="topic" type="unsigned integer" link="topic:id" parentfield="topic"/>
 		<property name="sitegroup" type="unsigned integer"/>
 	 </type>
 
@@ -25,9 +25,9 @@
 		<property name="abstract" type="text"/>
 		<property name="content" type="text"/>
 		<property name="url" type="string" index="yes"/>
-		<property name="lang" type="unsigned integer" link="ratatoskr_article_lang"/>
+		<property name="lang" type="unsigned integer" link="midgard_language:id"/>
 		<property name="sid" type="unsigned integer"/>
-		<property name="contentauthor" type="unsigned integer" link="ratatoskr_article_lang" field="author"/>
+		<property name="contentauthor" type="unsigned integer" link="midgard_person:id" field="author"/>
 		<property name="contentcreated" type="datetime" field="created"/>
 		<property name="sitegroup" type="unsigned integer"/>
         <!-- Legacy -->
@@ -43,13 +43,13 @@
 		<property name="id" type="unsigned integer" primaryfield="id"/>
 		<property name="name" type="string" index="yes"/>
 		<property name="code" type="text"/>
-		<property name="up" link="ratatoskr_topic" type="unsigned integer" upfield="up"/>
+		<property name="up" link="topic:id" type="unsigned integer" upfield="up"/>
 		<property name="sitegroup" type="unsigned integer"/>
         <!-- MidCOM properties -->
 		<property name="component" type="string" index="yes"/>
 		<property name="style" type="string" index="yes"/>
 		<property name="styleInherit" type="boolean" field="style_inherit" index="yes"/>
-		<property name="symlink" link="ratatoskr_topic" type="unsigned integer" index="yes"/>
+		<property name="symlink" link="topic:id" type="unsigned integer" index="yes"/>
 	 </type>
 
 	<!-- Multilang properties -->
@@ -58,30 +58,30 @@
 		<property name="title" type="string"/>
 		<property name="extra" type="text"/>
 		<property name="description" type="text"/>
-		<property name="lang" type="unsigned integer" link="ratatoskr_topic_lang"/>
+		<property name="lang" type="unsigned integer" link="midgard_language:id"/>
 		<property name="sid" type="unsigned integer"/>
 		<property name="sitegroup" type="unsigned integer"/>
         <!-- Legacy -->
 		<property name="score" type="integer"/>
 	 </type>
 
-	<type name="ratatoskr_topic" table="topic">
+	<type name="topic" table="topic">
 		<property name="id" type="unsigned integer" primaryfield="id"/>
 		<property name="name" type="string" index="yes"/>
 		<property name="code" type="text"/>
-		<property name="up" link="ratatoskr_topic" type="unsigned integer" upfield="up"/>
+		<property name="up" link="topic:id" type="unsigned integer" upfield="up"/>
 		<property name="sitegroup" type="unsigned integer"/>
     <!-- MidCOM properties -->
 		<property name="component" type="string" index="yes"/>
 		<property name="style" type="string" index="yes"/>
 		<property name="styleInherit" type="boolean" field="style_inherit" index="yes"/>
-		<property name="symlink" link="ratatoskr_topic" type="unsigned integer" index="yes"/>
+		<property name="symlink" link="topic:id" type="unsigned integer" index="yes"/>
 	
 		<!-- Multilang properties -->
 		<property name="title" type="string"/>
 		<property name="extra" type="text"/>
 		<property name="description" type="text"/>
-		<property name="lang" type="unsigned integer" link="ratatoskr_topic"/>
+		<property name="lang" type="unsigned integer" link="midgard_language:id"/>
 		<property name="sid" type="unsigned integer"/>
         <!-- Legacy -->
 		<property name="score" type="integer"/>
