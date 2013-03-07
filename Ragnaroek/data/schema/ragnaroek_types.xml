@@ -65,7 +65,7 @@
 		<property name="score" type="integer"/>
 	 </type>
 
-	<type name="topic" table="topic">
+	<type name="ratatoskr_topic" table="topic">
 		<property name="id" type="unsigned integer" primaryfield="id"/>
 		<property name="name" type="string" index="yes"/>
 		<property name="code" type="text"/>
@@ -86,14 +86,4 @@
         <!-- Legacy -->
 		<property name="score" type="integer"/>
 	 </type>
-
-	<type name="midgard_language" table="midgard_language">
-		<property name="id" type="unsigned integer" primaryfield="id"/>
-		<property name="code" type="string" dbtype="varchar(2)" index="yes"/>
-		<property name="name" type="string" index="yes"/>
-		<property name="native" type="string"/>
-		<property name="locale" type="string"/>
-		<property name="description" type="text"/>
-	 <property name="sitegroup" type="unsigned integer"/></type>
-
 </Schema>
