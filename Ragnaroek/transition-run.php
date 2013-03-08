@@ -87,6 +87,6 @@ foreach ($paths as $path) {
 
 # finaly, execute real transition
 
-exec("php -c midgard2.ini ./RagnaroekTransition.php {$configFile}");
+passthru("php -c midgard2.ini ./RagnaroekTransition.php {$configFile}");
 
 ?>
