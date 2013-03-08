@@ -31,7 +31,7 @@ class WorkspaceManager implements \CRTransition\WorkspaceManager
     {
         $this->mgd = MidgardConnection::get_instance();
         if ($default_language == null) {
-            $this->default_language = new \midgard_language();
+            $this->default_language = new \ragnaroek_midgard_language();
             $this->default_language->code = 'multilang';
         } else {
             $this->default_language = $this->getLangByCode($default_language);
@@ -52,7 +52,7 @@ class WorkspaceManager implements \CRTransition\WorkspaceManager
 
     public function getLangByCode($code) 
     {
-        $storage = new MidgardQueryStorage('midgard_language');
+        $storage = new MidgardQueryStorage('ragnaroek_midgard_language');
         $qs = new MidgardQuerySelect($storage);
         $qs->set_constraint(
             new MidgardQueryConstraint(
@@ -131,7 +131,7 @@ class WorkspaceManager implements \CRTransition\WorkspaceManager
             if ($lang == $this->default_language->id) {
                 continue;
             }
-            $this->languages[] = new \midgard_language($lang);
+            $this->languages[] = new \ragnaroek_midgard_language($lang);
         }
     }
 
