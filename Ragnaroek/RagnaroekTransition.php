@@ -11,31 +11,6 @@ if (!isset($transition_config)) {
     throw new Exception("'transition_config' not set");
 }
 
-# Set variables from given configuration
-
-# Database to transform
-$DB_LIVE_NAME=$transition_config['ratatoskr_db_name'];
-$DB_LIVE_USERNAME=$transition_config['ratatoskr_db_username'];
-$DB_LIVE_PASSWORD=$transition_config['ratatoskr_db_password'];
-$DB_LIVE_DUMP_FILE=$transition_config['ratatoskr_db_dump_file'];
-
-# Temporary database
-$DB_TMP_NAME=$transition_config['temporary_database_name'];
-$DB_TMP_USERNAME=$transition_config['temporary_database_username'];
-$DB_TMP_PASSWORD=$transition_config['temporary_database_password'];
-
-# Directory with schemas which hold information about types to transform
-$SCHEMA_RAGNAROEK_DIRECTORY=$transition_config['schema_directory_ragnaroek'];
-
-# Directory for updated schemas (used for transition only)
-$SCHEMA_TMP_DIRECTORY=__DIR__ . $transition_config['schema_directory_sql']; 
-
-# Directory for schemas which should be used to generate classes
-$SCHEMA_RATATOSKR_DIRECTORY=__DIR__ . $transition_config['schema_directory_transition'];
-
-# working directory
-$SRC_TOP_DIR = $transition_config['working_directory'];
-
 # Load mandatory files
 
 if (!extension_loaded('mysql')) {
@@ -48,27 +23,27 @@ require __DIR__ . '/RagnaroekTransitionAbstract.php';
 
 class RagnaroekTransition extends RagnaroekTransitionAbstract
 {
-    public function __construct($db_live_name, $db_live_username, $db_live_password, $db_live_dump_file, $db_tmp_name, $db_tmp_username, $db_tmp_password, $schema_ragnaroek_directory, $schema_ratatoskr_directory, $schema_tmp_directory, $src_top_dir) 
+    public function __construct(array $config) 
     {
-        $this->db_live_name = $db_live_name;
-	    $this->db_live_username = $db_live_username;
-	    $this->db_live_password = $db_live_password;
-	    $this->db_live_dump_file = $db_live_dump_file;
+        $this->db_live_name = $config['ratatoskr_db_name'];
+	    $this->db_live_username = $config['ratatoskr_db_username'];
+	    $this->db_live_password = $config['ratatoskr_db_password'];
+	    $this->db_live_dump_file = $config['ratatoskr_db_dump_file'];
 
-	    $this->db_tmp_name = $db_tmp_name;
-	    $this->db_tmp_username = $db_tmp_username;
-	    $this->db_tmp_password = $db_tmp_password;
+	    $this->db_tmp_name = $config['temporary_database_name'];
+	    $this->db_tmp_username = $config['temporary_database_username'];
+	    $this->db_tmp_password = $config['temporary_database_password'];
 
-        $this->schema_ragnaroek_directory = $schema_ragnaroek_directory;
-        $this->schema_ratatoskr_directory = $schema_ratatoskr_directory;
-	    $this->schema_tmp_directory = $schema_tmp_directory;
+        $this->schema_ragnaroek_directory = $config['schema_directory_ragnaroek'];
+        $this->schema_ratatoskr_directory = $config['schema_directory_transition'];
+	    $this->schema_tmp_directory = $config['schema_directory_sql'];
 
-        $this->src_top_dir = $src_top_dir;
+        $this->src_top_dir = $config['working_directory'];
     }
 
     public function importContent()
     {
-        $transition = new \Ragnaroek\Ratatoskr\Transition(MidgardConnection::get_instance(), $this->Midgard2Config, __DIR__ . '/fixtures/', __DIR__ . '/data/ragnaroek/schema');
+        $transition = new \Ragnaroek\Ratatoskr\Transition(MidgardConnection::get_instance(), $this->Midgard2Config, $this->src_top_dir . '/fixtures/', $this->schema_tmp_directory);
 
         $workspaceManager = $transition->getWorkspaceManager();
         $workspaceManager->createWorkspacesAll();
@@ -95,19 +70,7 @@ class RagnaroekTransition extends RagnaroekTransitionAbstract
 
 # Run transition
 
-$transition = new RagnaroekTransition(
-	$DB_LIVE_NAME,
-    $DB_LIVE_USERNAME,
-    $DB_LIVE_PASSWORD,
-    $DB_LIVE_DUMP_FILE,
-    $DB_TMP_NAME,
-    $DB_TMP_USERNAME,
-    $DB_TMP_PASSWORD,
-    $SCHEMA_RAGNAROEK_DIRECTORY,
-    $SCHEMA_RATATOSKR_DIRECTORY,
-    $SCHEMA_TMP_DIRECTORY,
-    $SRC_TOP_DIR
-    );
+$transition = new RagnaroekTransition($transition_config);
 $transition->execute();
 
 ?>
