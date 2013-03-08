@@ -130,7 +130,7 @@ class ContentManager implements \CRTransition\ContentManager
     public function convertPersonToUser()
     {
         $qs = new MidgardQuerySelect(
-            new MidgardQueryStorage("ratatoskr_midgard_person")
+            new MidgardQueryStorage("ragnaroek_midgard_person")
         );
         $qs->toggle_readonly(false);
         $qs->execute();
