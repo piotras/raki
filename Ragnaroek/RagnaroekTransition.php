@@ -50,8 +50,7 @@ class RagnaroekTransition extends RagnaroekTransitionAbstract
 
         $contentManager = $transition->getContentManager();
         $types = $contentManager->getPossibleTypeNames();
-        foreach ($types as $type) {
-            echo "Import '{$type}' content \n";
+        foreach ($types as $type) { 
             $contentManager->importType($type);
         }
     }
