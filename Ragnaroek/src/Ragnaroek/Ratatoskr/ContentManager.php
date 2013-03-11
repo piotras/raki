@@ -99,7 +99,7 @@ class ContentManager implements \CRTransition\ContentManager
         $languages = array();
         foreach ($paths as $path) {
             $legacy = $workspaceManager->getLegacyMidgardType($path);
-            if ($legacy instanceof \midgard_language) {
+            if ($legacy instanceof \ragnaroek_midgard_language) {
                 if ($legacy->id == 0) {
                     continue;
                 }
