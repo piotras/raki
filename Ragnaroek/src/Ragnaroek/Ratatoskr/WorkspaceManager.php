@@ -344,15 +344,33 @@ class WorkspaceManager implements \CRTransition\WorkspaceManager
 
     private function getChildrenNames($ws, &$names)
     {
-        $children = $ws->list_children();
+
+        /* Enable, once bug in core is fixed in ratatoskr branch */
+        /* $children = $ws->list_children(); */
+
+        $storage = new MidgardQueryStorage("midgard_workspace");
+        $qs = new MidgardQuerySelect($storage);
+        $qs->toggle_readonly(false);
+        $qs->set_constraint(
+            new MidgardQueryConstraint(
+                new MidgardQueryProperty("up"),
+                "=",
+                new MidgardQueryValue($ws->id)
+            )
+        );
+        $qs->execute();
+        $children = $qs->list_objects();
 
         if (empty($children)) {
             return;
         }
 
         foreach ($children as $child) {
-            $names[$child->name] = array();
-            $this->getChildrenNames($child, $names[$child->name]);
+            /* Workaround for bug in core which prevents get children workspaces */
+            $childWS = new MidgardWorkspace();
+            $this->getMidgardWorkspaceManager()->get_workspace_by_path($childWS, $ws->get_path() . "/". $child->name);
+            $names[$childWS->name] = array(); 
+            $this->getChildrenNames($childWS, $names[$childWS->name]);
         }
     }
 
@@ -362,7 +380,6 @@ class WorkspaceManager implements \CRTransition\WorkspaceManager
         $ws = new MidgardWorkspace();
         $this->getMidgardWorkspaceManager()->get_workspace_by_path($ws, '/' . $this->default_sg_zero);
         $names[$this->default_sg_zero] = array();
-
         $this->getChildrenNames($ws, $names[$this->default_sg_zero]);
 
         return $names;
