@@ -1,21 +1,11 @@
 
 1. Clone raki project
 2. Change directory to Ratatoskr
-3. Dump production database and copy dump file to currrent location
-4. Update transition-example.php script:
- * set correct database name
- * set correct database username and password
-5. Copy schemas to data/schema directory (These schemas should contain all types you want to convert).
- * Update every type (from copied schemas) so it registers 'sitegroup' property explicitly
-6. Copy all schemas to data/ragnaroek/schema directory.
- * Rename types. E.g. add ragnaroek_transition prefix.
- (These schemas are required to generate correct SQL queries, and are not used by extension itself)
-7. Copy all schemas to /usr/share/midgard2 directory, so they can be used after migration.
-8. Copy all configuration files from /etc/midgard/conf.d to /etc/midgard2/conf.d.
+3. Edit config-example.php and run:
+
+    $ php transition-run.php ./config-example.php
+
+4. Copy all schemas to /usr/share/midgard2 directory, so they can be used after migration.
+5. Copy all configuration files from /etc/midgard/conf.d to /etc/midgard2/conf.d.
  * change [Database] section (to [Midgarddatabase])
-9. Convert midgard_person to midgard_user
-
-Run:
-
-    php -c midgard2.ini ./transition-example.php
 
