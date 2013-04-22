@@ -224,12 +224,12 @@
             <description>Reference to the local non-replication-safe database identifier of the object</description>
         </property>
         <!-- Legacy -->
-        <property name="contentauthor" type="unsigned integer" link="midgard_person:id" table="page_i" field="author" multilang="yes">
+				<!--<property name="contentauthor" type="unsigned integer" link="midgard_person:id" table="page_i" field="author" multilang="yes">
             <description>Author of the current language version of the page (legacy field)</description>
         </property>
         <property name="contentowner"    type="unsigned integer" link="midgard_group:id" table="page_i" field="owner" multilang="yes">
             <description>Owner of the current language version of the page (legacy field)</description>
-        </property>
+				</property>-->
         <property name="contentchanged"  type="datetime" table="page_i" field="changed" multilang="yes">
             <description>Time when the current language version has been changed (legacy field)</description>
         </property>
