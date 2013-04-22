@@ -107,10 +107,10 @@ abstract class RagnaroekTransitionAbstract
         $this->Midgard2Config->dbpass = $this->db_tmp_password;
 
         $mgd = midgard_connection::get_instance();
-        $mgd->enable_workspace(true);
         if ($mgd->open_config ($this->Midgard2Config) == false) {
             throw new Exception("Failed to connect. " . $mgd->get_error_string());
         }
+        $mgd->enable_workspace(true);
     }
 
     public function prepareMidgard2Storage()
