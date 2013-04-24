@@ -1,6 +1,6 @@
 <?php
 
-abstract class RagnaroekTransitionAbstract
+class StoragePrepare 
 {
     protected $db_live_name = null;
     protected $db_live_username = null;
@@ -16,6 +16,24 @@ abstract class RagnaroekTransitionAbstract
     protected $schema_tmp_directory = null;
 
     protected $scr_top_dir = null;
+
+    public function __construct(array $config)
+    {
+        $this->db_live_name = $config['ratatoskr_db_name'];
+        $this->db_live_username = $config['ratatoskr_db_username'];
+        $this->db_live_password = $config['ratatoskr_db_password'];
+        $this->db_live_dump_file = $config['ratatoskr_db_dump_file'];
+
+        $this->db_tmp_name = $config['temporary_database_name'];
+        $this->db_tmp_username = $config['temporary_database_username'];
+        $this->db_tmp_password = $config['temporary_database_password'];
+
+        $this->schema_ragnaroek_directory = $config['schema_directory_ragnaroek'];
+        $this->schema_ratatoskr_directory = $config['schema_directory_transition'];
+        $this->schema_tmp_directory = $config['schema_directory_sql'];
+
+        $this->src_top_dir = $config['working_directory'];
+    }
 
     public function validate()
     {
@@ -62,6 +80,37 @@ abstract class RagnaroekTransitionAbstract
         if ($this->src_top_dir == null) {
             throw new Exception("Invalid value");
         }
+    }
+   
+    public function importContent()
+    {
+        $transition = new \Ragnaroek\Ratatoskr\Transition(MidgardConnection::get_instance(), $this->Midgard2Config, $this->src_top_dir . '/fixtures/', $this->schema_tmp_directory);
+
+        $workspaceManager = $transition->getWorkspaceManager();
+        $workspaceManager->createWorkspacesAll();
+
+        $contentManager = $transition->getContentManager();
+        $types = $contentManager->getPossibleTypeNames();
+        foreach ($types as $type) {
+            $contentManager->importType($type);
+        }
+    }
+
+    public function execute()
+    {
+        $this->validate();
+        $this->prepareTransitionDatabase();
+        $this->dumpLiveDatabase();
+        $this->importDumpedDatabase();
+        $this->prepareMidgard2Connection();
+        $this->prepareMidgard2Storage();
+        $this->importContent();
+    }
+
+    public function executeAndImport()
+    {
+        $this->execute();
+        $this->importContent();
     }
 
     public function prepareTransitionDatabase()
@@ -185,14 +234,6 @@ abstract class RagnaroekTransitionAbstract
     public function copySchemasGenerateSQL()
     {
         self::copyXmlFiles($this->schema_ragnaroek_directory, $this->schema_tmp_directory);
-    }
-
-    /*
-     * Copy all schemas to /usr/share/midgard2 directory, so they can be used after migration.
-     */ 
-    public function copySchemasToRatatoskr()
-    {
-
     }
 }
 
