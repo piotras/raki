@@ -284,7 +284,7 @@ class WorkspaceManager implements \CRTransition\WorkspaceManager
 
         if ($this->possible_paths == null
             || in_array($absPath, $this->possible_paths) == false) {
-                throw new Exception ("Can not create workspace at '{$absPath}' path. Not defined in possible workspaces");
+                throw new \Exception ("Can not create workspace at '{$absPath}' path. Not defined in possible workspaces");
             }
 
         $ws = new MidgardWorkspace();
