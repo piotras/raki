@@ -63,7 +63,7 @@ class WorkspaceManager implements \CRTransition\WorkspaceManager
         );
         $qs->execute();
         if ($qs->get_results_count() != 1) {
-            throw new Exception("Failed to get language by '{$code}' code");
+            throw new \Exception("Failed to get language by '{$code}' code");
         }
 
         $langs = $qs->list_objects();
@@ -259,7 +259,7 @@ class WorkspaceManager implements \CRTransition\WorkspaceManager
         switch ($elements_count) {
             
         case 1:
-            throw new Exception("Invalid absolute path to determine legacy Midgard type");
+            throw new \Exception("Invalid absolute path to determine legacy Midgard type");
 
         case 2:
             return $this->default_sitegroup;
@@ -311,7 +311,7 @@ class WorkspaceManager implements \CRTransition\WorkspaceManager
         try {
             $this->getMidgardWorkspaceManager()->get_workspace_by_path($ws, $absPath);
         } catch (Exception $e) {
-            throw new Exception($e->getMessage() . ". " . $absPath);
+            throw new \Exception($e->getMessage() . ". " . $absPath);
         }
         return $ws;
     }
@@ -414,7 +414,7 @@ class WorkspaceManager implements \CRTransition\WorkspaceManager
             }
         }
 
-        throw new WorkspaceNotFoundException("Workspace identified by '{$name}' doesn't exist");
+        throw new \CRTransition\WorkspaceNotFoundException("Workspace identified by '{$name}' doesn't exist");
     }
 
     public function getDefaultLanguage()
