@@ -104,7 +104,7 @@ class StoragePrepare
         $this->importDumpedDatabase();
         $this->prepareMidgard2Connection();
         $this->prepareMidgard2Storage();
-        $this->importContent();
+        #$this->importContent();
     }
 
     public function executeAndImport()
@@ -115,7 +115,7 @@ class StoragePrepare
 
     public function prepareTransitionDatabase()
     {
-        echo "Create temporary database \n";
+        echo "Create temporary database '{$this->db_tmp_name}' \n";
         exec("sudo mysql -e 'CREATE DATABASE {$this->db_tmp_name} CHARACTER SET utf8'");
         $cmdGrant = "GRANT all ON {$this->db_tmp_name}.*  to '{$this->db_tmp_username}'@'localhost' identified by '{$this->db_tmp_password}'";
 
@@ -128,7 +128,7 @@ class StoragePrepare
 
     public function dumpLiveDatabase()
     {
-        echo "Dump live database \n";
+        echo "Dump live database '{$this->db_live_name}' to '{$this->db_live_dump_file}'\n";
         $path = $this->src_top_dir . "/" . $this->db_live_dump_file;
         $cmd = "sudo mysqldump -u {$this->db_live_username} -p{$this->db_live_password} {$this->db_live_name} > $path";
         exec($cmd); 
@@ -138,7 +138,7 @@ class StoragePrepare
     {
         $path = $this->src_top_dir . "/" . $this->db_live_dump_file;
         $testDB = $this->db_tmp_name;
-        echo "Import Sql dump {$path} \n";
+        echo "Import Sql dump {$path} to '{$testDB}'\n";
 
         exec("sudo mysql {$testDB} < {$path}", $out, $returnValue);
 
