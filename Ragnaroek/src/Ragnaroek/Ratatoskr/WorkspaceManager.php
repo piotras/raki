@@ -310,7 +310,7 @@ class WorkspaceManager implements \CRTransition\WorkspaceManager
         $ws = new MidgardWorkspace();
         try {
             $this->getMidgardWorkspaceManager()->get_workspace_by_path($ws, $absPath);
-        } catch (Exception $e) {
+        } catch (\Exception $e) {
             throw new \Exception($e->getMessage() . ". " . $absPath);
         }
         return $ws;
