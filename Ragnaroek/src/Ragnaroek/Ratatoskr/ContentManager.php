@@ -8,6 +8,7 @@ use \MidgardQuerySelect;
 use \MidgardQueryProperty;
 use \MidgardQueryValue;
 use \MidgardQueryConstraint;
+use \MidgardQueryConstraintGroup;
 use \MidgardUser;
 
 class ContentManager implements \CRTransition\ContentManager 
@@ -191,13 +192,39 @@ class ContentManager implements \CRTransition\ContentManager
             new MidgardQueryStorage($typeName)
         );
 
-        $qs->set_constraint(
-            new MidgardQueryConstraint(
+        $name_constraint = null;
+        $title_constraint = null;
+
+        $o = new $typeName();
+        if (property_exists($o, "name")) {
+            $name_constraint = new MidgardQueryConstraint(
                 new MidgardQueryProperty("name"), 
                 "=", 
                 new MidgardQueryValue($relPath)
-            )
-        );
+            );
+        } 
+
+        if (property_exists($o, "title")) {
+            $title_constraint = new MidgardQueryConstraint(
+                new MidgardQueryProperty("title"), 
+                "=", 
+                new MidgardQueryValue($relPath)
+            );
+        } 
+
+        if ($title_constraint == null 
+            || $name_constraint == null) {
+                $qs->set_constraint($name_property ? $name_property : $title_property);
+            }
+
+        if ($title_constraint != null
+            && $name_constraint != null) {
+                $cg = new MidgardQueryConstraintGroup("OR");
+                $cg->add_constraint($name_constraint);
+                $cg->add_constraint($title_constraint);
+
+            }
+
         //$mgd->set_loglevel("debug");
         $qs->execute();
         //$mgd->set_loglevel("warn");
