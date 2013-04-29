@@ -178,7 +178,8 @@ class WorkspaceManager implements \CRTransition\WorkspaceManager
             $sgs[$this->default_sg_zero][$sg->name] = array();
             if (!empty($this->languages)) {
                 foreach ($this->languages as $lang) {
-                    $sgs[$this->default_sg_zero][$sg->name][$this->default_language->code][$lang->code] = array();
+                    #$sgs[$this->default_sg_zero][$sg->name][$this->default_language->code][$lang->code] = array();
+                    $sgs[$this->default_sg_zero][$sg->name][$lang->code] = array();
                 }
             }
         }       

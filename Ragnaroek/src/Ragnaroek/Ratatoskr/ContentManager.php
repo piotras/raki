@@ -77,7 +77,8 @@ class ContentManager implements \CRTransition\ContentManager
         $sts = $this->getMgdSchemaToSQL();
         /* Copy content to one table - for every sitegroup and default language */
         foreach ($sitegroups as $sg) { 
-            $mlPath = '/' . $dSGName . '/' . $sg->name . '/' . $dLang->code;
+            #$mlPath = '/' . $dSGName . '/' . $sg->name . '/' . $dLang->code;
+            $mlPath = '/' . $dSGName . '/' . $sg->name;
             $ws = $workspaceManager->getMidgardWorkspaceByPath($mlPath);
             $lang = $workspaceManager->getLegacyMidgardType($mlPath);
             $q = $sts->getSQLUpdateTypePre($typeName, $ws->id, $sg->id, $lang->id);
@@ -214,7 +215,7 @@ class ContentManager implements \CRTransition\ContentManager
 
         if ($title_constraint == null 
             || $name_constraint == null) {
-                $qs->set_constraint($name_property ? $name_property : $title_property);
+                $qs->set_constraint($name_constraint ? $name_constraint : $title_constraint);
             }
 
         if ($title_constraint != null
