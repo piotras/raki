@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <midgard_object xmlns="http://www.midgard-project.org/midgard_object/1.8">
-  <midgard_language purge="no" guid="65350da41d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="65350da41d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:11</created>
@@ -31,9 +31,9 @@
     <description></description>
     <name>Afar</name>
     <native>Afaraf</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="6541f8a21d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="6541f8a21d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:11</created>
@@ -64,9 +64,9 @@
     <description></description>
     <name>Abkhaz</name>
     <native>&amp;#x410;&amp;#x4A7;&amp;#x441;&amp;#x443;&amp;#x430;</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="654573ce1d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="654573ce1d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:11</created>
@@ -97,9 +97,9 @@
     <description></description>
     <name>Avestan</name>
     <native>Avesta</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="6556e10e1d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="6556e10e1d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:12</created>
@@ -130,9 +130,9 @@
     <description></description>
     <name>Afrikaans</name>
     <native>Afrikaans</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="655816461d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="655816461d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:12</created>
@@ -163,9 +163,9 @@
     <description></description>
     <name>Akan</name>
     <native></native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="6562278a1d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="6562278a1d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:12</created>
@@ -196,9 +196,9 @@
     <description></description>
     <name>Arabic</name>
     <native>&amp;#x627;&amp;#x644;&amp;#x644;&amp;#x63A;&amp;#x629; &amp;#x627;&amp;#x644;&amp;#x639;&amp;#x631;&amp;#x628;&amp;#x64A;&amp;#x629;&amp;#x200E;</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="656bc31c1d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="656bc31c1d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:12</created>
@@ -229,9 +229,9 @@
     <description></description>
     <name>Amharic</name>
     <native>&amp;#x12A0;&amp;#x121B;&amp;#x122D;&amp;#x129B;</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="656cf3361d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="656cf3361d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:12</created>
@@ -262,9 +262,9 @@
     <description></description>
     <name>Aragonese</name>
     <native>Aragon&amp;#xE9;s</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="65768fea1d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="65768fea1d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:12</created>
@@ -295,9 +295,9 @@
     <description></description>
     <name>Assamese</name>
     <native>&amp;#x985;&amp;#x9B8;&amp;#x9AE;&amp;#x9C0;&amp;#x9AF;&amp;#x9BC;&amp;#x9BE;</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="6577bde81d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="6577bde81d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:12</created>
@@ -328,9 +328,9 @@
     <description></description>
     <name>Avaric</name>
     <native>&amp;#x430;&amp;#x432;&amp;#x430;&amp;#x440; &amp;#x43C;&amp;#x430;&amp;#x446;&amp;#x4C0;; &amp;#x43C;&amp;#x430;&amp;#x433;&amp;#x4C0;&amp;#x430;&amp;#x440;&amp;#x443;&amp;#x43B; &amp;#x43C;&amp;#x430;&amp;#x446;&amp;#x4C0;</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="657d92541d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="657d92541d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:12</created>
@@ -361,9 +361,9 @@
     <description></description>
     <name>Aymara</name>
     <native>Aymar aru</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="657eb9d61d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="657eb9d61d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:12</created>
@@ -394,9 +394,9 @@
     <description></description>
     <name>Azerbaijani</name>
     <native>Az&amp;#x259;rbaycanca</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="65839d481d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="65839d481d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:12</created>
@@ -427,9 +427,9 @@
     <description></description>
     <name>Bashkir</name>
     <native>&amp;#x431;&amp;#x430;&amp;#x448;&amp;#x4A1;&amp;#x43E;&amp;#x440;&amp;#x442; &amp;#x442;&amp;#x435;&amp;#x43B;&amp;#x435;</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="658582e81d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="658582e81d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:12</created>
@@ -460,9 +460,9 @@
     <description></description>
     <name>Basque</name>
     <native>Euskara</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="6594ef8a1d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="6594ef8a1d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:12</created>
@@ -493,9 +493,9 @@
     <description></description>
     <name>Belarusian</name>
     <native>&amp;#x411;&amp;#x435;&amp;#x43B;&amp;#x430;&amp;#x440;&amp;#x443;&amp;#x441;&amp;#x43A;&amp;#x430;&amp;#x44F; &amp;#x43C;&amp;#x43E;&amp;#x432;&amp;#x430;</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="659643301d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="659643301d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:12</created>
@@ -526,9 +526,9 @@
     <description></description>
     <name>Bulgarian</name>
     <native>&amp;#x431;&amp;#x44A;&amp;#x43B;&amp;#x433;&amp;#x430;&amp;#x440;&amp;#x441;&amp;#x43A;&amp;#x438; &amp;#x435;&amp;#x437;&amp;#x438;&amp;#x43A;</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="659ec3701d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="659ec3701d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:12</created>
@@ -559,9 +559,9 @@
     <description></description>
     <name>Bihari</name>
     <native></native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="65a7d78a1d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="65a7d78a1d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:12</created>
@@ -592,9 +592,9 @@
     <description></description>
     <name>Bislama</name>
     <native></native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="65a915c81d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="65a915c81d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:12</created>
@@ -625,9 +625,9 @@
     <description></description>
     <name>Bambara</name>
     <native>Bamanankan</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="65b1969e1d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="65b1969e1d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:12</created>
@@ -658,9 +658,9 @@
     <description></description>
     <name>Bangla</name>
     <native>&amp;#x9AC;&amp;#x9BE;&amp;#x982;&amp;#x9B2;&amp;#x9BE;</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="65b2e53a1d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="65b2e53a1d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:12</created>
@@ -691,9 +691,9 @@
     <description></description>
     <name>Breton</name>
     <native>Brezhoneg</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="65bb6dae1d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="65bb6dae1d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:12</created>
@@ -724,9 +724,9 @@
     <description></description>
     <name>Bosnian</name>
     <native>Bosanski jezik</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="65bca7f01d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="65bca7f01d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:12</created>
@@ -757,9 +757,9 @@
     <description></description>
     <name>Burmese</name>
     <native>&amp;#x1019;&amp;#x1014;&amp;#x1039;&amp;#x1019;&amp;#x102C;&amp;#x1005;&amp;#x102C;</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="65c528301d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="65c528301d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:12</created>
@@ -790,9 +790,9 @@
     <description></description>
     <name>Catalan</name>
     <native>Catal&amp;#xE0;</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="65ce27501d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="65ce27501d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:12</created>
@@ -823,9 +823,9 @@
     <description></description>
     <name>Chamorro</name>
     <native>Chamoru</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="65cf4ec81d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="65cf4ec81d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:12</created>
@@ -856,9 +856,9 @@
     <description></description>
     <name>Chechen</name>
     <native>&amp;#x43D;&amp;#x43E;&amp;#x445;&amp;#x447;&amp;#x438;&amp;#x439;&amp;#x43D; &amp;#x43C;&amp;#x43E;&amp;#x442;&amp;#x442;</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="65d7b7d41d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="65d7b7d41d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:12</created>
@@ -889,9 +889,9 @@
     <description></description>
     <name>Chichewa</name>
     <native>chiChe&amp;#x175;a; chinyanja</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="65d924481d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="65d924481d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:12</created>
@@ -922,9 +922,9 @@
     <description></description>
     <name>Church Slavonic</name>
     <native></native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="65e186061d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="65e186061d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:12</created>
@@ -955,9 +955,9 @@
     <description></description>
     <name>Chuvash</name>
     <native>&amp;#x447;&amp;#x4D1;&amp;#x432;&amp;#x430;&amp;#x448; &amp;#x447;&amp;#x4D7;&amp;#x43B;&amp;#x445;&amp;#x438;</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="65e348a61d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="65e348a61d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:12</created>
@@ -988,9 +988,9 @@
     <description></description>
     <name>Cornish</name>
     <native>Kernewek</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="65f2e3561d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="65f2e3561d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:13</created>
@@ -1021,9 +1021,9 @@
     <description></description>
     <name>Corsican</name>
     <native>Corsu</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="65f40f421d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="65f40f421d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:13</created>
@@ -1054,9 +1054,9 @@
     <description></description>
     <name>Cree</name>
     <native></native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="65fc7c901d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="65fc7c901d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:13</created>
@@ -1087,9 +1087,9 @@
     <description></description>
     <name>Czech</name>
     <native>&amp;#x10D;esky</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="65fddd101d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="65fddd101d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:13</created>
@@ -1120,9 +1120,9 @@
     <description></description>
     <name>Danish</name>
     <native>Dansk</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="660a575c1d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="660a575c1d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:13</created>
@@ -1153,9 +1153,9 @@
     <description></description>
     <name>German</name>
     <native>Deutsch</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="660bb14c1d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="660bb14c1d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:13</created>
@@ -1186,9 +1186,9 @@
     <description></description>
     <name>Mahl</name>
     <native>Kajin M&amp;#x327;aje&amp;#x13C;</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="66143ce01d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="66143ce01d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:13</created>
@@ -1219,9 +1219,9 @@
     <description></description>
     <name>Dzongkha 	&amp;#xF62;&amp;#xFAB;&amp;#xF7C;&amp;#xF44;&amp;#xF0B;&amp;#xF41;</name>
     <native></native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="661573f81d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="661573f81d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:13</created>
@@ -1252,9 +1252,9 @@
     <description></description>
     <name>English</name>
     <native>English</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="661dea601d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="661dea601d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:13</created>
@@ -1285,9 +1285,9 @@
     <description></description>
     <name>Esperanto</name>
     <native>Esperanto</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="661f436a1d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="661f436a1d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:13</created>
@@ -1318,9 +1318,9 @@
     <description></description>
     <name>Estonian</name>
     <native>Eesti keel</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="6627fc801d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="6627fc801d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:13</created>
@@ -1351,9 +1351,9 @@
     <description></description>
     <name>Ewe</name>
     <native>&amp;#x190;&amp;#x28B;&amp;#x25B;gb&amp;#x25B;</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="662b524a1d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="662b524a1d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:13</created>
@@ -1384,9 +1384,9 @@
     <description></description>
     <name>Faroese</name>
     <native>F&amp;#xF8;royskt</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="66387e0c1d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="66387e0c1d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:13</created>
@@ -1417,9 +1417,9 @@
     <description></description>
     <name>Fijan</name>
     <native>vosa Vakaviti</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="6639df5e1d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="6639df5e1d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:13</created>
@@ -1450,9 +1450,9 @@
     <description></description>
     <name>Finnish</name>
     <native>Suomi</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="6643c51e1d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="6643c51e1d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:13</created>
@@ -1483,9 +1483,9 @@
     <description></description>
     <name>Western Frisian</name>
     <native>Frysk</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="6645118a1d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="6645118a1d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:13</created>
@@ -1516,9 +1516,9 @@
     <description></description>
     <name>Fulah</name>
     <native>Fulfulde</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="664d5ab61d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="664d5ab61d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:13</created>
@@ -1549,9 +1549,9 @@
     <description></description>
     <name>Farsi</name>
     <native>&amp;#x641;&amp;#x627;&amp;#x631;&amp;#x633;&amp;#x6CC;</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="664eaa2e1d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="664eaa2e1d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:13</created>
@@ -1582,9 +1582,9 @@
     <description></description>
     <name>Galician</name>
     <native>Galego</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="665700841d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="665700841d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:13</created>
@@ -1615,9 +1615,9 @@
     <description></description>
     <name>Ganda</name>
     <native>Luganda</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="666073761d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="666073761d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:13</created>
@@ -1648,9 +1648,9 @@
     <description></description>
     <name>Georgian</name>
     <native>&amp;#x10E5;&amp;#x10D0;&amp;#x10E0;&amp;#x10D7;&amp;#x10E3;&amp;#x10DA;&amp;#x10D8; &amp;#x10D4;&amp;#x10DC;&amp;#x10D0;</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="6661a9b21d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="6661a9b21d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:13</created>
@@ -1681,9 +1681,9 @@
     <description></description>
     <name>Greek</name>
     <native>&amp;#x395;&amp;#x3BB;&amp;#x3BB;&amp;#x3B7;&amp;#x3BD;&amp;#x3B9;&amp;#x3BA;&amp;#x3AC;</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="666a22ae1d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="666a22ae1d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:13</created>
@@ -1714,9 +1714,9 @@
     <description></description>
     <name>Greenlandic</name>
     <native>kalaallisut</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="666b98f01d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="666b98f01d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:13</created>
@@ -1747,9 +1747,9 @@
     <description></description>
     <name>Spanish</name>
     <native>espa&amp;#xF1;ol, castellano</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="6677d2a01d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="6677d2a01d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:13</created>
@@ -1780,9 +1780,9 @@
     <description></description>
     <name>French</name>
     <native>Fran&amp;#xE7;ais</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="667923121d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="667923121d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:13</created>
@@ -1813,9 +1813,9 @@
     <description></description>
     <name>Guarani</name>
     <native>Ava&amp;#xF1;e'&amp;#x1EBD;</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="6681d17e1d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="6681d17e1d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:13</created>
@@ -1846,9 +1846,9 @@
     <description></description>
     <name>Guajarati</name>
     <native>&amp;#xA97;&amp;#xAC1;&amp;#xA9C;&amp;#xAB0;&amp;#xABE;&amp;#xAA4;&amp;#xAC0;</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="668333021d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="668333021d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:13</created>
@@ -1879,9 +1879,9 @@
     <description></description>
     <name>Haitian</name>
     <native>Krey&amp;#xF2;l ayisyen</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="668c1c101d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="668c1c101d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:14</created>
@@ -1912,9 +1912,9 @@
     <description></description>
     <name>Hausa</name>
     <native>Hausanc&amp;#x12B;</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="668dadfa1d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="668dadfa1d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:14</created>
@@ -1945,9 +1945,9 @@
     <description></description>
     <name>Hebrew</name>
     <native>&amp;#x5E2;&amp;#x5B4;&amp;#x5D1;&amp;#x5B0;&amp;#x5E8;&amp;#x5B4;&amp;#x5D9;&amp;#x5EA;; &amp;#x5E2;&amp;#x5D1;&amp;#x5E8;&amp;#x5D9;&amp;#x5EA;</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="668ee6201d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="668ee6201d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:14</created>
@@ -1978,9 +1978,9 @@
     <description></description>
     <name>Herero</name>
     <native>Otjiherero</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="669c6b2e1d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="669c6b2e1d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:14</created>
@@ -2011,9 +2011,9 @@
     <description></description>
     <name>Hindi</name>
     <native>&amp;#x939;&amp;#x93F;&amp;#x928;&amp;#x94D;&amp;#x926;&amp;#x940;</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="669db83a1d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="669db83a1d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:14</created>
@@ -2044,9 +2044,9 @@
     <description></description>
     <name>Hiri Motu</name>
     <native></native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="66a659181d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="66a659181d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:14</created>
@@ -2077,9 +2077,9 @@
     <description></description>
     <name>Hungarian</name>
     <native>Magyar</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="66a7f48a1d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="66a7f48a1d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:14</created>
@@ -2110,9 +2110,9 @@
     <description></description>
     <name>Icelandic</name>
     <native>&amp;#xED;slenska</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="66ad502e1d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="66ad502e1d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:14</created>
@@ -2143,9 +2143,9 @@
     <description></description>
     <name>Ido</name>
     <native>Ido</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="66aff43c1d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="66aff43c1d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:14</created>
@@ -2176,9 +2176,9 @@
     <description></description>
     <name>Igbo</name>
     <native>Igbo</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="66b98e0c1d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="66b98e0c1d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:14</created>
@@ -2209,9 +2209,9 @@
     <description></description>
     <name>Indonesian</name>
     <native></native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="66baff9e1d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="66baff9e1d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:14</created>
@@ -2242,9 +2242,9 @@
     <description></description>
     <name>Interlingua</name>
     <native>Interlingua</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="66c3908c1d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="66c3908c1d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:14</created>
@@ -2275,9 +2275,9 @@
     <description></description>
     <name>Interlingue</name>
     <native>Interlingue</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="66c4bf021d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="66c4bf021d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:14</created>
@@ -2308,9 +2308,9 @@
     <description></description>
     <name>Inupiaq</name>
     <native>I&amp;#xF1;upiaq</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="66c631341d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="66c631341d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:14</created>
@@ -2341,9 +2341,9 @@
     <description></description>
     <name>Irish</name>
     <native>Gaeilge</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="66d387c61d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="66d387c61d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:14</created>
@@ -2374,9 +2374,9 @@
     <description></description>
     <name>Japanese</name>
     <native>&amp;#x65E5;&amp;#x672C;&amp;#x8A9E;</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="66dc73721d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="66dc73721d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:14</created>
@@ -2407,9 +2407,9 @@
     <description></description>
     <name>Javanese</name>
     <native>Basa Jawa</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="66ddcd801d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="66ddcd801d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:14</created>
@@ -2440,9 +2440,9 @@
     <description></description>
     <name>Kannada</name>
     <native>&amp;#xC95;&amp;#xCA8;&amp;#xCCD;&amp;#xCA8;&amp;#xCA1;</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="66e61cf61d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="66e61cf61d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:14</created>
@@ -2473,9 +2473,9 @@
     <description></description>
     <name>Kashmiri</name>
     <native>&amp;#x6A9;&amp;#x672;&amp;#x634;&amp;#x64F;&amp;#x631;, &amp;#x915;&amp;#x949;&amp;#x936;&amp;#x941;&amp;#x930;</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="66e7d28a1d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="66e7d28a1d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:14</created>
@@ -2506,9 +2506,9 @@
     <description></description>
     <name>Kazakh</name>
     <native>&amp;#x49A;&amp;#x430;&amp;#x437;&amp;#x430;&amp;#x49B; &amp;#x442;&amp;#x456;&amp;#x43B;&amp;#x456;</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="66e90b1e1d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="66e90b1e1d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:14</created>
@@ -2539,9 +2539,9 @@
     <description></description>
     <name>Khmer</name>
     <native></native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="66f6a6701d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="66f6a6701d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:14</created>
@@ -2572,9 +2572,9 @@
     <description></description>
     <name>Kikuyu</name>
     <native>G&amp;#x129;k&amp;#x169;y&amp;#x169;</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="66f7e1de1d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="66f7e1de1d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:14</created>
@@ -2605,9 +2605,9 @@
     <description></description>
     <name>Kinyarwanda</name>
     <native>kinyaRwanda</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="66f970e41d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="66f970e41d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:14</created>
@@ -2638,9 +2638,9 @@
     <description></description>
     <name>Kirghiz</name>
     <native>&amp;#x43A;&amp;#x44B;&amp;#x440;&amp;#x433;&amp;#x44B;&amp;#x437; &amp;#x442;&amp;#x438;&amp;#x43B;&amp;#x438;</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="67072e141d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="67072e141d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:14</created>
@@ -2671,9 +2671,9 @@
     <description></description>
     <name>Croatian</name>
     <native>Hrvatski</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="67087e361d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="67087e361d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:14</created>
@@ -2704,9 +2704,9 @@
     <description></description>
     <name>Komi</name>
     <native>&amp;#x43A;&amp;#x43E;&amp;#x43C;&amp;#x438; &amp;#x43A;&amp;#x44B;&amp;#x432;</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="6709db281d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="6709db281d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:14</created>
@@ -2737,9 +2737,9 @@
     <description></description>
     <name>Kongo</name>
     <native>Kikongo</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="670b26041d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="670b26041d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:14</created>
@@ -2770,9 +2770,9 @@
     <description></description>
     <name>Korean</name>
     <native>&amp;#xD55C;&amp;#xAD6D;&amp;#xC5B4;</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="6718fb121d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="6718fb121d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:14</created>
@@ -2803,9 +2803,9 @@
     <description></description>
     <name>Kuanyama</name>
     <native></native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="671a3bee1d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="671a3bee1d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:14</created>
@@ -2836,9 +2836,9 @@
     <description></description>
     <name>Kurdish</name>
     <native>Kurd&amp;#xEE;</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="671bbd981d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="671bbd981d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:14</created>
@@ -2869,9 +2869,9 @@
     <description></description>
     <name>Lao</name>
     <native>&amp;#xE9E;&amp;#xEB2;&amp;#xEAA;&amp;#xEB2;&amp;#xEA5;&amp;#xEB2;&amp;#xEA7;</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="672951a61d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="672951a61d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:15</created>
@@ -2902,9 +2902,9 @@
     <description></description>
     <name>Latin</name>
     <native>Latine</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="672a9d721d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="672a9d721d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:15</created>
@@ -2935,9 +2935,9 @@
     <description></description>
     <name>Latvian</name>
     <native>Latvie&amp;#x161;u</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="672c07b61d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="672c07b61d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:15</created>
@@ -2968,9 +2968,9 @@
     <description></description>
     <name>Limburgish</name>
     <native>Limburgs</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="672ef75a1d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="672ef75a1d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:15</created>
@@ -3001,9 +3001,9 @@
     <description></description>
     <name>Lingala</name>
     <native>Lingala</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="67404f641d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="67404f641d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:15</created>
@@ -3034,9 +3034,9 @@
     <description></description>
     <name>Lithuanian</name>
     <native>Lietuvi&amp;#x173;</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="6741846a1d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="6741846a1d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:15</created>
@@ -3067,9 +3067,9 @@
     <description></description>
     <name>Luba Katanga</name>
     <native></native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="6742f9801d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="6742f9801d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:15</created>
@@ -3100,9 +3100,9 @@
     <description></description>
     <name>Luxembourgish</name>
     <native>L&amp;#xEB;tzebuergesch</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="675089421d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="675089421d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:15</created>
@@ -3133,9 +3133,9 @@
     <description></description>
     <name>Armenian</name>
     <native>&amp;#x540;&amp;#x561;&amp;#x575;&amp;#x565;&amp;#x580;&amp;#x565;&amp;#x576; &amp;#x56C;&amp;#x565;&amp;#x566;&amp;#x578;&amp;#x582;</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="6751e4681d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="6751e4681d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:15</created>
@@ -3166,9 +3166,9 @@
     <description></description>
     <name>Kanuri</name>
     <native></native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="67537c601d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="67537c601d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:15</created>
@@ -3199,9 +3199,9 @@
     <description></description>
     <name>Macedonian</name>
     <native>&amp;#x43C;&amp;#x430;&amp;#x43A;&amp;#x435;&amp;#x434;&amp;#x43E;&amp;#x43D;&amp;#x441;&amp;#x43A;&amp;#x438; &amp;#x458;&amp;#x430;&amp;#x437;&amp;#x438;&amp;#x43A;</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="675f835c1d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="675f835c1d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:15</created>
@@ -3232,9 +3232,9 @@
     <description></description>
     <name>Malagasy</name>
     <native>Malagasy fiteny</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="6760f19c1d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="6760f19c1d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:15</created>
@@ -3265,9 +3265,9 @@
     <description></description>
     <name>Malay</name>
     <native>bahasa Melayu</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="67696a481d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="67696a481d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:15</created>
@@ -3298,9 +3298,9 @@
     <description></description>
     <name>Maltese</name>
     <native>Malti</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="676aa9ee1d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="676aa9ee1d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:15</created>
@@ -3331,9 +3331,9 @@
     <description></description>
     <name>Manx</name>
     <native>Gaelg</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="676c226a1d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="676c226a1d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:15</created>
@@ -3364,9 +3364,9 @@
     <description></description>
     <name>M&amp;#x101;ori</name>
     <native>te reo M&amp;#x101;ori</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="676d66841d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="676d66841d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:15</created>
@@ -3397,9 +3397,9 @@
     <description></description>
     <name>Marathi</name>
     <native>&amp;#x92E;&amp;#x930;&amp;#x93E;&amp;#x920;&amp;#x940;</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="677b49841d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="677b49841d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:15</created>
@@ -3430,9 +3430,9 @@
     <description></description>
     <name>Marshallese</name>
     <native>Kajin M&amp;#x327;aje&amp;#x13C;</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="677c9c261d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="677c9c261d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:15</created>
@@ -3463,9 +3463,9 @@
     <description></description>
     <name>Malayalam</name>
     <native>&amp;#xD2E;&amp;#xD32;&amp;#xD2F;&amp;#xD3E;&amp;#xD33;&amp;#xD02;</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="677dfb3e1d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="677dfb3e1d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:15</created>
@@ -3496,9 +3496,9 @@
     <description></description>
     <name>Moldavian</name>
     <native>&amp;#x43B;&amp;#x438;&amp;#x43C;&amp;#x431;&amp;#x430; &amp;#x43C;&amp;#x43E;&amp;#x43B;&amp;#x434;&amp;#x43E;&amp;#x432;&amp;#x435;&amp;#x43D;&amp;#x44F;&amp;#x441;&amp;#x43A;&amp;#x44D;</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="6789b3f21d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="6789b3f21d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:15</created>
@@ -3529,9 +3529,9 @@
     <description></description>
     <name>Mongolian</name>
     <native>&amp;#x43C;&amp;#x43E;&amp;#x43D;&amp;#x433;&amp;#x43E;&amp;#x43B; &amp;#x445;&amp;#x44D;&amp;#x43B;</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="678b09dc1d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="678b09dc1d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:15</created>
@@ -3562,9 +3562,9 @@
     <description></description>
     <name>Nauruan</name>
     <native>Ekakair&amp;#x169; Naoero</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="67942f121d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="67942f121d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:15</created>
@@ -3595,9 +3595,9 @@
     <description></description>
     <name>Navajo</name>
     <native>Din&amp;#xE9; bizaad</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="6795d18c1d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="6795d18c1d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:15</created>
@@ -3628,9 +3628,9 @@
     <description></description>
     <name>Ndebele North</name>
     <native>isiNdebele</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="679762861d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="679762861d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:15</created>
@@ -3661,9 +3661,9 @@
     <description></description>
     <name>Ndebele South</name>
     <native>Nd&amp;#xE9;b&amp;#xE9;l&amp;#xE9;</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="67a065161d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="67a065161d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:15</created>
@@ -3694,9 +3694,9 @@
     <description></description>
     <name>Ndonga</name>
     <native>Owambo</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="67a1b7e01d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="67a1b7e01d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:15</created>
@@ -3727,9 +3727,9 @@
     <description></description>
     <name>Nepali</name>
     <native>&amp;#x928;&amp;#x947;&amp;#x92A;&amp;#x93E;&amp;#x932;&amp;#x940;</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="67ab49861d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="67ab49861d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:15</created>
@@ -3760,9 +3760,9 @@
     <description></description>
     <name>Northern Sami</name>
     <native>s&amp;#xE1;mi</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="67acf7681d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="67acf7681d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:15</created>
@@ -3793,9 +3793,9 @@
     <description></description>
     <name>Norwegian Bokm&amp;#xE5;l</name>
     <native>Norsk Bokm&amp;#xE5;l</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="67ae5aae1d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="67ae5aae1d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:15</created>
@@ -3826,9 +3826,9 @@
     <description></description>
     <name>Dutch</name>
     <native></native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="67d20d1e1d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="67d20d1e1d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:16</created>
@@ -3859,9 +3859,9 @@
     <description></description>
     <name>Norwegian Nynorsk</name>
     <native>Norsk Nynorsk</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="67d3a17e1d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="67d3a17e1d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:16</created>
@@ -3892,9 +3892,9 @@
     <description></description>
     <name>Norwegian</name>
     <native>Norsk</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="67d654c81d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="67d654c81d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:16</created>
@@ -3925,9 +3925,9 @@
     <description></description>
     <name>Occitan</name>
     <native>Occitan</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="67e5ca661d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="67e5ca661d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:16</created>
@@ -3958,9 +3958,9 @@
     <description></description>
     <name>Ojibwa</name>
     <native>&amp;#x140A;&amp;#x14C2;&amp;#x1511;&amp;#x14C7;&amp;#x142F;&amp;#x14A7;&amp;#x140F;&amp;#x1423;</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="67e705161d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="67e705161d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:16</created>
@@ -3991,9 +3991,9 @@
     <description></description>
     <name>Oriya</name>
     <native>&amp;#xB13;&amp;#xB21;&amp;#xB3C;&amp;#xB3F;&amp;#xB06;</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="67e88d0a1d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="67e88d0a1d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:16</created>
@@ -4024,9 +4024,9 @@
     <description></description>
     <name>Oromo</name>
     <native>Afaan Oromoo</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="67f631261d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="67f631261d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:16</created>
@@ -4057,9 +4057,9 @@
     <description></description>
     <name>Ossetian</name>
     <native>&amp;#x438;&amp;#x440;&amp;#x43E;&amp;#x43D; &amp;#x4D5;&amp;#x432;&amp;#x437;&amp;#x430;&amp;#x433;</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="67f7759a1d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="67f7759a1d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:16</created>
@@ -4090,9 +4090,9 @@
     <description></description>
     <name>Pali</name>
     <native>&amp;#x92A;&amp;#x93E;&amp;#x932;&amp;#x93F;</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="67f919401d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="67f919401d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:16</created>
@@ -4123,9 +4123,9 @@
     <description></description>
     <name>Polish</name>
     <native>Polski</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="68048b861d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="68048b861d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:16</created>
@@ -4156,9 +4156,9 @@
     <description></description>
     <name>Portuguese</name>
     <native>Portugu&amp;#xEA;s</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="6805d04a1d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="6805d04a1d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:16</created>
@@ -4189,9 +4189,9 @@
     <description></description>
     <name>Punjabi</name>
     <native>&amp;#xA2A;&amp;#xA70;&amp;#xA1C;&amp;#xA3E;&amp;#xA2C;&amp;#xA40; </native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="680e798e1d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="680e798e1d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:16</created>
@@ -4222,9 +4222,9 @@
     <description></description>
     <name>Pushto</name>
     <native>&amp;#x67E;&amp;#x69A;&amp;#x62A;</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="680fc1cc1d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="680fc1cc1d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:16</created>
@@ -4255,9 +4255,9 @@
     <description></description>
     <name>Quechua</name>
     <native>Runa Simi</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="681129d61d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="681129d61d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:16</created>
@@ -4288,9 +4288,9 @@
     <description></description>
     <name>Raeto-Romance</name>
     <native>Rumantsch grischun</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="681d3a781d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="681d3a781d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:16</created>
@@ -4321,9 +4321,9 @@
     <description></description>
     <name>Romanian</name>
     <native>Rom&amp;#xE2;n&amp;#x103;</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="681e901c1d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="681e901c1d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:16</created>
@@ -4354,9 +4354,9 @@
     <description></description>
     <name>Rundi</name>
     <native>Kirundi</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="6820019a1d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="6820019a1d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:16</created>
@@ -4387,9 +4387,9 @@
     <description></description>
     <name>Russian</name>
     <native>&amp;#x440;&amp;#x443;&amp;#x441;&amp;#x441;&amp;#x43A;&amp;#x438;&amp;#x439; &amp;#x44F;&amp;#x437;&amp;#x44B;&amp;#x43A;</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="682d96d41d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="682d96d41d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:16</created>
@@ -4420,9 +4420,9 @@
     <description></description>
     <name>Samoan</name>
     <native>gagana fa'a Samoa</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="682f06221d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="682f06221d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:16</created>
@@ -4453,9 +4453,9 @@
     <description></description>
     <name>Sango</name>
     <native>y&amp;#xE2;ng&amp;#xE2; t&amp;#xEE; s&amp;#xE4;ng&amp;#xF6;</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="6842d80a1d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="6842d80a1d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:16</created>
@@ -4486,9 +4486,9 @@
     <description></description>
     <name>Sanskrit</name>
     <native>&amp;#x938;&amp;#x902;&amp;#x938;&amp;#x94D;&amp;#x915;&amp;#x943;&amp;#x924;&amp;#x92E;&amp;#x94D;</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="684409961d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="684409961d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:16</created>
@@ -4519,9 +4519,9 @@
     <description></description>
     <name>Sardinian</name>
     <native>sardu</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="684593561d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="684593561d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:16</created>
@@ -4552,9 +4552,9 @@
     <description></description>
     <name>Gaelic</name>
     <native>G&amp;#xE0;idhlig</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="68532b2e1d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="68532b2e1d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:17</created>
@@ -4585,9 +4585,9 @@
     <description></description>
     <name>Serbian</name>
     <native>&amp;#x441;&amp;#x440;&amp;#x43F;&amp;#x441;&amp;#x43A;&amp;#x438; &amp;#x458;&amp;#x435;&amp;#x437;&amp;#x438;&amp;#x43A;</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="6854c5d81d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="6854c5d81d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:17</created>
@@ -4618,9 +4618,9 @@
     <description></description>
     <name>Shona</name>
     <native>chiShona</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="6857de1c1d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="6857de1c1d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:17</created>
@@ -4651,9 +4651,9 @@
     <description></description>
     <name>Sichuan Yi</name>
     <native>&amp;#xA187;&amp;#xA259;</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="6861c9181d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="6861c9181d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:17</created>
@@ -4684,9 +4684,9 @@
     <description></description>
     <name>Sindhi</name>
     <native>&amp;#x633;&amp;#x646;&amp;#x68C;&amp;#x64A;&amp;#x60C; &amp;#x633;&amp;#x646;&amp;#x62F;&amp;#x6BE;&amp;#x6CC;, &amp;#x938;&amp;#x93F;&amp;#x928;&amp;#x94D;&amp;#x927;&amp;#x940;</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="68631a521d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="68631a521d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:17</created>
@@ -4717,9 +4717,9 @@
     <description></description>
     <name>Sinhalese</name>
     <native>&amp;#xDC3;&amp;#xDD2;&amp;#xD82;&amp;#xDC4;&amp;#xDBD;</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="6864918e1d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="6864918e1d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:17</created>
@@ -4750,9 +4750,9 @@
     <description></description>
     <name>Slovak</name>
     <native>sloven&amp;#x10D;ina</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="6865d3781d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="6865d3781d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:17</created>
@@ -4783,9 +4783,9 @@
     <description></description>
     <name>Slovenian</name>
     <native>sloven&amp;#x161;&amp;#x10D;ina</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="68736efc1d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="68736efc1d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:17</created>
@@ -4816,9 +4816,9 @@
     <description></description>
     <name>Somali</name>
     <native>Soomaaliga; af Soomaali</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="6874deea1d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="6874deea1d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:17</created>
@@ -4849,9 +4849,9 @@
     <description></description>
     <name>Sotho</name>
     <native>seSotho</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="6876456e1d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="6876456e1d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:17</created>
@@ -4882,9 +4882,9 @@
     <description></description>
     <name>Sundanese</name>
     <native>basa Sunda</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="687784881d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="687784881d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:17</created>
@@ -4915,9 +4915,9 @@
     <description></description>
     <name>Swahili</name>
     <native>kiswahili</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="68833abc1d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="68833abc1d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:17</created>
@@ -4948,9 +4948,9 @@
     <description></description>
     <name>Swati</name>
     <native>siSwati</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="68847e2c1d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="68847e2c1d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:17</created>
@@ -4981,9 +4981,9 @@
     <description></description>
     <name>Swedish</name>
     <native>Svenska</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="688f496a1d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="688f496a1d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:17</created>
@@ -5014,9 +5014,9 @@
     <description></description>
     <name>Serbo-Croatian</name>
     <native></native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="6890888e1d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="6890888e1d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:17</created>
@@ -5047,9 +5047,9 @@
     <description></description>
     <name>Albanian</name>
     <native>Shqip</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="68922eb41d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="68922eb41d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:17</created>
@@ -5080,9 +5080,9 @@
     <description></description>
     <name>Tagalog</name>
     <native>Tagalog</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="689d9e8e1d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="689d9e8e1d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:17</created>
@@ -5113,9 +5113,9 @@
     <description></description>
     <name>Tahitian</name>
     <native>te reo Tahiti</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="689fbfb61d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="689fbfb61d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:17</created>
@@ -5146,9 +5146,9 @@
     <description></description>
     <name>Tajik</name>
     <native>&amp;#x442;&amp;#x43E;&amp;#x4B7;&amp;#x438;&amp;#x43A;&amp;#x4E3;</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="68a11bea1d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="68a11bea1d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:17</created>
@@ -5179,9 +5179,9 @@
     <description></description>
     <name>Tamil</name>
     <native>&amp;#xBA4;&amp;#xBAE;&amp;#xBBF;&amp;#xBB4;&amp;#xBCD;</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="68a7fd021d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="68a7fd021d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:17</created>
@@ -5212,9 +5212,9 @@
     <description></description>
     <name>Tatar</name>
     <native>&amp;#x442;&amp;#x430;&amp;#x442;&amp;#x430;&amp;#x440;&amp;#x447;&amp;#x430;</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="68a943921d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="68a943921d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:17</created>
@@ -5245,9 +5245,9 @@
     <description></description>
     <name>Telugu</name>
     <native>&amp;#xC24;&amp;#xC46;&amp;#xC32;&amp;#xC41;&amp;#xC17;&amp;#xC41;</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="68b6b32e1d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="68b6b32e1d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:17</created>
@@ -5278,9 +5278,9 @@
     <description></description>
     <name>Tibetan</name>
     <native>&amp;#xF56;&amp;#xF7C;&amp;#xF51;&amp;#xF0B;&amp;#xF61;&amp;#xF72;&amp;#xF42;</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="68b7f7e81d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="68b7f7e81d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:17</created>
@@ -5311,9 +5311,9 @@
     <description></description>
     <name>Tigrinya</name>
     <native>&amp;#x1275;&amp;#x130D;&amp;#x122D;&amp;#x129B;</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="68b961f01d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="68b961f01d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:17</created>
@@ -5344,9 +5344,9 @@
     <description></description>
     <name>Tongan</name>
     <native>faka-Tonga</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="68c4ea5c1d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="68c4ea5c1d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:17</created>
@@ -5377,9 +5377,9 @@
     <description></description>
     <name>Tsonga</name>
     <native>xiTsonga</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="68c639521d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="68c639521d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:17</created>
@@ -5410,9 +5410,9 @@
     <description></description>
     <name>Tswana</name>
     <native>seTswana</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="68c7b0de1d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="68c7b0de1d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:17</created>
@@ -5443,9 +5443,9 @@
     <description></description>
     <name>Turkmen</name>
     <native>&amp;#x422;&amp;#x4AF;&amp;#x440;&amp;#x43A;&amp;#x43C;&amp;#x435;&amp;#x43D;</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="68d36c9e1d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="68d36c9e1d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:17</created>
@@ -5476,9 +5476,9 @@
     <description></description>
     <name>Twi</name>
     <native></native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="68d4a64a1d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="68d4a64a1d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:17</created>
@@ -5509,9 +5509,9 @@
     <description></description>
     <name>Uighur</name>
     <native>&amp;#x626;&amp;#x6C7;&amp;#x64A;&amp;#x63A;&amp;#x6C7;&amp;#x631;&amp;#x686;</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="68dd1adc1d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="68dd1adc1d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:17</created>
@@ -5542,9 +5542,9 @@
     <description></description>
     <name>Ukrainian</name>
     <native>&amp;#x443;&amp;#x43A;&amp;#x440;&amp;#x430;&amp;#x457;&amp;#x43D;&amp;#x441;&amp;#x44C;&amp;#x43A;&amp;#x430; &amp;#x43C;&amp;#x43E;&amp;#x432;&amp;#x430;</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="68de78141d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="68de78141d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:17</created>
@@ -5575,9 +5575,9 @@
     <description></description>
     <name>Urdu</name>
     <native>&amp;#x627;&amp;#x631;&amp;#x62F;&amp;#x648;</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="68dfe1221d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="68dfe1221d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:17</created>
@@ -5608,9 +5608,9 @@
     <description></description>
     <name>Uzbek</name>
     <native>&amp;#x40E;&amp;#x437;&amp;#x431;&amp;#x435;&amp;#x43A;</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="68e126361d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="68e126361d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:17</created>
@@ -5641,9 +5641,9 @@
     <description></description>
     <name>Venda</name>
     <native>tshiVen&amp;#x1E13;a</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="68ecef3e1d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="68ecef3e1d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:18</created>
@@ -5674,9 +5674,9 @@
     <description></description>
     <name>Vietnamese</name>
     <native>Ti&amp;#x1EBF;ng Vi&amp;#x1EC7;t</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="68ee33d01d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="68ee33d01d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:18</created>
@@ -5707,9 +5707,9 @@
     <description></description>
     <name>Volap&amp;#xFC;k</name>
     <native>Volap&amp;#xFC;k</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="68f5adb81d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="68f5adb81d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:18</created>
@@ -5740,9 +5740,9 @@
     <description></description>
     <name>Walloon</name>
     <native>walon</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="68f70e7e1d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="68f70e7e1d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:18</created>
@@ -5773,9 +5773,9 @@
     <description></description>
     <name>Welsh</name>
     <native>Cymraeg</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="68ff94681d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="68ff94681d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:18</created>
@@ -5806,9 +5806,9 @@
     <description></description>
     <name>Wolof</name>
     <native>Wolof</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="6900fe3e1d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="6900fe3e1d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:18</created>
@@ -5839,9 +5839,9 @@
     <description></description>
     <name>Xhosa</name>
     <native></native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="690294241d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="690294241d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:18</created>
@@ -5872,9 +5872,9 @@
     <description></description>
     <name>Yiddish</name>
     <native>&amp;#x5D9;&amp;#x5D9;&amp;#x5B4;&amp;#x5D3;&amp;#x5D9;&amp;#x5E9;</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="690e17d61d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="690e17d61d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:18</created>
@@ -5905,9 +5905,9 @@
     <description></description>
     <name>Yoruba</name>
     <native>Yor&amp;#xF9;b&amp;#xE1;</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="690f531c1d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="690f531c1d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:18</created>
@@ -5938,9 +5938,9 @@
     <description></description>
     <name>Zhuang</name>
     <native></native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="6910ccd81d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="6910ccd81d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:18</created>
@@ -5971,9 +5971,9 @@
     <description></description>
     <name>Thai</name>
     <native>&amp;#xE20;&amp;#xE32;&amp;#xE29;&amp;#xE32;&amp;#xE44;&amp;#xE17;&amp;#xE22;</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="691c62321d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="691c62321d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:18</created>
@@ -6004,9 +6004,9 @@
     <description></description>
     <name>Turkish</name>
     <native>T&amp;#xFC;rk&amp;#xE7;e</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="691dc0781d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="691dc0781d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:18</created>
@@ -6037,9 +6037,9 @@
     <description></description>
     <name>Inuktitut</name>
     <native></native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="691f2aa81d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="691f2aa81d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:18</created>
@@ -6070,9 +6070,9 @@
     <description></description>
     <name>Chinese</name>
     <native>&amp;#x4E2D;&amp;#x6587;</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" guid="692ab5121d9611db8191d7401a2b650e650e">
+  <ragnaroek_midgard_language purge="no" guid="692ab5121d9611db8191d7401a2b650e650e">
     <metadata>
       <creator></creator>
       <created>2006-07-27 17:36:18</created>
@@ -6103,9 +6103,9 @@
     <description></description>
     <name>Zulu</name>
     <native>isiZulu</native>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
-  <midgard_language purge="no" action="created" guid="1de75e86e7f2d5675e811deac9149c6b77cd997d997">
+  <ragnaroek_midgard_language purge="no" action="created" guid="1de75e86e7f2d5675e811deac9149c6b77cd997d997">
     <metadata>
       <creator></creator>
       <created>2009-07-21 11:20:01</created>
@@ -6138,6 +6138,6 @@
     <description></description>
     <code>it</code>
     <locale></locale>
-  </midgard_language>
+  </ragnaroek_midgard_language>
 
 </midgard_object>

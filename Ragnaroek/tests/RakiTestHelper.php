@@ -11,7 +11,7 @@ class RakiTestHelper
 
     public function getLangByCode($code)
     {
-        $storage = new MidgardQueryStorage('midgard_language');
+        $storage = new MidgardQueryStorage('ragnaroek_midgard_language');
         $qs = new MidgardQuerySelect($storage);
         $qs->set_constraint(
             new midgard_query_constraint(
