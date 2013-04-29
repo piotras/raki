@@ -3,13 +3,11 @@ shared:
         paths:
             - '/SG0'
             - '/SG0/Raki SG1'
-            - '/SG0/Raki SG1/multilang'
             - '/SG0/Raki SG1/multilang/fi'
             - '/SG0/Raki SG1/multilang/ru'
         names:
             SG0:
                 Raki SG1:
-                    multilang:
                         fi: []
                         ru: []
 
@@ -18,6 +16,5 @@ testGetStoredWorkspaceByName:
         names:
             - SG0
             - Raki SG1
-            - multilang
             - fi
             - ru

@@ -3,13 +3,12 @@ shared:
         paths:
             - '/SG0'
             - '/SG0/Raki SG1'
-            - '/SG0/Raki SG1/multilang'
-            - '/SG0/Raki SG1/multilang/fi'
-            - '/SG0/Raki SG1/multilang/ru'
+            - '/SG0/Raki SG1/fi'
+            - '/SG0/Raki SG1/ru'
         names:
             SG0:
                 Raki SG1:
-                    multilang:
+                    :
                         fi: []
                         ru: []
 
@@ -18,7 +17,6 @@ testGetName:
         names:
             - SG0
             - Raki SG1
-            - multilang
             - fi
             - ru
 
@@ -27,15 +25,12 @@ testGetChildrenNames:
         names:
             - SG0
             - Raki SG1
-            - multilang
             - fi
             - ru
         children:
             SG0:
                 - Raki SG1
             Raki SG1:
-                - multilang
-            multilang:
                 - fi
                 - ru
             fi: []
@@ -46,15 +41,12 @@ testGetChildren:
         names:
             - SG0
             - Raki SG1
-            - multilang
             - fi
             - ru
         children:
             SG0:
                 - Raki SG1
             Raki SG1:
-                - multilang
-            multilang:
                 - fi
                 - ru
             fi: []

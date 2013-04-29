@@ -24,13 +24,12 @@ shared:
         paths:
             - /SG0
             - /SG0/Raki SG1
-            - /SG0/Raki SG1/multilang
-            - /SG0/Raki SG1/multilang/fi
-            - /SG0/Raki SG1/multilang/ru
+            - /SG0/Raki SG1/fi
+            - /SG0/Raki SG1/ru
         names:
             SG0:
                 Raki SG1:
-                    multilang:
+                    :
                         fi: []
                         ru: []
 
@@ -39,21 +38,19 @@ testZGetItemByPath:
         paths:
             - /SG0
             - /SG0/Raki SG1
-            - /SG0/Raki SG1/multilang
-            - /SG0/Raki SG1/multilang/fi
-            - /SG0/Raki SG1/multilang/ru
+            - /SG0/Raki SG1/fi
+            - /SG0/Raki SG1/ru
         items:
             /SG0:
                 ratatoskr_topic:
                     SG0 first topic: []
-            /SG0/Raki SG1: []
-            /SG0/Raki SG1/multilang: 
+            /SG0/Raki SG1: 
                 ratatoskr_topic:
                     Multilang: []
-            /SG0/Raki SG1/multilang/fi: 
+            /SG0/Raki SG1/fi: 
                 ratatoskr_topic:
                     Multilang: []
-            /SG0/Raki SG1/multilang/ru: 
+            /SG0/Raki SG1/ru: 
                 ratatoskr_topic:
                     Multilang: []
 
