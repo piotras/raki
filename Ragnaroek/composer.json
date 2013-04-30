@@ -15,12 +15,12 @@
     "minimum-stability": "dev",
     "require": {
         "php": ">=5.3.0",
-        "ext-midgard2": ">=12.09",
+        "ext-midgard2": ">=10.05",
         "midgard/crtransition": "dev-master"
     },
     "require-dev": {
         "midgard/crtransition": "dev-master",
-        "ext-midgard2": ">=12.09"
+        "ext-midgard2": ">=10.05"
     },
     "autoload": {
         "psr-0": {
