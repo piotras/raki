@@ -1,0 +1,52 @@
+shared:
+    types:
+        possible:
+            - ragnaroek_midgard_topic
+            - ragnaroek_midgard_language
+            - ragnaroek_midgard_article
+            - nt_folder
+        stored:
+            - ragnaroek_midgard_topic
+            - ragnaroek_midgard_language
+            - ragnaroek_midgard_article
+            - nt_folder
+    workspace:
+        paths:
+            - /SG0
+            - /SG0/pc3
+        names:
+            SG0:
+                pc3: []
+
+testZGetItemByPath:
+    workspace:
+        paths:
+            - /SG0
+            - /SG0/pc3
+        items:
+            /SG0:
+                ragnaroek_midgard_page:
+                    'pc3 root': []
+                ragnaroek_midgard_style:
+                    'template_Midgard': []
+            /pc3:
+                ragnaroek_midgard_article:
+                    'index': []
+                ragnaroek_midgard_topic:
+                    'openpsainvoices': []
+                    'documents': []
+                    'invoices': []
+                    'contacts': []
+                    'reports': []
+                    'wiki': []
+                ragnaroek_midgard_host:
+                    'pc3': []
+                ragnaroek_midgard_style:
+                    'template_Midgard': []
+                    'template_SimpleGray for pc3': []
+                ragnaroek_midgard_page:
+                    'pc3 root': []
+                ragnaroek_midgard_snippet:
+                    'config': []
+                    'siteconfig': []
+

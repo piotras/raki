@@ -1,0 +1,35 @@
+shared:
+    workspace:
+        paths:
+            - '/SG0'
+            - '/SG0/pc3'
+        names:
+            SG0:
+                pc3: []
+
+testGetName:
+    workspace:
+        names:
+            - SG0
+            - pc3
+
+testGetChildrenNames:
+    workspace:
+        names:
+            - SG0
+            - pc3
+        children:
+            SG0:
+                - pc3
+            pc3: []
+
+testGetChildren:
+    workspace:
+        names:
+            - SG0
+            - pc3
+        children:
+            SG0:
+                - pc3
+            pc3: []
+

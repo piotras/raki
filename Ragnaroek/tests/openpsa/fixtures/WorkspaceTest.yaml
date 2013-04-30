@@ -1,0 +1,14 @@
+shared:
+    workspace:
+        paths:
+            - '/SG0'
+            - '/SG0/pc3'
+        names:
+            SG0:
+                pc3: []
+
+testGetStoredWorkspaceByName:
+    workspace:
+        names:
+            - SG0
+            - pc3 

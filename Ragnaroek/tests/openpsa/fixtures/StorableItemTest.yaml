@@ -1,0 +1,25 @@
+shared:
+    workspace:
+        paths:
+            - /SG0
+            - /SG0/pc3
+        items:
+            /SG0:
+                ragnaroek_midgard_style:
+                    'template_Midgard':
+                        name: 'template_Midgard'
+                        up: 0
+
+            /SG0/pc3: 
+                ragnaroek_midgard_article:
+                    index:
+                        name: index
+                ragnaroek_midgard_topic:
+                    'openpsainvoices':
+                        name: 'openpsainvoices'
+                ragnaroek_midgard_host:
+                    'pc3': 
+                        name: pc3
+                ragnaroek_midgard_snippet:
+                    'config':
+                        name: 'config'
