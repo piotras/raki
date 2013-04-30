@@ -3,27 +3,26 @@ shared:
         paths:
             - /SG0
             - /SG0/Raki SG1
-            - /SG0/Raki SG1
             - /SG0/Raki SG1/fi
             - /SG0/Raki SG1/ru
         items:
             /SG0:
-                ratatoskr_topic:
+                ragnaroek_ratatoskr_topic:
                     SG0 first topic:
                         name: SG0 first topic
                         title: ''
             /SG0/Raki SG1: 
-                ratatoskr_topic:
+                ragnaroek_ratatoskr_topic:
                     Multilang:
                         name: Multilang
                         title: Good
             /SG0/Raki SG1/fi: 
-                ratatoskr_topic:
+                ragnaroek_ratatoskr_topic:
                     Multilang:
                         name: Multilang
                         title: Hyvä
             /SG0/Raki SG1/ru: 
-                ratatoskr_topic:
+                ragnaroek_ratatoskr_topic:
                     Multilang:
                         name: Multilang
                         title: Xороший
