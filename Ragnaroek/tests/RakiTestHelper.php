@@ -9,7 +9,7 @@ class RakiTestHelper
     const LangFiName = 'Hyvä';
     const LangRuName = 'Xороший';
 
-    public function getLangByCode($code)
+    static public function getLangByCode($code)
     {
         $storage = new MidgardQueryStorage('ragnaroek_midgard_language');
         $qs = new MidgardQuerySelect($storage);
