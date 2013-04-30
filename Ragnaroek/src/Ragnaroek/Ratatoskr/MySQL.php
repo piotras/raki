@@ -25,7 +25,11 @@ class MySQL
             mysql_free_result($this->result);
         }
 
-        $this->result = mysql_query($sql) or die('Query failed: ' . mysql_error() . "\n {$sql} \n");
+        $this->result = mysql_query($sql);
+        if ($this->result === false) {
+            $this->result = null;
+            throw new \Exception("Query failed: " . mysql_error() . "\n {$sql} \n");
+        }
     }
 
     public function getQueryResult()
