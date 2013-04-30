@@ -13,8 +13,8 @@ $transition_config = array (
     'temporary_database_username' => 'midgard',
     'temporary_database_password' => 'midgard',
     
-    # Directory with schemas which hold information about types to transform
-    'schema_directory_ragnaroek' => '/usr/share/midgard/schema',
+    # Directory with schemas which hold information about types to transform, '/usr/share/midgard/schema'
+    'schema_directory_ragnaroek' => __DIR__ . "/data/share/midgard/schema",
     
     # Directory for updated schemas (used for transition only)
     'schema_directory_sql' => __DIR__ . "/data/ragnaroek/schema",
