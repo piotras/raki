@@ -11,8 +11,9 @@ before_script:
   - cd Ragnaroek && wget -q http://getcomposer.org/composer.phar
   - php composer.phar install --dev
   - ./tests/travis_${APP}.sh
+  - phpenv config-add midgard2_${APP}.ini
 
-script: "`which php` -c midgard2_${APP}.ini `which phpunit` -c tests/phpunit_${APP}.xml.dist"
+script: phpunit -c tests/phpunit_${APP}.xml.dist
 
 notifications:
     irc: "irc.freenode.org#midgard"
