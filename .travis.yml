@@ -1,15 +1,18 @@
 language: php
 
 php:
-  - 5.3
   - 5.4
+
+env:
+  - APP=openpsa
 
 before_script:
   - ./Ragnaroek/travis_midgard.sh
   - cd Ragnaroek && wget -q http://getcomposer.org/composer.phar
   - php composer.phar install --dev
+  - ./tests/travis_${APP}.sh
 
-script: "`which php` -c midgard2.ini `which phpunit` -c tests/phpunit.xml.dist"
+script: "`which php` -c midgard2_${APP}.ini `which phpunit` -c tests/phpunit_${APP}.xml.dist"
 
 notifications:
     irc: "irc.freenode.org#midgard"
