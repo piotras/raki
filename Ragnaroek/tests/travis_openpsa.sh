@@ -16,7 +16,7 @@ sudo mysql -e "GRANT all ON ${MIDGARD_TEST_DB}.*  to '${MIDGARD_TEST_DB_USER}'@'
 sudo mysql -e " FLUSH PRIVILEGES";
 
 # Import data to live database
-gunzip -c openpsa/midgard_openpsademo.sql.gz > openpsa/midgard_openpsademo.sql
-mysql -u ${MIDGARD_TEST_DB_USER} -p${MIDGARD_TEST_DB_PASS} -D ${MIDGARD_TEST_DB} < openpsa/midgard_openpsademo.sql
+gunzip -c tests/openpsa/midgard_openpsademo.sql.gz > tests/openpsa/midgard_openpsademo.sql
+mysql -u ${MIDGARD_TEST_DB_USER} -p${MIDGARD_TEST_DB_PASS} -D ${MIDGARD_TEST_DB} < tests/openpsa/midgard_openpsademo.sql
 
-php -c openpsa/midgard2.ini ../src/Ragnaroek/Ratatoskr/Utils/SchemasCopy.php openpsa/transition-config.php
+php -c tests/openpsa/midgard2.ini src/Ragnaroek/Ratatoskr/Utils/SchemasCopy.php tests/openpsa/transition-config.php
