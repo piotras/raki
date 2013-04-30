@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Schema xmlns="http://www.midgard-project.org/repligard/1.4">
+
+  <type name="net_nemein_calendar_event" table="net_nemein_calendar_event" parent="midgard_topic" upfield="up" parentfield="node">
+    <property name="id"       type="unsigned integer" primaryfield="id"/>
+    <property name="start"    type="datetime" index="yes"/>
+    <property name="end"      type="datetime" index="yes"/>
+    <property name="name"     type="string" index="yes"/>
+    <property name="sid" type="unsigned integer" multilang="yes" table="net_nemein_calendar_event_i"/>
+    <property name="lang" type="unsigned integer" multilang="yes" table="net_nemein_calendar_event_i"/>
+    <property name="title"    type="string" multilang="yes" table="net_nemein_calendar_event_i"/>
+    <property name="description" type="longtext" multilang="yes" table="net_nemein_calendar_event_i"/>
+    <property name="type" type="integer"/>
+    <property name="extra" type="longtext"/>
+    <property name="up" type="unsigned integer" upfield="up" link="net_nemein_calendar_event:id"/>
+    <property name="node" link="midgard_topic:id" reverse="no" type="unsigned integer" parentfield="node"/>
+    <property name="openregistration" type="datetime" index="yes"/>
+    <property name="closeregistration" type="datetime" index="yes"/>
+    <property name="location" type="string" />
+  </type>
+
+    <type name="net_nemein_calendar_eventlink" table="net_nemein_calendar_eventlink" parent="midgard_topic">
+        <property name="id" type="unsigned integer" primaryfield="id" />
+        <property name="node" type="unsigned integer" link="midgard_topic:id" reverse="no" parentfield="node"/>
+        <property name="event" type="unsigned integer" link="net_nemein_calendar_event:id" reverse="no">
+            <description>
+                Linked net_nemein_calendar_event ID
+            </description>
+        </property>
+    </type>
+  
+</Schema>

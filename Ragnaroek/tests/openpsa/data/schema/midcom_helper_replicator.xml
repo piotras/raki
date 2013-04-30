@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Schema xmlns="http://www.midgard-project.org/repligard/1.4">
+    <type name="ragnaroek_midcom_helper_replicator_subscription" table="midcom_helper_replicator_subscription">
+        <property name="id" type="unsigned integer" primaryfield="id"/>
+        
+        <property name="title" type="string"/>
+        <property name="description" type="text"/>
+        <property name="filtersSerialized" type="text"/>
+                
+        <property name="exporter" type="string"/>
+        <property name="transporter" type="string"/>
+
+        <property name="status" type="integer"/>
+    <property name="sitegroup" type="unsigned integer"/></type>
+</Schema>
