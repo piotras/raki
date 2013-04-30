@@ -3,8 +3,8 @@ shared:
         paths:
             - '/SG0'
             - '/SG0/Raki SG1'
-            - '/SG0/Raki SG1/multilang/fi'
-            - '/SG0/Raki SG1/multilang/ru'
+            - '/SG0/Raki SG1/fi'
+            - '/SG0/Raki SG1/ru'
         names:
             SG0:
                 Raki SG1:
