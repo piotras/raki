@@ -5,7 +5,7 @@ if [ -n "$MIDGARD_EXT_VERSION:" ] ; then
 fi
 
 # Install Midgard2 library dependencies
-sudo apt-get install -y dbus libglib2.0-dev libgda-4.0-4 libgda-4.0-dev libxml2-dev libdbus-1-dev libdbus-glib-1-dev
+sudo apt-get install -y dbus libglib2.0-dev libgda-4.0-4 libgda-4.0-dev libxml2-dev libdbus-1-dev libdbus-glib-1-dev libgda-4.0-mysql
 
 # Build Midgard2 core from recent tarball
 wget -q https://github.com/midgardproject/midgard-core/tarball/${MIDGARD_EXT_VERSION} -O ${MIDGARD_EXT_VERSION}
