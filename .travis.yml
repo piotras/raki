@@ -5,6 +5,7 @@ php:
 
 env:
   - APP=openpsa
+  - APP=simple
 
 before_script:
   - ./Ragnaroek/travis_midgard.sh
