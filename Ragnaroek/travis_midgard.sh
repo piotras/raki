@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ -n "$MIDGARD_EXT_VERSION:" ] ; then
-	MIDGARD_EXT_VERSION="ragnaroek"
+	MIDGARD_EXT_VERSION="ratatoskr"
 fi
 
 # Install Midgard2 library dependencies
