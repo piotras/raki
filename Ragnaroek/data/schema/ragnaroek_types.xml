@@ -105,7 +105,7 @@
 
 	<type name="ragnaroek_element_lang" table="element_i">
 		<property name="value"    type="text" table="element_i" multilang="yes"/>
-		<property name="lang"     type="unsigned integer" link="midgard_language:id" table="element_i" multilang="yes"/>
+		<property name="lang"     type="unsigned integer" link="ragnaroek_midgard_language:id" table="element_i" multilang="yes"/>
 		<property name="sid"      type="unsigned integer" table="element_i" multilang="yes"/>
 		<property name="sitegroup" type="unsigned integer"/>
 	</type>
