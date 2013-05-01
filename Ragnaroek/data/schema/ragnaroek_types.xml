@@ -115,6 +115,7 @@
 		<property name="content"  type="text"     table="page_i" multilang="yes"/>
 		<property name="lang"     type="unsigned integer" link="ragnaroek_midgard_language:id" table="page_i" multilang="yes"/>
 		<property name="sid"      type="unsigned integer" table="page_i" multilang="yes"/>
+		<property name="contentchanged"  type="datetime" table="page_i" field="changed" multilang="yes"/>
 		<property name="sitegroup" type="unsigned integer"/>
 	</type>
 
