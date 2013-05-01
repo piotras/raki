@@ -154,7 +154,7 @@ class StoragePrepare
         $this->Midgard2Config->database = $this->db_tmp_name;
         $this->Midgard2Config->dbuser = $this->db_tmp_username;
         $this->Midgard2Config->dbpass = $this->db_tmp_password;
-        $this->Midgard2Config->loglevel = "debug";
+        //$this->Midgard2Config->loglevel = "debug";
 
         $mgd = midgard_connection::get_instance();
         if ($mgd->open_config ($this->Midgard2Config) == false) {
