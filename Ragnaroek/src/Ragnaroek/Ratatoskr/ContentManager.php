@@ -67,7 +67,8 @@ class ContentManager implements \CRTransition\ContentManager
     }
 
     public function importType($typeName)
-    { 
+    {
+        echo "Importing {$typeName} type \n"; 
         $mysql = $this->getTransition()->getMySQL();
 
         $workspaceManager = $this->getTransition()->getWorkspaceManager();
