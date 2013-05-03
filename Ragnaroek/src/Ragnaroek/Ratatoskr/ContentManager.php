@@ -214,6 +214,16 @@ class ContentManager implements \CRTransition\ContentManager
             );
         } 
 
+        if ($name_constraint != null) {
+            $qs->set_constraint($name_constraint);
+        } else if ($title_constraint != null) {
+            $qs->set_constraint($title_constraint);
+        } else {
+            /* sane fallback ? */
+        }
+
+
+        /*
         if ($title_constraint == null 
             || $name_constraint == null) {
                 $qs->set_constraint($name_constraint ? $name_constraint : $title_constraint);
@@ -226,6 +236,7 @@ class ContentManager implements \CRTransition\ContentManager
                 $cg->add_constraint($title_constraint);
 
             }
+         */
 
         //$mgd->set_loglevel("debug");
         $qs->execute();
