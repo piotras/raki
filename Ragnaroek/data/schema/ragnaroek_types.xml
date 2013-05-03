@@ -119,4 +119,11 @@
 		<property name="sitegroup" type="unsigned integer"/>
 	</type>
 
+	<type name="ragnaroek_pageelement_lang" table="pageelement_i">
+		<property name="lang"     type="unsigned integer" link="ragnaroek_midgard_language:id" table="pageelement_i" multilang="yes"/>
+		<property name="sid"      type="unsigned integer"     table="pageelement_i" multilang="yes"/>
+		<property name="value"    type="text" table="pageelement_i" multilang="yes"/>
+		<property name="sitegroup" type="unsigned integer"/>
+	</type>
+
 </Schema>
