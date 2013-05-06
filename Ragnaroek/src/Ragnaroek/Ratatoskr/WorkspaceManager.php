@@ -252,10 +252,14 @@ class WorkspaceManager implements \CRTransition\WorkspaceManager
         return null;
     }
 
-    private function determineLegacyType($absPath)
+    private function determineLegacyType($absPath, $onlyLang = false)
     {
         $elements = explode('/', $absPath);
         $elements_count = count($elements);
+
+        if ($onlyLang === true) {
+            return $this->findLanguageByName($elements[$elements_count - 1]);
+        }
 
         switch ($elements_count) {
             
@@ -298,12 +302,12 @@ class WorkspaceManager implements \CRTransition\WorkspaceManager
         $this->workspaces[$absPath]['legacy'] = $this->determineLegacyType($absPath);
     }
 
-    public function getLegacyMidgardType($absPath) 
+    public function getLegacyMidgardType($absPath, $onlyLang = false) 
     {
         $this->populateSitegroups();
         $this->populateLanguages();
 
-        return $this->determineLegacyType($absPath);
+        return $this->determineLegacyType($absPath, $onlyLang);
     }
 
     public function getMidgardWorkspaceByPath($absPath)
