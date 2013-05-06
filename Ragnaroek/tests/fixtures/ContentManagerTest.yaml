@@ -9,7 +9,6 @@ shared:
             - ragnaroek_topic
             - ragnaroek_topic_lang
             - ragnaroek_ratatoskr_topic
-            - midgard_node
             - nt_folder
         stored:
             - ragnaroek_topic
