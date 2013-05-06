@@ -34,7 +34,7 @@ function updateSchemas($directory, &$paths)
                 continue;
             }
 
-            $absPath = $schema_directory_transition . '/' . $entry;
+            $absPath = $directory . '/' . $entry;
             $info = pathinfo($absPath);
             /* Ignore non xml files */
             if ($info['extension'] != 'xml') {
