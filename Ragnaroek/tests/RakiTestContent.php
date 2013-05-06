@@ -57,9 +57,20 @@ class RakiTestContent
         $o->sid = $sID;
         $o->sitegroup = $sgID;
         $o->lang = RakiTestHelper::getLangByCode($lang)->id;
-        if ($o->create() === false) {
+        if ($o->create() == false) {
             throw new \Exception("Failed to create {$typeName}. " . midgard_connection::get_instance()->get_error_string() );
         }
+    }
+
+    public static function createTypeRecord($typeName, $name, $sgID) 
+    {
+        $o = new $typeName();
+        $o->name = $name;
+        $o->sitegroup = $sgID;
+        if ($o->create() == false) {
+            throw new \Exception("Failed to create {$typeName}. " . midgard_connection::get_instance()->get_error_string() );
+        }
+        return $o;
     }
 
     public static function createContent()
@@ -86,7 +97,7 @@ class RakiTestContent
         $tml->sid = $t->id;
         $tml->sitegroup = $sg->id;
         $tml->create();
-        
+
         /* Create content for languages */
         // FI
         self::createLangContent('ragnaroek_topic_lang', RakiTestHelper::LangFiName, $t->id, $sg->id, 'fi');
@@ -95,10 +106,7 @@ class RakiTestContent
 
 
         /* STYLE ELEMENT */
-        $e = new ragnaroek_element();
-        $e->name = RakiTestHelper::SG1TopicName;
-        $e->sitegroup = $sg->id;
-        $e->create();
+        $e = self::createTypeRecord('ragnaroek_element', RakiTestHelper::SG1TopicName, $sg->id);
         
         // FI
         self::createLangContent('ragnaroek_element_lang', RakiTestHelper::LangFiName, $e->id, $sg->id, 'fi');
@@ -107,10 +115,7 @@ class RakiTestContent
 
 
         /* PAGE */
-        $p = new ragnaroek_page();
-        $p->name = RakiTestHelper::SG1TopicName;
-        $p->sitegroup = $sg->id;
-        $p->create();
+        $p = self::createTypeRecord('ragnaroek_page', RakiTestHelper::SG1TopicName, $sg->id);
         
         // FI
         self::createLangContent('ragnaroek_page_lang', RakiTestHelper::LangFiName, $p->id, $sg->id, 'fi');
