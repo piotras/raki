@@ -103,10 +103,10 @@
 		<property name="sitegroup" type="unsigned integer"/>
 	</type>
 
-	<type name="ragnaroek_element" table="element" parent="ragnaroek_midgard_style">
+	<type name="ragnaroek_element" table="element">
 		<property name="id" type="unsigned integer" primaryfield="id"/>
 		<property name="name"     type="string" index="yes"/>
-		<property name="style"    type="unsigned integer" link="ragnaroek_midgard_style:id" parentfield="style"/>
+		<property name="style"    type="unsigned integer"/>
 		<property name="sitegroup" type="unsigned integer"/>
 	</type>
 
