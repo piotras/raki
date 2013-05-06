@@ -81,7 +81,12 @@ class ContentManager implements \CRTransition\ContentManager
             #$mlPath = '/' . $dSGName . '/' . $sg->name . '/' . $dLang->code;
             $mlPath = '/' . $dSGName . '/' . $sg->name;
             $ws = $workspaceManager->getMidgardWorkspaceByPath($mlPath);
-            $lang = $workspaceManager->getLegacyMidgardType($mlPath);
+            $lang = $workspaceManager->getLegacyMidgardType($mlPath, true);
+            /* Fallback to default language, there's no language content,so we move 
+             * everything to current sitegroup, without language context */
+            if ($lang === null) {
+                $lang = $dLang;
+            }
             $q = $sts->getSQLUpdateTypePre($typeName, $ws->id, $sg->id, $lang->id);
             //echo $q . "\n";
             $mysql->query($q);
