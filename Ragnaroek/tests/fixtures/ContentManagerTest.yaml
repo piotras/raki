@@ -45,10 +45,22 @@ testZGetItemByPath:
             /SG0/Raki SG1: 
                 ragnaroek_ratatoskr_topic:
                     Multilang: []
+                ragnaroek_element:
+                    Multilang: []
+                ragnaroek_page:
+                    Multilang: []
             /SG0/Raki SG1/fi: 
                 ragnaroek_ratatoskr_topic:
                     Multilang: []
+                ragnaroek_element:
+                    Multilang: []
+                ragnaroek_page:
+                    Multilang: []
             /SG0/Raki SG1/ru: 
                 ragnaroek_ratatoskr_topic:
+                    Multilang: []
+                ragnaroek_element:
+                    Multilang: []
+                ragnaroek_page:
                     Multilang: []
 

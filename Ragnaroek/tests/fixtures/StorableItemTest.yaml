@@ -16,8 +16,21 @@ shared:
                     Multilang:
                         name: Multilang
                         title: Good
+                ragnaroek_element:
+                    Multilang:
+                        name: Multilang
+                ragnaroek_page:
+                    Multilang:
+                        name: Multilang
             /SG0/Raki SG1/fi: 
                 ragnaroek_ratatoskr_topic:
+                    Multilang:
+                        name: Multilang
+                        title: Hyvä
+                ragnaroek_element:
+                    Multilang:
+                        name: Multilang
+                ragnaroek_page:
                     Multilang:
                         name: Multilang
                         title: Hyvä
@@ -26,4 +39,10 @@ shared:
                     Multilang:
                         name: Multilang
                         title: Xороший
-
+                ragnaroek_element:
+                    Multilang:
+                        name: Multilang
+                ragnaroek_page:
+                    Multilang:
+                        name: Multilang
+                        title: Xороший

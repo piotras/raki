@@ -103,10 +103,27 @@
 		<property name="sitegroup" type="unsigned integer"/>
 	</type>
 
+	<type name="ragnaroek_element" table="element" parent="ragnaroek_midgard_style">
+		<property name="id" type="unsigned integer" primaryfield="id"/>
+		<property name="name"     type="string" index="yes"/>
+		<property name="style"    type="unsigned integer" link="ragnaroek_midgard_style:id" parentfield="style"/>
+		<property name="sitegroup" type="unsigned integer"/>
+	</type>
+
 	<type name="ragnaroek_element_lang" table="element_i">
 		<property name="value"    type="text" table="element_i" multilang="yes"/>
 		<property name="lang"     type="unsigned integer" link="ragnaroek_midgard_language:id" table="element_i" multilang="yes"/>
 		<property name="sid"      type="unsigned integer" table="element_i" multilang="yes"/>
+		<property name="sitegroup" type="unsigned integer"/>
+	</type>
+
+	<type name="ragnaroek_page" table="page">
+		<property name="id" type="unsigned integer" primaryfield="id"/>
+		<property name="name"     type="string" index="yes"/>
+		<property name="info"     type="string" dbtype="set('auth','active')"/>
+		<property name="style"    type="unsigned integer"/>
+		<property name="up"       type="unsigned integer" upfield="up"/>
+		<property name="component"    type="string" index="yes"/>
 		<property name="sitegroup" type="unsigned integer"/>
 	</type>
 

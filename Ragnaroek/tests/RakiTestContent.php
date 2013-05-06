@@ -50,9 +50,20 @@ class RakiTestContent
         $rv = MidgardReplicator::import_from_xml($xml);
     }
 
-    public static function createContent()
+    public static function createLangContent($typeName, $title = '', $sID, $sgID, $lang)
     {
-        
+        $o = new $typeName();
+        $o->title = $title;
+        $o->sid = $sID;
+        $o->sitegroup = $sgID;
+        $o->lang = RakiTestHelper::getLangByCode($lang)->id;
+        if ($o->create() === false) {
+            throw new \Exception("Failed to create {$typeName}. " . midgard_connection::get_instance()->get_error_string() );
+        }
+    }
+
+    public static function createContent()
+    {    
         /* Create SG0 content */
         $t = new ragnaroek_topic();
         $t->name = RakiTestHelper::SG0TopicName;
@@ -62,7 +73,8 @@ class RakiTestContent
         $sg = new ragnaroek_sitegroup();
         $sg->name = RakiTestHelper::SG1Name;
         $sg->create();
-        
+
+        /* TOPIC */ 
         /* Create content for default language */
         $t = new ragnaroek_topic();
         $t->name = RakiTestHelper::SG1TopicName;
@@ -76,22 +88,34 @@ class RakiTestContent
         $tml->create();
         
         /* Create content for languages */
+        // FI
+        self::createLangContent('ragnaroek_topic_lang', RakiTestHelper::LangFiName, $t->id, $sg->id, 'fi');
+        // RU
+        self::createLangContent('ragnaroek_topic_lang', RakiTestHelper::LangRuName, $t->id, $sg->id, 'ru');
+
+
+        /* STYLE ELEMENT */
+        $e = new ragnaroek_element();
+        $e->name = RakiTestHelper::SG1TopicName;
+        $e->sitegroup = $sg->id;
+        $e->create();
         
         // FI
-        $tml = new ragnaroek_topic_lang();
-        $tml->title = RakiTestHelper::LangFiName;
-        $tml->sid = $t->id;
-        $tml->sitegroup = $sg->id;
-        $tml->lang = RakiTestHelper::getLangByCode('fi')->id; 
-        $tml->create();
-
+        self::createLangContent('ragnaroek_element_lang', RakiTestHelper::LangFiName, $e->id, $sg->id, 'fi');
         // RU
-        $tml = new ragnaroek_topic_lang();
-        $tml->title = RakiTestHelper::LangRuName;
-        $tml->sid = $t->id;
-        $tml->sitegroup = $sg->id;
-        $tml->lang = RakiTestHelper::getLangByCode('ru')->id;
-        $tml->create();
+        self::createLangContent('ragnaroek_element_lang', RakiTestHelper::LangRuName, $e->id, $sg->id, 'ru');
+
+
+        /* PAGE */
+        $p = new ragnaroek_page();
+        $p->name = RakiTestHelper::SG1TopicName;
+        $p->sitegroup = $sg->id;
+        $p->create();
+        
+        // FI
+        self::createLangContent('ragnaroek_page_lang', RakiTestHelper::LangFiName, $p->id, $sg->id, 'fi');
+        // RU
+        self::createLangContent('ragnaroek_page_lang', RakiTestHelper::LangRuName, $p->id, $sg->id, 'ru');
     }
 
     public static function prepareContent()
