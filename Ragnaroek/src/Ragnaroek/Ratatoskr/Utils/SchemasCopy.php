@@ -22,23 +22,32 @@ exec("cp {$schema_directory_ragnaroek}/*.xml  {$schema_directory_sql}");
 echo "Copy schema files to generate PHP classes \n";
 exec("cp {$schema_directory_ragnaroek}/*.xml  {$schema_directory_transition}");
 
-echo "Updating schemas \n";
-if ($handle = opendir($schema_directory_transition)) {
-    while (($entry = readdir($handle)) == true) {
-        /* Ignore parent and self directory */
-        if ($entry == '.' || $entry == '..') {
-            continue;
-        }
 
-        $absPath = $schema_directory_transition . '/' . $entry;
-        $info = pathinfo($absPath);
-        /* Ignore non xml files */
-        if ($info['extension'] != 'xml') {
-            continue;
+$paths = array();
+
+function updateSchemas($directory, &$paths)
+{
+    if ($handle = opendir($directory)) {
+        while (($entry = readdir($handle)) == true) {
+            /* Ignore parent and self directory */
+            if ($entry == '.' || $entry == '..') {
+                continue;
+            }
+
+            $absPath = $schema_directory_transition . '/' . $entry;
+            $info = pathinfo($absPath);
+            /* Ignore non xml files */
+            if ($info['extension'] != 'xml') {
+                continue;
+            }
+            $paths[] = $absPath;
         }
-        $paths[] = $absPath;
     }
 }
+
+echo "Updating schemas \n";
+updateSchemas($schema_directory_transition, $paths);
+updateSchemas($schema_directory_sql, $paths);
 
 function renameElement($name, $msg) 
 {
