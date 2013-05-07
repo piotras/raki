@@ -143,4 +143,17 @@
 		<property name="sitegroup" type="unsigned integer"/>
 	</type>
 
+	<type name="ragnaroek_host" table="host">
+		<property name="id" type="unsigned integer" primaryfield="id"/>
+		<property name="name"     type="string" index="yes"/>
+		<property name="info"     type="string" dbtype="set('auth')"/>
+		<property name="port"     type="integer" index="yes"/>
+		<property name="online"   type="boolean" index="yes"/>
+		<property name="prefix"   type="string" index="yes"/>
+		<property name="lang"     type="unsigned integer" link="midgard_language:id"/>
+		<property name="root"     type="unsigned integer" link="midgard_page:id"/>
+		<property name="style"    type="unsigned integer" link="midgard_style:id"/>
+		<property name="owner"    type="integer"/>
+	</type>
+
 </Schema>
