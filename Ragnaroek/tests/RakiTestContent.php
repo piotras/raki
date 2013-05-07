@@ -123,6 +123,7 @@ class RakiTestContent
 
         /* PAGE */
         $properties['name'] = RakiTestHelper::SG1TopicName;
+        $properties['lang'] = 0;
         $properties['style'] = 777;
         $properties['up'] = 0;
         $properties['component'] = 'fa.fi.fu';
@@ -138,6 +139,41 @@ class RakiTestContent
         $properties['title'] = RakiTestHelper::LangRuName;
         $properties['lang'] = RakiTestHelper::getLangByCode('ru')->id;
         self::createTypeRecord('ragnaroek_page_lang', $properties); 
+
+
+        /* HOST */
+        $properties['name'] = 'www.host.com';
+        $properties['lang'] = 0;
+        $properties['style'] = 777;
+        $properties['port'] = 80;
+        $properties['online'] = 1;
+        $properties['prefix'] = '/en';
+        $p = self::createTypeRecord('ragnaroek_host', $properties);
+
+
+        /* STYLE */
+        $properties['name'] = 'Stylish';
+        $properties['owner'] = 123;
+        $properties['up'] = 0;
+        $p = self::createTypeRecord('ragnaroek_style', $properties);
+
+        /* PAGE ELEMENT */
+        $properties['name'] = RakiTestHelper::SG1TopicName;
+        $properties['page'] = 101;
+        $e = self::createTypeRecord('ragnaroek_pageelement', $properties); 
+        
+        // FI
+        $properties['name'] = RakiTestHelper::LangFiName;
+        $properties['sid'] = $e->id;
+        $properties['lang'] = RakiTestHelper::getLangByCode('fi')->id;
+        $properties['value'] = 'Suomi';
+        self::createTypeRecord('ragnaroek_pageelement_lang', $properties); 
+        // RU
+        $properties['name'] = RakiTestHelper::LangRuName;
+        $properties['lang'] = RakiTestHelper::getLangByCode('ru')->id;
+        $properties['value'] = 'Русский';
+        self::createTypeRecord('ragnaroek_pageelement_lang', $properties); 
+
     }
 
     public static function prepareContent()

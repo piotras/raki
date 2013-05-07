@@ -25,6 +25,23 @@ shared:
                         name: Multilang
                         style: 777
                         up: 0
+                ragnaroek_midgard_host:
+                    www.host.com:
+                        name: www.host.com
+                        lang: 0
+                        style: 777
+                        port: 80
+                        online: 1
+                        prefix: '/en'
+                ragnaroek_midgard_style:
+                    Stylish:
+                        name: Stylish
+                        owner: 123
+                        up: 0
+                ragnaroek_midgard_pageelement:
+                    Multilang:
+                        name: Multilang
+                        page: 101
             /SG0/Raki SG1/fi: 
                 ragnaroek_ratatoskr_topic:
                     Multilang:
@@ -42,6 +59,12 @@ shared:
                         style: 777
                         up: 0
                         content: Lorem Ipsum
+                ragnaroek_midgard_pageelement:
+                    Multilang:
+                        name: Multilang
+                        page: 101
+                        title: Hyvä
+                        value: Suomi
             /SG0/Raki SG1/ru: 
                 ragnaroek_ratatoskr_topic:
                     Multilang:
@@ -59,3 +82,9 @@ shared:
                         style: 777
                         up: 0 
                         content: Lorem Ipsum
+                ragnaroek_midgard_pageelement:
+                    Multilang:
+                        name: Multilang
+                        page: 101
+                        title: Xороший
+                        value: Русский

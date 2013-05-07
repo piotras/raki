@@ -136,6 +136,13 @@
 		<property name="sitegroup" type="unsigned integer"/>
 	</type>
 
+	<type name="ragnaroek_pageelement" table="pageelement">
+		<property name="id" type="unsigned integer" primaryfield="id"/>
+		<property name="name"     type="string" index="yes"/>
+		<property name="info"     type="string" dbtype="set('inherit')"/>
+		<property name="page"     type="unsigned integer"/>
+	</type>
+
 	<type name="ragnaroek_pageelement_lang" table="pageelement_i">
 		<property name="lang"     type="unsigned integer" link="ragnaroek_midgard_language:id" table="pageelement_i" multilang="yes"/>
 		<property name="sid"      type="unsigned integer"     table="pageelement_i" multilang="yes"/>
@@ -154,6 +161,16 @@
 		<property name="root"     type="unsigned integer"/>
 		<property name="style"    type="unsigned integer"/>
 		<property name="owner"    type="integer"/>
+		<property name="sitegroup" type="unsigned integer"/>
 	</type>
+
+	<type name="ragnaroek_style" table="style">
+		<property name="id" type="unsigned integer" primaryfield="id"/>
+		<property name="name"     type="string" index="yes"/>
+		<property name="owner"    type ="unsigned integer"/>
+		<property name="up"       type="unsigned integer"/>
+		<property name="sitegroup" type="unsigned integer"/>
+	</type>
+
 
 </Schema>
