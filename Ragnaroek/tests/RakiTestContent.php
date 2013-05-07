@@ -163,13 +163,11 @@ class RakiTestContent
         $e = self::createTypeRecord('ragnaroek_pageelement', $properties); 
         
         // FI
-        $properties['name'] = RakiTestHelper::LangFiName;
         $properties['sid'] = $e->id;
         $properties['lang'] = RakiTestHelper::getLangByCode('fi')->id;
         $properties['value'] = 'Suomi';
         self::createTypeRecord('ragnaroek_pageelement_lang', $properties); 
         // RU
-        $properties['name'] = RakiTestHelper::LangRuName;
         $properties['lang'] = RakiTestHelper::getLangByCode('ru')->id;
         $properties['value'] = 'Русский';
         self::createTypeRecord('ragnaroek_pageelement_lang', $properties); 

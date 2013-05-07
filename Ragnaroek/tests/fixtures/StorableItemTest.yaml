@@ -63,7 +63,6 @@ shared:
                     Multilang:
                         name: Multilang
                         page: 101
-                        title: Hyvä
                         value: Suomi
             /SG0/Raki SG1/ru: 
                 ragnaroek_ratatoskr_topic:
@@ -86,5 +85,4 @@ shared:
                     Multilang:
                         name: Multilang
                         page: 101
-                        title: Xороший
                         value: Русский
