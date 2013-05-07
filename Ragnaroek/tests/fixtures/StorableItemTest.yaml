@@ -16,7 +16,7 @@ shared:
                     Multilang:
                         name: Multilang
                         title: Good
-                ragnaroek_element:
+                ragnaroek_midgard_element:
                     Multilang:
                         name: Multilang
                         style: 777
@@ -30,7 +30,7 @@ shared:
                     Multilang:
                         name: Multilang
                         title: Hyvä
-                ragnaroek_element:
+                ragnaroek_midgard_element:
                     Multilang:
                         name: Multilang
                         style: 777
@@ -47,7 +47,7 @@ shared:
                     Multilang:
                         name: Multilang
                         title: Xороший
-                ragnaroek_element:
+                ragnaroek_midgard_element:
                     Multilang:
                         name: Multilang
                         style: 777
