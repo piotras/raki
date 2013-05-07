@@ -19,9 +19,12 @@ shared:
                 ragnaroek_element:
                     Multilang:
                         name: Multilang
+                        style: 777
                 ragnaroek_midgard_page:
                     Multilang:
                         name: Multilang
+                        style: 777
+                        up: 0
             /SG0/Raki SG1/fi: 
                 ragnaroek_ratatoskr_topic:
                     Multilang:
@@ -30,10 +33,15 @@ shared:
                 ragnaroek_element:
                     Multilang:
                         name: Multilang
+                        style: 777
+                        value: Suomi
                 ragnaroek_midgard_page:
                     Multilang:
                         name: Multilang
                         title: Hyvä
+                        style: 777
+                        up: 0
+                        content: Lorem Ipsum
             /SG0/Raki SG1/ru: 
                 ragnaroek_ratatoskr_topic:
                     Multilang:
@@ -42,7 +50,12 @@ shared:
                 ragnaroek_element:
                     Multilang:
                         name: Multilang
+                        style: 777
+                        value: Русский
                 ragnaroek_midgard_page:
                     Multilang:
                         name: Multilang
                         title: Xороший
+                        style: 777
+                        up: 0 
+                        content: Lorem Ipsum

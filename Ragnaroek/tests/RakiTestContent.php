@@ -105,30 +105,36 @@ class RakiTestContent
 
         /* STYLE ELEMENT */
         $properties['name'] = RakiTestHelper::SG1TopicName;
+        $properties['style'] = 777;
         $e = self::createTypeRecord('ragnaroek_element', $properties); 
         
         // FI
         $properties['name'] = RakiTestHelper::LangFiName;
         $properties['sid'] = $e->id;
         $properties['lang'] = RakiTestHelper::getLangByCode('fi')->id;
+        $properties['value'] = 'Suomi';
         self::createTypeRecord('ragnaroek_element_lang', $properties); 
         // RU
         $properties['name'] = RakiTestHelper::LangRuName;
         $properties['lang'] = RakiTestHelper::getLangByCode('ru')->id;
+        $properties['value'] = 'Русский';
         self::createTypeRecord('ragnaroek_element_lang', $properties); 
 
 
         /* PAGE */
         $properties['name'] = RakiTestHelper::SG1TopicName;
+        $properties['style'] = 777;
+        $properties['up'] = 0;
+        $properties['component'] = 'fa.fi.fu';
         $p = self::createTypeRecord('ragnaroek_page', $properties); 
         
         // FI
         $properties['title'] = RakiTestHelper::LangFiName;
         $properties['sid'] = $p->id;
         $properties['lang'] = RakiTestHelper::getLangByCode('fi')->id;
+        $properties['content'] = "Lorem Ipsum";
         self::createTypeRecord('ragnaroek_page_lang', $properties);
         // RU
-
         $properties['title'] = RakiTestHelper::LangRuName;
         $properties['lang'] = RakiTestHelper::getLangByCode('ru')->id;
         self::createTypeRecord('ragnaroek_page_lang', $properties); 
