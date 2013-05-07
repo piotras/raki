@@ -150,9 +150,9 @@
 		<property name="port"     type="integer" index="yes"/>
 		<property name="online"   type="boolean" index="yes"/>
 		<property name="prefix"   type="string" index="yes"/>
-		<property name="lang"     type="unsigned integer" link="midgard_language:id"/>
-		<property name="root"     type="unsigned integer" link="midgard_page:id"/>
-		<property name="style"    type="unsigned integer" link="midgard_style:id"/>
+		<property name="lang"     type="unsigned integer"/>
+		<property name="root"     type="unsigned integer"/>
+		<property name="style"    type="unsigned integer"/>
 		<property name="owner"    type="integer"/>
 	</type>
 
