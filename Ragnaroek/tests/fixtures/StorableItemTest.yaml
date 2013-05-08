@@ -43,6 +43,7 @@ shared:
                         name: Multilang
                         page: 101
                 ragnaroek_midgard_group:
+                    Group:
                         name: Group
                         official: Official
                         street: Midgard Str
@@ -55,10 +56,6 @@ shared:
                         fax: 0800800800
                         extra: Something extra
                         owner: 202
-                ragnaroek_midgard_member:
-                        extra: Something extra
-                        uid: 100
-                        gid: 200
             /SG0/Raki SG1/fi: 
                 ragnaroek_ratatoskr_topic:
                     Multilang:
