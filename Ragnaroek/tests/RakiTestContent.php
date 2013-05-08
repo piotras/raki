@@ -160,6 +160,7 @@ class RakiTestContent
         /* PAGE ELEMENT */
         $properties['name'] = RakiTestHelper::SG1TopicName;
         $properties['page'] = 101;
+        $properties['sitegroup'] = $sg->id;
         $e = self::createTypeRecord('ragnaroek_pageelement', $properties); 
         
         // FI
