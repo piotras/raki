@@ -141,6 +141,7 @@
 		<property name="name"     type="string" index="yes"/>
 		<property name="info"     type="string" dbtype="set('inherit')"/>
 		<property name="page"     type="unsigned integer"/>
+		<property name="sitegroup" type="unsigned integer"/>
 	</type>
 
 	<type name="ragnaroek_pageelement_lang" table="pageelement_i">
