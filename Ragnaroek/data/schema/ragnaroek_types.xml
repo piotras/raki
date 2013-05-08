@@ -172,6 +172,30 @@
 		<property name="up"       type="unsigned integer"/>
 		<property name="sitegroup" type="unsigned integer"/>
 	</type>
+	
+	<type name="ragnaroek_group" table="grp">
+		<property name="id" type="unsigned integer" primaryfield="id"/>
+		<property name="name"     type="string" index="yes"/>
+		<property name="official" type="string"/>
+		<property name="street"   type="string"/>
+		<property name="postcode" type="string"/>
+		<property name="city"     type="string"/>
+		<property name="country"  type="string"/>
+		<property name="homepage" type="string"/>
+		<property name="email"    type="string"/>
+		<property name="phone"    type="string"/>
+		<property name="fax"      type="string"/>
+		<property name="extra"    type="text"/>
+		<property name="owner"    type="unsigned integer"/>
+		<property name="sitegroup" type="unsigned integer"/>
+	</type>
 
+	<type name="ragnaroek_member" table="member">
+		<property name="id" type="unsigned integer" primaryfield="id"/>
+		<property name="uid"      type="unsigned integer"/>
+		<property name="gid"      type="unsigned integer"/>
+		<property name="extra"    type="string"/>
+		<property name="sitegroup" type="unsigned integer"/>
+	</type>
 
 </Schema>

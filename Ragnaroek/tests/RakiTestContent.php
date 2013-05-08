@@ -173,6 +173,27 @@ class RakiTestContent
         $properties['value'] = 'Русский';
         self::createTypeRecord('ragnaroek_pageelement_lang', $properties); 
 
+        /* GROUP */
+        $properties['name'] = 'Group';
+        $properties['official'] = 'Official';
+        $properties['street'] = 'Midgard Str';
+        $properties['postcode'] = '07-007';
+        $properties['city'] = 'Sopot';
+        $properties['country'] = 'Spain';
+        $properties['homepage'] = 'www.site.com';
+        $properties['email'] = 'my@mail.com';
+        $properties['phone'] = '0700700700';
+        $properties['fax'] = '0800800800';
+        $properties['extra'] = 'Something extra';
+        $properties['owner'] = 202;
+        $p = self::createTypeRecord('ragnaroek_group', $properties);
+
+        /* MEMBER */
+        $properties['extra'] = 'Something extra';
+        $properties['uid'] = 100;
+        $properties['gid'] = 200;
+        $p = self::createTypeRecord('ragnaroek_member', $properties);
+
     }
 
     public static function prepareContent()
