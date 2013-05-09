@@ -88,10 +88,17 @@ class MgdSchemaToSQL extends DomDocument
 
     protected function getNodeByMidgardType($type)
     {
+        $_rf_name = substr($type, 10);
         $nodes = $this->documentElement->getElementsByTagName(self::ATTR_TYPE);
         foreach ($nodes as $node) {
             if ($node->getAttribute(self::ATTR_NAME) == $type) {
                 return $node;
+            }
+            /* type name might have 'ragnaroek_' prefix, try without it */
+            if (strpos($type, "ragnaroek") !== false) { 
+                if ($node->getAttribute(self::ATTR_NAME) == $_rf_name) {
+                    return $node;
+                }
             }
         }
         return null;
