@@ -10,6 +10,9 @@ shared:
             - ragnaroek_topic_lang
             - ragnaroek_ratatoskr_topic
             - nt_folder
+            - ragnaroek_midgard_style
+            - ragnaroek_midgard_group
+            - ragnaroek_midgard_pageelement
         stored:
             - ragnaroek_topic
             - midgard_language
@@ -19,6 +22,9 @@ shared:
             - ragnaroek_topic
             - ragnaroek_topic_lang
             - ragnaroek_ratatoskr_topic
+            - ragnaroek_midgard_style
+            - ragnaroek_midgard_group
+            - ragnaroek_midgard_pageelement
     workspace:
         paths:
             - /SG0
