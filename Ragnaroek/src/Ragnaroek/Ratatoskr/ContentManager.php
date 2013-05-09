@@ -88,14 +88,14 @@ class ContentManager implements \CRTransition\ContentManager
                 $lang = $dLang;
             }
             $q = $sts->getSQLUpdateTypePre($typeName, $ws->id, $sg->id, $lang->id);
-            //echo $q . "\n";
+            //echo "Update type pre: \n {$q} \n";
             $mysql->query($q);
 
         }
         /* Delete content with default language */
         /* Avoid duplicates in following bulk update */
         $q = $sts->getSQLDeleteTypePre($typeName, $dLang->id);
-        //echo $q . "\n";
+        //echo "Delete type pre:\n {$q} \n";
         $mysql->query($q);
 
 
@@ -120,14 +120,14 @@ class ContentManager implements \CRTransition\ContentManager
         foreach ($sitegroups as $sg) {
             foreach ($languages as $workspaceID => $langID) {
                 $q = $sts->getSQLInsertType($typeName, $sg->id, $workspaceID, $langID);
-                //echo $q . "\n";
+                //echo "Insert type data:\n {$q} \n";
                 $mysql->query($q);
             }
         }
 
         /* Set unique object's id in workspace */
         $q = $sts->getSQLUpdateTypePost($typeName);
-        //echo $q . "\n";
+        //echo "Update type post:\n {$q} \n";
         $mysql->query($q);
 
         if ($typeName == 'midgard_person') {
@@ -183,7 +183,7 @@ class ContentManager implements \CRTransition\ContentManager
                 $storedTypes[] = $type;
             }
         }
-        return $stroedTypes;
+        return $storedTypes;
     }
 
     public function getItemByPath(\CRTransition\StorableWorkspace $workspace, $typeName, $relPath)
