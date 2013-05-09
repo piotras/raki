@@ -79,15 +79,6 @@ class ContentManager implements \CRTransition\ContentManager
     {
         echo "Importing {$typeName} type \n";
 
-        /* Check if there's anything to update */
-        $qs = new MidgardQuerySelect(new MidgardQueryStorage($typeName));
-        $qs->set_limit(1);
-        $qs->execute();
-
-        if ($qs->get_results_count() < 1) {
-            return;
-        }
-
         $mysql = $this->getTransition()->getMySQL();
 
         $workspaceManager = $this->getTransition()->getWorkspaceManager();
