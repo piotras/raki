@@ -175,6 +175,10 @@ class StoragePrepare
                     continue;
                 }
 
+            /* Check implicit abstract type */
+            if (MidgardReflectorObject::get_schema_value($name, "isAbstract") == 'true') {
+                continue;
+            }
             if (strpos($name, "_abstract") != false) {
                 continue;
             }

@@ -10,6 +10,7 @@ use \MidgardQueryValue;
 use \MidgardQueryConstraint;
 use \MidgardQueryConstraintGroup;
 use \MidgardUser;
+use \MidgardReflectorObject;
 
 class ContentManager implements \CRTransition\ContentManager 
 {
@@ -41,6 +42,14 @@ class ContentManager implements \CRTransition\ContentManager
                     continue;
             }
 
+            /* Check implicit abstract type */
+            if (MidgardReflectorObject::get_schema_value($name, "isAbstract") == 'true') {
+                continue;
+            }
+            if (strpos($name, "_abstract") != false) {
+                continue;
+            }
+
             $names[] = $name;
         }
 
@@ -68,7 +77,17 @@ class ContentManager implements \CRTransition\ContentManager
 
     public function importType($typeName)
     {
-        echo "Importing {$typeName} type \n"; 
+        echo "Importing {$typeName} type \n";
+
+        /* Check if there's anything to update */
+        $qs = new MidgardQuerySelect(new MidgardQueryStorage($typeName));
+        $qs->set_limit(1);
+        $qs->execute();
+
+        if ($qs->get_results_count() < 1) {
+            return;
+        }
+
         $mysql = $this->getTransition()->getMySQL();
 
         $workspaceManager = $this->getTransition()->getWorkspaceManager();
