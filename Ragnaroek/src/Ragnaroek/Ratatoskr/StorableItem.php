@@ -18,7 +18,13 @@ class StorableItem implements \CRTransition\StorableItem
 
     public function getPath()
     {
-        return $this->midgardObject->name;
+        if (property_exists($this->midgardObject, "name")) {
+            return $this->midgardObject->name;
+        }
+        if (property_exists($this->midgardObject, "title")) {
+            return $this->midgardObject->title;
+        }
+        return $this->midgardObject->guid;
     }
 
     public function getProperty($property)
