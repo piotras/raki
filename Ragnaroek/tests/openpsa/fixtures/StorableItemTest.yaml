@@ -27,3 +27,8 @@ shared:
                     'Facebook':
                         title: 'Facebook'
                         orgOpenpsaOwnerWg: 'user:bc8f6374ff0111debeb749d0e4efc59dc59d'
+                ragnaroek_org_openpsa_campaign_message:
+                    'Halilhalo':
+                        title: 'Halilhalo'
+                        description: 'Dies is a test'
+                        orgOpenpsaObtype: 8000

@@ -6,6 +6,13 @@ shared:
             - ragnaroek_midgard_article
             - nt_folder
             - ragnaroek_org_openpsa_campaign
+            - ragnaroek_org_openpsa_task_resource
+            - ragnaroek_org_openpsa_relatedto
+            - ragnaroek_org_openpsa_salesproject
+            - ragnaroek_org_routamc_gallery_photolink
+            - ragnaroek_org_routamc_photostream_photo
+            - ragnaroek_org_routamc_positioning_country
+            - ragnaroek_org_openpsa_organization
         stored:
             - ragnaroek_midgard_topic
             - ragnaroek_midgard_language
