@@ -23,3 +23,7 @@ shared:
                 ragnaroek_midgard_snippet:
                     'config':
                         name: 'config'
+                ragnaroek_org_openpsa_campaign:
+                    'Facebook':
+                        title: 'Facebook'
+                        orgOpenpsaOwnerWg: 'user:bc8f6374ff0111debeb749d0e4efc59dc59d'

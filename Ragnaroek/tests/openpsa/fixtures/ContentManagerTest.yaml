@@ -5,11 +5,13 @@ shared:
             - ragnaroek_midgard_language
             - ragnaroek_midgard_article
             - nt_folder
+            - ragnaroek_org_openpsa_campaign
         stored:
             - ragnaroek_midgard_topic
             - ragnaroek_midgard_language
             - ragnaroek_midgard_article
             - nt_folder
+            - ragnaroek_org_openpsa_campaign
     workspace:
         paths:
             - /SG0
