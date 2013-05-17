@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Schema xmlns="http://www.midgard-project.org/repligard/1.4">
+
+    <type name="ragnaroek_org_openpsa_project" table="org_openpsa_project">
+        <property name="id" type="unsigned integer" primaryfield="id">
+            <description>Local non-replication-safe database identifier</description>
+        </property>
+        <property name="up" upfield="up" link="ragnaroek_org_openpsa_project:id" type="unsigned integer"/>
+        <property name="code" type="string"/>
+        <property name="title" type="string"/>
+        <property name="description" type="text"/>
+
+        <property name="start" type="integer"/>
+        <property name="end" type="integer"/>
+
+        <property name="status" field="projectStatus" type="integer">
+          <description>
+            Current project status
+          </description>
+        </property>
+
+        <property name="manager" link="ragnaroek_midgard_person:id" type="unsigned integer"/>
+
+        <property name="customer" link="ragnaroek_midgard_group:id" type="unsigned integer"/>
+        <property name="customerContact" link="ragnaroek_midgard_person:id" type="unsigned integer"/>
+
+        <!-- Additional contacts are handled as members to project -->
+
+        <!-- Caches for various values that otherwise would have to be queried runtime -->
+        <property name="plannedHours" type="float"/>
+        <property name="reportedHours" type="float"/>
+        <property name="approvedHours" type="float"/>
+        <property name="invoicedHours" type="float"/>
+        <property name="invoiceableHours" type="float"/>
+
+        <!-- Common OpenPSA properties -->
+        <property name="orgOpenpsaAccesstype" type="integer">
+          <description>
+            Shortcut for various ACL scenarios
+          </description>
+        </property>
+        <property name="orgOpenpsaWgtype" type="integer">
+          <description>
+	    will contain bitmask as integer
+
+	    - 00(int=0) not a workgroup
+	    - 01(int=1) is workgroup but not active
+	    - 11(int=3) active workgroup
+          </description>
+        </property>
+        <property name="orgOpenpsaOwnerWg" type="string">
+          <description>
+            The "owner" workgroup of this object
+          </description>
+        </property>
+        <!-- /Common OpenPSA properties -->
+
+    <property name="sitegroup" type="unsigned integer"/></type>
+
+    <type name="ragnaroek_org_openpsa_task" table="org_openpsa_task" parent="ragnaroek_org_openpsa_project">
+        <property name="id" type="unsigned integer" primaryfield="id">
+            <description>Local non-replication-safe database identifier</description>
+        </property>
+        <property name="up" upfield="up" link="ragnaroek_org_openpsa_task:id" type="unsigned integer"/>
+        <property name="project" parentfield="project" link="ragnaroek_org_openpsa_project:id" type="unsigned integer"/>
+        <property name="dependency" link="ragnaroek_org_openpsa_task:id" type="unsigned integer"/>
+        <property name="start" type="integer"/>
+        <property name="end" type="integer"/>
+        <property name="title" type="string"/>
+        <property name="description" type="text"/>
+
+        <property name="affectsSaldo" type="boolean"/>
+        <property name="plannedHours" type="float"/>
+        <property name="projectCode" type="string"/>
+
+        <property name="status" type="integer">
+        	<description>
+        		cache of last status
+        	</description>
+        </property>
+        <property name="acceptanceType" type="integer"/>
+
+        <property name="agreement" link="ragnaroek_org_openpsa_salesproject_deliverable:id" type="unsigned integer"/>
+        <property name="customer" link="ragnaroek_midgard_group:id" type="unsigned integer"/>
+
+        <property name="manager" link="ragnaroek_midgard_person:id" type="unsigned integer"/>
+
+        <!-- What "plugin" to use for price/cost calculation -->
+        <!-- PONDER: should these we even links, that would in a way make defining new ones easier, though how many are we going to need ? -->
+        <property name="pricePlugin" type="string"/>
+        <property name="costPlugin" type="string"/>
+        <!-- Base value for those calculations, only meaningful for some of the "plugins" -->
+        <property name="priceBase" type="float"/>
+        <property name="costBase" type="float"/>
+        <!-- Define max values (for warnings etc) for price & cost -->
+        <property name="maxPrice" type="float"/>
+        <property name="maxCost" type="float"/>
+
+        <!-- Caches for various values that otherwise would have to be queried runtime -->
+        <property name="costCache" type="float"/>
+        <property name="priceCache" type="float"/>
+        <property name="reportedHours" type="float"/>
+        <property name="approvedHours" type="float"/>
+        <property name="invoicedHours" type="float"/>
+        <property name="invoiceableHours" type="float"/>
+
+        <!-- Are all of these really necessary ?
+        <property name="customerProjectCode" type="string" />
+        <property name="customerOrderCode" type="string" />
+        <property name="customerReference" type="string" />
+        -->
+
+        <!-- Allow calendar "tasks as resources" feature (when implemented) to reserve overlapping
+             instances with this task, I'm not sure this is actually very useful as most be the time it will be true
+        <property name="calendarAllowOverlap" type="integer"/>
+         -->
+        <property name="expensesInvoiceableDefault" type="boolean">
+        	<description>
+        		Are expenses and mileages invoiceable by default ?
+        	</description>
+        </property>
+        <property name="hoursInvoiceableDefault" type="boolean">
+        	<description>
+        		Are hours invoiceable by default ?
+        	</description>
+        </property>
+        <property name="priority" type="integer"/>
+        <!-- TODO: how to handle "percentages" [as in the 1.x Projects] ? I think they will be a member-like system or something -->
+
+        <!-- Common OpenPSA properties -->
+        <property name="orgOpenpsaAccesstype" type="integer">
+        	<description>
+        		Shortcut for various ACL scenarios
+        	</description>
+        </property>
+        <property name="orgOpenpsaObtype" type="integer">
+        	<description>
+	        	Used to a) distinguish OpenPSA objects in QB b) store object "subtype" (project vs task etc)
+        	</description>
+        </property>
+        <property name="orgOpenpsaWgtype" type="integer">
+        	<description>
+	            will contain bitmask as integer
+
+	            - 00(int=0) not a workgroup
+	            - 01(int=1) is workgroup but not active
+	            - 11(int=3) active workgroup
+        	</description>
+        </property>
+        <property name="orgOpenpsaOwnerWg" type="string">
+        	<description>
+        		The "owner" workgroup of this object
+        	</description>
+        </property>
+        <!-- /Common OpenPSA properties -->
+
+    <property name="sitegroup" type="unsigned integer"/></type>
+
+    <type name="ragnaroek_org_openpsa_task_status" table="org_openpsa_task_status" parent="ragnaroek_org_openpsa_task">
+        <property name="id" type="unsigned integer" primaryfield="id">
+            <description>Local non-replication-safe database identifier</description>
+        </property>
+        <property name="task" link="ragnaroek_org_openpsa_task:id" type="unsigned integer" parentfield="task"/>
+        <property name="targetPerson" link="ragnaroek_midgard_person:id" type="unsigned integer"/>
+        <property name="type" type="integer" index="yes"/>
+        <property name="timestamp" type="integer" index="yes"/>
+        <property name="comment" type="text"/>
+    <property name="sitegroup" type="unsigned integer"/></type>
+
+    <type name="ragnaroek_org_openpsa_hour_report" table="org_openpsa_hour_report" parent="ragnaroek_org_openpsa_task">
+        <property name="id" type="unsigned integer" primaryfield="id">
+            <description>Local non-replication-safe database identifier</description>
+        </property>
+        <property name="task" link="ragnaroek_org_openpsa_task:id" type="unsigned integer" parentfield="task"/>
+        <property name="person" link="ragnaroek_midgard_person:id" type="unsigned integer"/>
+
+        <property name="invoice" link="ragnaroek_org_openpsa_invoice:id" type="unsigned integer" upfield="invoice"/>
+
+        <property name="hours" type="float"/>
+        <property name="description" type="text"/>
+
+        <property name="date" type="integer" index="yes"/>
+
+        <property name="reportType" type="string"/>
+        <property name="invoiceable" type="boolean" index="yes"/>
+
+        <!-- Caches for various values that other would have to be queried/calculated runtime -->
+        <property name="costCache" type="float"/>
+        <property name="priceCache" type="float"/>
+
+        <!-- Common OpenPSA properties -->
+        <property name="orgOpenpsaObtype" type="integer">
+        	<description>
+	        	Used to a) distinguish OpenPSA objects in QB b) store object "subtype" (project vs task etc)
+        	</description>
+        </property>
+        <!-- /Common OpenPSA properties -->
+
+    <property name="sitegroup" type="unsigned integer"/></type>
+
+    <type name="ragnaroek_org_openpsa_task_resource" table="org_openpsa_task_resource" parent="ragnaroek_org_openpsa_task">
+        <property name="id" type="unsigned integer" primaryfield="id">
+            <description>Local non-replication-safe database identifier</description>
+        </property>
+        <property name="person" link="ragnaroek_midgard_person:id" type="unsigned integer"/>
+        <property name="task" link="ragnaroek_org_openpsa_task:id" type="unsigned integer" parentfield="task"/>
+
+        <!-- Common OpenPSA properties -->
+        <property name="orgOpenpsaObtype" type="integer">
+        	<description>
+	        	Used to a) distinguish OpenPSA objects in QB b) store object "subtype" (project vs task etc)
+        	</description>
+        </property>
+        <!-- /Common OpenPSA properties -->
+    <property name="sitegroup" type="unsigned integer"/></type>
+
+</Schema>

@@ -21,7 +21,6 @@
         <property name="name" type="string" index="yes">
             <description>Country name</description>
         </property>
-        <!-- TODO: Alternate names should probably be a MultiLang table -->
         <property name="alternatenames" type="string">
             <description>Alternative and different language names of the country separated by pipe (`|`) characters</description>
         </property>
@@ -69,7 +68,6 @@
         <property name="region" type="string" index="yes">
             <description>An administrative region of the nation, such as a state or province</description>
         </property>
-        <!-- TODO: Alternate names should probably be a MultiLang table -->
         <property name="alternatenames" type="string">
             <description>Alternative and different language names of the city separated by pipe (`|`) characters</description>
         </property>
@@ -136,7 +134,6 @@
             <description>Source is the name of the position source module log entry comes from. These correspond to org_routamc_positioning_importer_X classes
             
             - gpx: GPS track log entry imported in GPX format
-            - plazes: Plazes information
             - manual: Manually entered position
             - objectlocation: Location acquired through an object's location
             </description>

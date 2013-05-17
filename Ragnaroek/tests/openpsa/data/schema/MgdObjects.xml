@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Schema xmlns="http://www.midgard-project.org/repligard/1.4">
 
-    <type name="ragnaroek_midgard_article" table="article">
+    <type name="ragnaroek_midgard_article" table="article" parent="ragnaroek_midgard_topic">
         <property name="id" type="unsigned integer" primaryfield="id">
             <description>Local non-replication-safe database identifier</description>
         </property>
@@ -20,10 +20,10 @@
         <property name="type" type="integer" index="yes">
             <description>Type of the article</description>
         </property>
-        <property name="up" type="unsigned integer" upfield="up">
+        <property name="up" type="unsigned integer" link="ragnaroek_midgard_article:id" upfield="up">
             <description>Possible prior part of the article</description>
         </property>
-        <property name="topic" type="unsigned integer" parentfield="topic">
+        <property name="topic" type="unsigned integer" link="ragnaroek_midgard_topic:id" parentfield="topic">
             <description>Topic the article is under</description>
         </property>
         <!-- Multilang features --> 
@@ -45,12 +45,12 @@
         <property name="sid" type="unsigned integer" table="article_i" multilang="yes">
             <description>Reference to the local non-replication-safe database identifier of the object</description>
         </property>
-				<property name="author" type="unsigned integer" field="author" multilang="yes">
+        <property name="contentauthor" type="unsigned integer" link="ragnaroek_midgard_person:id" table="article_i" field="author" multilang="yes">
             <description>Author of the language version of the article (legacy field)</description>
         </property>
         <property name="contentcreated" type="datetime" table="article_i" field="created" multilang="yes">
             <description>Creation time of the language version of the article (legacy field)</description>
-				</property> 
+        </property>
         <!-- Legacy -->
         <property name="calstart" type="datetime">
             <description>Date the article applies to (legacy field)</description>
@@ -70,8 +70,7 @@
         <property name="score" type="integer">
             <description>Arrangement score of the article (legacy field)</description>
         </property>
-	<property name="sitegroup" type="unsigned integer"/>
-    </type>
+    <property name="sitegroup" type="unsigned integer"/></type>
 
     <type name="ragnaroek_midgard_topic" table="topic">
         <property name="id" type="unsigned integer" primaryfield="id">
@@ -83,7 +82,7 @@
         <property name="code" type="text">
             <description>Executable PHP code for topic display</description>
         </property>
-        <property name="up" type="unsigned integer" upfield="up">
+        <property name="up" link="ragnaroek_midgard_topic:id" type="unsigned integer" upfield="up">
             <description>Topic the topic is under</description>
         </property>
         <!-- MidCOM properties -->
@@ -96,7 +95,7 @@
         <property name="styleInherit" type="boolean" field="style_inherit" index="yes">
             <description>Whether the MidCOM style should be inherited to subtopics</description>
         </property>
-        <property name="symlink" type="unsigned integer" index="yes">
+        <property name="symlink" link="ragnaroek_midgard_topic:id" type="unsigned integer" index="yes">
             <description>MidCOM topic symlink</description>
         </property>
         <!-- Multilang properties -->
@@ -119,8 +118,7 @@
         <property name="score" type="integer">
             <description>Arrangement score of the topic (legacy field)</description>
         </property>
-	<property name="sitegroup" type="unsigned integer"/>
-    </type>
+    <property name="sitegroup" type="unsigned integer"/></type>
 
     <type name="ragnaroek_midgard_host" table="host">
         <property name="id" type="unsigned integer" primaryfield="id">
@@ -144,18 +142,17 @@
         <property name="lang" type="unsigned integer" link="ragnaroek_midgard_language:id">
             <description>Language the host is in</description>
         </property>
-        <property name="root" type="unsigned integer">
+        <property name="root" type="unsigned integer" link="ragnaroek_midgard_page:id">
             <description>Root page of the host</description>
         </property>
-        <property name="style" type="unsigned integer">
+        <property name="style" type="unsigned integer" link="ragnaroek_midgard_style:id">
             <description>Style used with the host</description>
         </property>
         <!-- Legacy -->
         <property name="owner" type="integer">
             <description>Host owner group (legacy field)</description>
         </property>
-	<property name="sitegroup" type="unsigned integer"/>
-    </type>
+    <property name="sitegroup" type="unsigned integer"/></type>
 
     <type name="ragnaroek_midgard_style" table="style">
         <property name="id" type="unsigned integer" primaryfield="id">
@@ -164,37 +161,35 @@
         <property name="name" type="string" index="yes">
             <description>Path name of the style</description>
         </property>
-        <property name="owner" type="unsigned integer">
+        <property name="owner" type="unsigned integer" link="ragnaroek_midgard_group:id">
             <description>Style owner group (legacy field)</description>
         </property>
-        <property name="up" type="unsigned integer" upfield="up">
+        <property name="up" type="unsigned integer" link="ragnaroek_midgard_style:id" upfield="up">
             <description>Style the style is under</description>
         </property>
-	<property name="sitegroup" type="unsigned integer"/>
-    </type>
+    <property name="sitegroup" type="unsigned integer"/></type>
 
-    <type name="ragnaroek_midgard_element" table="element">
+    <type name="ragnaroek_midgard_element" table="element" parent="ragnaroek_midgard_style">
         <property name="id" type="unsigned integer" primaryfield="id">
             <description>Local non-replication-safe database identifier</description>
         </property>
         <property name="name" type="string" index="yes">
             <description>Path name of the element</description>
         </property>
-        <property name="style" type="unsigned integer" parentfield="style">
+        <property name="style" type="unsigned integer" link="ragnaroek_midgard_style:id" parentfield="style">
             <description>Style the element is in</description>
         </property>
         <!-- Multilang features -->
         <property name="value" type="text" table="element_i" multilang="yes">
             <description>Contents of the style element</description>
         </property>
-        <property name="lang" type="unsigned integer" table="element_i" multilang="yes">
+        <property name="lang" type="unsigned integer" link="ragnaroek_midgard_language:id" table="element_i" multilang="yes">
             <description>Language the element is in</description>
         </property>
         <property name="sid" type="unsigned integer" table="element_i" multilang="yes">
             <description>Reference to the local non-replication-safe database identifier of the object</description>
         </property>
-	<property name="sitegroup" type="unsigned integer"/>
-    </type>
+    <property name="sitegroup" type="unsigned integer"/></type>
 
     <type name="ragnaroek_midgard_page" table="page">
         <property name="id" type="unsigned integer" primaryfield="id">
@@ -206,10 +201,10 @@
         <property name="info" type="string" dbtype="set('auth','active')">
             <description>Settings for active and authenticated pages</description>
         </property>
-        <property name="style" type="unsigned integer">
+        <property name="style" type="unsigned integer" link="ragnaroek_midgard_style:id">
             <description>Style used with the host</description>
         </property>
-        <property name="up" type="unsigned integer" upfield="up">
+        <property name="up" type="unsigned integer" link="ragnaroek_midgard_page:id" upfield="up">
             <description>Page the page is under</description>
         </property>
         <property name="component" type="string" index="yes">
@@ -229,25 +224,24 @@
             <description>Reference to the local non-replication-safe database identifier of the object</description>
         </property>
         <!-- Legacy -->
-				<!-- <property name="contentauthor" type="unsigned integer" link="midgard_person:id" table="page_i" field="author" multilang="yes">
+				<!--<property name="contentauthor" type="unsigned integer" link="midgard_person:id" table="page_i" field="author" multilang="yes">
             <description>Author of the current language version of the page (legacy field)</description>
         </property>
         <property name="contentowner"    type="unsigned integer" link="midgard_group:id" table="page_i" field="owner" multilang="yes">
             <description>Owner of the current language version of the page (legacy field)</description>
-				</property> -->
+				</property>-->
         <property name="contentchanged" type="datetime" table="page_i" field="changed" multilang="yes">
             <description>Time when the current language version has been changed (legacy field)</description>
         </property>
-        <property name="owner" type="unsigned integer" field="owner">
+        <property name="owner" type="unsigned integer" link="ragnaroek_midgard_group:id" field="owner">
             <description>Owner of the page (legacy field)</description>
         </property>
-        <property name="author" type="unsigned integer">
+        <property name="author" type="unsigned integer" link="ragnaroek_midgard_person:id">
             <description>Author of the page (legacy field)</description>
         </property>
-				<property name="sitegroup" type="unsigned integer"/>
-    </type>
+    <property name="sitegroup" type="unsigned integer"/></type>
 
-    <type name="ragnaroek_midgard_pageelement" table="pageelement">
+    <type name="ragnaroek_midgard_pageelement" table="pageelement" parent="ragnaroek_midgard_page">
         <property name="id" type="unsigned integer" primaryfield="id">
             <description>Local non-replication-safe database identifier</description>
         </property>
@@ -257,7 +251,7 @@
         <property name="info" type="string" dbtype="set('inherit')">
             <description>Whether the page element is inherited</description>
         </property>
-        <property name="page" type="unsigned integer" parentfield="page">
+        <property name="page" type="unsigned integer" link="ragnaroek_midgard_page:id" parentfield="page">
             <description>Page the element is under</description>
         </property>
         <!-- Multilang features -->
@@ -270,8 +264,7 @@
         <property name="value" type="text" table="pageelement_i" multilang="yes">
             <description>Value of the page element</description>
         </property>
-	<property name="sitegroup" type="unsigned integer"/>
-    </type>
+    <property name="sitegroup" type="unsigned integer"/></type>
 
     <type name="ragnaroek_midgard_group" table="grp">
         <property name="id" type="unsigned integer" primaryfield="id">
@@ -310,20 +303,19 @@
         <property name="extra" type="text">
             <description>Additional information about the group</description>
         </property>
-        <property name="owner" type="unsigned integer" upfield="owner">
+        <property name="owner" link="ragnaroek_midgard_group:id" type="unsigned integer" upfield="owner">
             <description>Group the group is under</description>
         </property>
-	<property name="sitegroup" type="unsigned integer"/>
-    </type>
+    <property name="sitegroup" type="unsigned integer"/></type>
 
     <type name="ragnaroek_midgard_member" table="member">
         <property name="id" type="unsigned integer" primaryfield="id">
             <description>Local non-replication-safe database identifier</description>
         </property>
-        <property name="uid" type="unsigned integer">
+        <property name="uid" type="unsigned integer" link="ragnaroek_midgard_person:id">
             <description>Identifier of the user that belongs to a group</description>
         </property>
-        <property name="gid" type="unsigned integer" parentfield="gid">
+        <property name="gid" type="unsigned integer" link="ragnaroek_midgard_group:id" parentfield="gid">
             <description>Identifier of the group that the user belongs to</description>
         </property>
         <property name="extra" type="string">
@@ -333,8 +325,7 @@
         <property name="info" type="string" dbtype="set('owner','member')">
             <description>Type of membership: group owner or member (legacy field)</description>
         </property>
-	<property name="sitegroup" type="unsigned integer"/>
-    </type>
+    <property name="sitegroup" type="unsigned integer"/></type>
 
     <type name="ragnaroek_midgard_person" table="person">
         <property name="id" type="unsigned integer" primaryfield="id">
@@ -343,7 +334,7 @@
         <property name="username" type="string" index="yes">
             <description>Username of the person</description>
         </property>
-        <property name="password" type="string">
+        <property name="password" type="password" dbtype="varchar(13) binary">
             <description>Password of the person</description>
         </property>
         <property name="firstname" type="string" index="yes">
@@ -392,20 +383,19 @@
         <property name="info" type="string" dbtype="set('admin','address','phone','homepage','email','extra')">
             <description>Which fields of the person are publicly readable (legacy field)</description>
         </property>
-				<property name="topic" type="unsigned integer">
+        <property name="topic" type="unsigned integer" link="ragnaroek_midgard_topic:id">
             <description>Primary topic of the person (legacy field)</description>
         </property>
-        <property name="subtopic" type="unsigned integer">
+        <property name="subtopic" type="unsigned integer" link="ragnaroek_midgard_topic:id">
             <description>Secondary topic of the person (legacy field)</description>
         </property>
-        <property name="office" type="unsigned integer">
+        <property name="office" type="unsigned integer" link="ragnaroek_midgard_topic:id">
             <description>Office-specific topic of the person (legacy field)</description>
         </property>
-        <property name="department" type="unsigned integer">
+        <property name="department" type="unsigned integer" link="ragnaroek_midgard_topic:id">
             <description>Department-specific topic of the person (legacy field)</description>
         </property>
-	<property name="sitegroup" type="unsigned integer"/>
-    </type>
+    <property name="sitegroup" type="unsigned integer"/></type>
 
     <type name="ragnaroek_midgard_event" table="event">
         <property name="id" type="unsigned integer" primaryfield="id">
@@ -433,20 +423,19 @@
         <property name="busy" type="boolean">
             <description>Whether the event should make members reserved</description>
         </property>
-        <property name="up" type="unsigned integer" upfield="up">
+        <property name="up" type="unsigned integer" upfield="up" link="ragnaroek_midgard_event:id">
             <description>Event the event is under</description>
         </property>
-	<property name="sitegroup" type="unsigned integer"/>
-    </type>
+    <property name="sitegroup" type="unsigned integer"/></type>
 
-    <type name="ragnaroek_midgard_eventmember" table="eventmember">
+    <type name="ragnaroek_midgard_eventmember" table="eventmember" parent="ragnaroek_midgard_event">
         <property name="id" type="unsigned integer" primaryfield="id">
             <description>Local non-replication-safe database identifier</description>
         </property>
-        <property name="uid" type="unsigned integer">
+        <property name="uid" type="unsigned integer" link="ragnaroek_midgard_person:id">
             <description>Identifier of a person that belongs to the event</description>
         </property>
-        <property name="eid" type="unsigned integer" parentfield="eid">
+        <property name="eid" type="unsigned integer" link="ragnaroek_midgard_event:id" parentfield="eid">
             <description>Identifier of the event that a person belongs to</description>
         </property>
         <property name="extra" type="string">
@@ -459,8 +448,7 @@
         <property name="count" type="integer">
             <description>Count of the membership (legacy field)</description>
         </property>
-				<property name="sitegroup" type="unsigned integer"/>
-    </type>
+    <property name="sitegroup" type="unsigned integer"/></type>
 
     <type name="ragnaroek_midgard_attachment" table="blobs">
         <property name="id" type="unsigned integer" primaryfield="id">
@@ -497,8 +485,7 @@
         <property name="author" type="unsigned integer" link="ragnaroek_midgard_person:id">
             <description>Author of the attachment (legacy field)</description>
         </property>
-		<property name="sitegroup" type="unsigned integer"/>
-    </type>
+    <property name="sitegroup" type="unsigned integer"/></type>
 
     <type name="ragnaroek_midgard_parameter" table="record_extension">
         <property name="id" type="unsigned integer" primaryfield="id">
@@ -526,8 +513,7 @@
         <property name="oid" type="unsigned integer">
             <description>ID of the object the parameter extends (legacy field)</description>
         </property>
-	<property name="sitegroup" type="unsigned integer"/>
-    </type>
+    <property name="sitegroup" type="unsigned integer"/></type>
 
     <type name="ragnaroek_midgard_snippetdir" table="snippetdir">
         <property name="id" type="unsigned integer" primaryfield="id">
@@ -539,15 +525,14 @@
         <property name="description" type="text">
             <description>Description of the snippetdir</description>
         </property>
-        <property name="up" type="unsigned integer" upfield="up">
+        <property name="up" type="unsigned integer" link="ragnaroek_midgard_snippetdir:id" upfield="up">
             <description>Snippetdir the snippetdir is under</description>
         </property>
         <!-- Legacy -->
-				<property name="owner" type="unsigned integer">
+        <property name="owner" type="unsigned integer" link="ragnaroek_midgard_group:id">
             <description>Owner group of the snippetdir (legacy field)</description>
         </property>
-	<property name="sitegroup" type="unsigned integer"/>
-    </type>
+    <property name="sitegroup" type="unsigned integer"/></type>
 
     <type name="ragnaroek_midgard_snippet" table="snippet" parent="ragnaroek_midgard_snippetdir">
         <property name="id" type="unsigned integer" primaryfield="id">
@@ -576,8 +561,7 @@
         <property name="author" type="string" table="snippet_i" multilang="yes">
             <description>Author of the snippet (legacy field)</description>
         </property>
-	<property name="sitegroup" type="unsigned integer"/>
-    </type>
+    <property name="sitegroup" type="unsigned integer"/></type>
 
     <type name="ragnaroek_midgard_quota" table="quota">
         <property name="id" type="unsigned integer" primaryfield="id">
@@ -638,8 +622,7 @@
         <property name="currentcount" type="integer" field="count_is_current">
             <description>Legacy field</description>
         </property>
-	<property name="sitegroup" type="unsigned integer"/>
-    </type>
+    <property name="sitegroup" type="unsigned integer"/></type>
 
     <type name="ragnaroek_midgard_language" table="midgard_language">
         <property name="id" type="unsigned integer" primaryfield="id">
@@ -660,6 +643,6 @@
         <property name="description" type="text">
             <description>Description of the language</description>
         </property>
-	<property name="sitegroup" type="unsigned integer"/>
-    </type>
+    <property name="sitegroup" type="unsigned integer"/></type>
+
 </Schema>
