@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Schema xmlns="http://www.midgard-project.org/repligard/1.4">
+    <type name="ragnaroek_org_routamc_photostream_photo" table="org_routamc_photostream_photo" parent="ragnaroek_midgard_topic" parentfield="node">
+        <property name="id" type="unsigned integer" primaryfield="id"/>
+        <property name="node" link="ragnaroek_midgard_topic:id" reverse="no" type="unsigned integer" parentfield="node"/>
+        
+        <!-- External IDs can be used to store identifier of the image in some external service, like Flickr -->
+        <property name="externalid" type="string" index="yes"/>
+
+        <!-- Photographer is always a person in DB. If you want to store extra attribution data use parameters -->
+        <property name="photographer" link="ragnaroek_midgard_person:id" reverse="no" type="unsigned integer"/>
+
+        <!-- Direct links to archival, "fullscale" and thumbnail attachments -->
+        <property name="archival" link="ragnaroek_midgard_attachment:id" reverse="yes" type="unsigned integer"/>
+        <property name="main" link="ragnaroek_midgard_attachment:id" reverse="yes" type="unsigned integer"/>
+        <property name="thumb" link="ragnaroek_midgard_attachment:id" reverse="yes" type="unsigned integer"/>
+        
+        <!-- Status of the photo (for different purposes, like accepted, censored and so on) -->
+        <property name="status" type="integer" index="yes"/>
+
+        <!-- Descriptive fields are MLd -->
+        <property name="title" multilang="yes" table="org_routamc_photostream_photo_i" type="string"/>
+        <property name="description" multilang="yes" table="org_routamc_photostream_photo_i" type="text"/>
+        <property name="lang" multilang="yes" table="org_routamc_photostream_photo_i" type="unsigned integer"/>
+        <property name="sid" multilang="yes" table="org_routamc_photostream_photo_i" type="unsigned integer"/>
+
+        <!-- Timestamp when taken -->
+        <property name="taken" type="integer" index="yes"/>
+
+        <!-- Integer for rating, typically of the "1-5 stars" variety -->
+        <property name="rating" type="integer" index="yes"/>
+    <property name="sitegroup" type="unsigned integer"/></type>
+</Schema>
