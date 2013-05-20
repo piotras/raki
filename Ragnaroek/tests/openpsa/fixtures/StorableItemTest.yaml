@@ -25,10 +25,20 @@ shared:
                         name: 'config'
                 ragnaroek_org_openpsa_campaign:
                     'Facebook':
+                        name: 'Facebook'
                         title: 'Facebook'
                         orgOpenpsaOwnerWg: 'user:bc8f6374ff0111debeb749d0e4efc59dc59d'
                 ragnaroek_org_openpsa_campaign_message:
                     'Halilhalo':
+                        name: 'Halilhalo'
                         title: 'Halilhalo'
                         description: 'Dies is a test'
                         orgOpenpsaObtype: 8000
+                ragnaroek_org_openpsa_document:
+                        name: 'User Manual'
+                        title: 'User Manual'
+                        abstract: 'First version, English'
+                ragnaroek_org_openpsa_products_product:
+                        name: 'XenApp 6.5'
+                        title: 'XenApp 6.5'
+                        description: 'Virtual Application server'

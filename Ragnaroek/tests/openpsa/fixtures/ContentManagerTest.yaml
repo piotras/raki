@@ -13,12 +13,16 @@ shared:
             - ragnaroek_org_routamc_photostream_photo
             - ragnaroek_org_routamc_positioning_country
             - ragnaroek_org_openpsa_organization
+            - ragnaroek_org_openpsa_document
+            - ragnaroek_org_openpsa_products_product
         stored:
             - ragnaroek_midgard_topic
             - ragnaroek_midgard_language
             - ragnaroek_midgard_article
             - nt_folder
             - ragnaroek_org_openpsa_campaign
+            - ragnaroek_org_openpsa_document
+            - ragnaroek_org_openpsa_products_product
     workspace:
         paths:
             - /SG0
