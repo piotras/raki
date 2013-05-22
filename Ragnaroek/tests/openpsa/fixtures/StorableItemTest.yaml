@@ -40,3 +40,10 @@ shared:
                     'XenApp 6.5':
                         title: 'XenApp 6.5'
                         description: 'Virtual Application server'
+                ragnaroek_org_openpsa_products_product_group:
+                    'General/other':
+                        title: 'General/other'
+                        description: ''
+                    'Service':
+                        title: 'Service'
+                        description: 'THis is my sample'

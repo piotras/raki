@@ -15,6 +15,7 @@ shared:
             - ragnaroek_org_openpsa_organization
             - ragnaroek_org_openpsa_document
             - ragnaroek_org_openpsa_products_product
+            - ragnaroek_org_openpsa_products_product_group
         stored:
             - ragnaroek_midgard_topic
             - ragnaroek_midgard_language
@@ -23,6 +24,7 @@ shared:
             - ragnaroek_org_openpsa_campaign
             - ragnaroek_org_openpsa_document
             - ragnaroek_org_openpsa_products_product
+            - ragnaroek_org_openpsa_products_product_group
     workspace:
         paths:
             - /SG0
